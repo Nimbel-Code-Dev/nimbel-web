@@ -39,15 +39,15 @@ const backgroundMobile = await getImage({
     <title>{title}</title>
     <link rel="preload" as="image" href={backgroundDesktop.src} fetchpriority="high" media="(min-width: 768px)" />
     <link rel="preload" as="image" href={backgroundMobile.src} fetchpriority="high" media="(max-width: 767px)" />
-    <style>
+    <style define:vars={{ backgroundDesktop: `url(${backgroundDesktop.src})`, backgroundMobile: `url(${backgroundMobile.src})` }}>
       @media (max-width: 767px) {
         body {
-          background-image: url({backgroundMobile.src});
+          background-image: var(--backgroundMobile);
         }
       }
       @media (min-width: 768px) {
         body {
-          background-image: url({backgroundDesktop.src});
+          background-image: var(--backgroundDesktop);
         }
       }
     </style>
