@@ -37,6 +37,8 @@ const background = await getImage({
     </noscript>
   </head>
   <body style={`background-image: url(${background.src})`}>
-    <slot />
+    <main>
+      <slot />
+    </main>
   </body>
 </html>
