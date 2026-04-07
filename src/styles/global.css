@@ -38,7 +38,6 @@ html {
 
 body {
   @apply font-clash;
-  background-image: url("/assets/background.png");
   background-size: cover;
   background-position: center top;
   background-repeat: no-repeat;
