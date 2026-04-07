@@ -1,7 +1,7 @@
 ---
-import { getImage } from 'astro:assets';
-import backgroundSrc from '../assets/background.png';
-import '../styles/global.css';
+import { getImage } from "astro:assets";
+import backgroundSrc from "../assets/background.png";
+import "../styles/global.css";
 
 export type Props = {
   title?: string;
@@ -9,13 +9,16 @@ export type Props = {
   lang?: string;
 };
 
-const { title = 'Nimbel CODE', description = 'Design Smarter, Not Harder', lang = 'es' } = Astro.props;
+const {
+  title = "Nimbel CODE",
+  description = "Design Smarter, Not Harder",
+  lang = "es",
+} = Astro.props;
 
 const background = await getImage({
   src: backgroundSrc,
-  format: 'webp',
-  quality: 50,
-  width: 1440,
+  format: "webp",
+  quality: 80,
 });
 ---
 
@@ -26,6 +29,12 @@ const background = await getImage({
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="description" content={description} />
     <title>{title}</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Instrument+Sans:wght@400;500;600;700&display=swap" media="print" onload="this.media='all'" />
+    <noscript>
+      <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Instrument+Sans:wght@400;500;600;700&display=swap" />
+    </noscript>
   </head>
   <body style={`background-image: url(${background.src})`}>
     <slot />
