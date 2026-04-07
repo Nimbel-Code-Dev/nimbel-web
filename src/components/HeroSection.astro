@@ -61,6 +61,8 @@ const t = useTranslations(locale);
       <Image
         src={phonesImg}
         alt=""
+        widths={[320, 512, 768]}
+        sizes="(max-width: 1024px) 320px, (max-width: 1280px) 512px, 768px"
         class="w-full max-w-lg drop-shadow-2xl"
       />
     </div>
