@@ -2,7 +2,6 @@
 
 ### Regla general
 
-- Usar siempre la skill `/add-dep` para instalar dependencias
 - Nunca usar `npm install` ni `yarn`. Solo `pnpm`
 - El `pnpm-lock.yaml` debe commitearse siempre
 
