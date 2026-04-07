@@ -1,0 +1,66 @@
+---
+import { useTranslations, type Locale } from "../i18n/utils";
+
+export type Props = {
+  locale: Locale;
+};
+
+const { locale } = Astro.props;
+const t = useTranslations(locale);
+---
+
+<section class="relative w-full min-h-screen flex items-center overflow-hidden">
+  <div class="w-full grid grid-cols-2 max-md:grid-cols-1 min-h-screen">
+    <!-- Left: Content -->
+    <div
+      class="flex flex-col justify-center px-15 py-24 max-md:px-6 max-md:py-20 z-10"
+    >
+      <!-- Eyebrow -->
+      <span
+        class="text-nimbel-eyebrow font-semibold text-sm tracking-widest uppercase mb-6"
+      >
+        {t("hero", "eyebrow")}
+      </span>
+
+      <!-- Headline -->
+      <h1
+        class="font-mortend text-6xl max-lg:text-5xl max-md:text-4xl text-nimbel-text uppercase leading-tight mb-6"
+      >
+        {t("hero", "headline")}
+      </h1>
+
+      <!-- Description -->
+      <p class="text-nimbel-muted text-base leading-relaxed max-w-md mb-10">
+        {t("hero", "description")}
+      </p>
+
+      <!-- CTA -->
+      <div>
+        <a href="/contacto" class="btn-primary inline-flex items-center gap-2">
+          <span>{t("hero", "cta")}</span>
+          <svg
+            class="w-5 h-5"
+            fill="none"
+            stroke="currentColor"
+            viewBox="0 0 24 24"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M13 7l5 5m0 0l-5 5m5-5H6"></path>
+          </svg>
+        </a>
+      </div>
+    </div>
+
+    <!-- Right: Phones — hidden on mobile -->
+    <div class="max-md:hidden flex items-center justify-center">
+      <img
+        src="/assets/phones.png"
+        alt=""
+        class="w-full max-w-lg drop-shadow-2xl"
+      />
+    </div>
+  </div>
+</section>

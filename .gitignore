@@ -1,0 +1,20 @@
+# Build output
+dist/
+.astro/
+
+# Dependencies
+node_modules/
+
+# Env / secrets
+.env
+.env.*
+!.env.example
+
+# Claude local config
+.claude/
+
+# Editor local config
+.vscode/
+
+# OS
+.DS_Store

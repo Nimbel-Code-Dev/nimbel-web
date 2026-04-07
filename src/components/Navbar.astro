@@ -1,0 +1,115 @@
+---
+import { useTranslations, type Locale } from "../i18n/utils";
+
+export type Props = {
+  currentPage?: string;
+  locale: Locale;
+};
+
+const { currentPage, locale } = Astro.props;
+const t = useTranslations(locale);
+
+const navLinks = [
+  { label: t("navbar", "about"), href: "#about" },
+  { label: t("navbar", "services"), href: "#services" },
+];
+---
+
+<nav class="flex items-center justify-between px-15 py-5 relative max-md:px-6">
+  <!-- Logo -->
+  <img src="/assets/Nimbel Logo.svg" alt="Nimbel" class="h-10 w-auto" />
+
+  <!-- Desktop: Links + CTA -->
+  <div class="hidden md:flex gap-4 items-center">
+    {
+      navLinks.map((link) => (
+        <a
+          href={link.href}
+          class="text-nimbel-muted text-base px-1 py-1 whitespace-nowrap"
+          aria-current={currentPage === link.href ? "page" : undefined}
+        >
+          {link.label}
+        </a>
+      ))
+    }
+    <a href="/agenda" class="btn-secondary">
+      {t("navbar", "cta")}
+    </a>
+  </div>
+
+  <!-- Mobile: Hamburger button -->
+  <button
+    id="menu-toggle"
+    class="md:hidden flex flex-col gap-1.25 p-2 cursor-pointer"
+    aria-label="Abrir menú"
+    aria-expanded="false"
+  >
+    <span
+      class="hamburger-line block w-6 h-0.5 bg-nimbel-muted transition-all duration-300"
+    ></span>
+    <span
+      class="hamburger-line block w-6 h-0.5 bg-nimbel-muted transition-all duration-300"
+    ></span>
+    <span
+      class="hamburger-line block w-6 h-0.5 bg-nimbel-muted transition-all duration-300"
+    ></span>
+  </button>
+</nav>
+
+<!-- Mobile menu -->
+<div
+  id="mobile-menu"
+  class="hidden md:hidden flex-col items-start gap-2 bg-nimbel-bg px-6 pb-6 border-t border-nimbel-muted/10"
+>
+  {
+    navLinks.map((link) => (
+      <a
+        href={link.href}
+        class="text-nimbel-muted text-base py-3 w-full border-b border-nimbel-muted/10"
+        aria-current={currentPage === link.href ? "page" : undefined}
+      >
+        {link.label}
+      </a>
+    ))
+  }
+  <a href="/agenda" class="btn-secondary mt-2">
+    {t("navbar", "cta")}
+  </a>
+</div>
+
+<script>
+  const toggle = document.getElementById("menu-toggle");
+  const menu = document.getElementById("mobile-menu");
+  const lines = document.querySelectorAll(".hamburger-line");
+
+  toggle?.addEventListener("click", () => {
+    const isOpen = toggle.getAttribute("aria-expanded") === "true";
+
+    toggle.setAttribute("aria-expanded", String(!isOpen));
+    menu?.classList.toggle("hidden");
+    menu?.classList.toggle("flex");
+
+    // Animate to X
+    if (!isOpen) {
+      lines[0]?.classList.add("translate-y-[7px]", "rotate-45");
+      lines[1]?.classList.add("opacity-0");
+      lines[2]?.classList.add("-translate-y-[7px]", "-rotate-45");
+    } else {
+      lines[0]?.classList.remove("translate-y-[7px]", "rotate-45");
+      lines[1]?.classList.remove("opacity-0");
+      lines[2]?.classList.remove("-translate-y-[7px]", "-rotate-45");
+    }
+  });
+
+  // Close menu on link click
+  menu?.querySelectorAll("a").forEach((link) => {
+    link.addEventListener("click", () => {
+      menu.classList.add("hidden");
+      menu.classList.remove("flex");
+      toggle?.setAttribute("aria-expanded", "false");
+      lines[0]?.classList.remove("translate-y-[7px]", "rotate-45");
+      lines[1]?.classList.remove("opacity-0");
+      lines[2]?.classList.remove("-translate-y-[7px]", "-rotate-45");
+    });
+  });
+</script>

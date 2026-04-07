@@ -1,0 +1,12 @@
+---
+export type Props = {
+  variant?: "primary" | "secondary";
+};
+
+const { variant = "primary", ...rest } = Astro.props;
+const className = `btn-${variant}`;
+---
+
+<button class={className} {...rest}>
+  <slot />
+</button>
