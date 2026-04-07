@@ -12,7 +12,8 @@
 
 @font-face {
   font-family: "Mortend";
-  src: url("/fonts/mortend-mortend-regular-400.woff") format("woff");
+  src: url("/fonts/mortend-mortend-regular-400.woff2") format("woff2"),
+       url("/fonts/mortend-mortend-regular-400.woff") format("woff");
   font-weight: 400;
   font-display: swap;
 }
