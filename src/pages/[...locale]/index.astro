@@ -15,7 +15,13 @@ const locale = (Astro.currentLocale ?? "es") as Locale;
 const t = useTranslations(locale);
 ---
 
-<Layout title={t("meta", "title")} lang={locale}>
-  <Navbar currentPage="/" locale={locale} />
+<Layout
+  title={t("meta", "title")}
+  description={t("meta", "description")}
+  lang={locale}
+>
+  <header>
+    <Navbar currentPage="/" locale={locale} />
+  </header>
   <HeroSection locale={locale} />
 </Layout>

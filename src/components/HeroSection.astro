@@ -60,7 +60,7 @@ const t = useTranslations(locale);
     <div class="max-md:hidden flex items-center justify-center">
       <Image
         src={phonesImg}
-        alt=""
+        alt={t("hero", "imgAlt")}
         widths={[320, 512, 640]}
         sizes="(max-width: 1024px) 320px, (max-width: 1280px) 512px, 640px"
         class="w-full max-w-lg drop-shadow-2xl"

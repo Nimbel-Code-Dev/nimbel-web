@@ -1,6 +1,7 @@
 export const es = {
   meta: {
     title: 'Nimbel CODE - Design Smarter, Not Harder',
+    description: 'Tendrás la flexibilidad de un freelance y la seriedad de una consultora. Desarrollamos tu aplicación con calidad, personalización y a un coste razonable.',
   },
   navbar: {
     about: 'Sobre nosotros',

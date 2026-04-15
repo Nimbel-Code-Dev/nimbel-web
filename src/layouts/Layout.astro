@@ -11,7 +11,7 @@ export type Props = {
 
 const {
   title = "Nimbel CODE",
-  description = "Design Smarter, Not Harder",
+  description = "Tendrás la flexibilidad de un freelance y la seriedad de una consultora. Desarrollamos tu aplicación con calidad, personalización y a un coste razonable.",
   lang = "es",
 } = Astro.props;
 
@@ -28,6 +28,9 @@ const backgroundMobile = await getImage({
   quality: 30,
   width: 640,
 });
+
+const canonicalURL = new URL(Astro.url.pathname, Astro.site);
+const ogImage = new URL("/og-image.png", Astro.site);
 ---
 
 <!doctype html>
@@ -37,13 +40,48 @@ const backgroundMobile = await getImage({
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="description" content={description} />
     <title>{title}</title>
+
+    <!-- Canonical -->
+    <link rel="canonical" href={canonicalURL} />
+
+    <!-- hreflang -->
+    <link rel="alternate" hreflang="es" href={new URL("/", Astro.site)} />
+    <link rel="alternate" hreflang="en" href={new URL("/en", Astro.site)} />
+    <link rel="alternate" hreflang="x-default" href={new URL("/", Astro.site)} />
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content={canonicalURL} />
+    <meta property="og:title" content={title} />
+    <meta property="og:description" content={description} />
+    <meta property="og:image" content={ogImage} />
+
+    <!-- Twitter / X -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content={title} />
+    <meta name="twitter:description" content={description} />
+    <meta name="twitter:image" content={ogImage} />
+
+    <!-- JSON-LD -->
+    <script type="application/ld+json" set:html={JSON.stringify({
+      "@context": "https://schema.org",
+      "@type": "Organization",
+      "name": "Nimbel CODE",
+      "url": Astro.site,
+      "description": description,
+    })} />
+
+    <!-- Fonts -->
     <link rel="dns-prefetch" href="https://fonts.googleapis.com" />
     <link rel="dns-prefetch" href="https://fonts.gstatic.com" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <!-- Preload critical assets -->
     <link rel="preload" as="image" href={backgroundDesktop.src} fetchpriority="high" media="(min-width: 768px)" />
     <link rel="preload" as="image" href={backgroundMobile.src} fetchpriority="high" media="(max-width: 767px)" />
     <link rel="preload" as="font" type="font/woff2" href="/fonts/mortend-mortend-regular-400.woff2" crossorigin />
+
     <style define:vars={{ backgroundDesktop: `url(${backgroundDesktop.src})`, backgroundMobile: `url(${backgroundMobile.src})` }}>
       @media (max-width: 767px) {
         body {
@@ -56,6 +94,7 @@ const backgroundMobile = await getImage({
         }
       }
     </style>
+
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Instrument+Sans:wght@400;500;600;700&display=swap" media="print" onload="this.media='all'" />
     <noscript>
       <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Instrument+Sans:wght@400;500;600;700&display=swap" />
