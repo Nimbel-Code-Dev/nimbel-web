@@ -1,4 +1,5 @@
 ---
+import ClientsCarousel from "../../components/ClientsCarousel.astro";
 import HeroSection from "../../components/HeroSection.astro";
 import Navbar from "../../components/Navbar.astro";
 import { useTranslations, type Locale } from "../../i18n/utils";
@@ -24,4 +25,5 @@ const t = useTranslations(locale);
     <Navbar currentPage="/" locale={locale} />
   </header>
   <HeroSection locale={locale} />
+  <ClientsCarousel />
 </Layout>

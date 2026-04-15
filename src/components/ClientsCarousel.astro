@@ -1,0 +1,54 @@
+---
+const logos = [
+  { src: "/assets/clinic-de-barcelona.svg", alt: "Clínic de Barcelona" },
+  { src: "/assets/mediage-comunicacion.png", alt: "Mediage Comunicación" },
+  { src: "/assets/unimedia.png", alt: "Unimedia Tech" },
+  {
+    src: "/assets/StartUB-Universitat-Barcelona.png",
+    alt: "StartUB Universitat Barcelona",
+  },
+  { src: "/assets/elmerkat.png", alt: "El Merkat" },
+  { src: "/assets/innocard.svg", alt: "Innocard" },
+];
+---
+
+<section class="w-full bg-white overflow-hidden">
+  <div class="flex items-center h-18 px-15 max-md:px-6 gap-15">
+    <!-- Label fijo -->
+    <p
+      class="shrink-0 text-nimbel-bg text-3xl font-semibold uppercase whitespace-nowrap font-display"
+    >
+      Confían en nosotros
+    </p>
+
+    <!-- Carrusel -->
+    <div class="flex-1 overflow-hidden">
+      <div
+        class="flex items-center gap-15 w-max"
+        style="animation: marquee 24s linear infinite;"
+      >
+        {
+          logos.map((logo) => (
+            <img
+              src={logo.src}
+              alt={logo.alt}
+              loading="lazy"
+              class="h-7 w-auto max-w-36 object-contain grayscale opacity-60 hover:opacity-100 hover:grayscale-0 transition-all duration-300"
+            />
+          ))
+        }
+        {
+          logos.map((logo) => (
+            <img
+              src={logo.src}
+              alt={logo.alt}
+              loading="lazy"
+              aria-hidden="true"
+              class="h-7 w-auto max-w-36 object-contain grayscale opacity-60 hover:opacity-100 hover:grayscale-0 transition-all duration-300"
+            />
+          ))
+        }
+      </div>
+    </div>
+  </div>
+</section>
