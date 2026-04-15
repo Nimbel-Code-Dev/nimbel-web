@@ -1,5 +1,6 @@
 ---
 import { useTranslations, type Locale } from "../i18n/utils";
+import MobileMenu from "./MobileMenu.astro";
 
 export type Props = {
   currentPage?: string;
@@ -56,60 +57,4 @@ const navLinks = [
   </button>
 </nav>
 
-<!-- Mobile menu -->
-<div
-  id="mobile-menu"
-  class="hidden md:hidden flex-col items-start gap-2 bg-nimbel-bg px-6 pb-6 border-t border-nimbel-muted/10"
->
-  {
-    navLinks.map((link) => (
-      <a
-        href={link.href}
-        class="text-nimbel-muted text-base py-3 w-full border-b border-nimbel-muted/10"
-        aria-current={currentPage === link.href ? "page" : undefined}
-      >
-        {link.label}
-      </a>
-    ))
-  }
-  <a href="/agenda" class="btn-secondary mt-2">
-    {t("navbar", "cta")}
-  </a>
-</div>
-
-<script>
-  const toggle = document.getElementById("menu-toggle");
-  const menu = document.getElementById("mobile-menu");
-  const lines = document.querySelectorAll(".hamburger-line");
-
-  toggle?.addEventListener("click", () => {
-    const isOpen = toggle.getAttribute("aria-expanded") === "true";
-
-    toggle.setAttribute("aria-expanded", String(!isOpen));
-    menu?.classList.toggle("hidden");
-    menu?.classList.toggle("flex");
-
-    // Animate to X
-    if (!isOpen) {
-      lines[0]?.classList.add("translate-y-[7px]", "rotate-45");
-      lines[1]?.classList.add("opacity-0");
-      lines[2]?.classList.add("-translate-y-[7px]", "-rotate-45");
-    } else {
-      lines[0]?.classList.remove("translate-y-[7px]", "rotate-45");
-      lines[1]?.classList.remove("opacity-0");
-      lines[2]?.classList.remove("-translate-y-[7px]", "-rotate-45");
-    }
-  });
-
-  // Close menu on link click
-  menu?.querySelectorAll("a").forEach((link) => {
-    link.addEventListener("click", () => {
-      menu.classList.add("hidden");
-      menu.classList.remove("flex");
-      toggle?.setAttribute("aria-expanded", "false");
-      lines[0]?.classList.remove("translate-y-[7px]", "rotate-45");
-      lines[1]?.classList.remove("opacity-0");
-      lines[2]?.classList.remove("-translate-y-[7px]", "-rotate-45");
-    });
-  });
-</script>
+<MobileMenu navLinks={navLinks} locale={locale} />

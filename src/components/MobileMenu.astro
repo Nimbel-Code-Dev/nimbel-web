@@ -1,0 +1,43 @@
+---
+import { useTranslations, type Locale } from "../i18n/utils";
+
+export type Props = {
+  navLinks: Array<{ label: string; href: string }>;
+  locale: Locale;
+};
+
+const { navLinks, locale } = Astro.props;
+const t = useTranslations(locale);
+---
+
+<div
+  id="mobile-menu"
+  class="hidden md:hidden flex-col items-start gap-2 bg-nimbel-bg px-6 pb-6 border-t border-nimbel-muted/10"
+>
+  {
+    navLinks.map((link) => (
+      <a
+        href={link.href}
+        class="text-nimbel-muted text-base py-3 w-full border-b border-nimbel-muted/10"
+        aria-current={link.href === "#" ? "page" : undefined}
+      >
+        {link.label}
+      </a>
+    ))
+  }
+  <a href="/agenda" class="btn-secondary mt-2">
+    {t("navbar", "cta")}
+  </a>
+</div>
+
+<script>
+  import { initMobileMenu } from "../scripts/mobileMenu";
+
+  if (document.readyState === "loading") {
+    document.addEventListener("DOMContentLoaded", () => {
+      initMobileMenu();
+    });
+  } else {
+    initMobileMenu();
+  }
+</script>
