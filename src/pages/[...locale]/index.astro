@@ -2,6 +2,7 @@
 import ClientsCarousel from "@/components/ClientsCarousel.astro";
 import HeroSection from "@/components/HeroSection.astro";
 import Navbar from "@/components/Navbar.astro";
+import Services from "@/components/Services.astro";
 import ServicesHeadline from "@/components/ServicesHeadline.astro";
 import { useTranslations, type Locale } from "@/i18n/utils";
 import Layout from "@/layouts/Layout.astro";
@@ -28,4 +29,5 @@ const t = useTranslations(locale);
   <HeroSection locale={locale} />
   <ClientsCarousel locale={locale} />
   <ServicesHeadline locale={locale} />
+  <Services locale={locale} />
 </Layout>
