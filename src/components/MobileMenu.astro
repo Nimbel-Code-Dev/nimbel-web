@@ -1,5 +1,5 @@
 ---
-import { useTranslations, type Locale } from "../i18n/utils";
+import { useTranslations, type Locale } from "@/i18n/utils";
 
 export type Props = {
   navLinks: Array<{ label: string; href: string }>;
@@ -31,7 +31,7 @@ const t = useTranslations(locale);
 </div>
 
 <script>
-  import { initMobileMenu } from "../scripts/mobileMenu";
+  import { initMobileMenu } from "@/scripts/mobileMenu";
 
   if (document.readyState === "loading") {
     document.addEventListener("DOMContentLoaded", () => {

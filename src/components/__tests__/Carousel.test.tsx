@@ -2,7 +2,7 @@ import { cleanup, fireEvent, render, screen, act } from "@testing-library/react"
 import userEvent from "@testing-library/user-event";
 import React from "react";
 import { afterEach, beforeEach, describe, expect, it, vi } from "vitest";
-import Carousel from "../Carousel";
+import Carousel from "@/components/Carousel";
 
 afterEach(() => cleanup());
 
