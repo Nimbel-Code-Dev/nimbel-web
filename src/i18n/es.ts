@@ -229,6 +229,26 @@ export const es = {
       message: 'Gracias por contactarnos. Te respondemos en menos de 24 horas.',
     },
   },
+  form: {
+    errors: {
+      name: {
+        required: 'El nombre es obligatorio',
+        minLength: 'El nombre debe tener al menos 3 caracteres',
+        maxLength: 'El nombre no puede exceder 100 caracteres',
+        pattern: 'El nombre solo puede contener letras y espacios'
+      },
+      email: {
+        required: 'El email es obligatorio',
+        email: 'El email no es válido'
+      },
+      message: {
+        required: 'El mensaje es obligatorio',
+        minLength: 'El mensaje debe tener al menos 10 caracteres',
+        maxLength: 'El mensaje no puede exceder 5000 caracteres'
+      }
+    },
+    success: 'Mensaje enviado con éxito'
+  },
   footer: {
     description: 'Flexibilidad de freelance, seriedad de consultora.',
     nav: {

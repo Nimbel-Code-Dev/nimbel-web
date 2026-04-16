@@ -229,6 +229,26 @@ export const en = {
       message: 'Thanks for reaching out. We will get back to you within 24 hours.',
     },
   },
+  form: {
+    errors: {
+      name: {
+        required: 'Name is required',
+        minLength: 'Name must be at least 3 characters',
+        maxLength: 'Name cannot exceed 100 characters',
+        pattern: 'Name can only contain letters and spaces'
+      },
+      email: {
+        required: 'Email is required',
+        email: 'Email is not valid'
+      },
+      message: {
+        required: 'Message is required',
+        minLength: 'Message must be at least 10 characters',
+        maxLength: 'Message cannot exceed 5000 characters'
+      }
+    },
+    success: 'Message sent successfully'
+  },
   footer: {
     description: 'Freelancer flexibility, consultancy reliability.',
     nav: {
