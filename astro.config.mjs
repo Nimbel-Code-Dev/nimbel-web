@@ -1,10 +1,11 @@
+import react from "@astrojs/react";
 import sitemap from "@astrojs/sitemap";
 import tailwindcss from "@tailwindcss/vite";
 import { defineConfig } from "astro/config";
 
 export default defineConfig({
   site: "https://nimbel-web.vercel.app",
-  integrations: [sitemap()],
+  integrations: [sitemap(), react()],
   i18n: {
     defaultLocale: "es",
     locales: ["es", "en"],
