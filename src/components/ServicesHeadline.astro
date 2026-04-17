@@ -1,6 +1,6 @@
 ---
-import { useTranslations, type Locale } from '@/i18n/utils';
-import ServicesHeadlineReact from './ServicesHeadlineReact';
+import { useTranslations } from "@/i18n/utils";
+import type { Locale } from "@/i18n/utils";
 
 interface Props {
   locale: Locale;
@@ -9,16 +9,23 @@ interface Props {
 const { locale } = Astro.props;
 const t = useTranslations(locale);
 
-const headline = t('services', 'headline') as string;
-const highlight1 = t('services', 'headlineHighlight1') as string;
-const highlight2 = t('services', 'headlineHighlight2') as string;
-const sectionLabel = t('services', 'sectionLabel') as string;
+const headline = t("services", "headline") as string;
+const highlight1 = t("services", "headlineHighlight1") as string;
+const highlight2 = t("services", "headlineHighlight2") as string;
+
+function highlightText(text: string, word: string, className: string): string {
+  const regex = new RegExp(`(${word})`, "gi");
+  return text.replace(regex, `<span class="${className}">$1</span>`);
+}
+
+let highlightedText = headline;
+highlightedText = highlightText(highlightedText, highlight1, "text-nimbel-accent");
+highlightedText = highlightText(highlightedText, highlight2, "text-nimbel-accent");
 ---
 
-<ServicesHeadlineReact
-  headline={headline}
-  highlight1={highlight1}
-  highlight2={highlight2}
-  sectionLabel={sectionLabel}
-  client:load
-/>
+<section class="w-full bg-nimbel-bg py-20 px-15 max-md:px-6 max-md:py-14">
+  <h2
+    class="font-mortend text-2xl sm:text-3xl lg:text-4xl xl:text-5xl text-nimbel-text uppercase text-center leading-tight tracking-[-0.01em]"
+    set:html={highlightedText}
+  />
+</section>
