@@ -6,6 +6,7 @@ import Navbar from "@/components/Navbar.astro";
 import Services from "@/components/Services.astro";
 import ServicesHeadline from "@/components/ServicesHeadline.astro";
 import Stats from "@/components/Stats.astro";
+import Testimonials from "@/components/Testimonials.astro";
 import { useTranslations, type Locale } from "@/i18n/utils";
 import Layout from "@/layouts/Layout.astro";
 
@@ -34,4 +35,5 @@ const t = useTranslations(locale);
   <Services locale={locale} />
   <Stats locale={locale} />
   <CaseStudies locale={locale} />
+  <Testimonials locale={locale} />
 </Layout>

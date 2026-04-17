@@ -1,0 +1,99 @@
+---
+import { useTranslations, type Locale } from "@/i18n/utils";
+
+interface Props {
+  locale: Locale;
+}
+
+const { locale } = Astro.props;
+const t = useTranslations(locale);
+
+const headline = t("testimonials", "headline") as string;
+const starsAriaLabel = t("testimonials", "starsAriaLabel") as string;
+const items = t("testimonials", "items") as ReadonlyArray<{
+  id: string;
+  name: string;
+  role: string;
+  quote: string;
+  photo?: string;
+  photoAlt: string;
+}>;
+
+function getInitials(name: string): string {
+  return name
+    .split(" ")
+    .filter(Boolean)
+    .slice(0, 2)
+    .map((part) => part[0].toUpperCase())
+    .join("");
+}
+---
+
+<section
+  class="w-full bg-nimbel-text py-16 sm:py-20 lg:py-24"
+  aria-label={t("testimonials", "ariaLabel") as string}
+>
+  <div class="mx-auto w-full max-w-7xl px-6 sm:px-12 lg:px-16">
+    <h2 class="font-clash text-2xl sm:text-3xl font-bold text-nimbel-bg mb-10 sm:mb-14">
+      {headline}
+    </h2>
+
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+      {
+        items.map((item) => (
+          <article
+            class="bg-white rounded-lg shadow-md p-6 lg:p-8 flex flex-col gap-6"
+            data-testid={`testimonial-card-${item.id}`}
+          >
+            <!-- Header: avatar + name + role + stars -->
+            <div class="flex items-start gap-4">
+              <!-- Avatar circular -->
+              <div class="shrink-0 w-16 h-16 rounded-full overflow-hidden bg-nimbel-bg flex items-center justify-center">
+                {item.photo ? (
+                  <img
+                    src={item.photo}
+                    alt={item.photoAlt}
+                    class="w-full h-full object-cover"
+                    loading="lazy"
+                  />
+                ) : (
+                  <span class="text-nimbel-text font-bold text-lg select-none" aria-hidden="true">
+                    {getInitials(item.name)}
+                  </span>
+                )}
+              </div>
+
+              <!-- Nombre, rol y estrellas -->
+              <div class="flex flex-col gap-1">
+                <p class="font-bold text-xl text-nimbel-bg leading-tight">{item.name}</p>
+                <p class="text-sm text-gray-500">{item.role}</p>
+                <div
+                  class="flex gap-0.5 text-nimbel-accent"
+                  aria-label={starsAriaLabel}
+                  role="img"
+                >
+                  {Array.from({ length: 5 }).map(() => (
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 20 20"
+                      fill="currentColor"
+                      class="w-4 h-4"
+                      aria-hidden="true"
+                    >
+                      <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.286 3.957a1 1 0 00.95.69h4.162c.969 0 1.371 1.24.588 1.81l-3.37 2.448a1 1 0 00-.364 1.118l1.286 3.957c.3.921-.755 1.688-1.54 1.118l-3.37-2.448a1 1 0 00-1.175 0l-3.37 2.448c-.784.57-1.838-.197-1.539-1.118l1.286-3.957a1 1 0 00-.364-1.118L2.075 9.384c-.783-.57-.38-1.81.588-1.81h4.162a1 1 0 00.95-.69l1.286-3.957z" />
+                    </svg>
+                  ))}
+                </div>
+              </div>
+            </div>
+
+            <!-- Quote -->
+            <blockquote class="text-gray-700 text-base leading-relaxed">
+              &#8220;{item.quote}&#8221;
+            </blockquote>
+          </article>
+        ))
+      }
+    </div>
+  </div>
+</section>

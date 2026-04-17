@@ -14,8 +14,9 @@
 
 @font-face {
   font-family: "Mortend";
-  src: url("/fonts/mortend-mortend-regular-400.woff2") format("woff2"),
-       url("/fonts/mortend-mortend-regular-400.woff") format("woff");
+  src:
+    url("/fonts/mortend-mortend-regular-400.woff2") format("woff2"),
+    url("/fonts/mortend-mortend-regular-400.woff") format("woff");
   font-weight: 400;
   font-display: swap;
 }
@@ -41,8 +42,12 @@
 }
 
 @keyframes marquee {
-  0% { transform: translateX(0); }
-  100% { transform: translateX(-50%); }
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
 }
 
 /* Base styles */
