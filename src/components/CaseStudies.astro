@@ -1,0 +1,41 @@
+---
+import CaseStudiesCarousel from "@/components/CaseStudiesCarousel";
+import { useTranslations, type Locale } from "@/i18n/utils";
+
+interface Props {
+  locale: Locale;
+}
+
+const { locale } = Astro.props;
+const t = useTranslations(locale);
+
+const headline = t("caseStudies", "headline") as string;
+const ariaLabel = t("caseStudies", "ariaLabel") as string;
+const items = t("caseStudies", "items") as ReadonlyArray<{
+  id: string;
+  title: string;
+  titleHighlight: string;
+  description: string;
+  cta: string;
+  imgAlt: string;
+}>;
+---
+
+<section
+  class="w-full bg-nimbel-bg py-16 sm:py-20 lg:py-24"
+  aria-label={ariaLabel}
+>
+  <div class="mx-auto w-full max-w-7xl px-6 sm:px-12 lg:px-16">
+    <h2
+      class="font-mortend text-sm sm:text-base uppercase tracking-widest text-nimbel-eyebrow mb-10 sm:mb-14"
+    >
+      {headline}
+    </h2>
+
+    <CaseStudiesCarousel
+      client:load
+      items={items}
+      locale={locale}
+    />
+  </div>
+</section>
