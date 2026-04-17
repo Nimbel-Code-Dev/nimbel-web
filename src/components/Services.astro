@@ -24,7 +24,7 @@ const services = items.map((item) => ({
 
 <section
   id="services"
-  class="w-full bg-[#f5f5f5] px-15 py-20 rounded-2xl"
+  class="w-full bg-nimbel-text px-4 sm:px-6 lg:px-8 py-10 sm:py-14 lg:py-20 rounded-2xl"
   aria-label={t("services", "sectionLabel") as string}
   data-testid="services-section"
 >
@@ -32,16 +32,16 @@ const services = items.map((item) => ({
     {
       services.map((service, index) => (
         <div
-          class={`flex flex-col lg:flex-row gap-4 lg:gap-15 items-start py-10 px-4 lg:px-10${
-            index < services.length - 1 ? " border-b border-[#0c1414]" : ""
+          class={`flex flex-col lg:flex-row gap-4 lg:gap-10 items-start py-6 sm:py-8 lg:py-10 px-2 sm:px-4 lg:px-10${
+            index < services.length - 1 ? " border-b border-nimbel-bg" : ""
           }`}
           data-testid={`service-row-${service.id}`}
         >
           {/* Arrow Icon */}
-          <div class="flex-shrink-0 w-20 h-20">
+          <div class="flex-shrink-0 w-10 h-10 sm:w-14 sm:h-14 lg:w-20 lg:h-20">
             <svg
               viewBox="0 0 24 24"
-              class="w-full h-full text-[#fe4819]"
+              class="w-full h-full text-nimbel-accent"
               fill="none"
               stroke="currentColor"
               stroke-width="2"
@@ -55,7 +55,7 @@ const services = items.map((item) => ({
 
           {/* Title */}
           <h3
-            class="flex-1 font-mortend font-bold text-4xl text-[#0c1414] uppercase tracking-[-0.36px] leading-tight"
+            class="flex-1 font-mortend font-bold text-xl sm:text-2xl lg:text-4xl text-nimbel-bg uppercase tracking-[-0.36px] leading-tight"
             data-testid={`service-title-${service.id}`}
           >
             {service.title}
@@ -63,7 +63,7 @@ const services = items.map((item) => ({
 
           {/* Description */}
           <p
-            class="flex-1 font-clash text-2xl text-[#0c1414] leading-normal"
+            class="flex-1 font-clash text-sm sm:text-base lg:text-2xl text-nimbel-bg leading-normal"
             data-testid={`service-desc-${service.id}`}
           >
             {service.description}

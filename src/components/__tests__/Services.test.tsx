@@ -56,7 +56,7 @@ function ServicesStatic({
             key={service.id}
             data-testid={`service-row-${service.id}`}
             className={
-              index < services.length - 1 ? "border-b border-[#0c1414]" : ""
+              index < services.length - 1 ? "border-b border-nimbel-bg" : ""
             }
           >
             {/* Arrow icon */}
