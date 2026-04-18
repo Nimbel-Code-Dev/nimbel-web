@@ -149,6 +149,7 @@ export const es = {
   },
   team: {
     headline: "CONOCE A NUESTRO EQUIPO",
+    headlineHighlight: "EQUIPO",
     ariaLabel: "Equipo de Nimbel Code",
     linkedinAriaLabel: "LinkedIn de",
     items: [
@@ -156,12 +157,16 @@ export const es = {
         id: "ruben-sahagun",
         name: "Rubén Sahagún",
         role: "CEO / CTO",
+        photo: "/assets/Ruben.jpg",
+        linkedin: "https://www.linkedin.com/in/ruben1/",
         photoAlt: "Foto de Rubén Sahagún, CEO/CTO de Nimbel Code",
       },
       {
         id: "giampiero-fermini",
         name: "Giampiero Fermini",
         role: "Full Stack Developer",
+        photo: "/assets/Giampiero.png",
+        linkedin: "https://www.linkedin.com/in/fc-giampiero/",
         photoAlt:
           "Foto de Giampiero Fermini, Full Stack Developer de Nimbel Code",
       },
@@ -169,18 +174,24 @@ export const es = {
         id: "maribel-rodriguez",
         name: "Maribel Rodríguez",
         role: "UX/UI Designer",
+        photo: "/assets/Maribel.jpg",
+        linkedin: "https://www.linkedin.com/in/marrodgar/",
         photoAlt: "Foto de Maribel Rodríguez, UX/UI Designer de Nimbel Code",
       },
       {
         id: "diana-guirado",
         name: "Diana Guirado",
         role: "CFO",
+        photo: "/assets/Diana.jpg",
+        linkedin: "https://www.linkedin.com/in/dianafinanzaspymes",
         photoAlt: "Foto de Diana Guirado, CFO de Nimbel Code",
       },
       {
         id: "clara-guirado",
         name: "Clara Guirado",
         role: "Operations Coordinator",
+        photo: "/assets/Clara.png",
+        linkedin: "https://www.linkedin.com/in/clara-guirado-10026541/",
         photoAlt:
           "Foto de Clara Guirado, Operations Coordinator de Nimbel Code",
       },
@@ -188,6 +199,8 @@ export const es = {
         id: "sol-lavisse",
         name: "Sol Lavisse",
         role: "Growth Manager",
+        photo: "/assets/Sol.jpg",
+        linkedin: "https://www.linkedin.com/in/sollavisse/",
         photoAlt: "Foto de Sol Lavisse, Growth Manager de Nimbel Code",
       },
     ],

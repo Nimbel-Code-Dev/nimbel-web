@@ -1,0 +1,94 @@
+---
+import { useTranslations, type Locale } from "@/i18n/utils";
+
+interface Props {
+  locale: Locale;
+}
+
+const { locale } = Astro.props;
+const t = useTranslations(locale);
+
+const headline = t("team", "headline") as string;
+const headlineHighlight = t("team", "headlineHighlight") as string;
+const ariaLabel = t("team", "ariaLabel") as string;
+const linkedinAriaLabel = t("team", "linkedinAriaLabel") as string;
+const items = t("team", "items") as ReadonlyArray<{
+  id: string;
+  name: string;
+  role: string;
+  photo: string;
+  linkedin: string;
+  photoAlt: string;
+}>;
+
+function highlightText(text: string, word: string, className: string): string {
+  const regex = new RegExp(`(${word})`, "gi");
+  return text.replace(regex, `<span class="${className}">$1</span>`);
+}
+
+const highlightedHeadline = highlightText(
+  headline,
+  headlineHighlight,
+  "text-nimbel-accent",
+);
+---
+
+<section
+  class="w-full bg-nimbel-bg py-16 sm:py-20 lg:py-24"
+  aria-label={ariaLabel}
+>
+  <div
+    class="flex items-center flex-col mx-auto w-full max-w-8xl px-6 sm:px-12 lg:px-16"
+  >
+    <h2
+      class="font-mortend text-4xl sm:text-5xl lg:text-6xl uppercase font-bold text-white text-center mb-12 sm:mb-16 lg:mb-20 leading-tight"
+      set:html={highlightedHeadline}
+    />
+
+    <div
+      class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8 max-w-7xl"
+    >
+      {
+        items.map((item) => (
+          <article data-testid={`team-card-${item.id}`}>
+            <img
+              src={item.photo}
+              alt={item.photoAlt}
+              class="w-full aspect-square object-cover rounded-sm grayscale"
+              loading="lazy"
+            />
+
+            <p class="font-bold text-white text-lg lg:text-xl mt-3">
+              {item.name}
+            </p>
+
+            <hr class="border-b border-nimbel-muted/30 my-2" />
+
+            <div class="flex justify-between items-center">
+              <span class="text-sm text-white">{item.role}</span>
+
+              <a
+                href={item.linkedin}
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label={`${linkedinAriaLabel} ${item.name}`}
+                class="bg-nimbel-accent rounded-sm p-1 flex items-center justify-center shrink-0"
+              >
+                <svg
+                  viewBox="0 0 24 24"
+                  fill="black"
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="w-4 h-4"
+                  aria-hidden="true"
+                >
+                  <path d="M7.17532 20.091V9.25352H3.69V20.091H7.17532ZM5.43339 7.773C6.64839 7.773 7.4047 6.942 7.4047 5.901C7.38294 4.8375 6.64984 4.029 5.45662 4.029C4.26339 4.029 3.48387 4.839 3.48387 5.901C3.48387 6.942 4.24016 7.773 5.41016 7.773H5.43339ZM12.5579 20.091V14.0385C12.5579 13.7145 12.5811 13.3905 12.674 13.1595C12.9252 12.513 13.4985 11.8425 14.4624 11.8425C15.7239 11.8425 16.2276 12.8355 16.2276 14.2935V20.091H19.7129V13.875C19.7129 10.545 17.9942 8.99704 15.7006 8.99704C13.8513 8.99704 13.0224 10.047 12.5579 10.7865V10.824H12.5347L12.5579 10.7865V9.25352H9.07401C9.1176 10.2705 9.07401 20.091 9.07401 20.091H12.5579Z" />
+                </svg>
+              </a>
+            </div>
+            <hr class="border-b border-nimbel-muted/30 my-2" />
+          </article>
+        ))
+      }
+    </div>
+  </div>
+</section>

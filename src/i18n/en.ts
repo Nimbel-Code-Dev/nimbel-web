@@ -148,6 +148,7 @@ export const en = {
   },
   team: {
     headline: "MEET OUR TEAM",
+    headlineHighlight: "TEAM",
     ariaLabel: "Nimbel Code team",
     linkedinAriaLabel: "LinkedIn of",
     items: [
@@ -155,12 +156,16 @@ export const en = {
         id: "ruben-sahagun",
         name: "Rubén Sahagún",
         role: "CEO / CTO",
+        photo: "/assets/Ruben.jpg",
+        linkedin: "https://www.linkedin.com/in/ruben1/",
         photoAlt: "Photo of Rubén Sahagún, CEO/CTO at Nimbel Code",
       },
       {
         id: "giampiero-fermini",
         name: "Giampiero Fermini",
         role: "Full Stack Developer",
+        photo: "/assets/Giampiero.png",
+        linkedin: "https://www.linkedin.com/in/fc-giampiero/",
         photoAlt:
           "Photo of Giampiero Fermini, Full Stack Developer at Nimbel Code",
       },
@@ -168,18 +173,24 @@ export const en = {
         id: "maribel-rodriguez",
         name: "Maribel Rodríguez",
         role: "UX/UI Designer",
+        photo: "/assets/Maribel.jpg",
+        linkedin: "https://www.linkedin.com/in/marrodgar/",
         photoAlt: "Photo of Maribel Rodríguez, UX/UI Designer at Nimbel Code",
       },
       {
         id: "diana-guirado",
         name: "Diana Guirado",
         role: "CFO",
+        photo: "/assets/Diana.jpg",
+        linkedin: "https://www.linkedin.com/in/dianafinanzaspymes",
         photoAlt: "Photo of Diana Guirado, CFO at Nimbel Code",
       },
       {
         id: "clara-guirado",
         name: "Clara Guirado",
         role: "Operations Coordinator",
+        photo: "/assets/Clara.png",
+        linkedin: "https://www.linkedin.com/in/clara-guirado-10026541/",
         photoAlt:
           "Photo of Clara Guirado, Operations Coordinator at Nimbel Code",
       },
@@ -187,6 +198,8 @@ export const en = {
         id: "sol-lavisse",
         name: "Sol Lavisse",
         role: "Growth Manager",
+        photo: "/assets/Sol.jpg",
+        linkedin: "https://www.linkedin.com/in/sollavisse/",
         photoAlt: "Photo of Sol Lavisse, Growth Manager at Nimbel Code",
       },
     ],
