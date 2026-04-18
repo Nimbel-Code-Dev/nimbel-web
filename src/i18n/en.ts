@@ -80,6 +80,7 @@ export const en = {
         description:
           "Mobile app development, doctor care console, data analytics and statistics console.",
         cta: "discover FAMBA",
+        href: "https://web.fambaproject.com/",
         imgAlt: "Famba project screenshot",
       },
       {
@@ -89,6 +90,7 @@ export const en = {
         description:
           "Analysta is a digital tool designed to simplify the analysis of an investor's operations in financial markets.",
         cta: "discover ANALYSTA",
+        href: "https://analysta.es/",
         imgAlt: "Analysta project screenshot",
       },
       {
@@ -99,6 +101,7 @@ export const en = {
         description:
           "Platform that allows you to create personalized digital business cards.",
         cta: "discover INNOCARD",
+        href: "https://www.innocard.me/",
         imgAlt: "Innocard project screenshot",
       },
       {
@@ -108,6 +111,7 @@ export const en = {
         description:
           "Newsup is a digital news platform that allows you to have a press room, send emails, and share HD multimedia content.",
         cta: "discover NEWSUP",
+        href: "https://www.newsup.ai/",
         imgAlt: "NewsUp project screenshot",
       },
     ],
@@ -228,19 +232,25 @@ export const en = {
     },
     contactOptions: [
       {
-        type: "email",
+        icon: "/assets/Mail.svg",
         label: "CONTACT US",
         sublabel: "Send us an email",
+        href: "mailto:ruben@nimbel.net",
+        external: false,
       },
       {
-        type: "call",
+        icon: "/assets/Call.svg",
         label: "SCHEDULE A CALL",
         sublabel: "Book on our calendly",
+        href: "#",
+        external: false,
       },
       {
-        type: "linkedin",
+        icon: "/assets/Linkedin.svg",
         label: "LiNKEDiN",
         sublabel: "We're not big on social media but we have LinkedIn!",
+        href: "https://www.linkedin.com/company/nimbel-code-apps/",
+        external: true,
       },
     ],
     errors: {

@@ -7,6 +7,7 @@ export interface CaseStudyItem {
   titleHighlight: string;
   description: string;
   cta: string;
+  href: string;
   imgAlt: string;
 }
 
@@ -45,7 +46,12 @@ function CaseStudySlide({ item }: { item: CaseStudyItem }) {
           {item.description}
         </p>
         <div>
-          <a href="#contact" className="btn-primary uppercase tracking-wide text-sm">
+          <a
+            href={item.href}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="btn-primary uppercase tracking-wide text-sm"
+          >
             {item.cta}
           </a>
         </div>
