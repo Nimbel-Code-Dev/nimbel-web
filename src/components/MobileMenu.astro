@@ -8,6 +8,12 @@ export type Props = {
 
 const { navLinks, locale } = Astro.props;
 const t = useTranslations(locale);
+
+const pathname = Astro.url.pathname;
+const alternateUrl =
+  locale === "es"
+    ? `/en${pathname === "/" ? "" : pathname}`
+    : pathname.replace(/^\/en/, "") || "/";
 ---
 
 <div
@@ -28,6 +34,20 @@ const t = useTranslations(locale);
   <a href="/agenda" class="btn-secondary mt-2">
     {t("navbar", "cta")}
   </a>
+  <!-- Language switcher -->
+  <div class="flex items-center gap-2 pt-2 text-sm font-medium" aria-label="Cambiar idioma">
+    {locale === "es" ? (
+      <span class="text-nimbel-text" aria-current="true">ES</span>
+    ) : (
+      <a href={alternateUrl} class="text-nimbel-muted hover:text-nimbel-text transition-colors">ES</a>
+    )}
+    <span class="text-nimbel-muted/40">/</span>
+    {locale === "en" ? (
+      <span class="text-nimbel-text" aria-current="true">EN</span>
+    ) : (
+      <a href={alternateUrl} class="text-nimbel-muted hover:text-nimbel-text transition-colors">EN</a>
+    )}
+  </div>
 </div>
 
 <script>

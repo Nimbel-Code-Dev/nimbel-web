@@ -1,0 +1,288 @@
+---
+import Footer from "@/components/Footer.astro";
+import Navbar from "@/components/Navbar.astro";
+import { type Locale } from "@/i18n/utils";
+import Layout from "@/layouts/Layout.astro";
+
+export function getStaticPaths() {
+  return [
+    { params: { locale: undefined } }, // /privacidad
+    { params: { locale: "en" } }, // /en/privacidad
+  ];
+}
+
+const locale = (Astro.currentLocale ?? "es") as Locale;
+
+const isEN = locale === "en";
+
+const title = isEN ? "Privacy Policy and Legal Notice" : "Política de Privacidad y Aviso Legal";
+const description = isEN
+  ? "Privacy policy and legal notice for Nimbel Code Limited."
+  : "Política de privacidad y aviso legal de Nimbel Code Limited.";
+---
+
+<Layout title={`${title} | Nimbel Code`} description={description} lang={locale}>
+  <header>
+    <Navbar currentPage="/privacidad" locale={locale} />
+  </header>
+
+  <section class="w-full bg-nimbel-text">
+    <div class="max-w-3xl mx-auto px-6 py-16">
+
+      {isEN ? (
+        <>
+          <!-- LEGAL NOTICE -->
+          <h1 class="font-mortend uppercase text-3xl text-nimbel-bg mb-2">
+            Privacy Policy and Legal Notice
+          </h1>
+          <p class="font-clash text-nimbel-bg/60 text-sm mb-10">
+            Last updated: April 2025
+          </p>
+
+          <h2 class="font-mortend uppercase text-xl text-nimbel-bg mb-4">
+            Legal Notice
+          </h2>
+          <div class="font-clash text-nimbel-bg leading-relaxed space-y-2 text-sm">
+            <p><span class="font-bold">Company:</span> Nimbel Code Limited</p>
+            <p><span class="font-bold">VAT Number:</span> IE4428779UH</p>
+            <p><span class="font-bold">Registered address:</span> Unit 2, 2 Bridge Street, Athlone, Co. Westmeath, N37F1W4, Ireland</p>
+            <p><span class="font-bold">Contact email:</span>{" "}
+              <a href="mailto:ruben@nimbel.net" class="text-nimbel-accent hover:underline">
+                ruben@nimbel.net
+              </a>
+            </p>
+            <p><span class="font-bold">Business activity:</span> Software development and digital applications</p>
+            <p><span class="font-bold">Website:</span>{" "}
+              <a href="https://nimbel-web.vercel.app" target="_blank" rel="noopener noreferrer" class="text-nimbel-accent hover:underline">
+                https://nimbel-web.vercel.app
+              </a>
+            </p>
+          </div>
+
+          <!-- PRIVACY POLICY -->
+          <div class="border-t border-nimbel-bg/10 mt-10 pt-10">
+            <h2 class="font-mortend uppercase text-xl text-nimbel-bg mb-6">
+              Privacy Policy
+            </h2>
+
+            <div class="font-clash text-nimbel-bg leading-relaxed space-y-6 text-sm">
+
+              <div>
+                <h3 class="font-bold text-nimbel-bg mt-6 mb-2">1. Data Controller</h3>
+                <p>
+                  The data controller responsible for processing your personal data is <span class="font-bold">Nimbel Code Limited</span>, with registered address at Unit 2, 2 Bridge Street, Athlone, Co. Westmeath, N37F1W4, Ireland, and VAT number IE4428779UH. You can contact us at{" "}
+                  <a href="mailto:ruben@nimbel.net" class="text-nimbel-accent hover:underline">ruben@nimbel.net</a>.
+                </p>
+              </div>
+
+              <div>
+                <h3 class="font-bold text-nimbel-bg mt-6 mb-2">2. Data We Collect</h3>
+                <p>
+                  We collect the following personal data submitted through the contact form on this website:
+                </p>
+                <ul class="list-disc list-inside mt-2 space-y-1 pl-2">
+                  <li>Full name</li>
+                  <li>Email address</li>
+                </ul>
+                <p class="mt-2">
+                  We do not collect data through cookies, analytics tools, or any other tracking mechanism. No user accounts or financial transactions are processed on this website.
+                </p>
+              </div>
+
+              <div>
+                <h3 class="font-bold text-nimbel-bg mt-6 mb-2">3. Purpose of Processing</h3>
+                <p>
+                  The personal data provided through the contact form is used exclusively to respond to commercial enquiries and requests for information submitted by the user.
+                </p>
+              </div>
+
+              <div>
+                <h3 class="font-bold text-nimbel-bg mt-6 mb-2">4. Legal Basis</h3>
+                <p>
+                  The legal basis for processing your personal data is our legitimate interest (Art. 6(1)(f) GDPR) in responding to enquiries received through our contact channels. Where required, we will seek your explicit consent prior to any further processing.
+                </p>
+              </div>
+
+              <div>
+                <h3 class="font-bold text-nimbel-bg mt-6 mb-2">5. Data Retention</h3>
+                <p>
+                  Personal data is retained for as long as necessary to handle the enquiry and, where applicable, to manage any resulting commercial relationship. Once no longer necessary, data will be securely deleted.
+                </p>
+              </div>
+
+              <div>
+                <h3 class="font-bold text-nimbel-bg mt-6 mb-2">6. Recipients and Third-Party Transfers</h3>
+                <p>
+                  We do not share, sell, or transfer your personal data to third parties, except where required by law or by order of a competent authority.
+                </p>
+              </div>
+
+              <div>
+                <h3 class="font-bold text-nimbel-bg mt-6 mb-2">7. Your Rights</h3>
+                <p>
+                  Under the GDPR, you have the following rights regarding your personal data:
+                </p>
+                <ul class="list-disc list-inside mt-2 space-y-1 pl-2">
+                  <li>Right of access</li>
+                  <li>Right to rectification</li>
+                  <li>Right to erasure ("right to be forgotten")</li>
+                  <li>Right to data portability</li>
+                  <li>Right to restriction of processing</li>
+                  <li>Right to object</li>
+                </ul>
+                <p class="mt-2">
+                  To exercise any of these rights, please send a written request to{" "}
+                  <a href="mailto:ruben@nimbel.net" class="text-nimbel-accent hover:underline">ruben@nimbel.net</a>.
+                  We will respond within 30 days in accordance with applicable law.
+                </p>
+              </div>
+
+              <div>
+                <h3 class="font-bold text-nimbel-bg mt-6 mb-2">8. Supervisory Authority</h3>
+                <p>
+                  If you believe that the processing of your personal data does not comply with the GDPR, you have the right to lodge a complaint with the competent supervisory authority:
+                </p>
+                <p class="mt-2 font-bold">Data Protection Commission Ireland</p>
+                <p>
+                  Website:{" "}
+                  <a href="https://www.dataprotection.ie" target="_blank" rel="noopener noreferrer" class="text-nimbel-accent hover:underline">
+                    www.dataprotection.ie
+                  </a>
+                </p>
+              </div>
+
+            </div>
+          </div>
+        </>
+      ) : (
+        <>
+          <!-- AVISO LEGAL -->
+          <h1 class="font-mortend uppercase text-3xl text-nimbel-bg mb-2">
+            Política de Privacidad y Aviso Legal
+          </h1>
+          <p class="font-clash text-nimbel-bg/60 text-sm mb-10">
+            Última actualización: abril de 2025
+          </p>
+
+          <h2 class="font-mortend uppercase text-xl text-nimbel-bg mb-4">
+            Aviso Legal
+          </h2>
+          <div class="font-clash text-nimbel-bg leading-relaxed space-y-2 text-sm">
+            <p><span class="font-bold">Titular:</span> Nimbel Code Limited</p>
+            <p><span class="font-bold">Número VAT:</span> IE4428779UH</p>
+            <p><span class="font-bold">Domicilio social:</span> Unit 2, 2 Bridge Street, Athlone, Co. Westmeath, N37F1W4, Irlanda</p>
+            <p><span class="font-bold">Email de contacto:</span>{" "}
+              <a href="mailto:ruben@nimbel.net" class="text-nimbel-accent hover:underline">
+                ruben@nimbel.net
+              </a>
+            </p>
+            <p><span class="font-bold">Actividad:</span> Desarrollo de software y aplicaciones digitales</p>
+            <p><span class="font-bold">Web:</span>{" "}
+              <a href="https://nimbel-web.vercel.app" target="_blank" rel="noopener noreferrer" class="text-nimbel-accent hover:underline">
+                https://nimbel-web.vercel.app
+              </a>
+            </p>
+          </div>
+
+          <!-- POLÍTICA DE PRIVACIDAD -->
+          <div class="border-t border-nimbel-bg/10 mt-10 pt-10">
+            <h2 class="font-mortend uppercase text-xl text-nimbel-bg mb-6">
+              Política de Privacidad
+            </h2>
+
+            <div class="font-clash text-nimbel-bg leading-relaxed space-y-6 text-sm">
+
+              <div>
+                <h3 class="font-bold text-nimbel-bg mt-6 mb-2">1. Responsable del tratamiento</h3>
+                <p>
+                  El responsable del tratamiento de tus datos personales es <span class="font-bold">Nimbel Code Limited</span>, con domicilio social en Unit 2, 2 Bridge Street, Athlone, Co. Westmeath, N37F1W4, Irlanda, y número VAT IE4428779UH. Podés contactarnos en{" "}
+                  <a href="mailto:ruben@nimbel.net" class="text-nimbel-accent hover:underline">ruben@nimbel.net</a>.
+                </p>
+              </div>
+
+              <div>
+                <h3 class="font-bold text-nimbel-bg mt-6 mb-2">2. Datos que recopilamos</h3>
+                <p>
+                  Recopilamos los siguientes datos personales que nos enviás a través del formulario de contacto de esta web:
+                </p>
+                <ul class="list-disc list-inside mt-2 space-y-1 pl-2">
+                  <li>Nombre completo</li>
+                  <li>Dirección de correo electrónico</li>
+                </ul>
+                <p class="mt-2">
+                  No recopilamos datos mediante cookies, herramientas de analítica ni ningún otro mecanismo de seguimiento. Esta web no gestiona cuentas de usuario ni transacciones económicas.
+                </p>
+              </div>
+
+              <div>
+                <h3 class="font-bold text-nimbel-bg mt-6 mb-2">3. Finalidad del tratamiento</h3>
+                <p>
+                  Los datos personales facilitados a través del formulario de contacto se utilizan exclusivamente para atender consultas comerciales y responder a solicitudes de información enviadas por el usuario.
+                </p>
+              </div>
+
+              <div>
+                <h3 class="font-bold text-nimbel-bg mt-6 mb-2">4. Base legal</h3>
+                <p>
+                  La base legal para el tratamiento de tus datos es el interés legítimo (Art. 6.1.f RGPD) en responder a las consultas recibidas a través de nuestros canales de contacto. En los casos en que sea necesario, recabaremos tu consentimiento expreso antes de cualquier tratamiento adicional.
+                </p>
+              </div>
+
+              <div>
+                <h3 class="font-bold text-nimbel-bg mt-6 mb-2">5. Conservación de los datos</h3>
+                <p>
+                  Los datos personales se conservan durante el tiempo necesario para gestionar la consulta y, en su caso, la relación comercial derivada de la misma. Una vez que ya no sean necesarios, los datos serán eliminados de forma segura.
+                </p>
+              </div>
+
+              <div>
+                <h3 class="font-bold text-nimbel-bg mt-6 mb-2">6. Destinatarios y cesiones</h3>
+                <p>
+                  No cedemos, vendemos ni transferimos tus datos personales a terceros, salvo obligación legal o requerimiento de autoridad competente.
+                </p>
+              </div>
+
+              <div>
+                <h3 class="font-bold text-nimbel-bg mt-6 mb-2">7. Tus derechos</h3>
+                <p>
+                  En virtud del RGPD, tenés los siguientes derechos sobre tus datos personales:
+                </p>
+                <ul class="list-disc list-inside mt-2 space-y-1 pl-2">
+                  <li>Derecho de acceso</li>
+                  <li>Derecho de rectificación</li>
+                  <li>Derecho de supresión ("derecho al olvido")</li>
+                  <li>Derecho a la portabilidad de los datos</li>
+                  <li>Derecho a la limitación del tratamiento</li>
+                  <li>Derecho de oposición</li>
+                </ul>
+                <p class="mt-2">
+                  Para ejercer cualquiera de estos derechos, podés enviar una solicitud escrita a{" "}
+                  <a href="mailto:ruben@nimbel.net" class="text-nimbel-accent hover:underline">ruben@nimbel.net</a>.
+                  Responderemos en un plazo máximo de 30 días conforme a la normativa aplicable.
+                </p>
+              </div>
+
+              <div>
+                <h3 class="font-bold text-nimbel-bg mt-6 mb-2">8. Reclamaciones ante la autoridad de control</h3>
+                <p>
+                  Si considerás que el tratamiento de tus datos personales no se ajusta al RGPD, tenés derecho a presentar una reclamación ante la autoridad de control competente:
+                </p>
+                <p class="mt-2 font-bold">Data Protection Commission Ireland</p>
+                <p>
+                  Web:{" "}
+                  <a href="https://www.dataprotection.ie" target="_blank" rel="noopener noreferrer" class="text-nimbel-accent hover:underline">
+                    www.dataprotection.ie
+                  </a>
+                </p>
+              </div>
+
+            </div>
+          </div>
+        </>
+      )}
+
+    </div>
+  </section>
+
+  <Footer locale={locale} />
+</Layout>

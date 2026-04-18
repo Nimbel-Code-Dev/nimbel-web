@@ -14,13 +14,21 @@ const navLinks = [
   { label: t("navbar", "about"), href: "#about" },
   { label: t("navbar", "services"), href: "#services" },
 ];
+
+const pathname = Astro.url.pathname;
+const alternateUrl =
+  locale === "es"
+    ? `/en${pathname === "/" ? "" : pathname}`
+    : pathname.replace(/^\/en/, "") || "/";
 ---
 
 <nav class="flex items-center justify-between px-15 py-5 relative max-md:px-6">
   <!-- Logo -->
-  <img src="/assets/Nimbel Logo.svg" alt="Nimbel" class="h-10 w-auto" width="40" height="40" />
+  <a href={locale === "en" ? "/en" : "/"} aria-label="Nimbel Code — inicio">
+    <img src="/assets/Nimbel Logo.svg" alt="Nimbel" class="h-10 w-auto" width="40" height="40" />
+  </a>
 
-  <!-- Desktop: Links + CTA -->
+  <!-- Desktop: Links + CTA + Lang switcher -->
   <div class="hidden md:flex gap-4 items-center">
     {
       navLinks.map((link) => (
@@ -36,6 +44,20 @@ const navLinks = [
     <a href="/agenda" class="btn-secondary">
       {t("navbar", "cta")}
     </a>
+    <!-- Language switcher -->
+    <div class="flex items-center gap-1 text-sm font-medium" aria-label="Cambiar idioma">
+      {locale === "es" ? (
+        <span class="text-nimbel-text" aria-current="true">ES</span>
+      ) : (
+        <a href={alternateUrl} class="text-nimbel-muted hover:text-nimbel-text transition-colors">ES</a>
+      )}
+      <span class="text-nimbel-muted/40">/</span>
+      {locale === "en" ? (
+        <span class="text-nimbel-text" aria-current="true">EN</span>
+      ) : (
+        <a href={alternateUrl} class="text-nimbel-muted hover:text-nimbel-text transition-colors">EN</a>
+      )}
+    </div>
   </div>
 
   <!-- Mobile: Hamburger button -->

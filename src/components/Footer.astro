@@ -17,6 +17,9 @@ const nav = t("footer", "nav") as {
 };
 const social = t("footer", "social") as { title: string };
 const copyright = t("footer", "copyright") as string;
+
+const privacyLink = locale === "en" ? "/en/privacidad" : "/privacidad";
+const privacyLabel = locale === "en" ? "Privacy policy" : "Política de privacidad";
 ---
 
 <footer class="w-full bg-nimbel-bg">
@@ -67,6 +70,14 @@ const copyright = t("footer", "copyright") as string;
               class="text-nimbel-text text-sm hover:text-nimbel-accent transition-colors"
             >
               {nav.contact}
+            </a>
+          </li>
+          <li>
+            <a
+              href={privacyLink}
+              class="text-nimbel-text text-sm hover:text-nimbel-accent transition-colors"
+            >
+              {privacyLabel}
             </a>
           </li>
         </ul>
