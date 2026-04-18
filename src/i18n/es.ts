@@ -81,6 +81,7 @@ export const es = {
         description:
           "Desarrollo de aplicación móvil, consola de atención para doctores, consola de análisis de datos y estadísticas.",
         cta: "conoce FAMBA",
+        href: "https://web.fambaproject.com/",
         imgAlt: "Captura del proyecto Famba",
       },
       {
@@ -90,6 +91,7 @@ export const es = {
         description:
           "Analysta es una herramienta digital diseñada para simplificar el análisis de la operativa de un inversor en mercados financieros.",
         cta: "conoce ANALYSTA",
+        href: "https://analysta.es/",
         imgAlt: "Captura del proyecto Analysta",
       },
       {
@@ -100,6 +102,7 @@ export const es = {
         description:
           "Plataforma que permite crear tarjetas de presentación digitales personalizadas.",
         cta: "conoce INNOCARD",
+        href: "https://www.innocard.me/",
         imgAlt: "Captura del proyecto Innocard",
       },
       {
@@ -109,6 +112,7 @@ export const es = {
         description:
           "Newsup es una plataforma digital de noticias, que permite tener una sala de prensa, enviar emails y compartir contenido multimedia HD.",
         cta: "conoce NEWSUP",
+        href: "https://www.newsup.ai/",
         imgAlt: "Captura del proyecto NEWSUP",
       },
     ],
@@ -229,19 +233,25 @@ export const es = {
     },
     contactOptions: [
       {
-        type: "email",
+        icon: "/assets/Mail.svg",
         label: "CONTÁCTANOS",
         sublabel: "Envíanos un email",
+        href: "mailto:ruben@nimbel.net",
+        external: false,
       },
       {
-        type: "call",
+        icon: "/assets/Call.svg",
         label: "AGENDA UNA CALL",
         sublabel: "Agenda en nuestro calendly",
+        href: "#",
+        external: false,
       },
       {
-        type: "linkedin",
+        icon: "/assets/Linkedin.svg",
         label: "LiNKEDiN",
         sublabel: "No somos mucho de redes sociales pero tenemos linkedin!",
+        href: "https://www.linkedin.com/company/nimbel-code-apps/",
+        external: true,
       },
     ],
     errors: {
@@ -276,7 +286,7 @@ export const es = {
     success: "Mensaje enviado con éxito",
   },
   footer: {
-    description: "Flexibilidad de freelance, seriedad de consultora.",
+    description: "Tu software, tus reglas.",
     nav: {
       title: "Navegación",
       about: "Sobre nosotros",
@@ -284,8 +294,8 @@ export const es = {
       contact: "Contacto",
     },
     social: {
-      title: "Seguinos",
+      title: "Sígenos",
     },
-    copyright: "© 2026 Nimbel Code. Todos los derechos reservados.",
+    copyright: "© 2026 Nimbel Code LTD. Todos los derechos reservados.",
   },
 } as const;

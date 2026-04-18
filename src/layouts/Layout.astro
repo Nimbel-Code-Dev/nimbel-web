@@ -55,6 +55,9 @@ const ogImage = new URL("/og-image.png", Astro.site);
     <meta property="og:title" content={title} />
     <meta property="og:description" content={description} />
     <meta property="og:image" content={ogImage} />
+    <meta property="og:site_name" content="Nimbel Code" />
+    <meta property="og:locale" content={lang === "en" ? "en_US" : "es_ES"} />
+    <meta property="og:locale:alternate" content={lang === "en" ? "es_ES" : "en_US"} />
 
     <!-- Twitter / X -->
     <meta name="twitter:card" content="summary_large_image" />
@@ -65,10 +68,21 @@ const ogImage = new URL("/og-image.png", Astro.site);
     <!-- JSON-LD -->
     <script type="application/ld+json" set:html={JSON.stringify({
       "@context": "https://schema.org",
-      "@type": "Organization",
-      "name": "Nimbel CODE",
+      "@type": "ProfessionalService",
+      "name": "Nimbel Code",
       "url": Astro.site,
       "description": description,
+      "logo": new URL("/assets/Nimbel Logo.svg", Astro.site),
+      "email": "ruben@nimbel.net",
+      "sameAs": [
+        "https://www.linkedin.com/company/nimbel-code-apps/"
+      ],
+      "serviceType": [
+        "Desarrollo de aplicaciones móvil",
+        "Desarrollo de plataformas web",
+        "Diseño UX/UI",
+        "Consultoría tecnológica"
+      ]
     })} />
 
     <!-- Fonts -->
