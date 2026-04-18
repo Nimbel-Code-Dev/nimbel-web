@@ -205,12 +205,12 @@ describe('useTranslations hook — integration', () => {
 
   it('works with footer section — es', () => {
     const t = useTranslations('es');
-    expect(t('footer', 'copyright')).toBe('© 2026 Nimbel Code. Todos los derechos reservados.');
+    expect(t('footer', 'copyright')).toBe('© 2026 Nimbel Code LTD. Todos los derechos reservados.');
   });
 
   it('works with footer section — en', () => {
     const t = useTranslations('en');
-    expect(t('footer', 'copyright')).toBe('© 2026 Nimbel Code. All rights reserved.');
+    expect(t('footer', 'copyright')).toBe('© 2026 Nimbel Code LTD. All rights reserved.');
   });
 
   it('works with testimonials section — es', () => {

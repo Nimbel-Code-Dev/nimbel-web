@@ -296,6 +296,6 @@ export const en = {
     social: {
       title: "Follow us",
     },
-    copyright: "© 2026 Nimbel Code. All rights reserved.",
+    copyright: "© 2026 Nimbel Code LTD. All rights reserved.",
   },
 } as const;
