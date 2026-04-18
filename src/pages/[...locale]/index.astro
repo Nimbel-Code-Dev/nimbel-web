@@ -1,6 +1,8 @@
 ---
 import CaseStudies from "@/components/CaseStudies.astro";
 import ClientsCarousel from "@/components/ClientsCarousel.astro";
+import Contact from "@/components/Contact.astro";
+import Footer from "@/components/Footer.astro";
 import HeroSection from "@/components/HeroSection.astro";
 import Navbar from "@/components/Navbar.astro";
 import Services from "@/components/Services.astro";
@@ -38,4 +40,6 @@ const t = useTranslations(locale);
   <CaseStudies locale={locale} />
   <Testimonials locale={locale} />
   <Team locale={locale} />
+  <Contact locale={locale} />
+  <Footer locale={locale} />
 </Layout>

@@ -1,0 +1,127 @@
+---
+import { useTranslations, type Locale } from "@/i18n/utils";
+
+interface Props {
+  locale: Locale;
+}
+
+const { locale } = Astro.props;
+const t = useTranslations(locale);
+
+const description = t("footer", "description") as string;
+const nav = t("footer", "nav") as {
+  title: string;
+  about: string;
+  services: string;
+  contact: string;
+};
+const social = t("footer", "social") as { title: string };
+const copyright = t("footer", "copyright") as string;
+---
+
+<footer class="w-full bg-nimbel-bg">
+  <!-- Main section -->
+  <div class="mx-auto w-full max-w-7xl px-6 sm:px-12 lg:px-16 py-12 lg:py-16">
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10 lg:gap-16">
+
+      <!-- Col 1: Logo + description -->
+      <div>
+        <img
+          src="/assets/Nimbel Logo.svg"
+          alt="Nimbel Code"
+          class="h-8 w-auto mb-4"
+        />
+        <p class="text-nimbel-muted text-sm leading-relaxed max-w-xs">
+          {description}
+        </p>
+      </div>
+
+      <!-- Col 2: Navigation -->
+      <div>
+        <p class="font-mortend uppercase text-xs tracking-widest text-nimbel-muted mb-4">
+          {nav.title}
+        </p>
+        <ul class="flex flex-col gap-3">
+          <li>
+            <a
+              href="#"
+              class="text-nimbel-text text-sm hover:text-nimbel-accent transition-colors"
+            >
+              {nav.about}
+            </a>
+          </li>
+          <li>
+            <a
+              href="#services"
+              class="text-nimbel-text text-sm hover:text-nimbel-accent transition-colors"
+            >
+              {nav.services}
+            </a>
+          </li>
+          <li>
+            <a
+              href="#contact"
+              class="text-nimbel-text text-sm hover:text-nimbel-accent transition-colors"
+            >
+              {nav.contact}
+            </a>
+          </li>
+        </ul>
+      </div>
+
+      <!-- Col 3: Social -->
+      <div>
+        <p class="font-mortend uppercase text-xs tracking-widest text-nimbel-muted mb-4">
+          {social.title}
+        </p>
+        <ul class="flex flex-col gap-3">
+          <li>
+            <a
+              href="https://www.linkedin.com/company/nimbel"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="group inline-flex items-center gap-2 text-nimbel-text text-sm hover:text-nimbel-accent transition-colors"
+            >
+              <svg
+                viewBox="0 0 24 24"
+                fill="currentColor"
+                class="w-4 h-4 text-nimbel-muted group-hover:text-nimbel-accent transition-colors shrink-0"
+                aria-hidden="true"
+              >
+                <path d="M7.17532 20.091V9.25352H3.69V20.091H7.17532ZM5.43339 7.773C6.64839 7.773 7.4047 6.942 7.4047 5.901C7.38294 4.8375 6.64984 4.029 5.45662 4.029C4.26339 4.029 3.48387 4.839 3.48387 5.901C3.48387 6.942 4.24016 7.773 5.41016 7.773H5.43339ZM12.5579 20.091V14.0385C12.5579 13.7145 12.5811 13.3905 12.674 13.1595C12.9252 12.513 13.4985 11.8425 14.4624 11.8425C15.7239 11.8425 16.2276 12.8355 16.2276 14.2935V20.091H19.7129V13.875C19.7129 10.545 17.9942 8.99704 15.7006 8.99704C13.8513 8.99704 13.0224 10.047 12.5579 10.7865V10.824H12.5347L12.5579 10.7865V9.25352H9.07401C9.1176 10.2705 9.07401 20.091 9.07401 20.091H12.5579Z" />
+              </svg>
+              LinkedIn
+            </a>
+          </li>
+          <li>
+            <a
+              href="https://github.com/nimbel"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="group inline-flex items-center gap-2 text-nimbel-text text-sm hover:text-nimbel-accent transition-colors"
+            >
+              <svg
+                viewBox="0 0 24 24"
+                fill="currentColor"
+                class="w-4 h-4 text-nimbel-muted group-hover:text-nimbel-accent transition-colors shrink-0"
+                aria-hidden="true"
+              >
+                <path d="M12 0C5.374 0 0 5.373 0 12c0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23A11.509 11.509 0 0 1 12 5.803c1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576C20.566 21.797 24 17.3 24 12c0-6.627-5.373-12-12-12z" />
+              </svg>
+              GitHub
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <!-- Separator -->
+  <div class="border-t border-white/10">
+    <div class="mx-auto w-full max-w-7xl px-6 sm:px-12 lg:px-16 py-6">
+      <p class="text-center text-sm text-nimbel-muted">
+        {copyright}
+      </p>
+    </div>
+  </div>
+</footer>

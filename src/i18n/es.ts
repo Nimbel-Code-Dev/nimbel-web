@@ -230,7 +230,7 @@ export const es = {
     contactOptions: [
       {
         type: "email",
-        label: "CONTACTA",
+        label: "CONTÁCTANOS",
         sublabel: "Envíanos un email",
       },
       {
