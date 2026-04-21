@@ -1,5 +1,4 @@
 ---
-import ContactForm from "@/components/ContactForm";
 import { useTranslations, type Locale } from "@/i18n/utils";
 
 interface Props {
@@ -12,13 +11,6 @@ const t = useTranslations(locale);
 const headline = t("contact", "headline") as string;
 const headlineHighlight = t("contact", "headlineHighlight") as string;
 const description = t("contact", "description") as string;
-const form = t("contact", "form") as {
-  name: string;
-  email: string;
-  message: string;
-  submit: string;
-  sending: string;
-};
 const contactOptions = t("contact", "contactOptions") as ReadonlyArray<{
   icon: string;
   label: string;
@@ -26,20 +18,6 @@ const contactOptions = t("contact", "contactOptions") as ReadonlyArray<{
   href: string;
   external: boolean;
 }>;
-const successData = t("contact", "success") as { title: string; message: string };
-const formErrors = t("form", "errors") as {
-  name: { required: string; minLength: string; maxLength: string; pattern: string };
-  email: { required: string; email: string };
-  message: { required: string; minLength: string; maxLength: string };
-};
-
-// Flatten errors for FormValidator message map: "name.required", "email.email", etc.
-const flatMessages: Record<string, string> = {};
-for (const [field, rules] of Object.entries(formErrors)) {
-  for (const [rule, msg] of Object.entries(rules as Record<string, string>)) {
-    flatMessages[`${field}.${rule}`] = msg;
-  }
-}
 
 function highlightText(text: string, word: string, className: string): string {
   const regex = new RegExp(`(${word})`, "gi");
@@ -51,7 +29,6 @@ const highlightedHeadline = highlightText(
   headlineHighlight,
   "text-nimbel-accent"
 );
-
 ---
 
 <section
@@ -72,22 +49,13 @@ const highlightedHeadline = highlightText(
 
     <!-- 2-column grid -->
     <div class="flex flex-col lg:flex-row gap-12 lg:gap-16">
-      <!-- Left: Form -->
+      <!-- Left: Calendly widget -->
       <div class="w-full lg:w-1/2">
-        <ContactForm
-          client:load
-          locale={locale}
-          messages={flatMessages}
-          labels={{
-            name: form.name,
-            email: form.email,
-            message: form.message,
-            submit: form.submit,
-            sending: form.sending,
-          }}
-          successTitle={successData.title}
-          successMessage={successData.message}
-        />
+        <div
+          class="calendly-inline-widget w-full rounded-lg overflow-hidden"
+          data-url="https://calendly.com/ruben-nimbel/meeting?hide_event_type_details=1"
+          style="min-width:320px;height:700px;"
+        ></div>
       </div>
 
       <!-- Right: Contact options -->
@@ -116,3 +84,5 @@ const highlightedHeadline = highlightText(
     </div>
   </div>
 </section>
+
+<script is:inline src="https://assets.calendly.com/assets/external/widget.js" async></script>

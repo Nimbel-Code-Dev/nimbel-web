@@ -11,7 +11,7 @@ export const es = {
   },
   hero: {
     eyebrow: "DESIGN SMARTER, NOT HARDER",
-    headline: "Más que el desarrollo de una aplicación.",
+    headline: "Transformamos tus ideas en activos digitales propios.",
     description:
       "Nos encargamos de todo, desde la primera idea hasta que funciona y crece contigo. Tú solo cuéntanos qué necesitas.",
     cta: "Hablemos de tu idea",
