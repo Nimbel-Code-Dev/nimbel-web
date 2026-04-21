@@ -243,8 +243,8 @@ export const en = {
         icon: "/assets/Call.svg",
         label: "SCHEDULE A CALL",
         sublabel: "Book on our calendly",
-        href: "#",
-        external: false,
+        href: "https://calendly.com/ruben-nimbel/meeting",
+        external: true,
       },
       {
         icon: "/assets/Linkedin.svg",
