@@ -66,7 +66,7 @@ export const en = {
     ariaLabel: "Nimbel Code statistics",
     items: [
       { value: +20, label: "YEARS OF EXPERIENCE" },
-      { value: +10, label: "SUCCESSFUL PROJECTS" },
+      { value: +50, label: "SUCCESSFUL PROJECTS" },
       { value: +5, label: "COUNTRIES" },
     ],
   },

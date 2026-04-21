@@ -66,7 +66,7 @@ export const es = {
     ariaLabel: "Estadísticas de Nimbel Code",
     items: [
       { value: +20, label: "AÑOS DE EXPERIENCIA" },
-      { value: +10, label: "PROYECTOS EXITOSOS" },
+      { value: +50, label: "PROYECTOS EXITOSOS" },
       { value: +5, label: "PRESENCIA EN PAISES" },
     ],
   },
