@@ -1,8 +1,8 @@
 export const es = {
   meta: {
-    title: "Nimbel CODE - Design Smarter, Not Harder",
+    title: "Nimbel CODE - Tu activo digital. Tu control.",
     description:
-      "Tendrás la flexibilidad de un freelance y la seriedad de una consultora. Desarrollamos tu aplicación con calidad, personalización y a un coste razonable.",
+      "Software a medida con IA integrada. Construimos junto a ti un sistema digital que es tuyo: sin licencias, sin dependencias, sin quedar rehenes de nadie.",
   },
   navbar: {
     about: "Sobre nosotros",
@@ -10,11 +10,11 @@ export const es = {
     cta: "AGENDA UNA CALL",
   },
   hero: {
-    eyebrow: "DESIGN SMARTER, NOT HARDER",
-    headline: "Transformamos tus ideas en activos digitales propios.",
+    eyebrow: "Control total sobre tu sistema digital",
+    headline: "Transformamos tus ideas en activos digitales propios",
     description:
-      "Nos encargamos de todo, desde la primera idea hasta que funciona y crece contigo. Tú solo cuéntanos qué necesitas.",
-    cta: "Hablemos de tu idea",
+      "IA integrada con tus sistemas, desarrollo propio y a medida. Con nuestro respaldo técnico en cada paso.",
+    cta: "Agendar asesoramiento",
     imgAlt: "Nimbel app preview",
   },
   clients: {
@@ -29,36 +29,36 @@ export const es = {
     sectionLabel: "Servicios",
     items: [
       {
-        id: "dev-infrastructure",
-        title: "Desarrollo de aplicaciones e infrasctructura",
+        id: "custom-software",
+        title: "Software a medida para tu operativa diaria",
         shortDesc:
-          "Construimos tu software desde cero y nos aseguramos de que funcione sin caídas, sea rápido y escale cuando tu negocio crezca.",
+          "Analizamos cómo trabajas y construimos lo que necesitas: gestión de incidencias, trazabilidad, integración con tu ERP, automatización de procesos. Sin atajos. Sin plantillas. Tuyo desde el primer día.",
         fullDesc:
-          "Construimos tu software desde cero y nos aseguramos de que funcione sin caídas, sea rápido y escale cuando tu negocio crezca.",
+          "Analizamos cómo trabajas y construimos lo que necesitas: gestión de incidencias, trazabilidad, integración con tu ERP, automatización de procesos. Sin atajos. Sin plantillas. Tuyo desde el primer día.",
       },
       {
-        id: "ux-design",
-        title: "Diseño UX/UI",
+        id: "ai-integration",
+        title: "IA aplicada a tu día a día",
         shortDesc:
-          "Que sea bonito está bien. Que tu equipo lo use sin formación y sin frustraciones es lo que importa.",
+          "No te hablamos de IA en abstracto. La integramos donde tiene sentido en tu operativa diaria: para automatizar tareas repetitivas, anticipar problemas o ayudar a tu equipo a tomar mejores decisiones. Con guía, no con experimentos.",
         fullDesc:
-          "Que sea bonito está bien. Que tu equipo lo use sin formación y sin frustraciones es lo que importa.",
+          "No te hablamos de IA en abstracto. La integramos donde tiene sentido en tu operativa diaria: para automatizar tareas repetitivas, anticipar problemas o ayudar a tu equipo a tomar mejores decisiones. Con guía, no con experimentos.",
       },
       {
-        id: "sales-automation",
-        title: "Vende más sin trabajar el doble",
+        id: "technical-mentoring",
+        title: "Acompañamiento y mentoría técnica",
         shortDesc:
-          "Automatizamos tu proceso de ventas con IA: seguimientos, propuestas, captación. Para que ningún cliente potencial se pierda por falta de tiempo.",
+          "Desarrollamos: te enseñamos, te acompañamos y estamos cuando algo falla. Tienes un equipo técnico de tu lado, no solo un proveedor.",
         fullDesc:
-          "Automatizamos tu proceso de ventas con IA: seguimientos, propuestas, captación. Para que ningún cliente potencial se pierda por falta de tiempo.",
+          "Desarrollamos: te enseñamos, te acompañamos y estamos cuando algo falla. Tienes un equipo técnico de tu lado, no solo un proveedor.",
       },
       {
-        id: "project-rescue",
-        title: "Rescate de proyectos tecnológicos",
+        id: "rescue-integration",
+        title: "Rescate e integración",
         shortDesc:
-          "¿Tu proyecto se quedó a medias, no funciona como esperabas o el proveedor anterior desapareció? Lo retomamos desde donde esté.",
+          "Tienes código generado con IA que funciona a medias, un proveedor que desapareció o sistemas que no se hablan entre sí. Seguimos desde donde esté y lo convertimos en algo que funciona de verdad.",
         fullDesc:
-          "¿Tu proyecto se quedó a medias, no funciona como esperabas o el proveedor anterior desapareció? Lo retomamos desde donde esté.",
+          "Tienes código generado con IA que funciona a medias, un proveedor que desapareció o sistemas que no se hablan entre sí. Seguimos desde donde esté y lo convertimos en algo que funciona de verdad.",
       },
     ],
   },
@@ -125,9 +125,9 @@ export const es = {
       {
         id: "jose-munoz",
         name: "Jose Muñoz",
-        role: "Jefe del Servicio de Salud Internacional",
+        role: "Jefe del Servicio de Salud Internacional, Hospital Clínic",
         quote:
-          "Famba llevaba años en desarrollo sin llegar a funcionar como necesitábamos. Cuando Nimbel Code se incorporó al proyecto, todo cambió. En poco tiempo lograron estabilizar la plataforma, mejorar la experiencia de usuario y convertir una idea estancada en una herramienta real y útil. Su enfoque claro, profesional y resolutivo fue justo lo que necesitábamos para sacar Famba adelante.",
+          "Famba llevaba años sin funcionar como necesitábamos. Cuando entró Nimbel, en pocas semanas teníamos una herramienta real. Lo que más valoro es que en ningún momento nos dejaron solos: nos explicaron cada decisión técnica y nos ayudaron a que el equipo lo adoptara. Hoy es un activo que seguimos evolucionando.",
         photoAlt: "Foto de Jose Muñoz",
         photo: "/assets/Jose.jpg",
       },
@@ -136,7 +136,7 @@ export const es = {
         name: "Gerard Gil",
         role: "Fundador de NewsUp",
         quote:
-          "Trabajar con Nimbel ha sido un punto de inflexión para Newsup. Supieron entender las necesidades tanto técnicas como editoriales del proyecto, y nos ayudaron a transformar nuestra plataforma en una herramienta mucho más robusta, escalable y fácil de gestionar. El equipo aportó no solo capacidad técnica, sino también visión de producto. Gracias a su trabajo, hoy podemos crecer y ofrecer una mejor experiencia a nuestros usuarios.",
+          "Nimbel no solo nos construyó la plataforma. Nos ayudaron a entender qué necesitábamos realmente y cómo escalarla sin depender de ellos para siempre. Eso marca la diferencia con cualquier agencia de desarrollo: te dejan con algo tuyo, no con una caja negra.",
         photoAlt: "Foto de Gerard Gil",
         photo: "/assets/Gerard.jpg",
       },
@@ -145,7 +145,7 @@ export const es = {
         name: "Pol Margaix",
         role: "Fundador de Analysta",
         quote:
-          "La colaboración con Nimbel ha sido fundamental para el desarrollo del proyecto. Destacaría la increíble eficiencia y su capacidad para ir siempre un paso por delante. No se limitan únicamente a ejecutar, sino que constantemente proponen soluciones innovadoras y mejoras que demuestran un profundo entendimiento de nuestras metas. Son un equipo resolutivo que no necesita supervisión constante, lo que nos ha permitido avanzar a un ritmo que no habíamos logrado antes. Su proactividad ha sido clave para desbloquear el verdadero potencial del proyecto.",
+          "Lo que más nos sorprendió fue que siempre iban un paso por delante. No esperaban a que les dijeras qué hacer: proponen, anticipan problemas y nos dan claridad técnica cuando más la necesitámos. Gracias a eso hoy tenemos un producto que controlamos y podemos seguir desarrollando.",
         photoAlt: "Foto de Pol Margaix",
         photo: "/assets/Pol.jpg",
       },
@@ -217,10 +217,10 @@ export const es = {
     on: "en",
   },
   contact: {
-    headline: "¿TIENES ALGÚN PROYECTO EN MENTE?",
-    headlineHighlight: "PROYECTO",
+    headline: "Agenda con nosotros una asesoría gratuita",
+    headlineHighlight: "gratuita",
     description:
-      "Este puede ser el comienzo de algo importante. Envíanos un correo con las necesidades de tu proyecto y te responderemos en 1 o 2 días laborables (probablemente antes).",
+      "Cuéntanos cómo trabajas, qué no funciona como debería y qué te gustaría controlar mejor. En 24 horas te decimos si podemos ayudarte y cómo.",
     form: {
       name: "Nombre",
       namePlaceholder: "Tu nombre completo",
@@ -286,7 +286,7 @@ export const es = {
     success: "Mensaje enviado con éxito",
   },
   footer: {
-    description: "Tu software, tus reglas.",
+    description: "Tu activo digital. Tu control. Tu equipo.",
     nav: {
       title: "Navegación",
       about: "Sobre nosotros",

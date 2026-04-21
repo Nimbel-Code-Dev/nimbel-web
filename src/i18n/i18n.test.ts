@@ -165,12 +165,12 @@ describe('i18n — contact section', () => {
 describe('useTranslations hook — integration', () => {
   it('returns correct string for es locale (hero section)', () => {
     const t = useTranslations('es');
-    expect(t('hero', 'cta')).toBe('Hablemos de tu idea');
+    expect(t('hero', 'cta')).toBe('Agendar asesoramiento');
   });
 
   it('returns correct string for en locale (hero section)', () => {
     const t = useTranslations('en');
-    expect(t('hero', 'cta')).toBe("Let's talk about your idea");
+    expect(t('hero', 'cta')).toBe('Schedule a consultation');
   });
 
   it('works with services section — es', () => {
@@ -195,12 +195,12 @@ describe('useTranslations hook — integration', () => {
 
   it('works with contact section — es', () => {
     const t = useTranslations('es');
-    expect(t('contact', 'headline')).toBe('¿TIENES ALGÚN PROYECTO EN MENTE?');
+    expect(t('contact', 'headline')).toBe('Agenda con nosotros una asesoría gratuita');
   });
 
   it('works with contact section — en', () => {
     const t = useTranslations('en');
-    expect(t('contact', 'headline')).toBe('DO YOU HAVE A PROJECT IN MIND?');
+    expect(t('contact', 'headline')).toBe('Schedule a free consultation with us');
   });
 
   it('works with footer section — es', () => {

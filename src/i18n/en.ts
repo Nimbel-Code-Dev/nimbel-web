@@ -1,8 +1,8 @@
 export const en = {
   meta: {
-    title: "Nimbel CODE - Design Smarter, Not Harder",
+    title: "Nimbel CODE - Your digital asset. Your control.",
     description:
-      "Get the flexibility of a freelancer and the reliability of a consultancy. We build your app with quality, customization, and at a reasonable cost.",
+      "Custom software with integrated AI. We build your digital system together with you — no licenses, no dependencies, no being held hostage by anyone.",
   },
   navbar: {
     about: "About us",
@@ -10,11 +10,11 @@ export const en = {
     cta: "SCHEDULE A CALL",
   },
   hero: {
-    eyebrow: "Design Smarter, Not Harder",
-    headline: "We turn your ideas into digital realities",
+    eyebrow: "Full control over your digital system",
+    headline: "We transform your ideas into your own digital assets",
     description:
-      "We handle everything, from the first idea until it works and grows with you. Just tell us what you need.",
-    cta: "Let's talk about your idea",
+      "AI integrated with your systems, custom and proprietary development. With our technical support at every step.",
+    cta: "Schedule a consultation",
     imgAlt: "Nimbel app preview",
   },
   clients: {
@@ -28,36 +28,36 @@ export const en = {
     sectionLabel: "Services",
     items: [
       {
-        id: "dev-infrastructure",
-        title: "Application development and infrastructure",
+        id: "custom-software",
+        title: "Custom software for your daily operations",
         shortDesc:
-          "We build your software from scratch and make sure it runs without downtime, is fast, and scales as your business grows.",
+          "We analyze how you work and build what you need: incident management, traceability, ERP integration, process automation. No shortcuts. No templates. Yours from day one.",
         fullDesc:
-          "We build your software from scratch and make sure it runs without downtime, is fast, and scales as your business grows.",
+          "We analyze how you work and build what you need: incident management, traceability, ERP integration, process automation. No shortcuts. No templates. Yours from day one.",
       },
       {
-        id: "ux-design",
-        title: "UX/UI Design",
+        id: "ai-integration",
+        title: "AI applied to your daily work",
         shortDesc:
-          "Looking good is fine. Having your team use it without training and without frustration is what matters.",
+          "We don't talk about AI in the abstract. We integrate it where it makes sense in your daily operations: to automate repetitive tasks, anticipate problems, or help your team make better decisions. With guidance, not experiments.",
         fullDesc:
-          "Looking good is fine. Having your team use it without training and without frustration is what matters.",
+          "We don't talk about AI in the abstract. We integrate it where it makes sense in your daily operations: to automate repetitive tasks, anticipate problems, or help your team make better decisions. With guidance, not experiments.",
       },
       {
-        id: "sales-automation",
-        title: "Sell more without working twice as hard",
+        id: "technical-mentoring",
+        title: "Technical support and mentoring",
         shortDesc:
-          "We automate your sales process with AI: follow-ups, proposals, lead capture. So no potential client slips through the cracks.",
+          "We develop: we teach you, support you, and are there when something breaks. You have a technical team on your side, not just a vendor.",
         fullDesc:
-          "We automate your sales process with AI: follow-ups, proposals, lead capture. So no potential client slips through the cracks.",
+          "We develop: we teach you, support you, and are there when something breaks. You have a technical team on your side, not just a vendor.",
       },
       {
-        id: "project-rescue",
-        title: "Technology project rescue",
+        id: "rescue-integration",
+        title: "Rescue and integration",
         shortDesc:
-          "Is your project half-done, not working as expected, or did your previous provider disappear? We pick it up from wherever it is.",
+          "You have AI-generated code that half-works, a vendor who disappeared, or systems that don't talk to each other. We pick up from wherever it is and turn it into something that truly works.",
         fullDesc:
-          "Is your project half-done, not working as expected, or did your previous provider disappear? We pick it up from wherever it is.",
+          "You have AI-generated code that half-works, a vendor who disappeared, or systems that don't talk to each other. We pick up from wherever it is and turn it into something that truly works.",
       },
     ],
   },
@@ -124,9 +124,9 @@ export const en = {
       {
         id: "jose-munoz",
         name: "Jose Muñoz",
-        role: "Head of International Health Service",
+        role: "Head of International Health Service, Hospital Clínic",
         quote:
-          "Famba had been in development for years without working as we needed. When Nimbel Code joined the project, everything changed. In a short time they managed to stabilize the platform, improve the user experience and turn a stalled idea into a real and useful tool. Their clear, professional and decisive approach was exactly what we needed to move Famba forward.",
+          "Famba had been struggling for years without working the way we needed. When Nimbel joined, within a few weeks we had a real tool. What I value most is that they never left us on our own: they explained every technical decision and helped the team adopt it. Today it's an asset we keep evolving.",
         photoAlt: "Photo of Jose Muñoz",
         photo: "/assets/Jose.jpg",
       },
@@ -135,7 +135,7 @@ export const en = {
         name: "Gerard Gil",
         role: "Founder of NewsUp",
         quote:
-          "Working with Nimbel has been a turning point for Newsup. They understood both the technical and editorial needs of the project, and helped us transform our platform into a much more robust, scalable and easy-to-manage tool. The team contributed not only technical capacity, but also product vision. Thanks to their work, we can now grow and offer a better experience to our users.",
+          "Nimbel didn't just build the platform for us. They helped us understand what we really needed and how to scale it without depending on them forever. That's what sets them apart from any development agency: they leave you with something that's yours, not a black box.",
         photoAlt: "Photo of Gerard Gil",
         photo: "/assets/Gerard.jpg",
       },
@@ -144,7 +144,7 @@ export const en = {
         name: "Pol Margaix",
         role: "Founder of Analysta",
         quote:
-          "The collaboration with Nimbel has been fundamental to the development of the project. I would highlight the incredible efficiency and their ability to always be one step ahead. They do not limit themselves to executing, but constantly propose innovative solutions and improvements that demonstrate a deep understanding of our goals. They are a decisive team that does not need constant supervision, which has allowed us to advance at a pace we had not achieved before. Their proactivity has been key to unlocking the true potential of the project.",
+          "What surprised us most was that they were always one step ahead. They didn't wait to be told what to do: they propose, anticipate problems and give us technical clarity when we need it most. Thanks to that we now have a product we control and can keep developing.",
         photoAlt: "Photo of Pol Margaix",
         photo: "/assets/Pol.jpg",
       },
@@ -216,10 +216,10 @@ export const en = {
     on: "on",
   },
   contact: {
-    headline: "DO YOU HAVE A PROJECT IN MIND?",
-    headlineHighlight: "PROJECT",
+    headline: "Schedule a free consultation with us",
+    headlineHighlight: "free",
     description:
-      "This could be the beginning of something important. Send us an email with your project needs and we will get back to you in 1 or 2 business days (probably sooner).",
+      "Tell us how you work, what isn't working as it should, and what you'd like to have more control over. Within 24 hours we'll tell you if we can help and how.",
     form: {
       name: "Name",
       namePlaceholder: "Your full name",
@@ -286,7 +286,7 @@ export const en = {
     success: "Message sent successfully",
   },
   footer: {
-    description: "Freelancer flexibility, consultancy reliability.",
+    description: "Your digital asset. Your control. Your team.",
     nav: {
       title: "Navigation",
       about: "About us",
