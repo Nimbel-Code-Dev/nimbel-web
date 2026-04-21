@@ -14,7 +14,7 @@ export const es = {
     headline: "Transformamos tus ideas en activos digitales propios",
     description:
       "IA integrada con tus sistemas, desarrollo propio y a medida. Con nuestro respaldo técnico en cada paso.",
-    cta: "Agendar asesoramiento",
+    cta: "AGENDAR ASESORAMIENTO",
     imgAlt: "Nimbel app preview",
   },
   clients: {
@@ -22,10 +22,9 @@ export const es = {
     ariaLabel: "Carrusel de logos de clientes",
   },
   services: {
-    headline:
-      "Desarrollo de aplicaciones a medida, Apps móvil y plataformas web",
-    headlineHighlight1: "Desarrollo",
-    headlineHighlight2: "plataformas",
+    headline: "Desarrollo a medida de software. Con IA integrada y estándares de calidad reales.",
+    headlineHighlight1: "IA",
+    headlineHighlight2: "calidad",
     sectionLabel: "Servicios",
     items: [
       {

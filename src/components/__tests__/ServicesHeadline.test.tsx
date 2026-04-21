@@ -50,15 +50,16 @@ describe("ServicesHeadline", () => {
 
   it("non-highlighted text is preserved intact (ES)", () => {
     const html = buildHighlightedHeadline(esHeadline, esHighlight1, esHighlight2);
-    expect(html).toContain("de aplicaciones a medida");
-    expect(html).toContain("Apps móvil y");
-    expect(html).toContain("web");
+    expect(html).toContain("Desarrollo a medida de software.");
+    expect(html).toContain("integrada y estándares de");
+    expect(html).toContain("reales.");
   });
 
   it("non-highlighted text is preserved intact (EN)", () => {
     const html = buildHighlightedHeadline(enHeadline, enHighlight1, enHighlight2);
-    expect(html).toContain("application development");
-    expect(html).toContain("Mobile apps and web");
+    expect(html).toContain("Custom software development.");
+    expect(html).toContain("integrated");
+    expect(html).toContain("standards.");
   });
 
   it("returns plain text unchanged when highlight words are absent", () => {

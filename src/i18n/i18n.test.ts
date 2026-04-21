@@ -165,12 +165,12 @@ describe('i18n — contact section', () => {
 describe('useTranslations hook — integration', () => {
   it('returns correct string for es locale (hero section)', () => {
     const t = useTranslations('es');
-    expect(t('hero', 'cta')).toBe('Agendar asesoramiento');
+    expect(t('hero', 'cta')).toBe('AGENDAR ASESORAMIENTO');
   });
 
   it('returns correct string for en locale (hero section)', () => {
     const t = useTranslations('en');
-    expect(t('hero', 'cta')).toBe('Schedule a consultation');
+    expect(t('hero', 'cta')).toBe('SCHEDULE A CONSULTATION');
   });
 
   it('works with services section — es', () => {

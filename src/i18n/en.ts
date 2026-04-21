@@ -14,7 +14,7 @@ export const en = {
     headline: "We transform your ideas into your own digital assets",
     description:
       "AI integrated with your systems, custom and proprietary development. With our technical support at every step.",
-    cta: "Schedule a consultation",
+    cta: "SCHEDULE A CONSULTATION",
     imgAlt: "Nimbel app preview",
   },
   clients: {
@@ -22,9 +22,9 @@ export const en = {
     ariaLabel: "Client logos carousel",
   },
   services: {
-    headline: "Custom application development, Mobile apps and web platforms",
-    headlineHighlight1: "Custom",
-    headlineHighlight2: "platforms",
+    headline: "Custom software development. With integrated AI and real quality standards.",
+    headlineHighlight1: "AI",
+    headlineHighlight2: "quality",
     sectionLabel: "Services",
     items: [
       {
