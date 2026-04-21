@@ -1,8 +1,8 @@
 export const es = {
   meta: {
-    title: "Nimbel CODE - Tu activo digital. Tu control.",
+    title: "Nimbel CODE - Desarrolla tu activo digital.",
     description:
-      "Software a medida con IA integrada. Construimos junto a ti un sistema digital que es tuyo: sin licencias, sin dependencias, sin quedar rehenes de nadie.",
+      "Software a medida con IA. Construimos junto a ti un sistema digital que es tuyo: sin licencias, sin dependencias, sin quedar rehenes de nadie.",
   },
   navbar: {
     about: "Sobre nosotros",
@@ -65,9 +65,9 @@ export const es = {
   stats: {
     ariaLabel: "Estadísticas de Nimbel Code",
     items: [
-      { value: +20, label: "AÑOS DE EXPERIENCIA" },
-      { value: +50, label: "PROYECTOS EXITOSOS" },
-      { value: +5, label: "PRESENCIA EN PAISES" },
+      { value: 20, label: "AÑOS DE EXPERIENCIA" },
+      { value: 50, label: "PROYECTOS EXITOSOS" },
+      { value: 5, label: "PRESENCIA EN PAISES" },
     ],
   },
   caseStudies: {
