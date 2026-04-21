@@ -22,7 +22,8 @@ export const es = {
     ariaLabel: "Carrusel de logos de clientes",
   },
   services: {
-    headline: "Desarrollo a medida de software. Con IA integrada y estándares de calidad reales.",
+    headline:
+      "Desarrollo a medida de software. Con IA integrada y estándares de calidad reales.",
     headlineHighlight1: "IA",
     headlineHighlight2: "calidad",
     sectionLabel: "Servicios",
@@ -64,9 +65,9 @@ export const es = {
   stats: {
     ariaLabel: "Estadísticas de Nimbel Code",
     items: [
-      { value: 15, label: "AÑOS DE EXPERIENCIA" },
-      { value: 50, label: "PROYECTOS EXITOSOS" },
-      { value: 25, label: "PROYECTOS RESCATADOS" },
+      { value: +20, label: "AÑOS DE EXPERIENCIA" },
+      { value: +10, label: "PROYECTOS EXITOSOS" },
+      { value: +5, label: "PRESENCIA EN PAISES" },
     ],
   },
   caseStudies: {

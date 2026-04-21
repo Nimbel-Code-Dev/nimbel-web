@@ -22,7 +22,8 @@ export const en = {
     ariaLabel: "Client logos carousel",
   },
   services: {
-    headline: "Custom software development. With integrated AI and real quality standards.",
+    headline:
+      "Custom software development. With integrated AI and real quality standards.",
     headlineHighlight1: "AI",
     headlineHighlight2: "quality",
     sectionLabel: "Services",
@@ -64,9 +65,9 @@ export const en = {
   stats: {
     ariaLabel: "Nimbel Code statistics",
     items: [
-      { value: 15, label: "YEARS OF EXPERIENCE" },
-      { value: 50, label: "SUCCESSFUL PROJECTS" },
-      { value: 25, label: "RESCUED PROJECTS" },
+      { value: +20, label: "YEARS OF EXPERIENCE" },
+      { value: +10, label: "SUCCESSFUL PROJECTS" },
+      { value: +5, label: "COUNTRIES" },
     ],
   },
   caseStudies: {
