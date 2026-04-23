@@ -220,16 +220,6 @@ export const en = {
     headlineHighlight: "free",
     description:
       "Tell us how you work, what isn't working as it should, and what you'd like to have more control over. Within 24 hours we'll tell you if we can help and how.",
-    form: {
-      name: "Name",
-      namePlaceholder: "Your full name",
-      email: "Email",
-      emailPlaceholder: "you@email.com",
-      message: "Tell us about your project",
-      messagePlaceholder: "Tell us about your project",
-      submit: "Send message",
-      sending: "Sending...",
-    },
     contactOptions: [
       {
         icon: "/assets/Mail.svg",
@@ -253,37 +243,6 @@ export const en = {
         external: true,
       },
     ],
-    errors: {
-      required: "This field is required",
-      invalidEmail: "The email format is invalid",
-      minLength: "Must be at least {min} characters",
-      maxLength: "Cannot exceed {max} characters",
-    },
-    success: {
-      title: "Message sent!",
-      message:
-        "Thanks for reaching out. We will get back to you within 24 hours.",
-    },
-  },
-  form: {
-    errors: {
-      name: {
-        required: "Name is required",
-        minLength: "Name must be at least 3 characters",
-        maxLength: "Name cannot exceed 100 characters",
-        pattern: "Name can only contain letters and spaces",
-      },
-      email: {
-        required: "Email is required",
-        email: "Email is not valid",
-      },
-      message: {
-        required: "Message is required",
-        minLength: "Message must be at least 10 characters",
-        maxLength: "Message cannot exceed 5000 characters",
-      },
-    },
-    success: "Message sent successfully",
   },
   footer: {
     description: "Your digital asset. Your control. Your team.",

@@ -31,13 +31,14 @@ const stats = t("stats", "items") as ReadonlyArray<{
             data-testid={`stat-item-${stat.value}`}
           >
             <span
-              class="font-mortend font-bold text-6xl sm:text-7xl lg:text-8xl text-white leading-none tabular-nums"
+              class="font-mortend font-bold text-6xl sm:text-7xl lg:text-8xl text-nimbel-text leading-none tabular-nums"
               aria-hidden="true"
               data-stat-target={stat.value}
             >
               0
             </span>
-            <p class="mt-3 font-mortend text-sm sm:text-base text-white uppercase tracking-widest leading-snug">
+            <span class="sr-only">{stat.value} {stat.label}</span>
+            <p class="mt-3 font-mortend text-sm sm:text-base text-nimbel-text uppercase tracking-widest leading-snug">
               {stat.label}
             </p>
           </div>
@@ -46,15 +47,6 @@ const stats = t("stats", "items") as ReadonlyArray<{
     </div>
   </div>
 </section>
-
-<!-- Accessible fallback: screen readers get the real value -->
-{
-  stats.map((stat) => (
-    <span class="sr-only">
-      {stat.value} {stat.label}
-    </span>
-  ))
-}
 
 <script>
   function easeOutCubic(t: number): number {

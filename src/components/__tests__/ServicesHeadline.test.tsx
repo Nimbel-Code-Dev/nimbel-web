@@ -3,7 +3,8 @@ import { useTranslations } from "@/i18n/utils";
 
 // Extracted highlight logic matching ServicesHeadline.astro
 function highlightText(text: string, word: string, className: string): string {
-  const regex = new RegExp(`(${word})`, "gi");
+  const escaped = word.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
+  const regex = new RegExp(`(${escaped})`, "gi");
   return text.replace(regex, `<span class="${className}">$1</span>`);
 }
 

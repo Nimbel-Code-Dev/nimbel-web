@@ -24,7 +24,7 @@ const alternateUrl =
 
 <nav class="flex items-center justify-between px-15 py-5 relative max-md:px-6">
   <!-- Logo -->
-  <a href={locale === "en" ? "/en" : "/"} aria-label="Nimbel Code — inicio">
+  <a href={locale === "en" ? "/en" : "/"} aria-label={locale === "en" ? "Nimbel Code — home" : "Nimbel Code — inicio"}>
     <img src="/assets/Nimbel Logo.svg" alt="Nimbel" class="h-10 w-auto" width="40" height="40" />
   </a>
 
@@ -45,7 +45,7 @@ const alternateUrl =
       {t("navbar", "cta")}
     </a>
     <!-- Language switcher -->
-    <div class="flex items-center gap-1 text-sm font-medium" aria-label="Cambiar idioma">
+    <div class="flex items-center gap-1 text-sm font-medium" aria-label={locale === "en" ? "Change language" : "Cambiar idioma"}>
       {locale === "es" ? (
         <span class="text-nimbel-text" aria-current="true">ES</span>
       ) : (
@@ -64,8 +64,9 @@ const alternateUrl =
   <button
     id="menu-toggle"
     class="md:hidden flex flex-col gap-1.25 p-2 cursor-pointer"
-    aria-label="Abrir menú"
+    aria-label={locale === "en" ? "Open menu" : "Abrir menú"}
     aria-expanded="false"
+    aria-controls="mobile-menu"
   >
     <span
       class="hamburger-line block w-6 h-0.5 bg-nimbel-muted transition-all duration-300"
@@ -79,4 +80,4 @@ const alternateUrl =
   </button>
 </nav>
 
-<MobileMenu navLinks={navLinks} locale={locale} />
+<MobileMenu navLinks={navLinks} locale={locale} currentPage={currentPage} />

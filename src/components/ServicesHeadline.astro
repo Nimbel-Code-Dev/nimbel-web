@@ -14,7 +14,8 @@ const highlight1 = t("services", "headlineHighlight1") as string;
 const highlight2 = t("services", "headlineHighlight2") as string;
 
 function highlightText(text: string, word: string, className: string): string {
-  const regex = new RegExp(`(${word})`, "gi");
+  const escaped = word.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
+  const regex = new RegExp(`(${escaped})`, "gi");
   return text.replace(regex, `<span class="${className}">$1</span>`);
 }
 

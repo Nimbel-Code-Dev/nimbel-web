@@ -1,6 +1,7 @@
 import { cleanup, render, screen } from "@testing-library/react";
 import React from "react";
 import { afterEach, describe, expect, it } from "vitest";
+import { es } from "@/i18n/es";
 
 // Since Stats.astro is a static Astro component, we test the rendered
 // output by building an equivalent React representation of the static HTML
@@ -10,11 +11,7 @@ afterEach(() => cleanup());
 
 // ── Fixtures (mirror i18n data) ───────────────────────────────────────────────
 
-const mockStats = [
-  { value: 15, label: "AÑOS DE EXPERIENCIA" },
-  { value: 50, label: "PROYECTOS EXITOSOS" },
-  { value: 25, label: "PROYECTOS RESCATADOS" },
-];
+const mockStats = es.stats.items as Array<{ value: number; label: string }>;
 
 // ── Static stats component (mirrors Stats.astro structure) ────────────────────
 
@@ -86,9 +83,9 @@ describe("Stats static section", () => {
     expect(screen.queryAllByRole("link")).toHaveLength(0);
   });
 
-  it("renders stat for value 15 with expected label", () => {
+  it("renders stat for value 20 with expected label", () => {
     render(<StatsStatic stats={mockStats} />);
-    const item = screen.getByTestId("stat-item-15");
+    const item = screen.getByTestId("stat-item-20");
     expect(item).toBeTruthy();
     expect(item.textContent).toContain("AÑOS DE EXPERIENCIA");
   });
@@ -100,10 +97,10 @@ describe("Stats static section", () => {
     expect(item.textContent).toContain("PROYECTOS EXITOSOS");
   });
 
-  it("renders stat for value 25 with expected label", () => {
+  it("renders stat for value 5 with expected label", () => {
     render(<StatsStatic stats={mockStats} />);
-    const item = screen.getByTestId("stat-item-25");
+    const item = screen.getByTestId("stat-item-5");
     expect(item).toBeTruthy();
-    expect(item.textContent).toContain("PROYECTOS RESCATADOS");
+    expect(item.textContent).toContain("PRESENCIA EN PAISES");
   });
 });

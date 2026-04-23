@@ -4,9 +4,10 @@ import { useTranslations, type Locale } from "@/i18n/utils";
 export type Props = {
   navLinks: Array<{ label: string; href: string }>;
   locale: Locale;
+  currentPage?: string;
 };
 
-const { navLinks, locale } = Astro.props;
+const { navLinks, locale, currentPage } = Astro.props;
 const t = useTranslations(locale);
 
 const pathname = Astro.url.pathname;
@@ -25,7 +26,7 @@ const alternateUrl =
       <a
         href={link.href}
         class="text-nimbel-muted text-base py-3 w-full border-b border-nimbel-muted/10"
-        aria-current={link.href === "#" ? "page" : undefined}
+        aria-current={currentPage === link.href ? "page" : undefined}
       >
         {link.label}
       </a>
@@ -35,7 +36,7 @@ const alternateUrl =
     {t("navbar", "cta")}
   </a>
   <!-- Language switcher -->
-  <div class="flex items-center gap-2 pt-2 text-sm font-medium" aria-label="Cambiar idioma">
+  <div class="flex items-center gap-2 pt-2 text-sm font-medium" aria-label={locale === "en" ? "Change language" : "Cambiar idioma"}>
     {locale === "es" ? (
       <span class="text-nimbel-text" aria-current="true">ES</span>
     ) : (

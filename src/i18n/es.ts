@@ -144,7 +144,7 @@ export const es = {
         name: "Pol Margaix",
         role: "Fundador de Analysta",
         quote:
-          "Lo que más nos sorprendió fue que siempre iban un paso por delante. No esperaban a que les dijeras qué hacer: proponen, anticipan problemas y nos dan claridad técnica cuando más la necesitámos. Gracias a eso hoy tenemos un producto que controlamos y podemos seguir desarrollando.",
+          "Lo que más nos sorprendió fue que siempre iban un paso por delante. No esperaban a que les dijeras qué hacer: proponen, anticipan problemas y nos dan claridad técnica cuando más la necesitamos. Gracias a eso hoy tenemos un producto que controlamos y podemos seguir desarrollando.",
         photoAlt: "Foto de Pol Margaix",
         photo: "/assets/Pol.jpg",
       },
@@ -220,16 +220,6 @@ export const es = {
     headlineHighlight: "gratuita",
     description:
       "Cuéntanos cómo trabajas, qué no funciona como debería y qué te gustaría controlar mejor. En 24 horas te decimos si podemos ayudarte y cómo.",
-    form: {
-      name: "Nombre",
-      namePlaceholder: "Tu nombre completo",
-      email: "Email",
-      emailPlaceholder: "tu@email.com",
-      message: "Cuéntanos sobre tu proyecto",
-      messagePlaceholder: "Cuéntanos sobre tu proyecto",
-      submit: "Enviar mensaje",
-      sending: "Enviando...",
-    },
     contactOptions: [
       {
         icon: "/assets/Mail.svg",
@@ -253,36 +243,6 @@ export const es = {
         external: true,
       },
     ],
-    errors: {
-      required: "Este campo es requerido",
-      invalidEmail: "El email no tiene un formato válido",
-      minLength: "Debe tener al menos {min} caracteres",
-      maxLength: "No puede superar los {max} caracteres",
-    },
-    success: {
-      title: "¡Mensaje enviado!",
-      message: "Gracias por contactarnos. Te respondemos en menos de 24 horas.",
-    },
-  },
-  form: {
-    errors: {
-      name: {
-        required: "El nombre es obligatorio",
-        minLength: "El nombre debe tener al menos 3 caracteres",
-        maxLength: "El nombre no puede exceder 100 caracteres",
-        pattern: "El nombre solo puede contener letras y espacios",
-      },
-      email: {
-        required: "El email es obligatorio",
-        email: "El email no es válido",
-      },
-      message: {
-        required: "El mensaje es obligatorio",
-        minLength: "El mensaje debe tener al menos 10 caracteres",
-        maxLength: "El mensaje no puede exceder 5000 caracteres",
-      },
-    },
-    success: "Mensaje enviado con éxito",
   },
   footer: {
     description: "Tu activo digital. Tu control. Tu equipo.",
@@ -293,7 +253,7 @@ export const es = {
       contact: "Contacto",
     },
     social: {
-      title: "Sígenos",
+      title: "Síguenos",
     },
     copyright: "© 2026 Nimbel Code LTD. Todos los derechos reservados.",
   },

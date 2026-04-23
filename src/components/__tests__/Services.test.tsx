@@ -1,6 +1,7 @@
 import { cleanup, render, screen } from "@testing-library/react";
 import React from "react";
 import { afterEach, describe, expect, it } from "vitest";
+import { es } from "@/i18n/es";
 
 // Since Services.astro is a static Astro component, we test the rendered
 // output by building an equivalent React representation of the static HTML
@@ -10,32 +11,11 @@ afterEach(() => cleanup());
 
 // ── Fixtures (mirror i18n data) ───────────────────────────────────────────────
 
-const mockServices = [
-  {
-    id: "dev-infrastructure",
-    title: "Desarrollo de aplicaciones e infrasctructura",
-    description:
-      "Construimos tu software desde cero y nos aseguramos de que funcione sin caídas, sea rápido y escale cuando tu negocio crezca.",
-  },
-  {
-    id: "ux-design",
-    title: "Diseño UX/UI",
-    description:
-      "Que sea bonito está bien. Que tu equipo lo use sin formación y sin frustraciones es lo que importa.",
-  },
-  {
-    id: "sales-automation",
-    title: "Vende más sin trabajar el doble",
-    description:
-      "Automatizamos tu proceso de ventas con IA: seguimientos, propuestas, captación. Para que ningún cliente potencial se pierda por falta de tiempo.",
-  },
-  {
-    id: "project-rescue",
-    title: "Rescate de proyectos tecnológicos",
-    description:
-      "¿Tu proyecto se quedó a medias, no funciona como esperabas o el proveedor anterior desapareció? Lo retomamos desde donde esté.",
-  },
-];
+const mockServices = es.services.items.map((item) => ({
+  id: item.id,
+  title: item.title,
+  description: item.shortDesc,
+}));
 
 // ── Static services list component (mirrors Services.astro structure) ─────────
 

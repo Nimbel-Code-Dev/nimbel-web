@@ -1,7 +1,7 @@
 import { describe, it, expect } from 'vitest';
-import { es } from './es';
-import { en } from './en';
-import { useTranslations } from './utils';
+import { es } from '@/i18n/es';
+import { en } from '@/i18n/en';
+import { useTranslations } from '@/i18n/utils';
 
 // ---------------------------------------------------------------------------
 // Helper: recursively collect all "leaf" key paths from an object
@@ -131,31 +131,6 @@ describe('i18n — stats section', () => {
     es.stats.items.forEach((esItem, i) => {
       expect(en.stats.items[i].value).toBe(esItem.value);
     });
-  });
-});
-
-// ---------------------------------------------------------------------------
-// Unit tests — contact section
-// ---------------------------------------------------------------------------
-describe('i18n — contact section', () => {
-  it('es contact form has all required keys', () => {
-    const { form, errors } = es.contact;
-    expect(form.name).toBeTruthy();
-    expect(form.email).toBeTruthy();
-    expect(form.message).toBeTruthy();
-    expect(form.submit).toBeTruthy();
-    expect(errors.required).toBeTruthy();
-    expect(errors.invalidEmail).toBeTruthy();
-  });
-
-  it('en contact form has all required keys', () => {
-    const { form, errors } = en.contact;
-    expect(form.name).toBeTruthy();
-    expect(form.email).toBeTruthy();
-    expect(form.message).toBeTruthy();
-    expect(form.submit).toBeTruthy();
-    expect(errors.required).toBeTruthy();
-    expect(errors.invalidEmail).toBeTruthy();
   });
 });
 

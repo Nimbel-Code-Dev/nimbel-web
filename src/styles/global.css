@@ -7,9 +7,13 @@
   --color-nimbel-muted: #e9e9e9;
   --color-nimbel-eyebrow: #edffd7;
   --color-nimbel-stats: #277380;
+  --color-nimbel-surface: #ffffff;
   --font-clash: "Instrument Sans", sans-serif;
   --font-display: "Clash Display", "Instrument Sans", sans-serif;
   --font-mortend: "Mortend", sans-serif;
+  --spacing-18: 4.5rem;
+  --container-8xl: 88rem;
+  --container-9xl: 96rem;
 }
 
 @font-face {

@@ -234,9 +234,7 @@ export default function Carousel({
   // translateX offset = -(currentIndex * (itemWidth + gap))
   // We express this as a calc() in CSS using percentage-based widths.
   const itemWidthPercent = 100 / itemsPerView;
-  const trackTranslateX = prefersReducedMotion
-    ? `calc(-${currentIndex} * (${itemWidthPercent}% + ${gap}px))`
-    : `calc(-${currentIndex} * (${itemWidthPercent}% + ${gap}px))`;
+  const trackTranslateX = `calc(-${currentIndex} * (${itemWidthPercent}% + ${gap}px))`;
 
   const transitionStyle = prefersReducedMotion ? "none" : "transform 300ms ease-out";
 
@@ -280,7 +278,7 @@ export default function Carousel({
       {showArrows && !isSingleItem && (
         <button
           type="button"
-          className="absolute left-0 top-1/2 -translate-y-1/2 -translate-x-1/2 z-10 flex items-center justify-center w-10 h-10 rounded-full bg-white/90 shadow-md text-gray-700 hover:bg-white focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-500 transition-all duration-200 disabled:opacity-30 disabled:cursor-not-allowed"
+          className="absolute left-0 top-1/2 -translate-y-1/2 -translate-x-1/2 z-10 flex items-center justify-center w-10 h-10 rounded-full bg-nimbel-text/90 shadow-md text-nimbel-bg hover:bg-nimbel-text focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-nimbel-accent transition-all duration-200 disabled:opacity-30 disabled:cursor-not-allowed"
           aria-label="Previous slide"
           onClick={() => {
             handlePrev();
@@ -295,7 +293,7 @@ export default function Carousel({
       {showArrows && !isSingleItem && (
         <button
           type="button"
-          className="absolute right-0 top-1/2 -translate-y-1/2 translate-x-1/2 z-10 flex items-center justify-center w-10 h-10 rounded-full bg-white/90 shadow-md text-gray-700 hover:bg-white focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-500 transition-all duration-200 disabled:opacity-30 disabled:cursor-not-allowed"
+          className="absolute right-0 top-1/2 -translate-y-1/2 translate-x-1/2 z-10 flex items-center justify-center w-10 h-10 rounded-full bg-nimbel-text/90 shadow-md text-nimbel-bg hover:bg-nimbel-text focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-nimbel-accent transition-all duration-200 disabled:opacity-30 disabled:cursor-not-allowed"
           aria-label="Next slide"
           onClick={() => {
             handleNext();
@@ -323,8 +321,8 @@ export default function Carousel({
               aria-current={i === currentIndex ? "true" : undefined}
               className={[
                 "w-2 h-2 rounded-full transition-all duration-200",
-                "focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-500",
-                i === currentIndex ? "bg-gray-800 scale-125" : "bg-gray-400",
+                "focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-nimbel-accent",
+                i === currentIndex ? "bg-nimbel-bg scale-125" : "bg-nimbel-muted",
               ].join(" ")}
               onClick={() => {
                 handleGoTo(i);

@@ -1,4 +1,5 @@
 import React, { useCallback, useEffect, useRef, useState } from "react";
+import type { Locale } from "@/i18n/utils";
 
 export interface CaseStudyItem {
   id: string;
@@ -12,7 +13,7 @@ export interface CaseStudyItem {
 
 interface Props {
   items: readonly CaseStudyItem[];
-  locale: string;
+  locale: Locale;
 }
 
 const AUTOPLAY_MS = 5000;
@@ -145,6 +146,7 @@ export default function CaseStudiesCarousel({ items, locale }: Props) {
                     alt={item.imgAlt}
                     className="w-full h-full object-cover"
                     loading="lazy"
+                    onError={(e) => { (e.target as HTMLImageElement).style.display = 'none'; }}
                   />
                 </div>
               </div>

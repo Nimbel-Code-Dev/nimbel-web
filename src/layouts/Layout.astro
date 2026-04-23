@@ -31,6 +31,17 @@ const backgroundMobile = await getImage({
 
 const canonicalURL = new URL(Astro.url.pathname, Astro.site);
 const ogImage = new URL("/og-image.png", Astro.site);
+
+const serviceTypes = lang === "en"
+  ? ["Mobile app development", "Web platform development", "UX/UI Design", "Technology consulting"]
+  : ["Desarrollo de aplicaciones móvil", "Desarrollo de plataformas web", "Diseño UX/UI", "Consultoría tecnológica"];
+
+const hreflangEs = lang === "es"
+  ? canonicalURL
+  : new URL(Astro.url.pathname.replace(/^\/en/, "") || "/", Astro.site);
+const hreflangEn = lang === "en"
+  ? canonicalURL
+  : new URL(`/en${Astro.url.pathname === "/" ? "" : Astro.url.pathname}`, Astro.site);
 ---
 
 <!doctype html>
@@ -46,8 +57,8 @@ const ogImage = new URL("/og-image.png", Astro.site);
     <link rel="canonical" href={canonicalURL} />
 
     <!-- hreflang -->
-    <link rel="alternate" hreflang="es" href={new URL("/", Astro.site)} />
-    <link rel="alternate" hreflang="en" href={new URL("/en", Astro.site)} />
+    <link rel="alternate" hreflang="es" href={hreflangEs} />
+    <link rel="alternate" hreflang="en" href={hreflangEn} />
     <link rel="alternate" hreflang="x-default" href={new URL("/", Astro.site)} />
 
     <!-- Open Graph -->
@@ -78,12 +89,7 @@ const ogImage = new URL("/og-image.png", Astro.site);
       "sameAs": [
         "https://www.linkedin.com/company/nimbel-code-apps/"
       ],
-      "serviceType": [
-        "Desarrollo de aplicaciones móvil",
-        "Desarrollo de plataformas web",
-        "Diseño UX/UI",
-        "Consultoría tecnológica"
-      ]
+      "serviceType": serviceTypes
     })} />
 
     <!-- Fonts -->
