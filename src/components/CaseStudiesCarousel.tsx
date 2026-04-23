@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useRef, useCallback } from "react";
+import React, { useCallback, useEffect, useRef, useState } from "react";
 
 export interface CaseStudyItem {
   id: string;
@@ -15,7 +15,7 @@ interface Props {
   locale: string;
 }
 
-const AUTOPLAY_MS = 6000;
+const AUTOPLAY_MS = 5000;
 
 function buildTitle(title: string, highlight: string): React.ReactNode {
   const idx = title.indexOf(highlight);
@@ -40,7 +40,8 @@ export default function CaseStudiesCarousel({ items, locale }: Props) {
   useEffect(() => {
     const mq = window.matchMedia("(prefers-reduced-motion: reduce)");
     setPrefersReducedMotion(mq.matches);
-    const handler = (e: MediaQueryListEvent) => setPrefersReducedMotion(e.matches);
+    const handler = (e: MediaQueryListEvent) =>
+      setPrefersReducedMotion(e.matches);
     mq.addEventListener("change", handler);
     return () => mq.removeEventListener("change", handler);
   }, []);
@@ -67,7 +68,7 @@ export default function CaseStudiesCarousel({ items, locale }: Props) {
       setCurrent((prev) =>
         dx < 0
           ? (prev + 1) % items.length
-          : (prev - 1 + items.length) % items.length
+          : (prev - 1 + items.length) % items.length,
       );
     }
   };
@@ -75,7 +76,9 @@ export default function CaseStudiesCarousel({ items, locale }: Props) {
   return (
     <div
       role="region"
-      aria-label={locale === "es" ? "Carrusel de casos de éxito" : "Case studies carousel"}
+      aria-label={
+        locale === "es" ? "Carrusel de casos de éxito" : "Case studies carousel"
+      }
       onMouseEnter={() => setPaused(true)}
       onMouseLeave={() => setPaused(false)}
       onTouchStart={handleTouchStart}
@@ -150,41 +153,74 @@ export default function CaseStudiesCarousel({ items, locale }: Props) {
         })}
       </div>
 
-      {/* Progress dots */}
-      <div
-        className="flex items-center justify-center gap-2 mt-10"
-        role="tablist"
-        aria-label={locale === "es" ? "Navegación de proyectos" : "Project navigation"}
-      >
-        {items.map((_, i) => (
-          <button
-            key={i}
-            type="button"
-            role="tab"
-            aria-label={`${locale === "es" ? "Proyecto" : "Project"} ${i + 1}`}
-            aria-current={i === current ? "true" : undefined}
-            onClick={() => goTo(i)}
-            className={[
-              "relative overflow-hidden rounded-full transition-all duration-300 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-nimbel-accent",
-              i === current
-                ? "w-8 h-2 bg-white/20"
-                : "w-2 h-2 bg-white/40 hover:bg-white/60",
-            ].join(" ")}
+      {/* Progress dots + pause indicator */}
+      <div className="flex items-center justify-center gap-4 mt-10">
+        <div
+          role="tablist"
+          aria-label={
+            locale === "es" ? "Navegación de proyectos" : "Project navigation"
+          }
+          className="flex items-center gap-2"
+        >
+          {items.map((_, i) => (
+            <button
+              key={i}
+              type="button"
+              role="tab"
+              aria-label={`${locale === "es" ? "Proyecto" : "Project"} ${i + 1}`}
+              aria-current={i === current ? "true" : undefined}
+              onClick={() => goTo(i)}
+              className={[
+                "relative overflow-hidden rounded-full transition-all duration-300 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-nimbel-accent",
+                i === current
+                  ? "w-8 h-2 bg-white/20"
+                  : "w-2 h-2 bg-white/40 hover:bg-white/60",
+              ].join(" ")}
+            >
+              {i === current && (
+                <span
+                  key={`fill-${current}`}
+                  className="absolute inset-0 bg-nimbel-accent origin-left rounded-full"
+                  style={{
+                    animation: prefersReducedMotion
+                      ? "none"
+                      : `case-studies-progress ${AUTOPLAY_MS}ms linear forwards`,
+                    animationPlayState: paused ? "paused" : "running",
+                  }}
+                />
+              )}
+            </button>
+          ))}
+        </div>
+
+        {/* Pause indicator — fades in on hover, fades out on leave */}
+        <div
+          aria-live="polite"
+          aria-label={
+            paused
+              ? locale === "es"
+                ? "Carrusel pausado"
+                : "Carousel paused"
+              : undefined
+          }
+          className={[
+            "flex items-center gap-1.5 text-nimbel-muted/50 text-xs transition-opacity duration-300 select-none",
+            paused ? "opacity-100" : "opacity-0",
+          ].join(" ")}
+        >
+          {/* Pause icon */}
+          <svg
+            width="8"
+            height="10"
+            viewBox="0 0 8 10"
+            fill="currentColor"
+            aria-hidden="true"
           >
-            {i === current && (
-              <span
-                key={`fill-${current}`}
-                className="absolute inset-0 bg-nimbel-accent origin-left rounded-full"
-                style={{
-                  animation: prefersReducedMotion
-                    ? "none"
-                    : `case-studies-progress ${AUTOPLAY_MS}ms linear forwards`,
-                  animationPlayState: paused ? "paused" : "running",
-                }}
-              />
-            )}
-          </button>
-        ))}
+            <rect x="0" y="0" width="2.5" height="10" rx="1" />
+            <rect x="5.5" y="0" width="2.5" height="10" rx="1" />
+          </svg>
+          <span>{locale === "es" ? "pausado" : "paused"}</span>
+        </div>
       </div>
     </div>
   );
