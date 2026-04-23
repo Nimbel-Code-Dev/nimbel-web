@@ -204,7 +204,7 @@ export default function CaseStudiesCarousel({ items, locale }: Props) {
               : undefined
           }
           className={[
-            "flex items-center gap-1.5 text-nimbel-muted/50 text-xs transition-opacity duration-300 select-none",
+            "hidden md:flex items-center gap-1.5 text-nimbel-muted/50 text-xs transition-opacity duration-300 select-none",
             paused ? "opacity-100" : "opacity-0",
           ].join(" ")}
         >
