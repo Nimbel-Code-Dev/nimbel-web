@@ -41,6 +41,11 @@
          transition-opacity hover:opacity-80 whitespace-nowrap;
 }
 
+@keyframes case-studies-progress {
+  from { transform: scaleX(0); }
+  to   { transform: scaleX(1); }
+}
+
 @keyframes marquee {
   0% {
     transform: translateX(0);

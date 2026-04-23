@@ -96,8 +96,7 @@ export const en = {
       },
       {
         id: "innocard",
-        title:
-          "Innocard, create, customize and share your entire personal and corporate identity in one gesture",
+        title: "Innocard, your digital identity in one gesture",
         titleHighlight: "Innocard",
         description:
           "Platform that allows you to create personalized digital business cards.",

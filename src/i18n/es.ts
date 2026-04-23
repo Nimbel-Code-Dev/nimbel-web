@@ -96,8 +96,7 @@ export const es = {
       },
       {
         id: "innocard",
-        title:
-          "Innocard, crea, personaliza y comparte toda tu identidad personal y corporativa en un solo gesto",
+        title: "Innocard, tu identidad digital en un solo gesto",
         titleHighlight: "Innocard",
         description:
           "Plataforma que permite crear tarjetas de presentación digitales personalizadas.",

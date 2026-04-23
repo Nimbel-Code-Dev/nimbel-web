@@ -1,5 +1,4 @@
-import React from "react";
-import Carousel from "@/components/Carousel";
+import React, { useState, useEffect, useRef, useCallback } from "react";
 
 export interface CaseStudyItem {
   id: string;
@@ -11,16 +10,16 @@ export interface CaseStudyItem {
   imgAlt: string;
 }
 
-interface CaseStudiesCarouselProps {
+interface Props {
   items: readonly CaseStudyItem[];
   locale: string;
 }
 
+const AUTOPLAY_MS = 6000;
+
 function buildTitle(title: string, highlight: string): React.ReactNode {
   const idx = title.indexOf(highlight);
-  if (idx === -1) {
-    return <span>{title}</span>;
-  }
+  if (idx === -1) return <span>{title}</span>;
   const before = title.slice(0, idx);
   const after = title.slice(idx + highlight.length);
   return (
@@ -32,63 +31,161 @@ function buildTitle(title: string, highlight: string): React.ReactNode {
   );
 }
 
-function CaseStudySlide({ item }: { item: CaseStudyItem }) {
-  const imgSrc = `/assets/${item.id}-app.png`;
+export default function CaseStudiesCarousel({ items, locale }: Props) {
+  const [current, setCurrent] = useState(0);
+  const [paused, setPaused] = useState(false);
+  const [prefersReducedMotion, setPrefersReducedMotion] = useState(false);
+  const touchStartXRef = useRef(0);
+
+  useEffect(() => {
+    const mq = window.matchMedia("(prefers-reduced-motion: reduce)");
+    setPrefersReducedMotion(mq.matches);
+    const handler = (e: MediaQueryListEvent) => setPrefersReducedMotion(e.matches);
+    mq.addEventListener("change", handler);
+    return () => mq.removeEventListener("change", handler);
+  }, []);
+
+  // Including `current` in deps resets the interval on every slide change,
+  // keeping the progress dot animation in sync.
+  useEffect(() => {
+    if (paused || prefersReducedMotion) return;
+    const id = setInterval(() => {
+      setCurrent((prev) => (prev + 1) % items.length);
+    }, AUTOPLAY_MS);
+    return () => clearInterval(id);
+  }, [current, paused, prefersReducedMotion, items.length]);
+
+  const goTo = useCallback((index: number) => setCurrent(index), []);
+
+  const handleTouchStart = (e: React.TouchEvent) => {
+    touchStartXRef.current = e.touches[0].clientX;
+  };
+
+  const handleTouchEnd = (e: React.TouchEvent) => {
+    const dx = e.changedTouches[0].clientX - touchStartXRef.current;
+    if (Math.abs(dx) > 40) {
+      setCurrent((prev) =>
+        dx < 0
+          ? (prev + 1) % items.length
+          : (prev - 1 + items.length) % items.length
+      );
+    }
+  };
 
   return (
-    <div className="flex flex-col lg:flex-row items-center gap-8 lg:gap-12 w-full px-6 lg:px-12 py-8">
-      {/* Text side */}
-      <div className="flex flex-col gap-6 lg:w-1/2 order-2 lg:order-1">
-        <h3 className="font-display font-semibold text-2xl sm:text-3xl lg:text-4xl text-nimbel-text leading-tight">
-          {buildTitle(item.title, item.titleHighlight)}
-        </h3>
-        <p className="text-nimbel-muted text-base lg:text-lg leading-relaxed">
-          {item.description}
-        </p>
-        <div>
-          <a
-            href={item.href}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="btn-primary uppercase tracking-wide text-sm"
-          >
-            {item.cta}
-          </a>
-        </div>
+    <div
+      role="region"
+      aria-label={locale === "es" ? "Carrusel de casos de éxito" : "Case studies carousel"}
+      onMouseEnter={() => setPaused(true)}
+      onMouseLeave={() => setPaused(false)}
+      onTouchStart={handleTouchStart}
+      onTouchEnd={handleTouchEnd}
+    >
+      {/*
+        CSS grid stacking: all slides share the same grid area so the container
+        is always as tall as the tallest slide. Visibility is controlled via
+        opacity only — no layout shifts, ever.
+      */}
+      <div style={{ display: "grid", gridTemplateAreas: '"stack"' }}>
+        {items.map((item, i) => {
+          const isActive = i === current;
+          const imgSrc = `/assets/${item.id}-app.png`;
+
+          return (
+            <div
+              key={item.id}
+              style={{ gridArea: "stack" }}
+              className={[
+                "transition-opacity duration-500",
+                isActive ? "opacity-100" : "opacity-0",
+              ].join(" ")}
+              aria-hidden={isActive ? undefined : true}
+              // inert prevents focus/interaction on hidden slides (React 19)
+              {...(!isActive ? { inert: true } : {})}
+            >
+              <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-16 items-center">
+                {/* Left: text */}
+                <div className="flex flex-col gap-6 lg:gap-8">
+                  <h3 className="font-mortend text-3xl sm:text-4xl xl:text-5xl font-bold text-nimbel-text uppercase leading-tight">
+                    {buildTitle(item.title, item.titleHighlight)}
+                  </h3>
+                  <p className="text-nimbel-muted text-base lg:text-lg leading-relaxed">
+                    {item.description}
+                  </p>
+                  <a
+                    href={item.href}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="btn-primary flex items-center justify-center gap-3 uppercase tracking-widest py-5"
+                  >
+                    <span>{item.cta}</span>
+                    <svg
+                      width="18"
+                      height="18"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      strokeWidth="2.5"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      aria-hidden="true"
+                    >
+                      <path d="M7 17L17 7M17 7H7M17 7v10" />
+                    </svg>
+                  </a>
+                </div>
+
+                {/* Right: image */}
+                <div className="w-full aspect-[4/3] lg:aspect-[3/2] overflow-hidden rounded-lg">
+                  <img
+                    src={imgSrc}
+                    alt={item.imgAlt}
+                    className="w-full h-full object-cover"
+                    loading="lazy"
+                  />
+                </div>
+              </div>
+            </div>
+          );
+        })}
       </div>
 
-      {/* Image side */}
-      <div className="lg:w-1/2 order-1 lg:order-2 w-full">
-        <img
-          src={imgSrc}
-          alt={item.imgAlt}
-          className="w-full h-auto rounded-xl object-cover shadow-lg"
-          loading="lazy"
-        />
+      {/* Progress dots */}
+      <div
+        className="flex items-center justify-center gap-2 mt-10"
+        role="tablist"
+        aria-label={locale === "es" ? "Navegación de proyectos" : "Project navigation"}
+      >
+        {items.map((_, i) => (
+          <button
+            key={i}
+            type="button"
+            role="tab"
+            aria-label={`${locale === "es" ? "Proyecto" : "Project"} ${i + 1}`}
+            aria-current={i === current ? "true" : undefined}
+            onClick={() => goTo(i)}
+            className={[
+              "relative overflow-hidden rounded-full transition-all duration-300 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-nimbel-accent",
+              i === current
+                ? "w-8 h-2 bg-white/20"
+                : "w-2 h-2 bg-white/40 hover:bg-white/60",
+            ].join(" ")}
+          >
+            {i === current && (
+              <span
+                key={`fill-${current}`}
+                className="absolute inset-0 bg-nimbel-accent origin-left rounded-full"
+                style={{
+                  animation: prefersReducedMotion
+                    ? "none"
+                    : `case-studies-progress ${AUTOPLAY_MS}ms linear forwards`,
+                  animationPlayState: paused ? "paused" : "running",
+                }}
+              />
+            )}
+          </button>
+        ))}
       </div>
     </div>
-  );
-}
-
-export default function CaseStudiesCarousel({
-  items,
-  locale,
-}: CaseStudiesCarouselProps) {
-  const slides: React.ReactNode[] = items.map((item) => (
-    <CaseStudySlide key={item.id} item={item} />
-  ));
-
-  return (
-    <Carousel
-      items={slides}
-      autoplay={true}
-      autoplayInterval={6000}
-      showDots={true}
-      showArrows={true}
-      loop={true}
-      itemsPerView={{ mobile: 1, tablet: 1, desktop: 1 }}
-      gap={{ mobile: 0, tablet: 0, desktop: 0 }}
-      label={locale === "es" ? "Carrusel de casos de éxito" : "Case studies carousel"}
-    />
   );
 }
