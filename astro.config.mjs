@@ -5,7 +5,7 @@ import { defineConfig } from "astro/config";
 import path from "node:path";
 
 export default defineConfig({
-  site: "https://nimbel-web.vercel.app",
+  site: "https://www.nimbel.net",
   integrations: [sitemap(), react()],
   i18n: {
     defaultLocale: "es",

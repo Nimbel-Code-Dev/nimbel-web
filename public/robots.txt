@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://nimbel-web.vercel.app/sitemap-index.xml
+Sitemap: https://www.nimbel.net/sitemap-index.xml
