@@ -195,16 +195,16 @@ describe('useTranslations hook — integration', () => {
 
   it('works with team section — en', () => {
     const t = useTranslations('en');
-    expect(t('team', 'headline')).toBe('MEET OUR TEAM');
+    expect(t('team', 'headline')).toBe('Our software development team');
   });
 
   it('works with caseStudies section — es', () => {
     const t = useTranslations('es');
-    expect(t('caseStudies', 'headline')).toBe('PROYECTOS DESTACADOS');
+    expect(t('caseStudies', 'headline')).toBe('Proyectos de desarrollo web y móvil destacados');
   });
 
   it('works with clients section — en', () => {
     const t = useTranslations('en');
-    expect(t('clients', 'headline')).toBe('Trusted by');
+    expect(t('clients', 'headline')).toBe('Companies that trust us');
   });
 });
