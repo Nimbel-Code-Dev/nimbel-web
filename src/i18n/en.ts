@@ -1,8 +1,8 @@
 export const en = {
   meta: {
-    title: "Nimbel CODE - Develop your digital asset.",
+    title: "Nimbel Code | Custom AI Software Development · Barcelona",
     description:
-      "Custom software with AI. We build your digital system together with you — no licenses, no dependencies, no being held hostage by anyone.",
+      "We build custom AI-powered software for businesses. Web apps, mobile apps and digital platforms you own. No licenses, no dependencies. Barcelona.",
   },
   navbar: {
     about: "About us",
@@ -18,7 +18,7 @@ export const en = {
     imgAlt: "Nimbel app preview",
   },
   clients: {
-    headline: "Trusted by",
+    headline: "Companies that trust us",
     ariaLabel: "Client logos carousel",
   },
   services: {
@@ -71,7 +71,7 @@ export const en = {
     ],
   },
   caseStudies: {
-    headline: "FEATURED PROJECTS",
+    headline: "Featured web and mobile development projects",
     ariaLabel: "Case studies carousel",
     items: [
       {
@@ -151,7 +151,7 @@ export const en = {
     ],
   },
   team: {
-    headline: "MEET OUR TEAM",
+    headline: "Our software development team",
     headlineHighlight: "TEAM",
     ariaLabel: "Nimbel Code team",
     linkedinAriaLabel: "LinkedIn of",

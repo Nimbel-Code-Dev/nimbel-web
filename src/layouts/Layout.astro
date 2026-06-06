@@ -33,15 +33,49 @@ const canonicalURL = new URL(Astro.url.pathname, Astro.site);
 const ogImage = new URL("/og-image.png", Astro.site);
 
 const serviceTypes = lang === "en"
-  ? ["Mobile app development", "Web platform development", "UX/UI Design", "Technology consulting"]
-  : ["Desarrollo de aplicaciones móvil", "Desarrollo de plataformas web", "Diseño UX/UI", "Consultoría tecnológica"];
+  ? [
+      "Custom web application development",
+      "Mobile app development",
+      "Web platform development",
+      "UX/UI Design",
+      "Technology consulting",
+      "AI software development",
+    ]
+  : [
+      "Desarrollo de aplicaciones web a medida",
+      "Desarrollo de aplicaciones móvil",
+      "Desarrollo de plataformas web",
+      "Diseño UX/UI",
+      "Consultoría tecnológica",
+      "Desarrollo de software con IA",
+    ];
+
+const schema = {
+  "@context": "https://schema.org",
+  "@type": "ProfessionalService",
+  "name": "Nimbel Code",
+  "url": "https://www.nimbel.net",
+  "description": description,
+  "logo": "https://www.nimbel.net/assets/Nimbel%20Logo.svg",
+  "email": "ruben@nimbel.net",
+  "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "Barcelona",
+    "addressCountry": "ES",
+  },
+  "areaServed": ["ES", "Latinoamérica"],
+  "sameAs": [
+    "https://www.linkedin.com/company/nimbel-code-apps/",
+  ],
+  "serviceType": serviceTypes,
+};
 
 const hreflangEs = lang === "es"
   ? canonicalURL
   : new URL(Astro.url.pathname.replace(/^\/en/, "") || "/", Astro.site);
 const hreflangEn = lang === "en"
   ? canonicalURL
-  : new URL(`/en${Astro.url.pathname === "/" ? "" : Astro.url.pathname}`, Astro.site);
+  : new URL(`/en${Astro.url.pathname === "/" ? "/" : Astro.url.pathname}`, Astro.site);
 ---
 
 <!doctype html>
@@ -78,19 +112,7 @@ const hreflangEn = lang === "en"
     <meta name="twitter:image" content={ogImage} />
 
     <!-- JSON-LD -->
-    <script type="application/ld+json" set:html={JSON.stringify({
-      "@context": "https://schema.org",
-      "@type": "ProfessionalService",
-      "name": "Nimbel Code",
-      "url": Astro.site,
-      "description": description,
-      "logo": new URL("/assets/Nimbel Logo.svg", Astro.site),
-      "email": "ruben@nimbel.net",
-      "sameAs": [
-        "https://www.linkedin.com/company/nimbel-code-apps/"
-      ],
-      "serviceType": serviceTypes
-    })} />
+    <script type="application/ld+json" set:html={JSON.stringify(schema, null, 2)} />
 
     <!-- Fonts -->
     <link rel="dns-prefetch" href="https://fonts.googleapis.com" />

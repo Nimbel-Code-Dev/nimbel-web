@@ -1,8 +1,8 @@
 export const es = {
   meta: {
-    title: "Nimbel CODE - Desarrolla tu activo digital.",
+    title: "Nimbel Code | Software a medida con IA · Barcelona",
     description:
-      "Software a medida con IA. Construimos junto a ti un sistema digital que es tuyo: sin licencias, sin dependencias, sin quedar rehenes de nadie.",
+      "Desarrollamos software a medida con IA integrada para empresas. Aplicaciones web, móvil y plataformas digitales propias. Sin licencias, sin dependencias. Barcelona.",
   },
   navbar: {
     about: "Sobre nosotros",
@@ -18,7 +18,7 @@ export const es = {
     imgAlt: "Nimbel app preview",
   },
   clients: {
-    headline: "Confían en nosotros",
+    headline: "Empresas que confían en nosotros",
     ariaLabel: "Carrusel de logos de clientes",
   },
   services: {
@@ -71,7 +71,7 @@ export const es = {
     ],
   },
   caseStudies: {
-    headline: "PROYECTOS DESTACADOS",
+    headline: "Proyectos de desarrollo web y móvil destacados",
     ariaLabel: "Carrusel de casos de éxito",
     items: [
       {
@@ -151,7 +151,7 @@ export const es = {
     ],
   },
   team: {
-    headline: "CONOCE A NUESTRO EQUIPO",
+    headline: "Nuestro equipo de desarrollo de software",
     headlineHighlight: "EQUIPO",
     ariaLabel: "Equipo de Nimbel Code",
     linkedinAriaLabel: "LinkedIn de",
