@@ -18,7 +18,7 @@ export const es = {
     imgAlt: "Nimbel app preview",
   },
   clients: {
-    headline: "Empresas que confían en nosotros",
+    headline: "Confían en nosotros",
     ariaLabel: "Carrusel de logos de clientes",
   },
   services: {

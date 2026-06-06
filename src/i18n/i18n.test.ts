@@ -205,6 +205,6 @@ describe('useTranslations hook — integration', () => {
 
   it('works with clients section — en', () => {
     const t = useTranslations('en');
-    expect(t('clients', 'headline')).toBe('Companies that trust us');
+    expect(t('clients', 'headline')).toBe('Trusted by');
   });
 });
