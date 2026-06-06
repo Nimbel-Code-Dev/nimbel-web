@@ -7,12 +7,14 @@ export type Props = {
   title?: string;
   description?: string;
   lang?: string;
+  robots?: string;
 };
 
 const {
   title = "Nimbel CODE",
   description = "Tendrás la flexibilidad de un freelance y la seriedad de una consultora. Desarrollamos tu aplicación con calidad, personalización y a un coste razonable.",
   lang = "es",
+  robots = "index, follow",
 } = Astro.props;
 
 const backgroundDesktop = await getImage({
@@ -85,6 +87,7 @@ const hreflangEn = lang === "en"
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="icon" type="image/svg+xml" href="/assets/favicon.svg" />
     <meta name="description" content={description} />
+    <meta name="robots" content={robots} />
     <title>{title}</title>
 
     <!-- Canonical -->
