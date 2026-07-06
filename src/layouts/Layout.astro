@@ -34,50 +34,54 @@ const backgroundMobile = await getImage({
 const canonicalURL = new URL(Astro.url.pathname, Astro.site);
 const ogImage = new URL("/og-image.png", Astro.site);
 
-const serviceTypes = lang === "en"
-  ? [
-      "Custom web application development",
-      "Mobile app development",
-      "Web platform development",
-      "UX/UI Design",
-      "Technology consulting",
-      "AI software development",
-    ]
-  : [
-      "Desarrollo de aplicaciones web a medida",
-      "Desarrollo de aplicaciones móvil",
-      "Desarrollo de plataformas web",
-      "Diseño UX/UI",
-      "Consultoría tecnológica",
-      "Desarrollo de software con IA",
-    ];
+const serviceTypes =
+  lang === "en"
+    ? [
+        "Custom web application development",
+        "Mobile app development",
+        "Web platform development",
+        "UX/UI Design",
+        "Technology consulting",
+        "AI software development",
+      ]
+    : [
+        "Desarrollo de aplicaciones web a medida",
+        "Desarrollo de aplicaciones móvil",
+        "Desarrollo de plataformas web",
+        "Diseño UX/UI",
+        "Consultoría tecnológica",
+        "Desarrollo de software con IA",
+      ];
 
 const schema = {
   "@context": "https://schema.org",
   "@type": "ProfessionalService",
-  "name": "Nimbel Code",
-  "url": "https://www.nimbel.net",
-  "description": description,
-  "logo": "https://www.nimbel.net/assets/Nimbel%20Logo.svg",
-  "email": "ruben@nimbel.net",
-  "address": {
+  name: "Nimbel Code",
+  url: "https://www.nimbel.net",
+  description: description,
+  logo: "https://www.nimbel.net/assets/Nimbel%20Logo.svg",
+  email: "ruben@nimbel.net",
+  address: {
     "@type": "PostalAddress",
-    "addressLocality": "Barcelona",
-    "addressCountry": "ES",
+    addressLocality: "Barcelona",
+    addressCountry: "ES",
   },
-  "areaServed": ["ES", "Latinoamérica"],
-  "sameAs": [
-    "https://www.linkedin.com/company/nimbel-code-apps/",
-  ],
-  "serviceType": serviceTypes,
+  areaServed: ["ES", "Latinoamérica"],
+  sameAs: ["https://www.linkedin.com/company/nimbel-code-apps/"],
+  serviceType: serviceTypes,
 };
 
-const hreflangEs = lang === "es"
-  ? canonicalURL
-  : new URL(Astro.url.pathname.replace(/^\/en/, "") || "/", Astro.site);
-const hreflangEn = lang === "en"
-  ? canonicalURL
-  : new URL(`/en${Astro.url.pathname === "/" ? "/" : Astro.url.pathname}`, Astro.site);
+const hreflangEs =
+  lang === "es"
+    ? canonicalURL
+    : new URL(Astro.url.pathname.replace(/^\/en/, "") || "/", Astro.site);
+const hreflangEn =
+  lang === "en"
+    ? canonicalURL
+    : new URL(
+        `/en${Astro.url.pathname === "/" ? "/" : Astro.url.pathname}`,
+        Astro.site,
+      );
 ---
 
 <!doctype html>
@@ -96,7 +100,11 @@ const hreflangEn = lang === "en"
     <!-- hreflang -->
     <link rel="alternate" hreflang="es" href={hreflangEs} />
     <link rel="alternate" hreflang="en" href={hreflangEn} />
-    <link rel="alternate" hreflang="x-default" href={new URL("/", Astro.site)} />
+    <link
+      rel="alternate"
+      hreflang="x-default"
+      href={new URL("/", Astro.site)}
+    />
 
     <!-- Open Graph -->
     <meta property="og:type" content="website" />
@@ -106,7 +114,10 @@ const hreflangEn = lang === "en"
     <meta property="og:image" content={ogImage} />
     <meta property="og:site_name" content="Nimbel Code" />
     <meta property="og:locale" content={lang === "en" ? "en_US" : "es_ES"} />
-    <meta property="og:locale:alternate" content={lang === "en" ? "es_ES" : "en_US"} />
+    <meta
+      property="og:locale:alternate"
+      content={lang === "en" ? "es_ES" : "en_US"}
+    />
 
     <!-- Twitter / X -->
     <meta name="twitter:card" content="summary_large_image" />
@@ -115,7 +126,19 @@ const hreflangEn = lang === "en"
     <meta name="twitter:image" content={ogImage} />
 
     <!-- JSON-LD -->
-    <script type="application/ld+json" set:html={JSON.stringify(schema, null, 2)} />
+    <script
+      type="application/ld+json"
+      set:html={JSON.stringify(schema, null, 2)}
+    />
+
+    <!-- Start of HubSpot Embed Code -->
+    <script
+      type="text/javascript"
+      id="hs-script-loader"
+      async
+      defer
+      src="//js-na1.hs-scripts.com/51196399.js"></script>
+    <!-- End of HubSpot Embed Code -->
 
     <!-- Fonts -->
     <link rel="dns-prefetch" href="https://fonts.googleapis.com" />
@@ -124,11 +147,34 @@ const hreflangEn = lang === "en"
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 
     <!-- Preload critical assets -->
-    <link rel="preload" as="image" href={backgroundDesktop.src} fetchpriority="high" media="(min-width: 768px)" />
-    <link rel="preload" as="image" href={backgroundMobile.src} fetchpriority="high" media="(max-width: 767px)" />
-    <link rel="preload" as="font" type="font/woff2" href="/fonts/mortend-mortend-regular-400.woff2" crossorigin />
+    <link
+      rel="preload"
+      as="image"
+      href={backgroundDesktop.src}
+      fetchpriority="high"
+      media="(min-width: 768px)"
+    />
+    <link
+      rel="preload"
+      as="image"
+      href={backgroundMobile.src}
+      fetchpriority="high"
+      media="(max-width: 767px)"
+    />
+    <link
+      rel="preload"
+      as="font"
+      type="font/woff2"
+      href="/fonts/mortend-mortend-regular-400.woff2"
+      crossorigin
+    />
 
-    <style define:vars={{ backgroundDesktop: `url(${backgroundDesktop.src})`, backgroundMobile: `url(${backgroundMobile.src})` }}>
+    <style
+      define:vars={{
+        backgroundDesktop: `url(${backgroundDesktop.src})`,
+        backgroundMobile: `url(${backgroundMobile.src})`,
+      }}
+    >
       @media (max-width: 767px) {
         body {
           background-image: var(--backgroundMobile);
@@ -141,9 +187,17 @@ const hreflangEn = lang === "en"
       }
     </style>
 
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Instrument+Sans:wght@400;500;600;700&display=swap" media="print" onload="this.media='all'" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Instrument+Sans:wght@400;500;600;700&display=swap"
+      media="print"
+      onload="this.media='all'"
+    />
     <noscript>
-      <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Instrument+Sans:wght@400;500;600;700&display=swap" />
+      <link
+        rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Instrument+Sans:wght@400;500;600;700&display=swap"
+      />
     </noscript>
   </head>
   <body>
