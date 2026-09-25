@@ -174,12 +174,28 @@ export const es = {
           "Foto de Giampiero Fermini, Full Stack Developer de Nimbel Code",
       },
       {
+        id: "albert-sune",
+        name: "Albert Suñé",
+        role: "Full Stack Developer",
+        photo: "/assets/Albert.jpg",
+        linkedin: "https://www.linkedin.com/in/albertsube/",
+        photoAlt: "Foto de Albert Suñé, Full Stack Developer de Nimbel Code",
+      },
+      {
         id: "maribel-rodriguez",
         name: "Maribel Rodríguez",
         role: "UX/UI Designer",
         photo: "/assets/Maribel.jpg",
         linkedin: "https://www.linkedin.com/in/marrodgar/",
         photoAlt: "Foto de Maribel Rodríguez, UX/UI Designer de Nimbel Code",
+      },
+      {
+        id: "sol-lavisse",
+        name: "Sol Lavisse",
+        role: "Growth Manager",
+        photo: "/assets/Sol.jpg",
+        linkedin: "https://www.linkedin.com/in/sollavisse/",
+        photoAlt: "Foto de Sol Lavisse, Growth Manager de Nimbel Code",
       },
       {
         id: "diana-guirado",
@@ -197,14 +213,6 @@ export const es = {
         linkedin: "https://www.linkedin.com/in/clara-guirado-10026541/",
         photoAlt:
           "Foto de Clara Guirado, Operations Coordinator de Nimbel Code",
-      },
-      {
-        id: "sol-lavisse",
-        name: "Sol Lavisse",
-        role: "Growth Manager",
-        photo: "/assets/Sol.jpg",
-        linkedin: "https://www.linkedin.com/in/sollavisse/",
-        photoAlt: "Foto de Sol Lavisse, Growth Manager de Nimbel Code",
       },
     ],
   },
