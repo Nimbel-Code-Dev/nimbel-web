@@ -168,7 +168,7 @@ export const en = {
         id: "giampiero-fermini",
         name: "Giampiero Fermini",
         role: "Full Stack Developer",
-        photo: "/assets/Giampiero.png",
+        photo: "/assets/Giampiero.jpg",
         linkedin: "https://www.linkedin.com/in/fc-giampiero/",
         photoAlt:
           "Photo of Giampiero Fermini, Full Stack Developer at Nimbel Code",
@@ -193,7 +193,7 @@ export const en = {
         id: "sol-lavisse",
         name: "Sol Lavisse",
         role: "Growth Manager",
-        photo: "/assets/Sol.jpg",
+        photo: "/assets/Sol.jpg?v=2",
         linkedin: "https://www.linkedin.com/in/sollavisse/",
         photoAlt: "Photo of Sol Lavisse, Growth Manager at Nimbel Code",
       },
