@@ -22,12 +22,90 @@ export function getStaticPaths() {
 
 const locale = (Astro.currentLocale ?? "es") as Locale;
 const t = useTranslations(locale);
+
+const isEn = locale === "en";
+
+const schema = {
+  "@context": "https://schema.org",
+  "@type": "ProfessionalService",
+  "@id": "https://www.nimbel.net/#organization",
+  name: "Nimbel Code",
+  alternateName: ["Nimbel", "Nimbel Code Apps"],
+  url: "https://www.nimbel.net/",
+  logo: "https://www.nimbel.net/assets/nimbel-logo.png",
+  image: "https://www.nimbel.net/assets/nimbel-logo.png",
+  description: isEn
+    ? "Nimbel Code is a custom software development company specialising in healthcare and artificial intelligence: web and mobile apps and digital platforms for clinics, hospitals and medtech."
+    : "Nimbel Code es una empresa de desarrollo de software a medida especializada en salud e inteligencia artificial: aplicaciones web, móviles y plataformas digitales para clínicas, hospitales y medtech.",
+  foundingDate: "2020-04",
+  founder: {
+    "@type": "Person",
+    name: "Rubén Sahagún",
+    jobTitle: "CEO",
+    sameAs: "https://www.linkedin.com/in/ruben1/",
+  },
+  email: "ruben@nimbel.net",
+  telephone: "+34666969374",
+  address: {
+    "@type": "PostalAddress",
+    addressLocality: "Barcelona",
+    addressRegion: "Cataluña",
+    addressCountry: "ES",
+  },
+  areaServed: ["ES", "IE", "MX", "AR", "CO", "CL"],
+  openingHoursSpecification: {
+    "@type": "OpeningHoursSpecification",
+    dayOfWeek: ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+    opens: "09:00",
+    closes: "18:00",
+  },
+  hasMap: "https://maps.google.com/?cid=1064071797735352286",
+  sameAs: [
+    "https://maps.google.com/?cid=1064071797735352286",
+    "https://www.linkedin.com/company/nimbel-code-apps/",
+    "https://www.instagram.com/nimbelcode.tech/",
+    "https://www.tiktok.com/@nimbelcode",
+  ],
+  knowsAbout: isEn
+    ? [
+        "Custom software development",
+        "Artificial intelligence",
+        "Healthcare software",
+        "Mobile applications",
+        "UX/UI design",
+      ]
+    : [
+        "Desarrollo de software a medida",
+        "Inteligencia artificial",
+        "Software sanitario",
+        "Aplicaciones móviles",
+        "Diseño UX/UI",
+      ],
+  serviceType: isEn
+    ? [
+        "AI software development",
+        "Software for clinics, hospitals and medtech",
+        "Custom web application development",
+        "Mobile app development",
+        "UX/UI design for apps and websites",
+        "Technology consulting",
+      ]
+    : [
+        "Desarrollo de software con inteligencia artificial",
+        "Software para clínicas, hospitales y medtech",
+        "Desarrollo de aplicaciones web a medida",
+        "Desarrollo de aplicaciones móviles",
+        "Diseño UX/UI de apps y webs",
+        "Consultoría tecnológica",
+      ],
+};
 ---
 
 <Layout
   title={t("meta", "title")}
   description={t("meta", "description")}
   lang={locale}
+  schema={schema}
 >
   <header>
     <Navbar currentPage="/" locale={locale} />
