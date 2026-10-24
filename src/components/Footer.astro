@@ -16,7 +16,10 @@ const nav = t("footer", "nav") as {
   contact: string;
 };
 const social = t("footer", "social") as { title: string };
-const copyright = t("footer", "copyright") as string;
+const copyright = (t("footer", "copyright") as string).replace(
+  "{year}",
+  String(new Date().getFullYear()),
+);
 
 const privacyLink = locale === "en" ? "/en/privacidad" : "/privacidad";
 const privacyLabel = locale === "en" ? "Privacy policy" : "Política de privacidad";
