@@ -6,7 +6,11 @@ import path from "node:path";
 
 export default defineConfig({
   site: "https://www.nimbel.net",
-  integrations: [sitemap(), react()],
+  integrations: [
+    // privacidad es noindex: no debe aparecer en el sitemap
+    sitemap({ filter: (page) => !page.includes("/privacidad") }),
+    react(),
+  ],
   i18n: {
     defaultLocale: "es",
     locales: ["es", "en"],
