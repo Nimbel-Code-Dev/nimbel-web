@@ -15,11 +15,12 @@ export const en = {
     description:
       "AI integrated with your systems, custom and proprietary development. With our technical support at every step.",
     cta: "SCHEDULE A CONSULTATION",
-    imgAlt: "Nimbel app preview",
+    imgAlt: "Repsol Toyota Rally Team and Famba apps built by Nimbel",
   },
   clients: {
     headline: "Trusted by",
     ariaLabel: "Client logos carousel",
+    logoAlt: "{name} logo",
   },
   services: {
     headline:

@@ -15,11 +15,12 @@ export const es = {
     description:
       "IA integrada con tus sistemas, desarrollo propio y a medida. Con nuestro respaldo técnico en cada paso.",
     cta: "AGENDAR ASESORAMIENTO",
-    imgAlt: "Nimbel app preview",
+    imgAlt: "Apps de Repsol Toyota Rally Team y Famba desarrolladas por Nimbel",
   },
   clients: {
     headline: "Confían en nosotros",
     ariaLabel: "Carrusel de logos de clientes",
+    logoAlt: "Logo de {name}",
   },
   services: {
     headline:
