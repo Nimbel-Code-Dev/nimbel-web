@@ -264,6 +264,6 @@ export const es = {
     social: {
       title: "Síguenos",
     },
-    copyright: "© {year} NIMBEL CODE LIMITED · Registrada en Irlanda, nº 788569 · Domicilio social: Unit 2, 2 Bridge Street, Athlone, Westmeath, N37 F1W4, Ireland. Todos los derechos reservados.",
+    copyright: "© {year} NIMBEL CODE LIMITED · Registrada en Irlanda · CRO 788569 · Domicilio social: Unit 2, 2 Bridge Street, Athlone, Co. Westmeath, N37 F1W4, Ireland. Todos los derechos reservados.",
   },
 } as const;

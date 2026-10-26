@@ -8,7 +8,6 @@ export type Props = {
   description?: string;
   lang?: string;
   robots?: string;
-  schema?: Record<string, unknown>;
 };
 
 const {
@@ -16,7 +15,6 @@ const {
   description = "Tendrás la flexibilidad de un freelance y la seriedad de una consultora. Desarrollamos tu aplicación con calidad, personalización y a un coste razonable.",
   lang = "es",
   robots = "index, follow",
-  schema,
 } = Astro.props;
 
 const backgroundDesktop = await getImage({
@@ -35,6 +33,118 @@ const backgroundMobile = await getImage({
 
 const canonicalURL = new URL(Astro.url.pathname, Astro.site);
 const ogImage = new URL("/og-image.png", Astro.site);
+
+const isEn = lang === "en";
+const siteUrl = "https://www.nimbel.net/";
+const organizationId = `${siteUrl}#organization`;
+
+const schema = {
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Organization",
+      "@id": organizationId,
+      name: "Nimbel Code",
+      legalName: "NIMBEL CODE LIMITED",
+      alternateName: ["Nimbel", "Nimbel Code Apps"],
+      identifier: {
+        "@type": "PropertyValue",
+        propertyID: "CRO",
+        value: "788569",
+        description: "Companies Registration Office, Ireland",
+      },
+      url: siteUrl,
+      logo: {
+        "@type": "ImageObject",
+        url: `${siteUrl}assets/nimbel-logo.png`,
+        width: 512,
+        height: 512,
+      },
+      foundingDate: "2020",
+      numberOfEmployees: {
+        "@type": "QuantitativeValue",
+        minValue: 2,
+        maxValue: 9,
+      },
+      description: isEn
+        ? "Nimbel Code builds custom software with integrated AI: web apps, mobile apps and digital platforms that businesses own."
+        : "Nimbel Code desarrolla software a medida con IA integrada: aplicaciones web, móviles y plataformas digitales propias para empresas.",
+      address: {
+        "@type": "PostalAddress",
+        streetAddress: "Unit 2, 2 Bridge Street",
+        addressLocality: "Athlone",
+        addressRegion: "Co. Westmeath",
+        postalCode: "N37 F1W4",
+        addressCountry: "IE",
+      },
+      location: {
+        "@type": "Place",
+        name: "Barcelona",
+        address: {
+          "@type": "PostalAddress",
+          addressLocality: "Barcelona",
+          addressRegion: "Cataluña",
+          addressCountry: "ES",
+        },
+        hasMap: "https://maps.google.com/?cid=1064071797735352286",
+      },
+      areaServed: [
+        { "@type": "Country", name: "ES" },
+        { "@type": "Country", name: "MX" },
+        { "@type": "Country", name: "CO" },
+        { "@type": "Country", name: "CL" },
+        { "@type": "Country", name: "AR" },
+      ],
+      contactPoint: {
+        "@type": "ContactPoint",
+        telephone: "+34 666 969 374",
+        email: "ruben@nimbel.net",
+        contactType: "sales",
+        availableLanguage: ["es", "en"],
+      },
+      founder: {
+        "@type": "Person",
+        "@id": `${siteUrl}#ruben`,
+        name: "Rubén Sahagún",
+        jobTitle: "Founder & CEO",
+        sameAs: ["https://www.linkedin.com/in/ruben1"],
+      },
+      knowsAbout: isEn
+        ? [
+            "Custom software development",
+            "Artificial intelligence",
+            "Web applications",
+            "Mobile applications",
+            "UX/UI design",
+          ]
+        : [
+            "Desarrollo de software a medida",
+            "Inteligencia artificial",
+            "Aplicaciones web",
+            "Aplicaciones móviles",
+            "Diseño UX/UI",
+          ],
+      sameAs: [
+        "https://www.linkedin.com/company/nimbel-code-apps/",
+        "https://github.com/Nimbel-Code-Dev",
+        "https://www.instagram.com/nimbelcode.tech/",
+        "https://www.tiktok.com/@nimbelcode",
+        "https://www.crunchbase.com/organization/nimbel",
+        "https://clutch.co/profile/nimbel-code",
+        "https://www.goodfirms.co/company/nimbel-code",
+        "https://maps.google.com/?cid=1064071797735352286",
+      ],
+    },
+    {
+      "@type": "WebSite",
+      "@id": `${siteUrl}#website`,
+      url: siteUrl,
+      name: "Nimbel Code",
+      publisher: { "@id": organizationId },
+      inLanguage: ["es", "en"],
+    },
+  ],
+};
 
 const hreflangEs =
   lang === "es"
@@ -91,14 +201,7 @@ const hreflangEn =
     <meta name="twitter:image" content={ogImage} />
 
     <!-- JSON-LD -->
-    {
-      schema && (
-        <script
-          type="application/ld+json"
-          set:html={JSON.stringify(schema)}
-        />
-      )
-    }
+    <script type="application/ld+json" set:html={JSON.stringify(schema)} />
 
     <!-- Start of HubSpot Embed Code -->
     <script
