@@ -14,6 +14,7 @@ const nav = t("footer", "nav") as {
   about: string;
   services: string;
   contact: string;
+  aboutNimbel: string;
 };
 const social = t("footer", "social") as { title: string };
 const copyright = (t("footer", "copyright") as string).replace(
@@ -22,6 +23,9 @@ const copyright = (t("footer", "copyright") as string).replace(
 );
 
 const privacyLink = locale === "en" ? "/en/privacidad" : "/privacidad";
+const aboutNimbelLink = locale === "en" ? "/en/about-nimbel-code" : "/sobre-nimbel-code";
+// Anclas de la home: con la ruta delante para que funcionen desde otras páginas
+const home = locale === "en" ? "/en/" : "/";
 const privacyLabel = locale === "en" ? "Privacy policy" : "Política de privacidad";
 ---
 
@@ -53,7 +57,7 @@ const privacyLabel = locale === "en" ? "Privacy policy" : "Política de privacid
         <ul class="flex flex-col gap-3">
           <li>
             <a
-              href="#team"
+              href={`${home}#team`}
               class="text-nimbel-text text-sm hover:text-nimbel-accent transition-colors"
             >
               {nav.about}
@@ -61,7 +65,7 @@ const privacyLabel = locale === "en" ? "Privacy policy" : "Política de privacid
           </li>
           <li>
             <a
-              href="#services"
+              href={`${home}#services`}
               class="text-nimbel-text text-sm hover:text-nimbel-accent transition-colors"
             >
               {nav.services}
@@ -69,7 +73,7 @@ const privacyLabel = locale === "en" ? "Privacy policy" : "Política de privacid
           </li>
           <li>
             <a
-              href="#contact"
+              href={`${home}#contact`}
               class="text-nimbel-text text-sm hover:text-nimbel-accent transition-colors"
             >
               {nav.contact}
@@ -81,6 +85,14 @@ const privacyLabel = locale === "en" ? "Privacy policy" : "Política de privacid
               class="text-nimbel-text text-sm hover:text-nimbel-accent transition-colors"
             >
               {privacyLabel}
+            </a>
+          </li>
+          <li>
+            <a
+              href={aboutNimbelLink}
+              class="text-nimbel-text text-sm hover:text-nimbel-accent transition-colors"
+            >
+              {nav.aboutNimbel}
             </a>
           </li>
         </ul>

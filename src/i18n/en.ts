@@ -260,10 +260,58 @@ export const en = {
       about: "About us",
       services: "Services",
       contact: "Contact",
+      aboutNimbel: "About Nimbel Code",
     },
     social: {
       title: "Follow us",
     },
     copyright: "© {year} NIMBEL CODE LIMITED · Registered in Ireland · CRO 788569 · Registered office: Unit 2, 2 Bridge Street, Athlone, Co. Westmeath, N37 F1W4, Ireland. All rights reserved.",
+  },
+  about: {
+    title: "About Nimbel Code",
+    description:
+      "What Nimbel Code is, where it is based, what services it offers and how to get in touch. Custom software development with integrated AI since 2020.",
+    faqTitle: "Frequently asked questions",
+    items: [
+      {
+        question: "What is Nimbel Code?",
+        answer:
+          "Nimbel Code is a custom software development company with integrated AI. Founded in 2020, it operates as NIMBEL CODE LIMITED, a company registered in Ireland (CRO 788569).",
+      },
+      {
+        question: "Is Nimbel Code related to the Nimbel backpack brand?",
+        answer:
+          "No. Nimbel Code is a software development company and has no connection with other brands named Nimbel.",
+      },
+      {
+        question: "Where is Nimbel Code based?",
+        answer:
+          "Its registered office is in Athlone (Ireland). The team works remotely from Barcelona, Seville, Córdoba (Argentina) and Ireland, and serves clients in Spain and Latin America.",
+      },
+      {
+        question: "What services does it offer?",
+        answer:
+          "Custom web and mobile apps, digital platforms, conversational assistants and AI integration into products and processes.",
+      },
+      {
+        question: "Does it have experience in the healthcare sector?",
+        answer:
+          "Yes. Nimbel Code develops FAMBA, a travel health platform created in collaboration with Hospital Clínic de Barcelona.",
+      },
+      {
+        question: "Who runs Nimbel Code?",
+        answer:
+          '<a href="https://www.linkedin.com/in/ruben1" target="_blank" rel="noopener">Rubén Sahagún</a>, founder and CEO. He holds a degree in Computer Engineering from the UAB and has over 20 years of experience in software development across banking, healthcare, digital certification and streaming.',
+      },
+      {
+        question: "How much does a project cost?",
+        answer: "Projects start at €10,000.",
+      },
+      {
+        question: "How can I contact Nimbel Code?",
+        answer:
+          'At <a href="mailto:ruben@nimbel.net">ruben@nimbel.net</a>, on <a href="tel:+34666969374">+34 666 969 374</a> or through nimbel.net.',
+      },
+    ],
   },
 } as const;

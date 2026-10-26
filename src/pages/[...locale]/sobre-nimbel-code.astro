@@ -1,0 +1,9 @@
+---
+import AboutNimbelPage from "@/components/AboutNimbelPage.astro";
+
+export function getStaticPaths() {
+  return [{ params: { locale: undefined } }]; // /sobre-nimbel-code
+}
+---
+
+<AboutNimbelPage locale="es" />

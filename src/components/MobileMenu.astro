@@ -5,16 +5,12 @@ export type Props = {
   navLinks: Array<{ label: string; href: string }>;
   locale: Locale;
   currentPage?: string;
+  alternateUrl: string;
 };
 
-const { navLinks, locale, currentPage } = Astro.props;
+const { navLinks, locale, currentPage, alternateUrl } = Astro.props;
 const t = useTranslations(locale);
-
-const pathname = Astro.url.pathname;
-const alternateUrl =
-  locale === "es"
-    ? `/en${pathname === "/" ? "" : pathname}`
-    : pathname.replace(/^\/en/, "") || "/";
+const home = locale === "en" ? "/en/" : "/";
 ---
 
 <div
@@ -32,7 +28,7 @@ const alternateUrl =
       </a>
     ))
   }
-  <a href="#contact" class="btn-secondary mt-2">
+  <a href={`${home}#contact`} class="btn-secondary mt-2">
     {t("navbar", "cta")}
   </a>
   <!-- Language switcher -->

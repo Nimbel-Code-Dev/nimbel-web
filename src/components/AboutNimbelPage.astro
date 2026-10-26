@@ -1,0 +1,93 @@
+---
+import Footer from "@/components/Footer.astro";
+import Navbar from "@/components/Navbar.astro";
+import { useTranslations, type Locale } from "@/i18n/utils";
+import Layout from "@/layouts/Layout.astro";
+
+interface Props {
+  locale: Locale;
+}
+
+const { locale } = Astro.props;
+const t = useTranslations(locale);
+
+const title = t("about", "title") as string;
+const description = t("about", "description") as string;
+const faqTitle = t("about", "faqTitle") as string;
+const items = t("about", "items") as readonly { question: string; answer: string }[];
+
+// Misma página en los dos idiomas, con slug propio en cada uno
+const alternates = { es: "/sobre-nimbel-code/", en: "/en/about-nimbel-code/" };
+const pageUrl = new URL(Astro.url.pathname, Astro.site).href;
+const organization = { "@id": "https://www.nimbel.net/#organization" };
+
+// El texto del schema sale del mismo HTML visible, sin etiquetas
+const toText = (html: string) => html.replace(/<[^>]+>/g, "");
+
+const graph = [
+  {
+    "@type": "AboutPage",
+    "@id": pageUrl,
+    url: pageUrl,
+    name: title,
+    description,
+    inLanguage: locale,
+    mainEntity: organization,
+  },
+  {
+    "@type": "FAQPage",
+    "@id": `${pageUrl}#faq`,
+    url: pageUrl,
+    inLanguage: locale,
+    about: organization,
+    publisher: organization,
+    mainEntity: items.map((item) => ({
+      "@type": "Question",
+      name: item.question,
+      acceptedAnswer: { "@type": "Answer", text: toText(item.answer) },
+    })),
+  },
+];
+---
+
+<Layout
+  title={title}
+  description={description}
+  lang={locale}
+  alternates={alternates}
+  graph={graph}
+>
+  <header>
+    <Navbar
+      currentPage={alternates[locale]}
+      locale={locale}
+      alternateUrl={locale === "en" ? alternates.es : alternates.en}
+    />
+  </header>
+
+  <section class="w-full bg-nimbel-text">
+    <div class="max-w-3xl mx-auto px-6 py-16">
+      <h1 class="font-mortend uppercase text-3xl text-nimbel-bg mb-10">
+        {title}
+      </h1>
+      <h2 class="font-mortend uppercase text-xl text-nimbel-bg mb-6">
+        {faqTitle}
+      </h2>
+      <div class="font-clash text-nimbel-bg leading-relaxed text-sm">
+        {
+          items.map((item) => (
+            <div class="mb-8">
+              <h3 class="font-bold text-nimbel-bg mb-2">{item.question}</h3>
+              <p
+                class="[&_a]:underline [&_a]:hover:text-nimbel-accent"
+                set:html={item.answer}
+              />
+            </div>
+          ))
+        }
+      </div>
+    </div>
+  </section>
+
+  <Footer locale={locale} />
+</Layout>
