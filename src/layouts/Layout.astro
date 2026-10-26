@@ -8,6 +8,10 @@ export type Props = {
   description?: string;
   lang?: string;
   robots?: string;
+  // URLs de las versiones es/en cuando no comparten slug
+  alternates?: { es: string; en: string };
+  // Nodos extra que se suman al @graph global
+  graph?: Record<string, unknown>[];
 };
 
 const {
@@ -15,6 +19,8 @@ const {
   description = "Tendrás la flexibilidad de un freelance y la seriedad de una consultora. Desarrollamos tu aplicación con calidad, personalización y a un coste razonable.",
   lang = "es",
   robots = "index, follow",
+  alternates,
+  graph = [],
 } = Astro.props;
 
 const backgroundDesktop = await getImage({
@@ -141,15 +147,18 @@ const schema = {
       publisher: { "@id": organizationId },
       inLanguage: ["es", "en"],
     },
+    ...graph,
   ],
 };
 
-const hreflangEs =
-  lang === "es"
+const hreflangEs = alternates
+  ? new URL(alternates.es, Astro.site)
+  : lang === "es"
     ? canonicalURL
     : new URL(Astro.url.pathname.replace(/^\/en/, "") || "/", Astro.site);
-const hreflangEn =
-  lang === "en"
+const hreflangEn = alternates
+  ? new URL(alternates.en, Astro.site)
+  : lang === "en"
     ? canonicalURL
     : new URL(
         `/en${Astro.url.pathname === "/" ? "/" : Astro.url.pathname}`,

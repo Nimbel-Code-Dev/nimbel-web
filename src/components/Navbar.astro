@@ -5,21 +5,26 @@ import MobileMenu from "./MobileMenu.astro";
 export type Props = {
   currentPage?: string;
   locale: Locale;
+  alternateUrl?: string;
 };
 
-const { currentPage, locale } = Astro.props;
+const { currentPage, locale, alternateUrl: alternateUrlProp } = Astro.props;
 const t = useTranslations(locale);
 
+// Anclas de la home: con la ruta delante para que funcionen desde otras páginas
+const home = locale === "en" ? "/en/" : "/";
+
 const navLinks = [
-  { label: t("navbar", "about"), href: "#team" },
-  { label: t("navbar", "services"), href: "#services" },
+  { label: t("navbar", "about"), href: `${home}#team` },
+  { label: t("navbar", "services"), href: `${home}#services` },
 ];
 
 const pathname = Astro.url.pathname;
 const alternateUrl =
-  locale === "es"
+  alternateUrlProp ??
+  (locale === "es"
     ? `/en${pathname === "/" ? "" : pathname}`
-    : pathname.replace(/^\/en/, "") || "/";
+    : pathname.replace(/^\/en/, "") || "/");
 ---
 
 <nav class="flex items-center justify-between px-15 py-5 relative max-md:px-6">
@@ -41,7 +46,7 @@ const alternateUrl =
         </a>
       ))
     }
-    <a href="#contact" class="btn-secondary">
+    <a href={`${home}#contact`} class="btn-secondary">
       {t("navbar", "cta")}
     </a>
     <!-- Language switcher -->
@@ -80,4 +85,9 @@ const alternateUrl =
   </button>
 </nav>
 
-<MobileMenu navLinks={navLinks} locale={locale} currentPage={currentPage} />
+<MobileMenu
+  navLinks={navLinks}
+  locale={locale}
+  currentPage={currentPage}
+  alternateUrl={alternateUrl}
+/>
