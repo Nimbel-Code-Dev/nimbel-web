@@ -180,12 +180,12 @@ describe('useTranslations hook — integration', () => {
 
   it('works with footer section — es', () => {
     const t = useTranslations('es');
-    expect(t('footer', 'copyright')).toBe('© {year} NIMBEL CODE LIMITED · Registrada en Irlanda, nº 788569 · Domicilio social: Unit 2, 2 Bridge Street, Athlone, Westmeath, N37 F1W4, Ireland. Todos los derechos reservados.');
+    expect(t('footer', 'copyright')).toBe('© {year} NIMBEL CODE LIMITED · Registrada en Irlanda · CRO 788569 · Domicilio social: Unit 2, 2 Bridge Street, Athlone, Co. Westmeath, N37 F1W4, Ireland. Todos los derechos reservados.');
   });
 
   it('works with footer section — en', () => {
     const t = useTranslations('en');
-    expect(t('footer', 'copyright')).toBe('© {year} NIMBEL CODE LIMITED · Registered in Ireland, No. 788569 · Registered office: Unit 2, 2 Bridge Street, Athlone, Westmeath, N37 F1W4, Ireland. All rights reserved.');
+    expect(t('footer', 'copyright')).toBe('© {year} NIMBEL CODE LIMITED · Registered in Ireland · CRO 788569 · Registered office: Unit 2, 2 Bridge Street, Athlone, Co. Westmeath, N37 F1W4, Ireland. All rights reserved.');
   });
 
   it('works with testimonials section — es', () => {

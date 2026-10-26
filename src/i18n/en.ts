@@ -264,6 +264,6 @@ export const en = {
     social: {
       title: "Follow us",
     },
-    copyright: "© {year} NIMBEL CODE LIMITED · Registered in Ireland, No. 788569 · Registered office: Unit 2, 2 Bridge Street, Athlone, Westmeath, N37 F1W4, Ireland. All rights reserved.",
+    copyright: "© {year} NIMBEL CODE LIMITED · Registered in Ireland · CRO 788569 · Registered office: Unit 2, 2 Bridge Street, Athlone, Co. Westmeath, N37 F1W4, Ireland. All rights reserved.",
   },
 } as const;
