@@ -265,7 +265,8 @@ export const en = {
     social: {
       title: "Follow us",
     },
-    copyright: "© {year} NIMBEL CODE LIMITED · Registered in Ireland · CRO 788569 · Registered office: Unit 2, 2 Bridge Street, Athlone, Co. Westmeath, N37 F1W4, Ireland. All rights reserved.",
+    copyright:
+      "© {year} NIMBEL CODE LIMITED · Registered in Ireland · CRO 788569 · Registered office: Unit 2, 2 Bridge Street, Athlone, Co. Westmeath, N37 F1W4, Ireland. All rights reserved.",
   },
   about: {
     title: "About Nimbel Code",
@@ -276,17 +277,17 @@ export const en = {
       {
         question: "What is Nimbel Code?",
         answer:
-          "Nimbel Code is a custom software development company with integrated AI. Founded in 2020, it operates as NIMBEL CODE LIMITED, a company registered in Ireland (CRO 788569).",
+          "Nimbel Code is a custom software development company that builds software with AI built in. Founded in 2020, it operates as NIMBEL CODE LIMITED, a company registered in Ireland (CRO 788569).",
       },
       {
-        question: "Is Nimbel Code related to the Nimbel backpack brand?",
+        question: "Is Nimbel Code related to the Nimbel baby carrier brand?",
         answer:
-          "No. Nimbel Code is a software development company and has no connection with other brands named Nimbel.",
+          "No. Nimbel Code is a software development company and is not affiliated with other brands named Nimbel.",
       },
       {
         question: "Where is Nimbel Code based?",
         answer:
-          "Its registered office is in Athlone (Ireland). The team works remotely from Barcelona, Seville, Córdoba (Argentina) and Ireland, and serves clients in Spain and Latin America.",
+          "Its registered office is in Athlone, Ireland. The team works remotely from Barcelona, Seville, Córdoba (Argentina) and Ireland, and serves clients in Spain and Latin America.",
       },
       {
         question: "What services does it offer?",
@@ -301,7 +302,7 @@ export const en = {
       {
         question: "Who runs Nimbel Code?",
         answer:
-          '<a href="https://www.linkedin.com/in/ruben1" target="_blank" rel="noopener">Rubén Sahagún</a>, founder and CEO. He holds a degree in Computer Engineering from the UAB and has over 20 years of experience in software development across banking, healthcare, digital certification and streaming.',
+          '<a href="https://www.linkedin.com/in/ruben1" target="_blank" rel="noopener">Rubén Sahagún</a>, founder and CEO. He holds a degree in Computer Engineering from the Universitat Autònoma de Barcelona (UAB) and has over 20 years of experience in software development across banking, healthcare, digital certification and streaming.',
       },
       {
         question: "How much does a project cost?",
@@ -310,7 +311,7 @@ export const en = {
       {
         question: "How can I contact Nimbel Code?",
         answer:
-          'At <a href="mailto:ruben@nimbel.net">ruben@nimbel.net</a>, on <a href="tel:+34666969374">+34 666 969 374</a> or through nimbel.net.',
+          'At <a href="mailto:ruben@nimbel.net">ruben@nimbel.net</a>, by phone at <a href="tel:+34666969374">+34 666 969 374</a> or through nimbel.net.',
       },
     ],
   },

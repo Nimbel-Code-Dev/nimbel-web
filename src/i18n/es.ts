@@ -265,7 +265,8 @@ export const es = {
     social: {
       title: "Síguenos",
     },
-    copyright: "© {year} NIMBEL CODE LIMITED · Registrada en Irlanda · CRO 788569 · Domicilio social: Unit 2, 2 Bridge Street, Athlone, Co. Westmeath, N37 F1W4, Ireland. Todos los derechos reservados.",
+    copyright:
+      "© {year} NIMBEL CODE LIMITED · Registrada en Irlanda · CRO 788569 · Domicilio social: Unit 2, 2 Bridge Street, Athlone, Co. Westmeath, N37 F1W4, Ireland. Todos los derechos reservados.",
   },
   about: {
     title: "Sobre Nimbel Code",
@@ -279,7 +280,8 @@ export const es = {
           "Nimbel Code es una empresa de desarrollo de software a medida con IA integrada. Fundada en 2020, opera como NIMBEL CODE LIMITED, sociedad registrada en Irlanda (CRO 788569).",
       },
       {
-        question: "¿Nimbel Code tiene relación con la marca de mochilas Nimbel?",
+        question:
+          "¿Nimbel Code tiene relación con la marca de mochilas portabebés Nimbel?",
         answer:
           "No. Nimbel Code es una empresa de desarrollo de software y no tiene relación con otras marcas llamadas Nimbel.",
       },
@@ -301,7 +303,7 @@ export const es = {
       {
         question: "¿Quién dirige Nimbel Code?",
         answer:
-          '<a href="https://www.linkedin.com/in/ruben1" target="_blank" rel="noopener">Rubén Sahagún</a>, fundador y CEO. Es ingeniero informático por la UAB y tiene más de 20 años de experiencia en desarrollo de software en banca, salud, certificación digital y streaming.',
+          '<a href="https://www.linkedin.com/in/ruben1" target="_blank" rel="noopener">Rubén Sahagún</a>, fundador y CEO. Es ingeniero informático por la Universidad Autónoma de Barcelona (UAB) y tiene más de 20 años de experiencia en desarrollo de software en banca, salud, certificación digital y streaming.',
       },
       {
         question: "¿Cuánto cuesta un proyecto?",
