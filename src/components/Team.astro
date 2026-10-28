@@ -39,26 +39,16 @@ const highlightedHeadline = highlightText(
   class="w-full bg-nimbel-bg py-16 sm:py-20 lg:py-24"
   aria-label={ariaLabel}
 >
-  <div
-    class="flex items-center flex-col mx-auto w-full max-w-8xl px-6 sm:px-12 lg:px-16"
-  >
+  <div class="mx-auto w-full max-w-7xl px-6 sm:px-12 lg:px-16">
     <h2
-      class="font-mortend text-4xl sm:text-5xl lg:text-6xl uppercase font-bold text-nimbel-text text-center mb-12 sm:mb-16 lg:mb-20 leading-tight"
+      class="font-mortend text-4xl sm:text-5xl lg:text-6xl uppercase font-bold text-nimbel-text mb-12 sm:mb-16 lg:mb-20 leading-tight"
       set:html={highlightedHeadline}
     />
 
-    <div
-      class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8 max-w-7xl"
-    >
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8">
       {
-        items.map((item, index) => (
-          <article
-            data-testid={`team-card-${item.id}`}
-            class:list={[
-              index === 0 && "lg:col-start-2",
-              index === 1 && "lg:col-start-1",
-            ]}
-          >
+        items.map((item) => (
+          <article data-testid={`team-card-${item.id}`}>
             <img
               src={item.photo}
               alt={item.photoAlt}
