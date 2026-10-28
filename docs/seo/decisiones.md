@@ -2,6 +2,18 @@
 
 Registro cronológico, la más reciente arriba. Formato: `### AAAA-MM-DD — título`, qué se decidió y por qué.
 
+### 2026-10-28 — Home ampliada: ¿Para quién es?, Cómo trabajamos y FAQ
+**Qué**: la home en español pasa de ~640 a ~1.370 palabras con tres secciones H2: "¿Para quién es?" (después de Servicios), "Cómo trabajamos" (5 pasos, después de Proyectos) y "Preguntas frecuentes" (6 preguntas, antes de Contacto). El FAQPage se añade al `@graph` con el mismo texto que se ve en la página. El contenido vive en `src/i18n/home-es.ts`, fuera de `es.ts`, y solo se pinta en ES: /en no cambia. También: el alt del logo pasa a "Hospital Clínic de Barcelona" (ES y EN) y la flecha del CTA del hero lleva `aria-hidden`. Las 9 imágenes con `alt=""` son decorativas (copia del marquee e iconos de contacto) y se quedan así.
+**Por qué**: la home tenía poco contenido para sus keywords principales y no respondía las dudas del cliente objetivo (precio, propiedad, proveedor que desaparece). Los pasos del proceso, el presupuesto cerrado por fase y el registro de horas los confirmó Rubén. No se publica ningún plazo porque no hay un dato que dar.
+
+### 2026-10-28 — Precio: 10.000 € como primera fase, no como precio del proyecto
+**Qué**: en la web, el precio se presenta como "una primera fase suele partir de 10.000 €", con trabajo por fases y presupuesto cerrado en cada una. Se alinea también la FAQ de "Sobre Nimbel Code" (ES y EN), que decía "Los proyectos parten de 10.000 €". El dato de que la mayoría de clientes hoy invierte ≥100.000 €/año no se publica en la home.
+**Por qué**: "proyectos desde 10.000 €" restaba credibilidad (nadie se cree que se haga todo eso por ese precio), pero quitar la cifra asustaba o no filtraba. Es real que la mayoría de clientes empezó con una primera fase de ese tamaño. La cifra de 100.000 €/año puede asustar sin contexto; se valora para la página /cuanto-cuesta-software-a-medida. Conviene que el precio diga lo mismo en todas las páginas, para buscadores y LLM.
+
+### 2026-10-28 — "empresa desarrollo software barcelona" se asigna a la home
+**Qué**: la keyword va a `/`, sin página local. La home lo refuerza con el title ("… en Barcelona") y la FAQ "¿Trabajáis con empresas de Barcelona?" (clientes de Barcelona que ya aparecen en la web, equipo allí y reuniones en persona).
+**Por qué**: según Semrush, las búsquedas con ciudad tienen intención de compra; sin ciudad, a veces son informativas. Limitación: la ficha de Google Business no tiene dirección, así que por "barcelona" se compite en resultados orgánicos, no en el map pack.
+
 ### 2026-10-28 — Home: title, H1, subtítulo, H2 y meta aplicados
 **Qué**: en la home en español: title "Desarrollo de software a medida en Barcelona | Nimbel Code"; H1 "Desarrollo de software a medida para empresas"; el H1 anterior pasa a subtítulo (párrafo) con "Sin licencias, sin dependencias."; H2 de servicios "Desarrollo de software a medida, con IA donde aporta." (resaltados "a medida" e "IA"); meta description nueva. og:* y twitter:* salen del mismo title y description. El title y la meta de /en no se tocan, pero su hero sigue el mismo patrón: H1 "Custom software development for businesses" y subtítulo "We transform your ideas into your own digital assets. No licenses, no dependencies.".
 **Por qué**: el H1 pasa a contener las keywords de la home. En /en se tradujo también el H1 porque, si no, el subtítulo repetía la frase del H1. "en Barcelona" en el title adelanta en parte la decisión pendiente sobre "empresa desarrollo software barcelona".

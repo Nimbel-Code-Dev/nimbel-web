@@ -17,7 +17,7 @@
 | software a medida para empresas | — | / | Comercial | 210 | 5 | Hecho 2026-10-28 |
 | empresas de desarrollo de software a medida | — | / + reseñas | Comercial | 110 | 29 | Pendiente |
 | cuánto cuesta un software a medida | cuánto sale hacer un software a medida (70), cuánto cuesta software a medida (30) | /cuanto-cuesta-software-a-medida (nueva) | Investigación comercial | ~100 | 3 | Pendiente |
-| empresa desarrollo software barcelona | — | / o página local (por decidir) | Comercial local | 90 | 14 | Pendiente |
+| empresa desarrollo software barcelona | — | / | Comercial local | 90 | 14 | Hecho 2026-10-28 |
 | externalizar desarrollo de software | criterios para externalizar desarrollo de software, equipo interno vs desarrollo externalizado | /externalizar-desarrollo-software (nueva) | Investigación comercial | ~50 | n/d | Pendiente |
 | custom software development barcelona | — | /en | Comercial | GSC: posición 4 | n/d | Pendiente |
 
