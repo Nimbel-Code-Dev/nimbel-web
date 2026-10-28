@@ -51,9 +51,9 @@ describe("ServicesHeadline", () => {
 
   it("non-highlighted text is preserved intact (ES)", () => {
     const html = buildHighlightedHeadline(esHeadline, esHighlight1, esHighlight2);
-    expect(html).toContain("Desarrollo a medida de software.");
-    expect(html).toContain("integrada y estándares de");
-    expect(html).toContain("reales.");
+    expect(html).toContain("Desarrollo de software");
+    expect(html).toContain(", con");
+    expect(html).toContain("donde aporta.");
   });
 
   it("non-highlighted text is preserved intact (EN)", () => {

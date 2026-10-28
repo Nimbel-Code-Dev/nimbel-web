@@ -11,7 +11,9 @@ export const en = {
   },
   hero: {
     eyebrow: "Full control over your digital system",
-    headline: "We transform your ideas into your own digital assets",
+    headline: "Custom software development for businesses",
+    subtitle:
+      "We transform your ideas into your own digital assets. No licenses, no dependencies.",
     description:
       "AI integrated with your systems, custom and proprietary development. With our technical support at every step.",
     cta: "SCHEDULE A CONSULTATION",
