@@ -2,7 +2,7 @@
 import { homeEs } from "@/i18n/home-es";
 
 // Solo ES de momento: el contenido sale de home-es.ts
-const { title, intro, steps } = homeEs.process;
+const { title, intro, steps, notes } = homeEs.process;
 ---
 
 <section id="como-trabajamos" class="w-full bg-nimbel-bg py-16 sm:py-20 lg:py-24 border-t border-white/10">
@@ -40,5 +40,20 @@ const { title, intro, steps } = homeEs.process;
         ))
       }
     </ol>
+
+    <div class="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-16 mt-10 sm:mt-14">
+      {
+        notes.map((note) => (
+          <div>
+            <h3 class="font-mortend font-bold text-lg sm:text-xl lg:text-2xl text-nimbel-text uppercase leading-tight mb-4">
+              {note.title}
+            </h3>
+            <p class="text-nimbel-muted text-base lg:text-lg leading-relaxed">
+              {note.text}
+            </p>
+          </div>
+        ))
+      }
+    </div>
   </div>
 </section>

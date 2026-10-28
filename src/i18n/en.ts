@@ -289,7 +289,7 @@ export const en = {
       {
         question: "Where is Nimbel Code based?",
         answer:
-          "Its registered office is in Athlone, Ireland. The team works remotely from Barcelona, Seville, Córdoba (Argentina) and Ireland, and serves clients in Spain and Latin America.",
+          "Its registered office is in Athlone, Ireland. The team works remotely from Barcelona, Seville, Córdoba (Argentina) and Ireland, and serves clients in Spain and Latin America. It has team members in Barcelona and visits the city often, so it can meet clients there in person.",
       },
       {
         question: "What services does it offer?",

@@ -2,7 +2,7 @@
 import { homeEs } from "@/i18n/home-es";
 
 // Solo ES de momento: el contenido sale de home-es.ts
-const { title, intro, items } = homeEs.audience;
+const { title, lead, intro, items } = homeEs.audience;
 ---
 
 <section id="para-quien" class="w-full bg-nimbel-bg py-16 sm:py-20 lg:py-24">
@@ -12,6 +12,9 @@ const { title, intro, items } = homeEs.audience;
     >
       {title}
     </h2>
+    <p class="text-nimbel-muted text-base lg:text-lg leading-relaxed max-w-3xl mb-4">
+      {lead}
+    </p>
     <p class="text-nimbel-muted text-base lg:text-lg leading-relaxed max-w-3xl mb-10 sm:mb-14">
       {intro}
     </p>

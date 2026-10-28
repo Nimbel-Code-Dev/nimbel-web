@@ -289,7 +289,7 @@ export const es = {
       {
         question: "¿Dónde está Nimbel Code?",
         answer:
-          "Su domicilio social está en Athlone (Irlanda). El equipo trabaja en remoto desde Barcelona, Sevilla, Córdoba (Argentina) e Irlanda, y da servicio a clientes de España y Latinoamérica.",
+          "Su domicilio social está en Athlone (Irlanda). El equipo trabaja en remoto desde Barcelona, Sevilla, Córdoba (Argentina) e Irlanda, y da servicio a clientes de España y Latinoamérica. En Barcelona tiene equipo y visita la ciudad con frecuencia, así que puede reunirse en persona con clientes de allí.",
       },
       {
         question: "¿Qué servicios ofrece?",
