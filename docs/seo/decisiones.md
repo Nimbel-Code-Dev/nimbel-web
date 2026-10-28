@@ -2,6 +2,14 @@
 
 Registro cronológico, la más reciente arriba. Formato: `### AAAA-MM-DD — título`, qué se decidió y por qué.
 
+### 2026-10-28 — Se quita de la home la sección "Desarrollo de software a medida en Barcelona"
+**Qué**: la home en español se queda con "¿Para quién es?" y "Cómo trabajamos". Se borran el componente `Barcelona.astro`, su texto en `home-es.ts` y su apartado en `contenido-home.md`. "empresa desarrollo software barcelona" queda apoyada solo en el title de la home ("… en Barcelona"); pasa a "En curso" en el keyword-map. Sustituye a la parte de Barcelona de la entrada siguiente.
+**Por qué**: el texto se veía forzado (repetía "Barcelona" y contaba que visitamos la ciudad). Se valoró reescribirlo o dejar una frase en otra sección, y Rubén eligió quitarlo.
+
+### 2026-10-28 — Secciones nuevas de la home montadas con los bloques visuales actuales
+**Qué**: vuelven a la home en español "¿Para quién es?" (después de Servicios), "Cómo trabajamos" (después de Proyectos) y "Desarrollo de software a medida en Barcelona" (antes de Contacto), con el texto exacto de `contenido-home.md`. No se crea diseño nuevo: se reutilizan piezas de la web. Los H2 son en Mortend centrados, como el de Servicios. "¿Para quién es?" va en fondo oscuro, con las 4 situaciones en una cuadrícula de 2×2 y la flecha naranja de Servicios. Los pasos de "Cómo trabajamos" usan las filas de Servicios, con el número en lugar de la flecha. "Precio y plazos" y "Tu software es tuyo" van en las tarjetas de Testimonios. Barcelona es un H2 con su párrafo, con el contenedor de Equipo. Componentes `Audience.astro`, `Process.astro` y `Barcelona.astro`; el texto vive en `src/i18n/home-es.ts` y solo se pinta en ES. Sin FAQ en la home.
+**Por qué**: Rubén descartó proponer direcciones visuales nuevas: las secciones tienen que encajar con el diseño actual y no verse como un pegote. La diseñadora las rediseñará más adelante; cada sección es un componente aislado, fácil de sustituir.
+
 ### 2026-10-28 — Secciones nuevas de la home retiradas hasta tener diseño
 **Qué**: se eliminan de la web y del código las secciones "¿Para quién es?", "Cómo trabajamos" y "Desarrollo de software a medida en Barcelona". El texto aprobado se guarda en `contenido-home.md`. Se mantiene publicado lo que no depende de ese diseño: el title, el H1, el subtítulo, el H2 y la meta de la home; los alt; y la FAQ de "Sobre Nimbel Code" con el precio por fases y Barcelona.
 **Por qué**: la implementación no tenía dirección visual y se veía mal. El contenido se rediseña partiendo de cero, con la diseñadora o con una skill de diseño, sin reutilizar esa versión. Las entradas anteriores sobre la home ampliada y sobre la FAQ única siguen valiendo en cuanto al contenido, no en cuanto a la implementación.

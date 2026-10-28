@@ -1,11 +1,11 @@
 # Contenido SEO pendiente de diseño — home (ES)
 
-Última actualización: 2026-10-28 · Estado: texto aprobado, **sin diseño**. No está publicado.
+Última actualización: 2026-10-28 · Estado: texto aprobado e **implementado** en la home con los bloques visuales actuales (`Audience.astro` y `Process.astro`; texto en `src/i18n/home-es.ts`). La sección de Barcelona se quitó el mismo día. Pendiente del rediseño de la diseñadora.
 
 Texto aprobado para ampliar la home en español de ~640 a ~1.250 palabras. Tiene que estar en la web por SEO; el diseño está por hacer. Ver el contexto en `decisiones.md` y la tarea "Ampliar home" en `backlog.md`.
 
 ## Requisitos del contenido
-- Keywords de la home (`keyword-map.md`): "desarrollo de software a medida" (3 veces en este texto), "software a medida para empresas" (1 vez) y "empresa desarrollo software barcelona".
+- Keywords de la home (`keyword-map.md`): "desarrollo de software a medida" (2 veces en este texto) y "software a medida para empresas" (1 vez). "empresa desarrollo software barcelona" ya no tiene apoyo en este texto: solo en el title.
 - Jerarquía: cada sección es un H2; los títulos de dentro son H3. La home ya tiene su H1 y no se toca.
 - Solo en español. /en no lleva estas secciones.
 - **Una sola FAQ en toda la web** (la de "Sobre Nimbel Code"). Este contenido va como texto normal, no como bloque de preguntas.
@@ -15,7 +15,6 @@ Texto aprobado para ampliar la home en español de ~640 a ~1.250 palabras. Tiene
 ## Ubicación en la home
 1. **¿Para quién es?**: después de Servicios.
 2. **Cómo trabajamos**: después de Proyectos.
-3. **Desarrollo de software a medida en Barcelona**: antes de Contacto.
 
 ---
 
@@ -61,7 +60,3 @@ Dependen del alcance: no cuesta lo mismo una herramienta interna sencilla que un
 
 ### Tu software es tuyo
 Lo que desarrollamos para ti es tuyo desde el primer día: el código, los datos y el control. No pagas licencias por usarlo ni dependes de nosotros para seguir adelante. Si algún día prefieres que lo mantenga otro equipo, puedes hacerlo.
-
-## Desarrollo de software a medida en Barcelona
-
-Trabajamos con empresas de Barcelona: entre nuestros clientes están el Hospital Clínic de Barcelona y StartUB, de la Universitat de Barcelona. Tenemos equipo en la ciudad y la visitamos con frecuencia, así que podemos reunirnos en persona. El resto del equipo trabaja en remoto desde Sevilla, Córdoba (Argentina) e Irlanda, y damos servicio a toda España y a Latinoamérica.
