@@ -3,10 +3,16 @@
 
 export const audience = {
   headline: "¿Para quién es?",
-  intro: [
+  intro:
     "El desarrollo de software a medida consiste en crear una herramienta pensada para tu empresa: tus procesos, tus datos y tu forma de trabajar. Un programa estándar es igual para todos y te obliga a adaptarte a él, normalmente pagando licencias. Con el software a medida ocurre al revés: la herramienta se adapta a ti y crece cuando tu negocio lo necesita.",
-    "Hacemos software a medida para empresas que necesitan tecnología propia, pero no quieren convertirse en una empresa tecnológica. Si te reconoces en alguna de estas situaciones, podemos ayudarte.",
-  ],
+  comparison: {
+    title: "¿Cuándo conviene un software a medida frente a uno estándar (SaaS)?",
+    paragraphs: [
+      "Un programa estándar conviene cuando tu proceso es igual al de cualquier otra empresa, como la contabilidad, las nóminas o el correo. Para eso ya hay buenas herramientas y no tiene sentido hacerlas de nuevo.",
+      "El software a medida conviene cuando tu forma de trabajar es parte de lo que te diferencia, cuando necesitas que varias herramientas compartan datos, cuando estás cambiando tu operativa para encajar en las limitaciones de un programa o cuando las licencias suben con cada usuario nuevo. Muchas veces la respuesta es combinar las dos cosas: mantener el SaaS que funciona y desarrollar a medida lo que no encaja.",
+    ],
+  },
+  lead: "Hacemos software a medida para empresas que necesitan tecnología propia, pero no quieren convertirse en una empresa tecnológica. Si te reconoces en alguna de estas situaciones, podemos ayudarte.",
   items: [
     {
       title:

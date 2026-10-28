@@ -19,7 +19,12 @@ import { audience } from "@/i18n/home-es";
     <div
       class="max-w-3xl flex flex-col gap-4 text-nimbel-muted text-base sm:text-lg leading-relaxed mb-12 sm:mb-16"
     >
-      {audience.intro.map((paragraph) => <p>{paragraph}</p>)}
+      <p>{audience.intro}</p>
+      <h3 class="font-bold text-lg lg:text-xl text-nimbel-text leading-snug mt-4">
+        {audience.comparison.title}
+      </h3>
+      {audience.comparison.paragraphs.map((paragraph) => <p>{paragraph}</p>)}
+      <p class="mt-4">{audience.lead}</p>
     </div>
 
     <div class="grid grid-cols-1 md:grid-cols-2 gap-x-12 lg:gap-x-16 gap-y-10">
