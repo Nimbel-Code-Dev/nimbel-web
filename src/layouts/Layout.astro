@@ -8,8 +8,8 @@ export type Props = {
   description?: string;
   lang?: string;
   robots?: string;
-  // URLs de las versiones es/en cuando no comparten slug
-  alternates?: { es: string; en: string };
+  // URLs de las versiones es/en cuando no comparten slug; sin `en` la página es solo ES
+  alternates?: { es: string; en?: string };
   // Nodos extra que se suman al @graph global
   graph?: Record<string, unknown>[];
 };
@@ -157,7 +157,7 @@ const hreflangEs = alternates
     ? canonicalURL
     : new URL(Astro.url.pathname.replace(/^\/en/, "") || "/", Astro.site);
 const hreflangEn = alternates
-  ? new URL(alternates.en, Astro.site)
+  ? alternates.en && new URL(alternates.en, Astro.site)
   : lang === "en"
     ? canonicalURL
     : new URL(
@@ -181,12 +181,18 @@ const hreflangEn = alternates
 
     <!-- hreflang -->
     <link rel="alternate" hreflang="es" href={hreflangEs} />
-    <link rel="alternate" hreflang="en" href={hreflangEn} />
-    <link
-      rel="alternate"
-      hreflang="x-default"
-      href={new URL("/", Astro.site)}
-    />
+    {
+      hreflangEn && (
+        <>
+          <link rel="alternate" hreflang="en" href={hreflangEn} />
+          <link
+            rel="alternate"
+            hreflang="x-default"
+            href={new URL("/", Astro.site)}
+          />
+        </>
+      )
+    }
 
     <!-- Open Graph -->
     <meta property="og:type" content="website" />

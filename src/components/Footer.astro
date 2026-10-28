@@ -27,6 +27,8 @@ const aboutNimbelLink = locale === "en" ? "/en/about-nimbel-code" : "/sobre-nimb
 // Anclas de la home: con la ruta delante para que funcionen desde otras páginas
 const home = locale === "en" ? "/en/" : "/";
 const privacyLabel = locale === "en" ? "Privacy policy" : "Política de privacidad";
+// Los casos solo existen en español
+const fambaCaseLink = locale === "es" ? "/casos/famba/" : undefined;
 ---
 
 <footer class="w-full bg-nimbel-bg">
@@ -95,6 +97,18 @@ const privacyLabel = locale === "en" ? "Privacy policy" : "Política de privacid
               {nav.aboutNimbel}
             </a>
           </li>
+          {
+            fambaCaseLink && (
+              <li>
+                <a
+                  href={fambaCaseLink}
+                  class="text-nimbel-text text-sm hover:text-nimbel-accent transition-colors"
+                >
+                  Caso FAMBA
+                </a>
+              </li>
+            )
+          }
         </ul>
       </div>
 

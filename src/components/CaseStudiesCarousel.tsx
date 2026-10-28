@@ -9,6 +9,8 @@ export interface CaseStudyItem {
   cta: string;
   href: string;
   imgAlt: string;
+  // Página interna del caso, si existe
+  caseHref?: string;
 }
 
 interface Props {
@@ -137,6 +139,14 @@ export default function CaseStudiesCarousel({ items, locale }: Props) {
                       <path d="M7 17L17 7M17 7H7M17 7v10" />
                     </svg>
                   </a>
+                  {item.caseHref && (
+                    <a
+                      href={item.caseHref}
+                      className="text-center text-sm uppercase tracking-widest text-nimbel-text underline hover:text-nimbel-accent transition-colors"
+                    >
+                      {locale === "es" ? "Ver caso" : "View case"}
+                    </a>
+                  )}
                 </div>
 
                 {/* Right: image */}

@@ -20,9 +20,18 @@ const items = t("caseStudies", "items") as ReadonlyArray<{
   href: string;
   imgAlt: string;
 }>;
+
+// Casos con página propia (de momento solo en español)
+const caseLinks: Record<string, string> =
+  locale === "es" ? { famba: "/casos/famba/" } : {};
+const itemsWithCase = items.map((item) => ({
+  ...item,
+  caseHref: caseLinks[item.id],
+}));
 ---
 
 <section
+  id="casos"
   class="w-full bg-nimbel-bg py-16 sm:py-20 lg:py-24"
   aria-label={ariaLabel}
 >
@@ -35,7 +44,7 @@ const items = t("caseStudies", "items") as ReadonlyArray<{
 
     <CaseStudiesCarousel
       client:load
-      items={items}
+      items={itemsWithCase}
       locale={locale}
     />
   </div>

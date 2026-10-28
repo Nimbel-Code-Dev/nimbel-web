@@ -298,7 +298,7 @@ export const es = {
       {
         question: "¿Tiene experiencia en el sector salud?",
         answer:
-          "Sí. Nimbel Code desarrolla FAMBA, una plataforma de salud del viajero creada en colaboración con el Hospital Clínic de Barcelona.",
+          'Sí. Nimbel Code desarrolla <a href="/casos/famba/">FAMBA</a>, una plataforma de salud del viajero creada en colaboración con el Hospital Clínic de Barcelona.',
       },
       {
         question: "¿Quién dirige Nimbel Code?",

@@ -1,0 +1,72 @@
+---
+import { getCollection, render } from "astro:content";
+import Footer from "@/components/Footer.astro";
+import Navbar from "@/components/Navbar.astro";
+import Layout from "@/layouts/Layout.astro";
+
+// Los casos solo existen en español: /casos/<slug>
+export async function getStaticPaths() {
+  const casos = await getCollection("casos");
+  return casos.map((caso) => ({
+    params: { locale: undefined, slug: caso.id },
+    props: { caso },
+  }));
+}
+
+const { caso } = Astro.props;
+const { Content, headings } = await render(caso);
+const { name, title, description, datePublished } = caso.data;
+
+const siteUrl = "https://www.nimbel.net/";
+const pagePath = `/casos/${caso.id}/`;
+const pageUrl = new URL(pagePath, Astro.site).href;
+const organization = { "@id": `${siteUrl}#organization` };
+// El headline del Article es el H1 del propio markdown
+const headline = headings.find((h) => h.depth === 1)?.text ?? title;
+
+const graph = [
+  {
+    "@type": "Article",
+    "@id": `${pageUrl}#article`,
+    mainEntityOfPage: pageUrl,
+    headline,
+    description,
+    datePublished,
+    inLanguage: "es",
+    author: organization,
+    publisher: organization,
+    about: { "@type": "Thing", name },
+  },
+  {
+    "@type": "BreadcrumbList",
+    "@id": `${pageUrl}#breadcrumb`,
+    itemListElement: [
+      { "@type": "ListItem", position: 1, name: "Inicio", item: siteUrl },
+      { "@type": "ListItem", position: 2, name: "Casos", item: `${siteUrl}#casos` },
+      { "@type": "ListItem", position: 3, name, item: pageUrl },
+    ],
+  },
+];
+---
+
+<Layout
+  title={title}
+  description={description}
+  lang="es"
+  alternates={{ es: pagePath }}
+  graph={graph}
+>
+  <header>
+    <Navbar currentPage={pagePath} locale="es" alternateUrl="/en/" />
+  </header>
+
+  <section class="w-full bg-nimbel-text">
+    <article
+      class="max-w-3xl mx-auto px-6 py-16 font-clash text-nimbel-bg leading-relaxed [&_h1]:font-mortend [&_h1]:uppercase [&_h1]:text-3xl [&_h1]:mb-6 [&_h2]:font-mortend [&_h2]:uppercase [&_h2]:text-xl [&_h2]:mt-10 [&_h2]:mb-4 [&_p]:mb-4 [&_ul]:list-disc [&_ul]:pl-5 [&_li]:mb-2"
+    >
+      <Content />
+    </article>
+  </section>
+
+  <Footer locale="es" />
+</Layout>
