@@ -308,7 +308,8 @@ export const es = {
       },
       {
         question: "¿Cuánto cuesta un proyecto?",
-        answer: "Los proyectos parten de 10.000 €.",
+        answer:
+          "Trabajamos por fases, con presupuesto cerrado en cada una. Una primera fase suele partir de 10.000 €, y la mayoría de nuestros clientes empezaron así antes de seguir evolucionando su software con nosotros.",
       },
       {
         question: "¿Cómo contactar con Nimbel Code?",

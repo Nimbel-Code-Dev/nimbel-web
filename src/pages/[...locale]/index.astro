@@ -1,15 +1,19 @@
 ---
+import Audience from "@/components/Audience.astro";
 import CaseStudies from "@/components/CaseStudies.astro";
 import ClientsCarousel from "@/components/ClientsCarousel.astro";
 import Contact from "@/components/Contact.astro";
 import Footer from "@/components/Footer.astro";
 import HeroSection from "@/components/HeroSection.astro";
+import HomeFaq from "@/components/HomeFaq.astro";
 import Navbar from "@/components/Navbar.astro";
+import Process from "@/components/Process.astro";
 import Services from "@/components/Services.astro";
 import ServicesHeadline from "@/components/ServicesHeadline.astro";
 import Stats from "@/components/Stats.astro";
 import Team from "@/components/Team.astro";
 import Testimonials from "@/components/Testimonials.astro";
+import { homeEs } from "@/i18n/home-es";
 import { useTranslations, type Locale } from "@/i18n/utils";
 import Layout from "@/layouts/Layout.astro";
 
@@ -22,12 +26,35 @@ export function getStaticPaths() {
 
 const locale = (Astro.currentLocale ?? "es") as Locale;
 const t = useTranslations(locale);
+
+// Las secciones ¿Para quién es?, Cómo trabajamos y FAQ solo existen en español
+const isEs = locale === "es";
+const pageUrl = new URL(Astro.url.pathname, Astro.site).href;
+const organization = { "@id": "https://www.nimbel.net/#organization" };
+const graph = isEs
+  ? [
+      {
+        "@type": "FAQPage",
+        "@id": `${pageUrl}#faq`,
+        url: pageUrl,
+        inLanguage: locale,
+        about: organization,
+        publisher: organization,
+        mainEntity: homeEs.faq.items.map((item) => ({
+          "@type": "Question",
+          name: item.question,
+          acceptedAnswer: { "@type": "Answer", text: item.answer },
+        })),
+      },
+    ]
+  : [];
 ---
 
 <Layout
   title={t("meta", "title")}
   description={t("meta", "description")}
   lang={locale}
+  graph={graph}
 >
   <header>
     <Navbar currentPage="/" locale={locale} />
@@ -36,10 +63,13 @@ const t = useTranslations(locale);
   <ClientsCarousel locale={locale} />
   <ServicesHeadline locale={locale} />
   <Services locale={locale} />
+  {isEs && <Audience />}
   <Stats locale={locale} />
   <CaseStudies locale={locale} />
+  {isEs && <Process />}
   <Testimonials locale={locale} />
   <Team locale={locale} />
+  {isEs && <HomeFaq />}
   <Contact locale={locale} />
   <Footer locale={locale} />
 </Layout>

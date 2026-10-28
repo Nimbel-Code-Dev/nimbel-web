@@ -308,7 +308,8 @@ export const en = {
       },
       {
         question: "How much does a project cost?",
-        answer: "Projects start at €10,000.",
+        answer:
+          "We work in phases, with a fixed budget for each one. A first phase usually starts at €10,000, and most of our clients started that way before continuing to evolve their software with us.",
       },
       {
         question: "How can I contact Nimbel Code?",

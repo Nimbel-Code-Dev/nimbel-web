@@ -1,0 +1,44 @@
+---
+import { homeEs } from "@/i18n/home-es";
+
+// Solo ES de momento: el contenido sale de home-es.ts
+const { title, intro, steps } = homeEs.process;
+---
+
+<section id="como-trabajamos" class="w-full bg-nimbel-bg py-16 sm:py-20 lg:py-24 border-t border-white/10">
+  <div class="mx-auto w-full max-w-7xl px-6 sm:px-12 lg:px-16">
+    <h2
+      class="font-mortend text-sm sm:text-base uppercase tracking-widest text-nimbel-eyebrow mb-6"
+    >
+      {title}
+    </h2>
+    <p class="font-mortend text-2xl sm:text-3xl lg:text-4xl text-nimbel-text uppercase leading-tight max-w-4xl mb-10 sm:mb-14">
+      {intro}
+    </p>
+
+    <ol class="flex flex-col">
+      {
+        steps.map((step, index) => (
+          <li
+            class={`flex flex-col lg:flex-row gap-3 lg:gap-10 items-start py-6 sm:py-8${
+              index < steps.length - 1 ? " border-b border-white/10" : ""
+            }`}
+          >
+            <span
+              class="shrink-0 font-mortend text-3xl lg:text-4xl text-nimbel-accent lg:w-20"
+              aria-hidden="true"
+            >
+              {String(index + 1).padStart(2, "0")}
+            </span>
+            <h3 class="flex-1 font-mortend font-bold text-lg sm:text-xl lg:text-2xl text-nimbel-text uppercase leading-tight">
+              {step.title}
+            </h3>
+            <p class="flex-1 text-nimbel-muted text-base lg:text-lg leading-relaxed">
+              {step.text}
+            </p>
+          </li>
+        ))
+      }
+    </ol>
+  </div>
+</section>
