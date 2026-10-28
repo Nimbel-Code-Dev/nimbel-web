@@ -6,6 +6,7 @@ Fuente única de verdad de las decisiones SEO de nimbel.net. Esta carpeta la lee
 - `keyword-map.md`: keywords elegidas y descartadas, la URL asignada a cada una y su estado.
 - `decisiones.md`: registro cronológico de decisiones (la más reciente arriba), con qué se decidió y por qué.
 - `backlog.md`: tareas SEO pendientes y hechas, por prioridad.
+- `contenido-home.md`: texto SEO aprobado para la home que está pendiente de diseño.
 
 Los requisitos SEO por componente de la construcción inicial de la landing están en [`SPECS.md`](../../SPECS.md).
 

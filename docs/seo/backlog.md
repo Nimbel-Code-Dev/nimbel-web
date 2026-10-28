@@ -4,7 +4,7 @@ Las tareas hechas indican el commit donde se aplicaron.
 
 ## Alta
 - [x] Home: title, H1, subtítulo, H2 y meta description — hecho 2026-10-28
-- [x] Ampliar home a ~1.200–1.500 palabras: cómo trabajamos (proceso), para quién es, FAQ ("¿cuánto cuesta?", "¿qué pasa si mi proveedor actual desaparece?") — hecho 2026-10-28 (~1.370 palabras)
+- [ ] Ampliar home a ~1.200–1.500 palabras: el texto está aprobado en `contenido-home.md` y falta diseñarlo e implementarlo (la primera versión se retiró el 2026-10-28 por diseño)
 - [ ] Página nueva /cuanto-cuesta-software-a-medida (valorar incluir, con contexto: la mayoría de clientes empezó con una primera fase de ~10.000 € y hoy invierte ≥100.000 €/año)
 
 ## Media

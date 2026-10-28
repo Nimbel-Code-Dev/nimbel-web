@@ -2,6 +2,10 @@
 
 Registro cronológico, la más reciente arriba. Formato: `### AAAA-MM-DD — título`, qué se decidió y por qué.
 
+### 2026-10-28 — Secciones nuevas de la home retiradas hasta tener diseño
+**Qué**: se eliminan de la web y del código las secciones "¿Para quién es?", "Cómo trabajamos" y "Desarrollo de software a medida en Barcelona". El texto aprobado se guarda en `contenido-home.md`. Se mantiene publicado lo que no depende de ese diseño: el title, el H1, el subtítulo, el H2 y la meta de la home; los alt; y la FAQ de "Sobre Nimbel Code" con el precio por fases y Barcelona.
+**Por qué**: la implementación no tenía dirección visual y se veía mal. El contenido se rediseña partiendo de cero, con la diseñadora o con una skill de diseño, sin reutilizar esa versión. Las entradas anteriores sobre la home ampliada y sobre la FAQ única siguen valiendo en cuanto al contenido, no en cuanto a la implementación.
+
 ### 2026-10-28 — Una sola FAQ en la web: la de "Sobre Nimbel Code"
 **Qué**: se quita la FAQ de la home y su FAQPage. Su contenido pasa a texto normal en las secciones de la home: "¿qué es?" es ahora la introducción de "¿Para quién es?"; "proveedor que desaparece" va en el punto de Rescate; "Precio y plazos" y "Tu software es tuyo" van como H3 al final de "Cómo trabajamos"; Barcelona pasa a una sección H2 propia, "Desarrollo de software a medida en Barcelona", antes de Contacto. En la FAQ de "Sobre Nimbel Code" (ES/EN), "¿Dónde está?" añade el equipo en Barcelona y las reuniones en persona. La home queda en ~1.280 palabras. Sustituye a la parte de FAQ de la entrada "Home ampliada".
 **Por qué**: dos bloques de "Preguntas frecuentes" con temas solapados (precio, ubicación) y textos distintos se veían desordenados, para el visitante y para los LLM. Regla: la web tiene una sola FAQ (la de la empresa, en "Sobre Nimbel Code") y el resto de páginas cuentan su contenido como texto normal.
