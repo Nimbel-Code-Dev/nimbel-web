@@ -1,13 +1,10 @@
 ---
-import Audience from "@/components/Audience.astro";
-import Barcelona from "@/components/Barcelona.astro";
 import CaseStudies from "@/components/CaseStudies.astro";
 import ClientsCarousel from "@/components/ClientsCarousel.astro";
 import Contact from "@/components/Contact.astro";
 import Footer from "@/components/Footer.astro";
 import HeroSection from "@/components/HeroSection.astro";
 import Navbar from "@/components/Navbar.astro";
-import Process from "@/components/Process.astro";
 import Services from "@/components/Services.astro";
 import ServicesHeadline from "@/components/ServicesHeadline.astro";
 import Stats from "@/components/Stats.astro";
@@ -25,9 +22,6 @@ export function getStaticPaths() {
 
 const locale = (Astro.currentLocale ?? "es") as Locale;
 const t = useTranslations(locale);
-
-// Las secciones ¿Para quién es?, Cómo trabajamos y Barcelona solo existen en español
-const isEs = locale === "es";
 ---
 
 <Layout
@@ -42,13 +36,10 @@ const isEs = locale === "es";
   <ClientsCarousel locale={locale} />
   <ServicesHeadline locale={locale} />
   <Services locale={locale} />
-  {isEs && <Audience />}
   <Stats locale={locale} />
   <CaseStudies locale={locale} />
-  {isEs && <Process />}
   <Testimonials locale={locale} />
   <Team locale={locale} />
-  {isEs && <Barcelona />}
   <Contact locale={locale} />
   <Footer locale={locale} />
 </Layout>
