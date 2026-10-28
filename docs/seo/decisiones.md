@@ -2,6 +2,10 @@
 
 Registro cronológico, la más reciente arriba. Formato: `### AAAA-MM-DD — título`, qué se decidió y por qué.
 
+### 2026-10-28 — Una sola FAQ en la web: la de "Sobre Nimbel Code"
+**Qué**: se quita la FAQ de la home y su FAQPage. Su contenido pasa a texto normal en las secciones de la home: "¿qué es?" es ahora la introducción de "¿Para quién es?"; "proveedor que desaparece" va en el punto de Rescate; "Precio y plazos" y "Tu software es tuyo" van como H3 al final de "Cómo trabajamos"; Barcelona pasa a una sección H2 propia, "Desarrollo de software a medida en Barcelona", antes de Contacto. En la FAQ de "Sobre Nimbel Code" (ES/EN), "¿Dónde está?" añade el equipo en Barcelona y las reuniones en persona. La home queda en ~1.280 palabras. Sustituye a la parte de FAQ de la entrada "Home ampliada".
+**Por qué**: dos bloques de "Preguntas frecuentes" con temas solapados (precio, ubicación) y textos distintos se veían desordenados, para el visitante y para los LLM. Regla: la web tiene una sola FAQ (la de la empresa, en "Sobre Nimbel Code") y el resto de páginas cuentan su contenido como texto normal.
+
 ### 2026-10-28 — Home ampliada: ¿Para quién es?, Cómo trabajamos y FAQ
 **Qué**: la home en español pasa de ~640 a ~1.370 palabras con tres secciones H2: "¿Para quién es?" (después de Servicios), "Cómo trabajamos" (5 pasos, después de Proyectos) y "Preguntas frecuentes" (6 preguntas, antes de Contacto). El FAQPage se añade al `@graph` con el mismo texto que se ve en la página. El contenido vive en `src/i18n/home-es.ts`, fuera de `es.ts`, y solo se pinta en ES: /en no cambia. También: el alt del logo pasa a "Hospital Clínic de Barcelona" (ES y EN) y la flecha del CTA del hero lleva `aria-hidden`. Las 9 imágenes con `alt=""` son decorativas (copia del marquee e iconos de contacto) y se quedan así.
 **Por qué**: la home tenía poco contenido para sus keywords principales y no respondía las dudas del cliente objetivo (precio, propiedad, proveedor que desaparece). Los pasos del proceso, el presupuesto cerrado por fase y el registro de horas los confirmó Rubén. No se publica ningún plazo porque no hay un dato que dar.
