@@ -16,6 +16,12 @@ export const audience = {
   items: [
     {
       title:
+        "Tienes un negocio y quieres lanzar tu propia app o SaaS, pero no tienes equipo técnico",
+      description:
+        "Tú conoces tu sector y a tus clientes; nosotros ponemos el equipo técnico que convierte tu idea en un producto real, desde la primera versión hasta que crece. Y el código es tuyo.",
+    },
+    {
+      title:
         "Tu empresa funciona con Excel, correos y herramientas que no se hablan entre sí",
       description:
         "La información está repartida, los datos se copian a mano y nadie tiene la foto completa. Reunimos tus procesos en una sola herramienta, pensada para cómo trabajas.",
