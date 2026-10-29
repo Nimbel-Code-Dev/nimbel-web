@@ -2,6 +2,10 @@
 
 Registro cronológico, la más reciente arriba. Formato: `### AAAA-MM-DD — título`, qué se decidió y por qué.
 
+### 2026-10-29 — El bloque sobre SaaS pasa al final de "¿Para quién es?"
+**Qué**: el H3 "¿Cuándo conviene un software a medida frente a uno estándar (SaaS)?" sale de la intro y va después de las 4 situaciones, en una fila con el título a la izquierda y los dos párrafos a la derecha, como las filas de Servicios. La intro vuelve a sus dos párrafos. El texto no cambia. Sustituye a la ubicación de la entrada siguiente.
+**Por qué**: entre los párrafos de la intro se formaba un bloque de texto de cuatro párrafos seguidos, ilegible, antes de llegar a la cuadrícula. Se valoró pasarlo a dos columnas con puntos o recortarlo, y Rubén eligió moverlo sin cambiar el texto.
+
 ### 2026-10-28 — La home responde cuándo conviene software a medida frente a un SaaS
 **Qué**: "¿Para quién es?" añade un H3, "¿Cuándo conviene un software a medida frente a uno estándar (SaaS)?", con dos párrafos: cuándo conviene un programa estándar (procesos iguales a los de cualquier empresa) y cuándo conviene el software a medida (proceso diferencial, herramientas que deben compartir datos, operativa forzada por las limitaciones del programa, licencias que crecen por usuario), y que a menudo lo mejor es combinar las dos cosas. Va entre los dos párrafos de la intro, para que "Si te reconoces en alguna de estas situaciones" siga justo encima de la cuadrícula. Es texto normal, no una FAQ.
 **Por qué**: la home comparaba estándar y a medida en una frase, pero no respondía cuándo conviene cada uno, que es la duda de quien compara. Con la pregunta como título, buscadores y LLM la identifican mejor como respuesta. Decir también cuándo no conviene el software a medida da credibilidad ante un cliente que quiere delegar.
