@@ -2,6 +2,13 @@
 
 Registro cronológico, la más reciente arriba. Formato: `### AAAA-MM-DD — título`, qué se decidió y por qué.
 
+### 2026-10-29 — Corrección del cliente objetivo
+**Qué**: el cliente principal (dato real) es un profesional con un negocio o con conocimiento de su sector que quiere lanzar su propia app o SaaS y no tiene equipo técnico. Todos los clientes actuales son así (FAMBA, NewsUp, Analysta, Innocard). El cliente secundario es la empresa que quiere digitalizar su operativa. Las keywords que salen de esto son hipótesis hasta validarlas en Semrush (sección "Hipótesis" de `keyword-map.md`): no se crean páginas públicas basadas en ellas. La home mantiene por ahora el H1 "para empresas"; se revisará si la página de socio tecnológico funciona. Ya se hace en la home: una situación nueva, en primer lugar, en "¿Para quién es?" para este cliente.
+**Observado en Google** (google.es, 2026-10-28):
+- "desarrollar mi idea de app sin conocimientos": SERP dominada por no-code y constructores de apps con IA (Flexygo, Adalo, Emergent, vídeos "crear app sin saber programar"). Intención "hazlo tú mismo": EVITAR "sin saber programar", "sin conocimientos" y "sin código".
+- "socio tecnológico para desarrollar mi app": nº 1 appsociados.com, con el mensaje "Tú pones la idea y el conocimiento del sector… nosotros la programación y tecnología". También aparecen listados "Top 10 empresas desarrolladoras de apps en España". Intención correcta.
+**Por qué**: el criterio anterior ("responsables de empresa que quieren delegar la tecnología") describía solo al cliente secundario. El posicionamiento y las keywords tienen que hablarle a quien de verdad contrata.
+
 ### 2026-10-29 — El bloque sobre SaaS pasa al final de "¿Para quién es?"
 **Qué**: el H3 "¿Cuándo conviene un software a medida frente a uno estándar (SaaS)?" sale de la intro y va después de las 4 situaciones, en una fila con el título a la izquierda y los dos párrafos a la derecha, como las filas de Servicios. La intro vuelve a sus dos párrafos. El texto no cambia. Sustituye a la ubicación de la entrada siguiente.
 **Por qué**: entre los párrafos de la intro se formaba un bloque de texto de cuatro párrafos seguidos, ilegible, antes de llegar a la cuadrícula. Se valoró pasarlo a dos columnas con puntos o recortarlo, y Rubén eligió moverlo sin cambiar el texto.

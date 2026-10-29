@@ -12,6 +12,7 @@ Texto aprobado para ampliar la home en español de ~640 a ~1.250 palabras. Tiene
 - No añadir datos que no estén aquí (plazos, cifras, clientes). Los datos los confirmó Rubén el 2026-10-28.
 - Enlace interno: "Rescate e integración" apunta a la sección de Servicios (`#services`).
 - "¿Cuándo conviene un software a medida frente a uno estándar (SaaS)?" va como H3 al final de "¿Para quién es?", después de las 4 situaciones, en una fila con el título a la izquierda y el texto a la derecha. Texto aprobado por Rubén el 2026-10-28.
+- La primera situación de "¿Para quién es?" (fundador que quiere lanzar su app o SaaS sin equipo técnico) se añadió el 2026-10-29 tras corregir el cliente objetivo (ver `decisiones.md`).
 
 ## Ubicación en la home
 1. **¿Para quién es?**: después de Servicios.
@@ -24,6 +25,9 @@ Texto aprobado para ampliar la home en español de ~640 a ~1.250 palabras. Tiene
 El desarrollo de software a medida consiste en crear una herramienta pensada para tu empresa: tus procesos, tus datos y tu forma de trabajar. Un programa estándar es igual para todos y te obliga a adaptarte a él, normalmente pagando licencias. Con el software a medida ocurre al revés: la herramienta se adapta a ti y crece cuando tu negocio lo necesita.
 
 Hacemos software a medida para empresas que necesitan tecnología propia, pero no quieren convertirse en una empresa tecnológica. Si te reconoces en alguna de estas situaciones, podemos ayudarte.
+
+### Tienes un negocio y quieres lanzar tu propia app o SaaS, pero no tienes equipo técnico
+Tú conoces tu sector y a tus clientes; nosotros ponemos el equipo técnico que convierte tu idea en un producto real, desde la primera versión hasta que crece. Y el código es tuyo.
 
 ### Tu empresa funciona con Excel, correos y herramientas que no se hablan entre sí
 La información está repartida, los datos se copian a mano y nadie tiene la foto completa. Reunimos tus procesos en una sola herramienta, pensada para cómo trabajas.
