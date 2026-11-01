@@ -27,12 +27,6 @@ export const audience = {
         "La información está repartida, los datos se copian a mano y nadie tiene la foto completa. Reunimos tus procesos en una sola herramienta, pensada para cómo trabajas.",
     },
     {
-      title:
-        "Necesitas una aplicación propia y no quieres montar un equipo técnico",
-      description:
-        "Quieres una app o una plataforma para tus clientes o tu equipo, sin contratar programadores ni gestionar un departamento de tecnología. Nosotros somos ese equipo.",
-    },
-    {
       title: "Tu proveedor anterior desapareció o el proyecto quedó a medias",
       description:
         "Tienes código que nadie mantiene o un desarrollo que no termina de funcionar, aunque se haya generado con IA. Tiene solución: revisamos lo que hay (código, servidores, accesos y documentación), te explicamos en qué estado está y seguimos desde donde esté. Es nuestro servicio de ",

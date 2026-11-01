@@ -12,7 +12,7 @@ Texto aprobado para ampliar la home en español de ~640 a ~1.250 palabras. Tiene
 - No añadir datos que no estén aquí (plazos, cifras, clientes). Los datos los confirmó Rubén el 2026-10-28.
 - Enlace interno: "Rescate e integración" apunta a la sección de Servicios (`#services`).
 - "¿Cuándo conviene un software a medida frente a uno estándar (SaaS)?" va como H3 al final de "¿Para quién es?", después de las 4 situaciones, en una fila con el título a la izquierda y el texto a la derecha. Texto aprobado por Rubén el 2026-10-28.
-- La primera situación de "¿Para quién es?" (fundador que quiere lanzar su app o SaaS sin equipo técnico) se añadió el 2026-10-29 tras corregir el cliente objetivo (ver `decisiones.md`).
+- La primera situación de "¿Para quién es?" (fundador que quiere lanzar su app o SaaS sin equipo técnico) se añadió el 2026-10-29 tras corregir el cliente objetivo (ver `decisiones.md`). El 2026-11-01 se quitó "Necesitas una aplicación propia y no quieres montar un equipo técnico", que repetía lo mismo.
 
 ## Ubicación en la home
 1. **¿Para quién es?**: después de Servicios.
@@ -31,9 +31,6 @@ Tú conoces tu sector y a tus clientes; nosotros ponemos el equipo técnico que 
 
 ### Tu empresa funciona con Excel, correos y herramientas que no se hablan entre sí
 La información está repartida, los datos se copian a mano y nadie tiene la foto completa. Reunimos tus procesos en una sola herramienta, pensada para cómo trabajas.
-
-### Necesitas una aplicación propia y no quieres montar un equipo técnico
-Quieres una app o una plataforma para tus clientes o tu equipo, sin contratar programadores ni gestionar un departamento de tecnología. Nosotros somos ese equipo.
 
 ### Tu proveedor anterior desapareció o el proyecto quedó a medias
 Tienes código que nadie mantiene o un desarrollo que no termina de funcionar, aunque se haya generado con IA. Tiene solución: revisamos lo que hay (código, servidores, accesos y documentación), te explicamos en qué estado está y seguimos desde donde esté. Es nuestro servicio de [Rescate e integración](#services).
