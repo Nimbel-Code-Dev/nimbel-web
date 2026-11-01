@@ -65,6 +65,46 @@ export const en = {
       },
     ],
   },
+  audience: {
+    headline: "Who is it for?",
+    intro:
+      "Custom software development means building a tool designed for your company: your processes, your data and the way you work. Off-the-shelf software is the same for everyone and forces you to adapt to it, usually while paying licenses. With custom software it works the other way around: the tool adapts to you and grows when your business needs it.",
+    comparison: {
+      title: "When is custom software better than off-the-shelf software (SaaS)?",
+      paragraphs: [
+        "Off-the-shelf software makes sense when your process is the same as any other company's, such as accounting, payroll or email. There are already good tools for that, and there's no point in building them again.",
+        "Custom software makes sense when the way you work is part of what sets you apart, when you need several tools to share data, when you're changing how you operate to fit the limitations of a program, or when licenses go up with every new user. Often the answer is to combine both: keep the SaaS that works and build custom what doesn't fit.",
+      ],
+    },
+    lead: "We build custom software for companies that need their own technology but don't want to become a tech company. If you recognize yourself in any of these situations, we can help.",
+    items: [
+      {
+        title:
+          "You have a business and want to launch your own app or SaaS, but you don't have a tech team",
+        description:
+          "You know your industry and your customers; we bring the tech team that turns your idea into a real product, from the first version until it grows. And the code is yours.",
+      },
+      {
+        title:
+          "Your company runs on Excel, emails and tools that don't talk to each other",
+        description:
+          "Information is scattered, data is copied by hand and nobody has the full picture. We bring your processes together in a single tool, designed around how you work.",
+      },
+      {
+        title: "Your previous provider disappeared or the project was left half-finished",
+        description:
+          "You have code nobody maintains or a project that never quite works, even if it was generated with AI. It can be fixed: we review what's there (code, servers, access and documentation), explain what state it's in and pick up from wherever it is. It's our ",
+        link: { label: "Rescue and integration", href: "#services" },
+        after: " service.",
+      },
+      {
+        title:
+          "You want to use AI in your operations, but don't know where to start",
+        description:
+          "We help you see where it really adds value and integrate it with your systems, step by step and without experiments.",
+      },
+    ],
+  },
   stats: {
     ariaLabel: "Nimbel Code statistics",
     items: [
@@ -116,6 +156,50 @@ export const en = {
         cta: "discover NEWSUP",
         href: "https://www.newsup.ai/",
         imgAlt: "NewsUp project screenshot",
+      },
+    ],
+  },
+  howWeWork: {
+    headline: "How we work",
+    intro:
+      "You focus on your business; we take care of the technology. This is what a custom software development project with Nimbel Code looks like.",
+    steps: [
+      {
+        title: "Initial conversation",
+        description:
+          "You tell us what you need and what problem you want to solve. No jargon: we talk about your business, not technology.",
+      },
+      {
+        title: "Analysis of how you work",
+        description:
+          "We study your processes, your tools and the people who will use the software. That way we build what you need, not what fits a template.",
+      },
+      {
+        title: "Phased proposal",
+        description:
+          "You receive a proposal with the scope and a fixed budget for each phase. You know what you'll get and what it costs before we start.",
+      },
+      {
+        title: "Development with frequent deliveries",
+        description:
+          "You see real progress throughout the project and tell us what to adjust. We also log, hour by hour, what we spend our time on and how the budget is being used, so you understand which parts cost more and which cost less.",
+      },
+      {
+        title: "Maintenance and support",
+        description:
+          "Once the software is up and running, we stay by your side: we maintain it, evolve it and are there when something breaks.",
+      },
+    ],
+    notes: [
+      {
+        title: "Price and timelines",
+        description:
+          "They depend on the scope: a simple internal tool doesn't cost the same as a platform with a mobile app and integrations. That's why we work in phases, with a fixed budget and timeline for each one. A first phase usually starts at €10,000, and most of our clients started that way before continuing to evolve their software with us. We'll soon publish a page with more detail on pricing.",
+      },
+      {
+        title: "Your software is yours",
+        description:
+          "What we build for you is yours from day one: the code, the data and the control. You don't pay licenses to use it or depend on us to keep going. If you ever prefer another team to maintain it, you can.",
       },
     ],
   },

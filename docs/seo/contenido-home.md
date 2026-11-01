@@ -1,13 +1,13 @@
 # Contenido SEO pendiente de diseño — home (ES)
 
-Última actualización: 2026-10-28 · Estado: texto aprobado e **implementado** en la home con los bloques visuales actuales (`Audience.astro` y `Process.astro`; texto en `src/i18n/home-es.ts`). La sección de Barcelona se quitó el mismo día. Pendiente del rediseño de la diseñadora.
+Última actualización: 2026-10-28 · Estado: texto aprobado e **implementado** en la home con los bloques visuales actuales (`Audience.astro` y `Process.astro`; texto en `src/i18n/es.ts` y su traducción en `src/i18n/en.ts`, claves `audience` y `howWeWork`). La sección de Barcelona se quitó el mismo día. Pendiente del rediseño de la diseñadora.
 
 Texto aprobado para ampliar la home en español de ~640 a ~1.250 palabras. Tiene que estar en la web por SEO; el diseño está por hacer. Ver el contexto en `decisiones.md` y la tarea "Ampliar home" en `backlog.md`.
 
 ## Requisitos del contenido
 - Keywords de la home (`keyword-map.md`): "desarrollo de software a medida" (2 veces en este texto) y "software a medida para empresas" (1 vez). "empresa desarrollo software barcelona" ya no tiene apoyo en este texto: solo en el title.
 - Jerarquía: cada sección es un H2; los títulos de dentro son H3. La home ya tiene su H1 y no se toca.
-- Solo en español. /en no lleva estas secciones.
+- En español y en inglés desde el 2026-11-01: /en lleva las mismas secciones, traducidas en `en.ts`. Un cambio aquí se aplica en los dos idiomas.
 - **Una sola FAQ en toda la web** (la de "Sobre Nimbel Code"). Este contenido va como texto normal, no como bloque de preguntas.
 - No añadir datos que no estén aquí (plazos, cifras, clientes). Los datos los confirmó Rubén el 2026-10-28.
 - Enlace interno: "Rescate e integración" apunta a la sección de Servicios (`#services`).

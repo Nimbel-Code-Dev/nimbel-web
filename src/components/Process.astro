@@ -1,6 +1,19 @@
 ---
-// Solo en español: el contenido vive en home-es.ts
-import { howWeWork } from "@/i18n/home-es";
+import { useTranslations, type Locale } from "@/i18n/utils";
+
+interface Props {
+  locale: Locale;
+}
+
+const { locale } = Astro.props;
+const t = useTranslations(locale);
+
+const howWeWork = {
+  headline: t("howWeWork", "headline"),
+  intro: t("howWeWork", "intro"),
+  steps: t("howWeWork", "steps"),
+  notes: t("howWeWork", "notes"),
+};
 ---
 
 <section

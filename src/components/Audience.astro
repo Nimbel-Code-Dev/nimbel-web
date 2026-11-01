@@ -1,6 +1,26 @@
 ---
-// Solo en español: el contenido vive en home-es.ts
-import { audience } from "@/i18n/home-es";
+import { useTranslations, type Locale } from "@/i18n/utils";
+
+interface Props {
+  locale: Locale;
+}
+
+const { locale } = Astro.props;
+const t = useTranslations(locale);
+
+const audience = {
+  headline: t("audience", "headline"),
+  intro: t("audience", "intro"),
+  lead: t("audience", "lead"),
+  comparison: t("audience", "comparison"),
+  // Solo una situación lleva enlace
+  items: t("audience", "items") as ReadonlyArray<{
+    title: string;
+    description: string;
+    link?: { label: string; href: string };
+    after?: string;
+  }>,
+};
 ---
 
 <section
