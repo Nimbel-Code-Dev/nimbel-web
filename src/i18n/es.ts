@@ -81,7 +81,9 @@ export const es = {
         title:
           "Tienes un negocio y quieres lanzar tu propia app o SaaS, pero no tienes equipo técnico",
         description:
-          "Tú conoces tu sector y a tus clientes; nosotros ponemos el equipo técnico que convierte tu idea en un producto real, desde la primera versión hasta que crece. Y el código es tuyo.",
+          "Tú conoces tu sector y a tus clientes; nosotros ponemos el equipo técnico que convierte tu idea en un producto real, desde la primera versión hasta que crece. Y el código es tuyo. Más sobre nuestro ",
+        link: { label: "desarrollo de apps", href: "/desarrollo-de-apps/" },
+        after: ".",
       },
       {
         title:
@@ -401,5 +403,110 @@ export const es = {
           'En <a href="mailto:ruben@nimbel.net">ruben@nimbel.net</a>, en el <a href="tel:+34666969374">+34 666 969 374</a> o desde nimbel.net.',
       },
     ],
+  },
+  appDevelopment: {
+    title: "Empresa de desarrollo de apps en Barcelona | Nimbel Code",
+    description:
+      "Tú pones el conocimiento de tu negocio; nosotros, el equipo técnico que convierte tu idea en una app o SaaS real. Y el código es tuyo desde el primer día.",
+    breadcrumb: "Desarrollo de apps",
+    headline:
+      "Empresa de desarrollo de apps: tú pones el negocio, nosotros el equipo técnico",
+    intro: [
+      "Conoces tu sector, a tus clientes y el problema que quieres resolver. Lo que te falta es el equipo que lo convierta en un producto. Somos una empresa de desarrollo de apps que hace de socio tecnológico: diseñamos, desarrollamos, lanzamos y mantenemos tu app o SaaS.",
+      "No necesitas saber de tecnología: hablamos de tu producto y de tus clientes, y te explicamos cada decisión técnica para que entiendas lo que tienes. Tenemos equipo en Barcelona, así que si estás allí podemos reunirnos en persona.",
+    ],
+    audience: {
+      title: "Desarrollo de apps para empresas y profesionales con una idea",
+      paragraphs: [
+        "Es para ti si tienes un negocio o una experiencia de años en tu sector, una idea de producto digital para tus clientes o para tu mercado, y no tienes programadores ni quieres montar un departamento de tecnología.",
+        "También para empresas que quieren una app propia para sus clientes o su equipo sin contratar a nadie.",
+      ],
+    },
+    journey: {
+      headline: "De la idea a la app en el mercado",
+      intro: "Una primera versión (MVP) suele estar lista en unos 3 meses.",
+      steps: [
+        {
+          title: "Idea",
+          description:
+            "Nos cuentas qué quieres lanzar y para quién. Sin tecnicismos.",
+        },
+        {
+          title: "Validación y alcance",
+          description:
+            "Decidimos juntos qué tiene que tener la primera versión y qué puede esperar. Recibes el alcance y el presupuesto cerrado de cada fase.",
+        },
+        {
+          title: "MVP",
+          description:
+            "Desarrollamos la primera versión con entregas frecuentes, para que veas avances reales y digas qué ajustar.",
+        },
+        {
+          title: "Lanzamiento",
+          description:
+            "Ponemos tu producto en producción y, si es una app móvil, la publicamos en App Store y Google Play.",
+        },
+        {
+          title: "Evolución y mantenimiento",
+          description:
+            "Seguimos a tu lado: mantenemos el producto, lo hacemos evolucionar y estamos cuando algo falla.",
+        },
+      ],
+      notes: [
+        {
+          title: "Cuánto cuesta crear una app",
+          description:
+            "Trabajamos por fases, con un presupuesto cerrado en cada una, para que sepas lo que vas a invertir antes de empezar. La primera fase es el MVP y suele partir de 10.000 €. A partir de ahí, el producto crece por fases según lo que necesites.",
+        },
+        {
+          title: "El código y los datos son tuyos",
+          description:
+            "Lo que desarrollamos para ti es tuyo desde el primer día: el código, los datos y el control. No pagas licencias por usarlo ni dependes de nosotros para seguir adelante. Si algún día prefieres que lo mantenga otro equipo, puedes hacerlo.",
+        },
+      ],
+    },
+    cases: {
+      headline: "Apps que hemos creado y rescatado",
+      groups: [
+        {
+          title: "Desde cero",
+          items: [
+            {
+              name: "Analysta",
+              description:
+                "Herramienta digital para simplificar el análisis de la operativa de un inversor en mercados financieros. La desarrollamos desde cero.",
+              testimonial: "pol-margaix",
+            },
+            {
+              name: "Innocard",
+              description:
+                "Plataforma para crear tarjetas de presentación digitales personalizadas. La desarrollamos desde cero.",
+            },
+          ],
+        },
+        {
+          title: "Rescates: cuando el proveedor anterior no funcionó",
+          intro:
+            "No todos los proyectos empiezan de cero. A veces llegan después de pasar por otros proveedores. Es nuestro servicio de ",
+          link: { label: "Rescate e integración", href: "/#services" },
+          after: ".",
+          items: [
+            {
+              name: "FAMBA",
+              description:
+                "Plataforma de salud del viajero creada en colaboración con el Hospital Clínic de Barcelona: app móvil, consola de atención para doctores y consola de análisis de datos y estadísticas. 8.000 usuarios, 5 centros activos y 4 países de la UE (España, Italia, Bélgica y Alemania).",
+              testimonial: "jose-munoz",
+              link: { label: "Ver el caso de FAMBA", href: "/casos/famba/" },
+            },
+            {
+              name: "NewsUp",
+              description:
+                "Plataforma digital de noticias que permite tener una sala de prensa, enviar emails y compartir contenido multimedia HD. Pasó por varios proveedores hasta que rescatamos el proyecto y construimos su producto.",
+              testimonial: "gerard-gil",
+            },
+          ],
+        },
+      ],
+    },
   },
 } as const;

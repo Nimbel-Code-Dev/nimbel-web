@@ -1,0 +1,246 @@
+---
+// Página de desarrollo de apps, montada con los bloques visuales de la home
+// (¿Para quién es?, Cómo trabajamos y Contacto). Texto en appDevelopment de es.ts/en.ts.
+import Contact from "@/components/Contact.astro";
+import Footer from "@/components/Footer.astro";
+import Navbar from "@/components/Navbar.astro";
+import { useTranslations, type Locale } from "@/i18n/utils";
+import Layout from "@/layouts/Layout.astro";
+
+interface Props {
+  locale: Locale;
+}
+
+type Link = { label: string; href: string };
+type CaseItem = {
+  name: string;
+  description: string;
+  testimonial?: string;
+  link?: Link;
+};
+type CaseGroup = {
+  title: string;
+  intro?: string;
+  link?: Link;
+  after?: string;
+  items: ReadonlyArray<CaseItem>;
+};
+
+const { locale } = Astro.props;
+const t = useTranslations(locale);
+
+const title = t("appDevelopment", "title") as string;
+const description = t("appDevelopment", "description") as string;
+const breadcrumb = t("appDevelopment", "breadcrumb") as string;
+const headline = t("appDevelopment", "headline") as string;
+const intro = t("appDevelopment", "intro") as ReadonlyArray<string>;
+const audience = t("appDevelopment", "audience");
+const journey = t("appDevelopment", "journey");
+const caseGroups = t("appDevelopment", "cases").groups as ReadonlyArray<CaseGroup>;
+const casesHeadline = t("appDevelopment", "cases").headline;
+
+// Los testimonios se leen de la sección de Testimonios para no duplicar el texto
+const testimonials = t("testimonials", "items") as ReadonlyArray<{
+  id: string;
+  name: string;
+  role: string;
+  quote: string;
+}>;
+const testimonialById = (id?: string) => testimonials.find((item) => item.id === id);
+
+// De momento solo existe en español; /en llegará cuando tenga keyword asignada
+const alternates = { es: "/desarrollo-de-apps/" };
+const siteUrl = "https://www.nimbel.net/";
+const pageUrl = new URL(Astro.url.pathname, Astro.site).href;
+
+const graph = [
+  {
+    "@type": "WebPage",
+    "@id": pageUrl,
+    url: pageUrl,
+    name: title,
+    description,
+    inLanguage: locale,
+    isPartOf: { "@id": `${siteUrl}#website` },
+    about: { "@id": `${siteUrl}#organization` },
+    breadcrumb: { "@id": `${pageUrl}#breadcrumb` },
+  },
+  {
+    "@type": "BreadcrumbList",
+    "@id": `${pageUrl}#breadcrumb`,
+    itemListElement: [
+      {
+        "@type": "ListItem",
+        position: 1,
+        name: locale === "es" ? "Inicio" : "Home",
+        item: siteUrl,
+      },
+      { "@type": "ListItem", position: 2, name: breadcrumb, item: pageUrl },
+    ],
+  },
+];
+
+const linkClass =
+  "underline decoration-nimbel-accent underline-offset-4 hover:text-nimbel-accent";
+---
+
+<Layout
+  title={title}
+  description={description}
+  lang={locale}
+  alternates={alternates}
+  graph={graph}
+>
+  <header>
+    <Navbar currentPage={alternates.es} locale={locale} alternateUrl="/en/" />
+  </header>
+
+  <!-- Mensaje central y para quién es: bloque de "¿Para quién es?" -->
+  <section class="w-full bg-nimbel-bg py-16 sm:py-20 lg:py-24">
+    <div class="mx-auto w-full max-w-7xl px-6 sm:px-12 lg:px-16">
+      <h1
+        class="font-mortend text-2xl sm:text-3xl lg:text-4xl xl:text-5xl text-nimbel-text uppercase leading-tight tracking-[-0.01em] mb-6"
+      >
+        {headline}
+      </h1>
+
+      <div
+        class="max-w-3xl flex flex-col gap-4 text-nimbel-muted text-base sm:text-lg leading-relaxed"
+      >
+        {intro.map((paragraph) => <p>{paragraph}</p>)}
+      </div>
+
+      <div class="flex flex-col lg:flex-row gap-4 lg:gap-10 items-start mt-12 sm:mt-16 border-t border-nimbel-muted/30 pt-8 sm:pt-10">
+        <h2 class="flex-1 font-bold text-xl lg:text-2xl text-nimbel-text leading-snug">
+          {audience.title}
+        </h2>
+        <div class="flex-1 flex flex-col gap-4 text-nimbel-muted text-base sm:text-lg leading-relaxed">
+          {audience.paragraphs.map((paragraph) => <p>{paragraph}</p>)}
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Recorrido, precio y propiedad: bloque de "Cómo trabajamos" -->
+  <section class="w-full bg-nimbel-text py-16 sm:py-20 lg:py-24">
+    <div class="mx-auto w-full max-w-7xl px-6 sm:px-12 lg:px-16">
+      <h2
+        class="font-mortend text-2xl sm:text-3xl lg:text-4xl xl:text-5xl text-nimbel-bg uppercase leading-tight tracking-[-0.01em] mb-4"
+      >
+        {journey.headline}
+      </h2>
+
+      <p class="max-w-3xl text-gray-600 text-sm sm:text-base mb-10 sm:mb-14">
+        {journey.intro}
+      </p>
+
+      <div class="flex flex-col">
+        {
+          journey.steps.map((step, index) => (
+            <div
+              class={`flex flex-col lg:flex-row gap-4 lg:gap-10 items-start py-6 sm:py-8 lg:py-10 px-2 sm:px-4 lg:px-10${
+                index < journey.steps.length - 1 ? " border-b border-nimbel-bg" : ""
+              }`}
+            >
+              <h3 class="flex-1 flex flex-col lg:flex-row gap-2 lg:gap-10 items-start font-mortend font-bold text-xl sm:text-2xl lg:text-3xl text-nimbel-bg uppercase tracking-[-0.36px] leading-tight">
+                <span class="shrink-0 w-10 sm:w-14 lg:w-20 text-nimbel-accent">
+                  {index + 1}.
+                </span>{" "}
+                <span>{step.title}</span>
+              </h3>
+              <p class="flex-1 font-clash text-sm sm:text-base lg:text-xl text-nimbel-bg leading-normal">
+                {step.description}
+              </p>
+            </div>
+          ))
+        }
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mt-10 sm:mt-14">
+        {
+          journey.notes.map((note) => (
+            <div class="bg-nimbel-surface rounded-lg shadow-md p-6 lg:p-8 flex flex-col gap-4">
+              <h3 class="font-bold text-xl text-nimbel-bg leading-tight">
+                {note.title}
+              </h3>
+              <p class="text-gray-700 text-base leading-relaxed">
+                {note.description}
+              </p>
+            </div>
+          ))
+        }
+      </div>
+    </div>
+  </section>
+
+  <!-- Casos: cuadrícula de "¿Para quién es?" -->
+  <section class="w-full bg-nimbel-bg py-16 sm:py-20 lg:py-24">
+    <div class="mx-auto w-full max-w-7xl px-6 sm:px-12 lg:px-16">
+      <h2
+        class="font-mortend text-2xl sm:text-3xl lg:text-4xl xl:text-5xl text-nimbel-text uppercase leading-tight tracking-[-0.01em] mb-6"
+      >
+        {casesHeadline}
+      </h2>
+
+      {
+        caseGroups.map((group) => (
+          <div class="mt-12 sm:mt-16">
+            <h3 class="font-bold text-xl lg:text-2xl text-nimbel-text leading-snug mb-4">
+              {group.title}
+            </h3>
+            {group.intro && (
+              <p class="max-w-3xl text-nimbel-muted text-base sm:text-lg leading-relaxed mb-8">
+                {group.intro}
+                {group.link && <a href={group.link.href} class={linkClass}>{group.link.label}</a>}
+                {group.after}
+              </p>
+            )}
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-x-12 lg:gap-x-16 gap-y-10">
+              {group.items.map((item) => {
+                const testimonial = testimonialById(item.testimonial);
+                return (
+                  <div class="flex flex-col lg:flex-row gap-4 border-t border-nimbel-muted/30 pt-6">
+                    <svg
+                      viewBox="0 0 24 24"
+                      class="shrink-0 w-8 h-8 sm:w-10 sm:h-10 text-nimbel-accent"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      aria-hidden="true"
+                    >
+                      <path d="M7 17L17 7M17 7H7M17 7V17" />
+                    </svg>
+                    <div class="flex flex-col gap-3">
+                      <h4 class="font-bold text-lg lg:text-xl text-nimbel-text leading-snug">
+                        {item.name}
+                      </h4>
+                      <p class="text-nimbel-muted text-base leading-relaxed">
+                        {item.description}
+                      </p>
+                      {testimonial && (
+                        <p class="text-nimbel-muted text-base leading-relaxed italic">
+                          “{testimonial.quote}” — {testimonial.name}, {testimonial.role}
+                        </p>
+                      )}
+                      {item.link?.href && (
+                        <a href={item.link.href} class={`text-nimbel-text text-base ${linkClass}`}>
+                          {item.link.label}
+                        </a>
+                      )}
+                    </div>
+                  </div>
+                );
+              })}
+            </div>
+          </div>
+        ))
+      }
+    </div>
+  </section>
+
+  <Contact locale={locale} />
+
+  <Footer locale={locale} />
+</Layout>

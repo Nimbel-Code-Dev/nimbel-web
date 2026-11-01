@@ -64,7 +64,7 @@ const audience = {
                 {item.title}
               </h3>
               <p class="text-nimbel-muted text-base leading-relaxed">
-                {item.description}{item.link && (<a href={item.link.href} class="underline decoration-nimbel-accent underline-offset-4 hover:text-nimbel-accent">{item.link.label}</a>)}{item.after}
+                {item.description}{item.link && (item.link.href ? <a href={item.link.href} class="underline decoration-nimbel-accent underline-offset-4 hover:text-nimbel-accent">{item.link.label}</a> : item.link.label)}{item.after}
               </p>
             </div>
           </div>

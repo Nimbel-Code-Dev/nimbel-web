@@ -27,7 +27,7 @@ El desarrollo de software a medida consiste en crear una herramienta pensada par
 Hacemos software a medida para empresas que necesitan tecnología propia, pero no quieren convertirse en una empresa tecnológica. Si te reconoces en alguna de estas situaciones, podemos ayudarte.
 
 ### Tienes un negocio y quieres lanzar tu propia app o SaaS, pero no tienes equipo técnico
-Tú conoces tu sector y a tus clientes; nosotros ponemos el equipo técnico que convierte tu idea en un producto real, desde la primera versión hasta que crece. Y el código es tuyo.
+Tú conoces tu sector y a tus clientes; nosotros ponemos el equipo técnico que convierte tu idea en un producto real, desde la primera versión hasta que crece. Y el código es tuyo. Más sobre nuestro [desarrollo de apps](/desarrollo-de-apps/).
 
 ### Tu empresa funciona con Excel, correos y herramientas que no se hablan entre sí
 La información está repartida, los datos se copian a mano y nadie tiene la foto completa. Reunimos tus procesos en una sola herramienta, pensada para cómo trabajas.

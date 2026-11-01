@@ -82,7 +82,10 @@ export const en = {
         title:
           "You have a business and want to launch your own app or SaaS, but you don't have a tech team",
         description:
-          "You know your industry and your customers; we bring the tech team that turns your idea into a real product, from the first version until it grows. And the code is yours.",
+          "You know your industry and your customers; we bring the tech team that turns your idea into a real product, from the first version until it grows. And the code is yours. More about our ",
+        // La página en inglés aún no existe: sin href, el componente pinta el texto sin enlace
+        link: { label: "app development", href: "" },
+        after: ".",
       },
       {
         title:
@@ -401,5 +404,111 @@ export const en = {
           'At <a href="mailto:ruben@nimbel.net">ruben@nimbel.net</a>, by phone at <a href="tel:+34666969374">+34 666 969 374</a> or through nimbel.net.',
       },
     ],
+  },
+  appDevelopment: {
+    title: "App Development Company in Barcelona | Nimbel Code",
+    description:
+      "You bring the knowledge of your business; we bring the tech team that turns your idea into a real app or SaaS. And the code is yours from day one.",
+    breadcrumb: "App development",
+    headline:
+      "App development company: you bring the business, we bring the tech team",
+    intro: [
+      "You know your industry, your customers and the problem you want to solve. What you're missing is the team to turn it into a product. We're an app development company that acts as your technology partner: we design, build, launch and maintain your app or SaaS.",
+      "You don't need to know about technology: we talk about your product and your customers, and we explain every technical decision so you understand what you have. We have a team in Barcelona, so if you're there we can meet in person.",
+    ],
+    audience: {
+      title: "App development for businesses and professionals with an idea",
+      paragraphs: [
+        "It's for you if you have a business or years of experience in your industry, an idea for a digital product for your customers or your market, and you don't have developers or want to set up a technology department.",
+        "It's also for companies that want their own app for their customers or their team without hiring anyone.",
+      ],
+    },
+    journey: {
+      headline: "From idea to app on the market",
+      intro: "A first version (MVP) is usually ready in about 3 months.",
+      steps: [
+        {
+          title: "Idea",
+          description:
+            "You tell us what you want to launch and who it's for. No jargon.",
+        },
+        {
+          title: "Validation and scope",
+          description:
+            "Together we decide what the first version needs and what can wait. You receive the scope and a fixed budget for each phase.",
+        },
+        {
+          title: "MVP",
+          description:
+            "We build the first version with frequent deliveries, so you see real progress and tell us what to adjust.",
+        },
+        {
+          title: "Launch",
+          description:
+            "We put your product into production and, if it's a mobile app, publish it on the App Store and Google Play.",
+        },
+        {
+          title: "Evolution and maintenance",
+          description:
+            "We stay by your side: we maintain the product, evolve it and are there when something breaks.",
+        },
+      ],
+      notes: [
+        {
+          title: "How much does it cost to build an app",
+          description:
+            "We work in phases, with a fixed budget for each one, so you know what you'll invest before we start. The first phase is the MVP and usually starts at €10,000. From there, the product grows in phases as you need it.",
+        },
+        {
+          title: "The code and the data are yours",
+          description:
+            "What we build for you is yours from day one: the code, the data and the control. You don't pay licenses to use it or depend on us to keep going. If you ever prefer another team to maintain it, you can.",
+        },
+      ],
+    },
+    cases: {
+      headline: "Apps we've built and rescued",
+      groups: [
+        {
+          title: "From scratch",
+          items: [
+            {
+              name: "Analysta",
+              description:
+                "A digital tool that simplifies the analysis of an investor's operations in financial markets. We built it from scratch.",
+              testimonial: "pol-margaix",
+            },
+            {
+              name: "Innocard",
+              description:
+                "A platform for creating personalized digital business cards. We built it from scratch.",
+            },
+          ],
+        },
+        {
+          title: "Rescues: when the previous provider didn't work out",
+          intro:
+            "Not every project starts from scratch. Sometimes they come to us after going through other providers. It's our ",
+          link: { label: "Rescue and integration", href: "/en/#services" },
+          after: " service.",
+          items: [
+            {
+              name: "FAMBA",
+              description:
+                "A travel health platform created in collaboration with Hospital Clínic de Barcelona: mobile app, care console for doctors and data and statistics console. 8,000 users, 5 active centers and 4 EU countries (Spain, Italy, Belgium and Germany).",
+              testimonial: "jose-munoz",
+              // El caso en inglés aún no existe: sin href, el componente no pinta el enlace
+              link: { label: "See the FAMBA case", href: "" },
+            },
+            {
+              name: "NewsUp",
+              description:
+                "A digital news platform that lets you have a press room, send emails and share HD multimedia content. It went through several providers until we rescued the project and built their product.",
+              testimonial: "gerard-gil",
+            },
+          ],
+        },
+      ],
+    },
   },
 } as const;

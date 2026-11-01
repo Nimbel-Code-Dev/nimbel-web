@@ -1,0 +1,9 @@
+---
+import AppDevelopmentPage from "@/components/AppDevelopmentPage.astro";
+
+export function getStaticPaths() {
+  return [{ params: { locale: undefined } }]; // /desarrollo-de-apps
+}
+---
+
+<AppDevelopmentPage locale="es" />
