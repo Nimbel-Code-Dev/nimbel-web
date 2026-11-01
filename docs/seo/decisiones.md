@@ -2,6 +2,21 @@
 
 Registro cronológico, la más reciente arriba. Formato: `### AAAA-MM-DD — título`, qué se decidió y por qué.
 
+### 2026-11-01 — "¿Para quién es?" se queda con 4 situaciones
+**Qué**: se quita "Necesitas una aplicación propia y no quieres montar un equipo técnico" de la home y de `contenido-home.md`. La situación del fundador (añadida el 2026-10-29) sigue la primera y sin cambios de texto; detrás, en el orden de antes, Excel y herramientas que no se hablan, proveedor que desapareció e IA. El H1 y el title no cambian.
+**Por qué**: las dos situaciones le hablaban al mismo cliente (quiere una app propia y no tiene equipo técnico). Se valoró reescribir también el texto del fundador, y Rubén eligió solo quitar la repetida. Con 4 situaciones la cuadrícula vuelve a ser de 2×2.
+
+### 2026-11-01 — Validación de la hipótesis del cliente fundador
+**Qué**:
+- El borrador /socio-tecnologico pasa a ser /desarrollo-de-apps, con keyword principal "empresa de desarrollo de apps" (borrador en `borradores/desarrollo-de-apps.md`). "Socio tecnológico" se queda como mensaje en el copy.
+- La página de precio pasa a /cuanto-cuesta-crear-una-app (más volumen que "cuánto cuesta software a medida", que queda como secundaria en la misma URL). Sustituye a /cuanto-cuesta-software-a-medida.
+- La home MANTIENE "desarrollo de software a medida" como keyword principal (grupo de ~3.400/mes, KD 5–12, recién aplicado). /desarrollo-de-apps cubre el grupo de apps sin canibalizar. Revisar en 6–8 semanas con Search Console (en `backlog.md`, 2026-12-20): si /desarrollo-de-apps trae impresiones y contactos y la home no, replantear el foco de la home.
+**Observado en Semrush** (España, 2026-11-01):
+- El cliente fundador busca "empresa de desarrollo de apps" (grupo de ~1.700/mes, KD 11–32, CPC 10–18 $ → intención de compra) y "cuánto cuesta crear una app" (210, KD 18). No busca "socio tecnológico", "CTO externo" ni "MVP" (volumen casi nulo).
+- appsociados.com: 0 keywords en el top 100 de Google España; su nº1 en "socio tecnológico para desarrollar mi app" es en una búsqueda sin volumen.
+- grupozas.com: ~1.300 visitas/mes estimadas, pero vienen de SEO local de marketing ("seo alicante", "diseñador web benidorm"), no de sus artículos de software. Sus temas de blog sirven como ideas, no como prueba de tráfico.
+**Por qué**: las keywords de la entrada "Corrección del cliente objetivo" (2026-10-29) eran hipótesis. Con los datos, las páginas nuevas se orientan a las palabras con las que el cliente fundador busca de verdad, y la home no se toca hasta tener datos de Search Console.
+
 ### 2026-10-29 — Corrección del cliente objetivo
 **Qué**: el cliente principal (dato real) es un profesional con un negocio o con conocimiento de su sector que quiere lanzar su propia app o SaaS y no tiene equipo técnico. Todos los clientes actuales son así (FAMBA, NewsUp, Analysta, Innocard). El cliente secundario es la empresa que quiere digitalizar su operativa. Las keywords que salen de esto son hipótesis hasta validarlas en Semrush (sección "Hipótesis" de `keyword-map.md`): no se crean páginas públicas basadas en ellas. La home mantiene por ahora el H1 "para empresas"; se revisará si la página de socio tecnológico funciona. Ya se hace en la home: una situación nueva, en primer lugar, en "¿Para quién es?" para este cliente.
 **Observado en Google** (google.es, 2026-10-28):
