@@ -1,7 +1,6 @@
 # /desarrollo-de-apps — borrador
 
-> **BORRADOR — pendiente de revisión de Rubén**
-> No crear la ruta en Astro hasta que Rubén revise el borrador. Keywords validadas en Semrush (`keyword-map.md`); contexto en `decisiones.md`, entradas "Validación de la hipótesis del cliente fundador" y "Datos del borrador de /desarrollo-de-apps" (2026-11-01). Sustituye al borrador /socio-tecnologico.
+> **PUBLICADO el 2026-11-01 en /desarrollo-de-apps** (aprobado por Rubén). El texto vigente vive en `src/i18n/es.ts` y `src/i18n/en.ts` (clave `appDevelopment`): los cambios se hacen allí, no aquí. Keywords validadas en Semrush (`keyword-map.md`); contexto en `decisiones.md`, entradas "Validación de la hipótesis del cliente fundador" y "Datos del borrador de /desarrollo-de-apps" (2026-11-01). Sustituye al borrador /socio-tecnologico.
 
 Última actualización: 2026-11-01 · Español. Llevará versión en inglés (pendiente de URL y keyword; ver "Antes de publicar").
 
@@ -97,8 +96,8 @@ Texto propuesto, con lo ya publicado en la FAQ de "Sobre Nimbel Code": Tenemos e
 Asesoría gratuita, con el mismo texto que la sección de Contacto de la home: "Agenda con nosotros una asesoría gratuita" → `/#contact`.
 
 ## Antes de publicar
-- [ ] Revisión de Rubén del borrador.
-- [ ] Decidir la descripción de NewsUp.
-- [ ] Versión en inglés: URL, keyword principal (sin validar todavía) y texto.
-- [ ] Crear la ruta en Astro y el enlace desde la home.
-- [ ] Actualizar el Estado en `keyword-map.md` y marcar la tarea en `backlog.md`.
+- [x] Revisión de Rubén del borrador.
+- [ ] Decidir la descripción de NewsUp (de momento, la publicada en el carrusel).
+- [ ] Versión en inglés: el texto ya está en `en.ts`; falta URL y keyword principal (sin validar todavía).
+- [x] Crear la ruta en Astro y el enlace desde la home.
+- [x] Actualizar el Estado en `keyword-map.md` y marcar la tarea en `backlog.md`.

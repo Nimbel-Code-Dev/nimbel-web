@@ -2,6 +2,17 @@
 
 Registro cronológico, la más reciente arriba. Formato: `### AAAA-MM-DD — título`, qué se decidió y por qué.
 
+### 2026-11-01 — Se publica /desarrollo-de-apps
+**Qué**:
+- Página nueva `/desarrollo-de-apps` con el borrador aprobado: title, meta y H1 del borrador; schema `WebPage` + `BreadcrumbList` (Inicio > Desarrollo de apps). Componente `AppDevelopmentPage.astro`, con el patrón de "Sobre Nimbel Code": texto en `es.ts` y traducción en `en.ts` (clave `appDevelopment`), protegido por el test de paridad.
+- Sin diseño nuevo: reutiliza los bloques de "¿Para quién es?" (cabecera, fila título | texto y cuadrícula de casos), "Cómo trabajamos" (pasos y tarjetas de precio y propiedad) y la sección de Contacto como CTA.
+- Los testimonios se leen de la sección de Testimonios por id, para no duplicar el texto.
+- Solo en español por ahora. El texto en inglés ya está escrito en `en.ts`, pero la ruta /en no se genera hasta asignarle keyword. Mientras tanto, los enlaces sin página en inglés (caso FAMBA y enlace desde la home) llevan `href` vacío y se pintan como texto.
+- Enlace desde la home: la situación del fundador de "¿Para quién es?" termina con "Más sobre nuestro desarrollo de apps", con el ancla en "desarrollo de apps".
+- NewsUp mantiene la descripción publicada en el carrusel; queda pendiente decidir si pasa a la de Notion.
+- El paso "Evolución y mantenimiento" no repite "Si algún día prefieres que lo mantenga otro equipo, puedes hacerlo", que ya está en la tarjeta "El código y los datos son tuyos".
+**Por qué**: Rubén aprobó el borrador y eligió montar la página con el patrón de "Sobre Nimbel Code" (se valoró un fichero solo en español, como el antiguo `home-es.ts`). Así el inglés queda listo para publicarse en cuanto tenga keyword.
+
 ### 2026-11-01 — Datos del borrador de /desarrollo-de-apps
 **Qué** (confirmado por Rubén):
 - El MVP es la primera fase y suele partir de 10.000 €, la misma cifra ya publicada.

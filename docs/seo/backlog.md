@@ -11,7 +11,7 @@ Las tareas hechas indican el commit donde se aplicaron.
 - [x] /en: "Who is it for?" y "How we work", igual que en español — hecho (a25e781)
 - [ ] Caso FAMBA en inglés (/en/cases/famba/ propuesto): bloqueado hasta asignar keyword en `keyword-map.md`
 - [ ] /desarrollo-de-apps en inglés: después de aprobar el borrador en español; URL y keyword por validar en Semrush (base de datos en inglés)
-- [ ] Publicar /desarrollo-de-apps (borrador en `docs/seo/borradores/desarrollo-de-apps.md`, pendiente de revisión de Rubén)
+- [x] Publicar /desarrollo-de-apps (borrador aprobado en `docs/seo/borradores/desarrollo-de-apps.md`), con enlace desde la situación del fundador en la home — hecho (9945b02)
 - [ ] Página nueva /cuanto-cuesta-crear-una-app (valorar incluir, con contexto: la mayoría de clientes empezó con una primera fase de ~10.000 € y hoy invierte ≥100.000 €/año)
 
 ## Contenido
