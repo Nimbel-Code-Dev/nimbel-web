@@ -2,6 +2,17 @@
 
 Registro cronológico, la más reciente arriba. Formato: `### AAAA-MM-DD — título`, qué se decidió y por qué.
 
+### 2026-11-01 — Datos del borrador de /desarrollo-de-apps
+**Qué** (confirmado por Rubén):
+- El MVP es la primera fase y suele partir de 10.000 €, la misma cifra ya publicada.
+- El lanzamiento incluye la puesta en producción y la publicación en App Store y Google Play. El acompañamiento con los primeros usuarios no entra en ese presupuesto.
+- Se publica un plazo: un MVP suele estar listo en unos 3 meses.
+- FAMBA y NewsUp se cuentan como rescates (NewsUp pasó por varios proveedores antes de llegar a Nimbel). Analysta e Innocard los hizo Nimbel desde cero.
+- /desarrollo-de-apps no lleva bloque de FAQ: se mantiene la regla de una sola FAQ en la web y las dudas se responden como texto normal en cada sección.
+- Todo el contenido de la web en español tendrá versión en inglés igual, incluidos /desarrollo-de-apps y el caso FAMBA. Sustituye a "solo existe el texto en español y no se inventa la traducción" (caso FAMBA, 2026-10-28) y a "solo se pinta en ES" (secciones nuevas de la home, 2026-10-28).
+- Aplicado en la home: "¿Para quién es?" y "Cómo trabajamos" se pintan también en /en. Su texto pasa de `home-es.ts` (borrado) a `es.ts` y `en.ts`, para que el test de paridad obligue a mantener los dos idiomas iguales (se valoró un `home-en.ts` paralelo y Rubén eligió este camino). El title y la meta de /en no cambian. El caso FAMBA en inglés y /desarrollo-de-apps en inglés esperan a tener keyword asignada.
+**Por qué**: resolver los [PENDIENTE] del borrador con datos reales. Contar FAMBA y NewsUp como rescates es fiel a sus testimonios y conecta con la situación "Tu proveedor anterior desapareció" de la home.
+
 ### 2026-11-01 — "¿Para quién es?" se queda con 4 situaciones
 **Qué**: se quita "Necesitas una aplicación propia y no quieres montar un equipo técnico" de la home y de `contenido-home.md`. La situación del fundador (añadida el 2026-10-29) sigue la primera y sin cambios de texto; detrás, en el orden de antes, Excel y herramientas que no se hablan, proveedor que desapareció e IA. El H1 y el title no cambian.
 **Por qué**: las dos situaciones le hablaban al mismo cliente (quiere una app propia y no tiene equipo técnico). Se valoró reescribir también el texto del fundador, y Rubén eligió solo quitar la repetida. Con 4 situaciones la cuadrícula vuelve a ser de 2×2.

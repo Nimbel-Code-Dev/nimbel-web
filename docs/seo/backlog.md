@@ -7,7 +7,10 @@ Las tareas hechas indican el commit donde se aplicaron.
 - [x] Ampliar home a ~1.200–1.500 palabras con el texto de `contenido-home.md`, montado con los bloques visuales actuales — hecho (801b393). La diseñadora lo rediseñará; la sección de Barcelona se quitó
 - [x] Home: responder cuándo conviene software a medida frente a uno estándar (SaaS) — hecho (9764dfb)
 - [x] Home: añadir la situación del fundador (quiere lanzar su app o SaaS sin equipo técnico) en primer lugar en "¿Para quién es?" — hecho (f29fa81)
-- [x] Home: quitar la situación "Necesitas una aplicación propia…", que repetía la del fundador — hecho 2026-11-01 (sin commit)
+- [x] Home: quitar la situación "Necesitas una aplicación propia…", que repetía la del fundador — hecho (c0ebb68)
+- [x] /en: "Who is it for?" y "How we work", igual que en español — hecho (a25e781)
+- [ ] Caso FAMBA en inglés (/en/cases/famba/ propuesto): bloqueado hasta asignar keyword en `keyword-map.md`
+- [ ] /desarrollo-de-apps en inglés: después de aprobar el borrador en español; URL y keyword por validar en Semrush (base de datos en inglés)
 - [ ] Publicar /desarrollo-de-apps (borrador en `docs/seo/borradores/desarrollo-de-apps.md`, pendiente de revisión de Rubén)
 - [ ] Página nueva /cuanto-cuesta-crear-una-app (valorar incluir, con contexto: la mayoría de clientes empezó con una primera fase de ~10.000 € y hoy invierte ≥100.000 €/año)
 
