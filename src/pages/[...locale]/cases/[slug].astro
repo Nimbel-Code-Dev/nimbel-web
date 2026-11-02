@@ -1,0 +1,17 @@
+---
+import { getCollection } from "astro:content";
+import CasePage from "@/components/CasePage.astro";
+
+// /en/cases/<slug>/: casos en inglés (src/content/casos/en/)
+export async function getStaticPaths() {
+  const casos = await getCollection("casos", (caso) => caso.id.startsWith("en/"));
+  return casos.map((caso) => ({
+    params: { locale: "en", slug: caso.id.split("/")[1] },
+    props: { caso },
+  }));
+}
+
+const { caso } = Astro.props;
+---
+
+<CasePage caso={caso} locale="en" />

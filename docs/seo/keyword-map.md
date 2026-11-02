@@ -11,6 +11,7 @@
 - Priorizar keywords con "empresa", "cuánto cuesta", "externalizar", "mantenimiento", "rescate".
 - Evitar "gratis", "tutorial", "cómo hacer", "qué es", "sin saber programar", "sin código".
 - Una keyword principal por URL (sin canibalizar). Las secundarias pueden compartir URL con su principal.
+- Las páginas de caso (`/casos/<slug>/`, `/en/cases/<slug>/`) no llevan keyword principal: son prueba social (`decisiones.md`, 2026-11-02).
 
 ## Keywords elegidas
 | Keyword principal | Variantes / secundarias | URL asignada | Intención | Vol/mes | KD | Estado |

@@ -21,9 +21,9 @@ const items = t("caseStudies", "items") as ReadonlyArray<{
   imgAlt: string;
 }>;
 
-// Casos con página propia (de momento solo en español)
+// Casos con página propia
 const caseLinks: Record<string, string> =
-  locale === "es" ? { famba: "/casos/famba/" } : {};
+  locale === "en" ? { famba: "/en/cases/famba/" } : { famba: "/casos/famba/" };
 const itemsWithCase = items.map((item) => ({
   ...item,
   caseHref: caseLinks[item.id],

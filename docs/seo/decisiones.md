@@ -2,6 +2,14 @@
 
 Registro cronológico, la más reciente arriba. Formato: `### AAAA-MM-DD — título`, qué se decidió y por qué.
 
+### 2026-11-02 — Las páginas de caso no llevan keyword principal; caso FAMBA en inglés
+**Qué**:
+- Las páginas de caso (`/casos/<slug>/` y `/en/cases/<slug>/`) son prueba social: no llevan keyword principal en `keyword-map.md`. Es una excepción a "toda página nueva necesita una keyword principal". Sustituye a la propuesta "travel health app development" para el caso FAMBA en inglés.
+- Se publica el caso FAMBA en inglés en `/en/cases/famba/`, traducción fiel del español. Los casos pasan a `src/content/casos/<es|en>/` y las dos rutas comparten `CasePage.astro`; hreflang en las dos direcciones cuando existe la traducción.
+- Enlaces en inglés activados: "FAMBA case" en el footer, "View case" en el carrusel, la FAQ de salud de "About Nimbel Code" y "See the FAMBA case" en el texto de /desarrollo-de-apps (este último se verá cuando la página en inglés exista).
+- NewsUp no tenía página de caso en ningún idioma. Se escribe un borrador (`borradores/caso-newsup.md`) con lo publicado, lo confirmado por Rubén y la ficha de Notion; se publica en los dos idiomas cuando Rubén lo apruebe.
+**Por qué**: el footer en inglés no enlazaba al caso FAMBA porque solo existía en español. Asignar keywords sin volumen a los casos sería inventar; Rubén eligió que no lleven.
+
 ### 2026-11-02 — El inglés de la home dice lo mismo que el español
 **Qué**: revisión de todo el texto ES ↔ EN (el español es el maestro). Se corrigen los 4 textos en inglés que decían otra cosa:
 - Title de /en: "Custom Software Development in Barcelona | Nimbel Code" (antes "Nimbel Code | Custom AI Software Development · Barcelona"). Lleva la keyword exacta de /en, "custom software development barcelona" (posición 4 en GSC). Sustituye a "El title y la meta de /en no cambian" (2026-11-01).

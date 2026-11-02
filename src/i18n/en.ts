@@ -386,7 +386,7 @@ export const en = {
       {
         question: "Does it have experience in the healthcare sector?",
         answer:
-          "Yes. Nimbel Code develops FAMBA, a travel health platform created in collaboration with Hospital Clínic de Barcelona.",
+          'Yes. Nimbel Code develops <a href="/en/cases/famba/">FAMBA</a>, a travel health platform created in collaboration with Hospital Clínic de Barcelona.',
       },
       {
         question: "Who runs Nimbel Code?",
@@ -497,8 +497,7 @@ export const en = {
               description:
                 "A travel health platform created in collaboration with Hospital Clínic de Barcelona: mobile app, care console for doctors and data and statistics console. 8,000 users, 5 active centers and 4 EU countries (Spain, Italy, Belgium and Germany).",
               testimonial: "jose-munoz",
-              // El caso en inglés aún no existe: sin href, el componente no pinta el enlace
-              link: { label: "See the FAMBA case", href: "" },
+              link: { label: "See the FAMBA case", href: "/en/cases/famba/" },
             },
             {
               name: "NewsUp",
