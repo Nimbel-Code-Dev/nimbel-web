@@ -2,6 +2,19 @@
 
 Registro cronológico, la más reciente arriba. Formato: `### AAAA-MM-DD — título`, qué se decidió y por qué.
 
+### 2026-11-02 — El inglés de la home dice lo mismo que el español
+**Qué**: revisión de todo el texto ES ↔ EN (el español es el maestro). Se corrigen los 4 textos en inglés que decían otra cosa:
+- Title de /en: "Custom Software Development in Barcelona | Nimbel Code" (antes "Nimbel Code | Custom AI Software Development · Barcelona"). Lleva la keyword exacta de /en, "custom software development barcelona" (posición 4 en GSC). Sustituye a "El title y la meta de /en no cambian" (2026-11-01).
+- Meta de /en: traducción de la española ("…web and mobile apps with integrated AI. You focus on your business; we take care of the technology. Barcelona.").
+- H2 de Servicios: "Custom software development, with AI where it adds value.", resaltando "AI" y "Custom", como el español resalta "IA" y "a medida".
+- Testimonio de Jose Muñoz: "Famba had gone years without working the way we needed", fiel a "llevaba años sin funcionar como necesitábamos".
+- En el español, "PRESENCIA EN PAISES" pasa a "PAÍSES".
+
+Lo que sigue solo en español son las páginas `/desarrollo-de-apps/` y `/casos/famba/` y los enlaces que apuntan a ellas (situación del fundador, FAMBA en /desarrollo-de-apps, FAQ de salud, "Ver caso" del carrusel y "Caso FAMBA" del footer). Se crean en inglés cuando Rubén apruebe sus keywords; propuestas sin validar: "app development company barcelona" para /en/app-development/ y, para el caso FAMBA, "travel health app development" o no asignar keyword a las páginas de caso.
+
+Fuera de esta revisión, pendiente de Rubén: la privacidad en español usa voseo, y en los dos idiomas menciona un formulario de contacto que no existe y dice que no hay seguimiento, aunque la web carga el script de llmometrics.
+**Por qué**: el inglés tiene que decir lo mismo que el español (decisión del 2026-11-01). Rubén eligió corregir ya los textos y dejar las páginas nuevas para cuando tengan keyword aprobada.
+
 ### 2026-11-01 — Se publica /desarrollo-de-apps
 **Qué**:
 - Página nueva `/desarrollo-de-apps` con el borrador aprobado: title, meta y H1 del borrador; schema `WebPage` + `BreadcrumbList` (Inicio > Desarrollo de apps). Componente `AppDevelopmentPage.astro`, con el patrón de "Sobre Nimbel Code": texto en `es.ts` y traducción en `en.ts` (clave `appDevelopment`), protegido por el test de paridad.

@@ -9,8 +9,10 @@ Las tareas hechas indican el commit donde se aplicaron.
 - [x] Home: añadir la situación del fundador (quiere lanzar su app o SaaS sin equipo técnico) en primer lugar en "¿Para quién es?" — hecho (f29fa81)
 - [x] Home: quitar la situación "Necesitas una aplicación propia…", que repetía la del fundador — hecho (c0ebb68)
 - [x] /en: "Who is it for?" y "How we work", igual que en español — hecho (a25e781)
-- [ ] Caso FAMBA en inglés (/en/cases/famba/ propuesto): bloqueado hasta asignar keyword en `keyword-map.md`
-- [ ] /desarrollo-de-apps en inglés: después de aprobar el borrador en español; URL y keyword por validar en Semrush (base de datos en inglés)
+- [x] /en: title, meta, H2 de Servicios y testimonio de Jose Muñoz, iguales que en español; tilde de PAÍSES — hecho 2026-11-02
+- [ ] Privacidad: revisar el voseo en español, la mención al formulario de contacto (no existe) y "sin seguimiento" (está llmometrics). Texto legal: decide Rubén
+- [ ] Caso FAMBA en inglés (/en/cases/famba/ propuesto): bloqueado hasta asignar keyword en `keyword-map.md`. Al crearlo, activar los enlaces en inglés: FAMBA en /desarrollo-de-apps, FAQ de salud, "Ver caso" del carrusel y "Caso FAMBA" del footer
+- [ ] /desarrollo-de-apps en inglés (/en/app-development/ propuesto, keyword propuesta "app development company barcelona"): el texto ya está en `en.ts`; falta validar la keyword en Semrush (base de datos en inglés). Al crearla, activar el enlace de la situación del fundador y los hreflang en las dos direcciones
 - [x] Publicar /desarrollo-de-apps (borrador aprobado en `docs/seo/borradores/desarrollo-de-apps.md`), con enlace desde la situación del fundador en la home — hecho (9945b02)
 - [ ] Página nueva /cuanto-cuesta-crear-una-app (valorar incluir, con contexto: la mayoría de clientes empezó con una primera fase de ~10.000 € y hoy invierte ≥100.000 €/año)
 
@@ -19,7 +21,7 @@ Las tareas hechas indican el commit donde se aplicaron.
 
 ## Media
 - [ ] Artículo /externalizar-desarrollo-software
-- [ ] /en orientada a "custom software development barcelona"
+- [ ] /en orientada a "custom software development barcelona" (en el title desde 2026-11-02; falta trabajarla en H1 y texto)
 - [x] Schema Organization: legalName "NIMBEL CODE LIMITED", identifier CRO 788569, sameAs (LinkedIn, Instagram, TikTok, GitHub, Crunchbase, Clutch, GoodFirms) y pie legal — hecho (9e58e1a, 2c8179d, 10b7817)
 - [x] Página de caso: FAMBA — hecho (e3fab13)
 - [ ] Páginas de casos: NewsUp, Analysta, Innocard

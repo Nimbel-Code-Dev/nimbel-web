@@ -1,8 +1,8 @@
 export const en = {
   meta: {
-    title: "Nimbel Code | Custom AI Software Development · Barcelona",
+    title: "Custom Software Development in Barcelona | Nimbel Code",
     description:
-      "We build custom AI-powered software for businesses. Web apps, mobile apps and digital platforms you own. No licenses, no dependencies. Barcelona.",
+      "We build custom software for businesses: web and mobile apps with integrated AI. You focus on your business; we take care of the technology. Barcelona.",
   },
   navbar: {
     about: "About us",
@@ -26,9 +26,9 @@ export const en = {
   },
   services: {
     headline:
-      "Custom software development. With integrated AI and real quality standards.",
+      "Custom software development, with AI where it adds value.",
     headlineHighlight1: "AI",
-    headlineHighlight2: "quality",
+    headlineHighlight2: "Custom",
     sectionLabel: "Services",
     items: [
       {
@@ -216,7 +216,7 @@ export const en = {
         name: "Jose Muñoz",
         role: "Head of International Health Service, Hospital Clínic",
         quote:
-          "Famba had been struggling for years without working the way we needed. When Nimbel joined, within a few weeks we had a real tool. What I value most is that they never left us on our own: they explained every technical decision and helped the team adopt it. Today it's an asset we keep evolving.",
+          "Famba had gone years without working the way we needed. When Nimbel joined, within a few weeks we had a real tool. What I value most is that they never left us on our own: they explained every technical decision and helped the team adopt it. Today it's an asset we keep evolving.",
         photoAlt: "Photo of Jose Muñoz",
         photo: "/assets/Jose.jpg",
       },

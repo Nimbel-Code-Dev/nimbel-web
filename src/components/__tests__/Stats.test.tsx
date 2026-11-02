@@ -101,6 +101,6 @@ describe("Stats static section", () => {
     render(<StatsStatic stats={mockStats} />);
     const item = screen.getByTestId("stat-item-5");
     expect(item).toBeTruthy();
-    expect(item.textContent).toContain("PRESENCIA EN PAISES");
+    expect(item.textContent).toContain("PRESENCIA EN PAÍSES");
   });
 });

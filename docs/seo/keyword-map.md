@@ -1,6 +1,6 @@
 # Keyword map — nimbel.net
 
-Última actualización: 2026-11-01 · Fuente: Semrush (base de datos España) + Google Search Console
+Última actualización: 2026-11-02 · Fuente: Semrush (base de datos España) + Google Search Console
 
 > Volúmenes <100 son estimaciones poco fiables de Semrush: sirven para priorizar, no como cifra real.
 
@@ -24,7 +24,7 @@
 | desarrollo de apps barcelona | — | /desarrollo-de-apps | Comercial local | 210 | 5 | Hecho 2026-11-01 |
 | cuánto cuesta crear una app | cuánto cuesta crear una app web (40, KD 8), …en España (30), …en euros (30), cuánto cuesta un software a medida (~100, KD 3), cuánto sale hacer un software a medida (70) | /cuanto-cuesta-crear-una-app (nueva; sustituye a /cuanto-cuesta-software-a-medida) | Investigación comercial | 210 | 18 | Validada — pendiente de crear |
 | externalizar desarrollo de software | criterios para externalizar desarrollo de software, equipo interno vs desarrollo externalizado | /externalizar-desarrollo-software (nueva) | Investigación comercial | ~50 | n/d | Pendiente |
-| custom software development barcelona | — | /en | Comercial | GSC: posición 4 | n/d | Pendiente |
+| custom software development barcelona | — | /en | Comercial | GSC: posición 4 | n/d | En curso: en el title desde 2026-11-02 |
 
 ## Para conseguir presencia (no página propia)
 | Keyword | Vol/mes | KD | Acción |

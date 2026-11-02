@@ -111,7 +111,7 @@ export const es = {
     items: [
       { value: 20, label: "AÑOS DE EXPERIENCIA" },
       { value: 50, label: "PROYECTOS EXITOSOS" },
-      { value: 5, label: "PRESENCIA EN PAISES" },
+      { value: 5, label: "PRESENCIA EN PAÍSES" },
     ],
   },
   caseStudies: {
