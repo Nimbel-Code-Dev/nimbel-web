@@ -7,6 +7,24 @@ Registro cronológico, la más reciente arriba. Formato: `### AAAA-MM-DD — tí
 **Calendly** (comprobado el 2026-11-03 en nimbel.net): el widget muestra su propio banner de cookies dentro del iframe, con "Rechazar todas", "Aceptar todas" y "Configuración de cookies". Las cookies opcionales dependen de ese banner, así que no hace falta uno nuestro.
 **Por qué**: HubSpot ponía cookies sin consentimiento y la política no lo mencionaba. Las alternativas (banner de HubSpot o banner propio) obligaban a reescribir la política y a meter un banner por un seguimiento que no compensa. Es coherente con no instalar GA4 para no necesitar banner.
 
+### 2026-11-03 — Listados "Top empresas": directorios sí, listas de competidores no
+**Qué**: el outreach para aparecer en los listados "Top empresas desarrolladoras de apps" se centra en directorios con ranking (Clutch, GoodFirms, TechBehemoths, DesignRush, Sortlist), no en los artículos "Top 10" de blogs. Ubicaciones: la sede sigue siendo Athlone y se añaden como ubicaciones adicionales todas las ciudades con equipo real (Barcelona/Ripollet, Sevilla, Córdoba-Argentina), no solo Barcelona. En la web no se crean páginas por ciudad (se vería forzado, como la sección de Barcelona que se quitó); las ubicaciones del equipo se dicen como dato en "Sobre Nimbel Code" y en el schema. Sin campaña de reseñas: Rubén ya las pidió para Google y no quiere insistir; se piden solo en momentos naturales.
+**Observado** (búsqueda, 2026-11-03): los "Top 10 empresas de desarrollo de apps en España" en español los publican competidores que se ponen primeros (Onabitz, abr 2026; Dribba, 2026; Q2B Studio), sin proceso de inclusión. Las búsquedas por ciudad devuelven sobre todo directorios (Clutch, GoodFirms, TechBehemoths, DesignRush, Sortlist). La lista "Top" de TechBehemoths para software a medida en Barcelona tiene solo 4 empresas y acepta sugerencias.
+**Por qué**: un competidor no tiene motivo para incluirnos, y la guía GEO da más peso a las menciones en fuentes de terceros que las IAs ya consultan para esta categoría (directorios y reseñas para servicios B2B, guía 6.9.4). No se publica una lista propia de "las mejores empresas" con Nimbel primera: es lo que hacen los competidores, pero no es honesto.
+
+### 2026-11-03 — Contraste con la Guía de SEO para IAs (GEO Metrics, octubre 2026)
+**Qué**:
+- **FAQ**: la regla "una sola FAQ en toda la web" pasa a **"cada pregunta tiene una sola respuesta en la web"**. Los artículos nuevos (/cuanto-cuesta-crear-una-app, /externalizar-desarrollo-software) pueden llevar un bloque corto de dudas (3–5, respuesta en ≤3 líneas) si no repite preguntas de la FAQ de "Sobre Nimbel Code". La home y /desarrollo-de-apps no cambian. Sustituye a la regla de la entrada "Una sola FAQ en la web" (2026-10-28).
+- **Autoría**: los artículos se firman por Rubén, con página de autor y schema `Person` (sameAs LinkedIn) enlazada a la Organization.
+- **Prompt Universe**: el keyword map se complementa con prompts de IA clasificados en Descubrimiento, Comparación y Validación (`keyword-map.md`), dados de alta en GEO Metrics. Prioridad: marca y validación, luego comparación; informacionales al final.
+- **Densidad sobre extensión**: en páginas nuevas no se fija un número de palabras; se mide por datos concretos y respuestas directas (respuesta en las primeras líneas de cada H2).
+- **Coherencia de entidad**: la og-image ("SOFTWARE A MEDIDA PARA SALUD") contradice la web generalista; se cambia.
+- **Medición**: se añaden el informe Generative AI de GSC, Bing Webmaster Tools (AI Performance), el canal de asistentes de IA en GA4 y la pregunta "¿cómo nos encontraste?" en Calendly. Posición en Google y citas en IA se miden por separado.
+- **Prioridades que suben**: /cuanto-cuesta-crear-una-app (páginas de precio con cifras en HTML) y el outreach a listados "Top empresas…" (menciones de terceros).
+- **Se mantiene**: una keyword por URL, casos sin keyword, robots.txt sin bloquear bots de IA, schema como higiene, web generalista.
+- **llms.txt**: opcional y de prioridad baja. Si existe, debe responder 200; si no, un 404 limpio (nunca 5xx ni redirección rota).
+**Por qué**: la guía (datos a 2026-10-07) aporta prácticas útiles para GEO, pero la escribe el CEO de GEO Metrics y se contradice (llms.txt "obligatorio" en 2.3 y "no es un problema no tenerlo" en el Mito 1; FAQ en cada pieza en 5.8.2 frente a "el FAQ schema no es palanca" en el Mito 4). Se adopta lo que tiene evidencia o coste bajo; la regla de FAQ se ajusta a su motivo original (evitar respuestas distintas a la misma pregunta).
+
 ### 2026-11-03 — Privacidad corregida
 **Qué**:
 - El script de seguimiento de HubSpot sigue en `Layout.astro` y pone cookies (`__hstc`, `hubspotutk`, `__hssrc`, `__hssc`) sin banner de consentimiento. Se quitó y se restauró: Rubén decide qué hacer (quitarlo, banner de HubSpot o banner propio).

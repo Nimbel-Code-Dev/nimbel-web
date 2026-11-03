@@ -1,6 +1,6 @@
 # Keyword map — nimbel.net
 
-Última actualización: 2026-11-02 · Fuente: Semrush (base de datos España) + Google Search Console
+Última actualización: 2026-11-03 · Fuente: Semrush (base de datos España) + Google Search Console
 
 > Volúmenes <100 son estimaciones poco fiables de Semrush: sirven para priorizar, no como cifra real.
 
@@ -12,6 +12,8 @@
 - Evitar "gratis", "tutorial", "cómo hacer", "qué es", "sin saber programar", "sin código".
 - Una keyword principal por URL (sin canibalizar). Las secundarias pueden compartir URL con su principal.
 - Las páginas de caso (`/casos/<slug>/`, `/en/cases/<slug>/`) no llevan keyword principal: son prueba social (`decisiones.md`, 2026-11-02).
+- Cada pregunta tiene una sola respuesta en la web: no repetir preguntas entre páginas ni entre bloques de dudas (`decisiones.md`, 2026-11-03).
+- Densidad sobre extensión: sin objetivo de número de palabras; datos concretos y respuesta directa al inicio de cada H2.
 
 ## Keywords elegidas
 | Keyword principal | Variantes / secundarias | URL asignada | Intención | Vol/mes | KD | Estado |
@@ -26,6 +28,25 @@
 | cuánto cuesta crear una app | cuánto cuesta crear una app web (40, KD 8), …en España (30), …en euros (30), cuánto cuesta un software a medida (~100, KD 3), cuánto sale hacer un software a medida (70) | /cuanto-cuesta-crear-una-app (nueva; sustituye a /cuanto-cuesta-software-a-medida) | Investigación comercial | 210 | 18 | Validada — pendiente de crear |
 | externalizar desarrollo de software | criterios para externalizar desarrollo de software, equipo interno vs desarrollo externalizado | /externalizar-desarrollo-software (nueva) | Investigación comercial | ~50 | n/d | Pendiente |
 | custom software development barcelona | — | /en | Comercial | GSC: posición 4 | n/d | En curso: en el title desde 2026-11-02 |
+
+## Prompt Universe (IA)
+Complementa a las keywords: preguntas en lenguaje natural que el cliente hace a una IA antes de contratar. Se miden en GEO Metrics (proyecto "Nimbel Code"). Prioridad: Validación y marca → Comparación → Descubrimiento → informacional (`decisiones.md`, 2026-11-03).
+
+Plan de GEO Metrics (trial): 3 prompts de ranking, 1 de precisión y 1 de citación. Todos con país España. Definidos el 2026-11-03.
+
+| Prompt | Tipo (GEO Metrics) | Categoría | Estado |
+|---|---|---|---|
+| ¿Qué es Nimbel Code y a quién sirve? | Precisión. Esperada: empresa de desarrollo de software a medida y apps para negocios sin equipo técnico, con sede en Irlanda y equipo en Barcelona | Validación (marca) | Activo |
+| ¿Qué empresa de desarrollo de apps en Barcelona me recomiendas si no tengo equipo técnico? | Ranking | Descubrimiento (/desarrollo-de-apps) | Activo |
+| ¿Qué empresa de desarrollo de software a medida para empresas me recomiendas en España? | Ranking | Descubrimiento (home) | Activo |
+| Necesito una empresa que rescate un proyecto de software que dejó a medias otro proveedor | Ranking | Descubrimiento (rescate) | Activo |
+| ¿Cuánto cuesta crear una app en España? | Citación (nimbel.net) | Informacional comercial (/cuanto-cuesta-crear-una-app) | Activo: línea base antes de publicar la página |
+
+Fuera por límite del plan (retomar si se amplía): "¿Nimbel Code es una buena empresa para desarrollar mi app?" (validación), "Nimbel Code frente a contratar un freelance o un equipo interno" (comparación). Retirados por genéricos, repetidos o informativos: "¿Qué empresa puede ayudarme con el desarrollo de una aplicación personalizada?", "¿Quién puede desarrollar una app móvil personalizada para mi negocio?", "¿Qué ventajas tiene contratar un desarrollo de software a medida?", "¿Qué necesito para crear una app para mi empresa?".
+
+Al terminar el trial: decidir si se paga según si se ha movido algo.
+
+Pendiente: completar con los 10 problemas reales del cliente (3 prompts cada uno), sacados de ventas.
 
 ## Para conseguir presencia (no página propia)
 | Keyword | Vol/mes | KD | Acción |

@@ -8,7 +8,7 @@ Texto aprobado para ampliar la home en español de ~640 a ~1.250 palabras. Tiene
 - Keywords de la home (`keyword-map.md`): "desarrollo de software a medida" (2 veces en este texto) y "software a medida para empresas" (1 vez). "empresa desarrollo software barcelona" ya no tiene apoyo en este texto: solo en el title.
 - Jerarquía: cada sección es un H2; los títulos de dentro son H3. La home ya tiene su H1 y no se toca.
 - En español y en inglés desde el 2026-11-01: /en lleva las mismas secciones, traducidas en `en.ts`. Un cambio aquí se aplica en los dos idiomas.
-- **Una sola FAQ en toda la web** (la de "Sobre Nimbel Code"). Este contenido va como texto normal, no como bloque de preguntas.
+- **Cada pregunta tiene una sola respuesta en la web** (regla del 2026-11-03, sustituye a "una sola FAQ"). En la home este contenido va como texto normal, no como bloque de preguntas.
 - No añadir datos que no estén aquí (plazos, cifras, clientes). Los datos los confirmó Rubén el 2026-10-28.
 - Enlace interno: "Rescate e integración" apunta a la sección de Servicios (`#services`).
 - "¿Cuándo conviene un software a medida frente a uno estándar (SaaS)?" va como H3 al final de "¿Para quién es?", después de las 4 situaciones, en una fila con el título a la izquierda y el texto a la derecha. Texto aprobado por Rubén el 2026-10-28.

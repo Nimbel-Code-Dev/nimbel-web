@@ -16,7 +16,7 @@
 
 ## Texto propuesto
 
-[PENDIENTE: una línea de cifras como la de FAMBA (usuarios, salas de prensa activas, comunicados enviados, países…). Si no hay cifras que se puedan publicar, se quita la línea.]
+[PENDIENTE, recomendado: una línea de cifras como la de FAMBA (usuarios, salas de prensa activas, comunicados enviados, países…). Los datos propios son lo que más pesa para que las IAs citen la página (`decisiones.md`, 2026-11-03). Si no hay cifras que se puedan publicar, se quita la línea.]
 
 ### Reto
 NewsUp quería centralizar en un solo entorno todo el trabajo de relaciones con los medios de departamentos de prensa, agencias y freelances, que hasta entonces se repartía entre email marketing genérico, hojas de cálculo y webs estáticas. Antes de llegar a Nimbel, el proyecto había pasado por varios proveedores sin llegar a un producto que funcionara.

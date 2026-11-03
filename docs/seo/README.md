@@ -7,6 +7,7 @@ Fuente única de verdad de las decisiones SEO de nimbel.net. Esta carpeta la lee
 - `decisiones.md`: registro cronológico de decisiones (la más reciente arriba), con qué se decidió y por qué.
 - `backlog.md`: tareas SEO pendientes y hechas, por prioridad.
 - `contenido-home.md`: texto SEO aprobado para la home que está pendiente de diseño.
+- `Guia_SEO_para_IAs_Edicion_Octubre_2026.md`: referencia externa (GEO Metrics, datos a 2026-10-07). La escribe el proveedor de una herramienta que usamos y tiene contradicciones internas: se consulta, pero mandan las decisiones de `decisiones.md` (contraste en la entrada del 2026-11-03).
 
 Los requisitos SEO por componente de la construcción inicial de la landing están en [`SPECS.md`](../../SPECS.md).
 
