@@ -10,7 +10,7 @@ Las tareas hechas indican el commit donde se aplicaron.
 - [x] Home: quitar la situación "Necesitas una aplicación propia…", que repetía la del fundador — hecho (c0ebb68)
 - [x] /en: "Who is it for?" y "How we work", igual que en español — hecho (a25e781)
 - [x] /en: title, meta, H2 de Servicios y testimonio de Jose Muñoz, iguales que en español; tilde de PAÍSES — hecho 2026-11-02
-- [ ] Privacidad: revisar el voseo en español, la mención al formulario de contacto (no existe) y "sin seguimiento" (está llmometrics). Texto legal: decide Rubén
+- [x] Privacidad: voseo corregido, sin mención a formulario, proveedores listados (Vercel, Google Fonts, Calendly, GeoMetrics) — hecho 2026-11-03. HubSpot quitado de la web — hecho 2026-11-03 (`decisiones.md`, "Se quita HubSpot"). Pendiente: revisión por un abogado; valorar alojar las fuentes en local
 - [x] Caso FAMBA en inglés en /en/cases/famba/, con sus enlaces en inglés (footer, carrusel, FAQ de salud y /desarrollo-de-apps) — hecho 2026-11-02, sin keyword principal (las páginas de caso no llevan)
 - [ ] /desarrollo-de-apps en inglés (/en/app-development/ propuesto, keyword propuesta "app development company barcelona"): el texto ya está en `en.ts`; falta validar la keyword en Semrush (base de datos en inglés). Al crearla, activar el enlace de la situación del fundador y los hreflang en las dos direcciones
 - [x] Publicar /desarrollo-de-apps (borrador aprobado en `docs/seo/borradores/desarrollo-de-apps.md`), con enlace desde la situación del fundador en la home — hecho (9945b02)

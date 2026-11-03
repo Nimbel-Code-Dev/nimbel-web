@@ -2,6 +2,19 @@
 
 Registro cronológico, la más reciente arriba. Formato: `### AAAA-MM-DD — título`, qué se decidió y por qué.
 
+### 2026-11-03 — Se quita HubSpot de la web
+**Qué**: se elimina el script de seguimiento de HubSpot (`js.hs-scripts.com/51196399.js`) de `Layout.astro`. La web deja de poner las cookies `__hstc`, `hubspotutk`, `__hssrc` y `__hssc`, y la política de privacidad queda correcta sin cambios. No se pone banner de cookies.
+**Calendly** (comprobado el 2026-11-03 en nimbel.net): el widget muestra su propio banner de cookies dentro del iframe, con "Rechazar todas", "Aceptar todas" y "Configuración de cookies". Las cookies opcionales dependen de ese banner, así que no hace falta uno nuestro.
+**Por qué**: HubSpot ponía cookies sin consentimiento y la política no lo mencionaba. Las alternativas (banner de HubSpot o banner propio) obligaban a reescribir la política y a meter un banner por un seguimiento que no compensa. Es coherente con no instalar GA4 para no necesitar banner.
+
+### 2026-11-03 — Privacidad corregida
+**Qué**:
+- El script de seguimiento de HubSpot sigue en `Layout.astro` y pone cookies (`__hstc`, `hubspotutk`, `__hssrc`, `__hssc`) sin banner de consentimiento. Se quitó y se restauró: Rubén decide qué hacer (quitarlo, banner de HubSpot o banner propio).
+- `/privacidad` (ES y EN): tuteo en lugar de voseo; fuera la mención al formulario de contacto (no existe: el contacto es email, teléfono y Calendly); apartado 6 con los proveedores reales (Vercel, Google Fonts, Calendly, GeoMetrics) y transferencias fuera del EEE; fecha noviembre de 2026.
+- GeoMetrics (script `llmometrics.b-cdn.net/metric.js`, revisado el 2026-11-03): no usa cookies ni almacenamiento; solo envía datos cuando la visita viene de un asistente de IA (URL, referer, resolución y idioma) a `api.geometrics.app`.
+**Pendiente**: revisión del texto por un abogado; valorar alojar las fuentes en local para no enviar la IP a Google.
+**Por qué**: la política decía "sin cookies ni seguimiento" y la web cargaba HubSpot. Mientras HubSpot siga, la política no lo menciona: hay que resolverlo.
+
 ### 2026-11-02 — Las páginas de caso no llevan keyword principal; caso FAMBA en inglés
 **Qué**:
 - Las páginas de caso (`/casos/<slug>/` y `/en/cases/<slug>/`) son prueba social: no llevan keyword principal en `keyword-map.md`. Es una excepción a "toda página nueva necesita una keyword principal". Sustituye a la propuesta "travel health app development" para el caso FAMBA en inglés.
