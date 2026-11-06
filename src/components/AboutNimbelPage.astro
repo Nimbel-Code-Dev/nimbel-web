@@ -15,6 +15,12 @@ const title = t("about", "title") as string;
 const description = t("about", "description") as string;
 const faqTitle = t("about", "faqTitle") as string;
 const items = t("about", "items") as readonly { question: string; answer: string }[];
+const collaboratorsTitle = t("about", "collaboratorsTitle") as string;
+const collaborators = t("about", "collaborators") as readonly {
+  name: string;
+  url: string;
+  description: string;
+}[];
 
 // Misma página en los dos idiomas, con slug propio en cada uno
 const alternates = { es: "/sobre-nimbel-code/", en: "/en/about-nimbel-code/" };
@@ -82,6 +88,28 @@ const graph = [
                 class="[&_a]:underline [&_a]:hover:text-nimbel-accent"
                 set:html={item.answer}
               />
+            </div>
+          ))
+        }
+      </div>
+      <h2 class="font-mortend uppercase text-xl text-nimbel-bg mb-6">
+        {collaboratorsTitle}
+      </h2>
+      <div class="font-clash text-nimbel-bg leading-relaxed text-sm">
+        {
+          collaborators.map((collaborator) => (
+            <div class="mb-8">
+              <h3 class="font-bold text-nimbel-bg mb-2">
+                <a
+                  href={collaborator.url}
+                  target="_blank"
+                  rel="noopener"
+                  class="underline hover:text-nimbel-accent"
+                >
+                  {collaborator.name}
+                </a>
+              </h3>
+              <p>{collaborator.description}</p>
             </div>
           ))
         }

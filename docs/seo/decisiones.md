@@ -2,6 +2,11 @@
 
 Registro cronológico, la más reciente arriba. Formato: `### AAAA-MM-DD — título`, qué se decidió y por qué.
 
+### 2026-11-06 — Enlace recíproco con Roger Guerrero Plana en "Sobre Nimbel Code"
+**Qué**: "Sobre Nimbel Code" (ES y EN) añade, después de la FAQ, un bloque "Colaboradores" con una ficha de texto: nombre enlazado a `https://rogerguerreroplana.com` y su descripción en tercera persona (él la envió en primera). El enlace es follow (`rel="noopener"`), sin logo ni foto. El texto vive en `es.ts` y `en.ts` (`about.collaborators`), así que un colaborador nuevo es una entrada más en la lista. No es una página nueva: no necesita keyword.
+**Observado** (2026-11-06): Roger enlaza a `https://www.nimbel.net` desde la sección "Colaboradores" de su home, en español y en inglés, con el logo (alt "Nimbel Code") y sin `nofollow`.
+**Por qué**: Rubén eligió esta página frente a una sección en la home (una sola ficha en la página de conversión) y una columna en el footer (un enlace recíproco en todas las páginas parece más artificial). El intercambio no es simétrico: él enlaza desde su home y nosotros desde una página interna.
+
 ### 2026-11-03 — Se quita HubSpot de la web
 **Qué**: se elimina el script de seguimiento de HubSpot (`js.hs-scripts.com/51196399.js`) de `Layout.astro`. La web deja de poner las cookies `__hstc`, `hubspotutk`, `__hssrc` y `__hssc`, y la política de privacidad queda correcta sin cambios. No se pone banner de cookies.
 **Calendly** (comprobado el 2026-11-03 en nimbel.net): el widget muestra su propio banner de cookies dentro del iframe, con "Rechazar todas", "Aceptar todas" y "Configuración de cookies". Las cookies opcionales dependen de ese banner, así que no hace falta uno nuestro.

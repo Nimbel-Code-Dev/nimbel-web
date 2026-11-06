@@ -359,6 +359,15 @@ export const es = {
     title: "Sobre Nimbel Code",
     description:
       "Qué es Nimbel Code, dónde está, qué servicios ofrece y cómo contactar. Desarrollo de software a medida con IA integrada desde 2020.",
+    collaboratorsTitle: "Colaboradores",
+    collaborators: [
+      {
+        name: "Roger Guerrero Plana",
+        url: "https://rogerguerreroplana.com",
+        description:
+          "Construye sistemas de IA y LLMs en producción: RAG, agentes e IA autoalojada, con los datos dentro de tu propia infraestructura.",
+      },
+    ],
     faqTitle: "Preguntas frecuentes",
     items: [
       {
