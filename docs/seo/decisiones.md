@@ -2,6 +2,10 @@
 
 Registro cronológico, la más reciente arriba. Formato: `### AAAA-MM-DD — título`, qué se decidió y por qué.
 
+### 2026-11-06 — El enlace a Roger Guerrero Plana pasa a una sección de la home
+**Qué**: la home (ES y EN) añade la sección "Colaboradores", entre Equipo y Contacto, con una ficha: imagen, nombre enlazado a `https://rogerguerreroplana.com`, etiqueta "Partner" y descripción. Componente `Collaborators.astro`, con la fila título | texto de "¿Para quién es?" y el círculo de Testimonios; el texto vive en `es.ts` y `en.ts` (`collaborators`). Mientras Roger no envíe su foto (cuadrada, 800×800 px), el círculo muestra sus iniciales. Se quita el bloque de "Sobre Nimbel Code". Sustituye a la ubicación de la entrada siguiente.
+**Por qué**: Rubén vio flojo el bloque de texto en una página interna frente a lo que Roger nos da en su home: sección propia, logo, etiqueta "Partner" y descripción. Se valoró una octava tarjeta en Equipo y se descartó, porque Roger no es parte del equipo.
+
 ### 2026-11-06 — Enlace recíproco con Roger Guerrero Plana en "Sobre Nimbel Code"
 **Qué**: "Sobre Nimbel Code" (ES y EN) añade, después de la FAQ, un bloque "Colaboradores" con una ficha de texto: nombre enlazado a `https://rogerguerreroplana.com` y su descripción en tercera persona (él la envió en primera). El enlace es follow (`rel="noopener"`), sin logo ni foto. El texto vive en `es.ts` y `en.ts` (`about.collaborators`), así que un colaborador nuevo es una entrada más en la lista. No es una página nueva: no necesita keyword.
 **Observado** (2026-11-06): Roger enlaza a `https://www.nimbel.net` desde la sección "Colaboradores" de su home, en español y en inglés, con el logo (alt "Nimbel Code") y sin `nofollow`.

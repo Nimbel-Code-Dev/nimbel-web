@@ -1,0 +1,88 @@
+---
+import { useTranslations, type Locale } from "@/i18n/utils";
+
+interface Props {
+  locale: Locale;
+}
+
+const { locale } = Astro.props;
+const t = useTranslations(locale);
+
+const headline = t("collaborators", "headline") as string;
+const items = t("collaborators", "items") as ReadonlyArray<{
+  id: string;
+  name: string;
+  role: string;
+  url: string;
+  description: string;
+  photo?: string;
+  photoAlt?: string;
+}>;
+
+function getInitials(name: string): string {
+  return name
+    .split(" ")
+    .filter(Boolean)
+    .slice(0, 2)
+    .map((part) => part[0].toUpperCase())
+    .join("");
+}
+---
+
+<section
+  id="colaboradores"
+  class="w-full bg-nimbel-bg pb-16 sm:pb-20 lg:pb-24"
+  aria-labelledby="colaboradores-title"
+>
+  <div class="mx-auto w-full max-w-7xl px-6 sm:px-12 lg:px-16">
+    <h2
+      id="colaboradores-title"
+      class="font-mortend text-2xl sm:text-3xl lg:text-4xl xl:text-5xl text-nimbel-text uppercase leading-tight tracking-[-0.01em] mb-6"
+    >
+      {headline}
+    </h2>
+
+    <!-- Fila título | texto, como las de Servicios y ¿Para quién es? -->
+    {
+      items.map((item) => (
+        <div
+          class="flex flex-col lg:flex-row gap-4 lg:gap-10 items-start border-t border-nimbel-muted/30 pt-8 sm:pt-10"
+          data-testid={`collaborator-${item.id}`}
+        >
+          <div class="flex-1 flex items-center gap-4">
+            <div class="shrink-0 w-16 h-16 rounded-full overflow-hidden bg-nimbel-surface flex items-center justify-center">
+              {item.photo ? (
+                <img
+                  src={item.photo}
+                  alt={item.photoAlt}
+                  class="w-full h-full object-cover grayscale"
+                  loading="lazy"
+                />
+              ) : (
+                <span class="text-nimbel-bg font-bold text-lg select-none" aria-hidden="true">
+                  {getInitials(item.name)}
+                </span>
+              )}
+            </div>
+            <div class="flex flex-col gap-1">
+              <h3 class="font-bold text-xl lg:text-2xl text-nimbel-text leading-snug">
+                <a
+                  href={item.url}
+                  target="_blank"
+                  rel="noopener"
+                  class="underline decoration-nimbel-accent underline-offset-4 hover:text-nimbel-accent"
+                >
+                  {item.name}
+                </a>
+              </h3>
+              <p class="text-sm text-nimbel-muted">{item.role}</p>
+            </div>
+          </div>
+          <p class="flex-1 text-nimbel-muted text-base sm:text-lg leading-relaxed">
+            {item.description}
+          </p>
+        </div>
+      ))
+    }
+  </div>
+</section>

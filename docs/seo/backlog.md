@@ -26,7 +26,8 @@ Las tareas hechas indican el commit donde se aplicaron.
   - Reseñas: no se hace campaña de reseñas (decisión de Rubén, 2026-11-03). Se piden solo en momentos naturales (fin de fase o de proyecto)
 
 ## Contenido
-- [x] "Sobre Nimbel Code": bloque "Colaboradores" con el enlace a Roger Guerrero Plana, en ES y EN — hecho 2026-11-06 (`decisiones.md`)
+- [x] Home: sección "Colaboradores" con el enlace a Roger Guerrero Plana, en ES y EN — hecho 2026-11-06 (`decisiones.md`)
+- [ ] Home: añadir la foto de Roger Guerrero Plana a "Colaboradores" cuando la envíe (cuadrada, 800×800 px, JPG)
 - [ ] "Sobre Nimbel Code" y schema Organization: indicar dónde está el equipo (Athlone, Barcelona, Sevilla, Córdoba-Argentina) como dato, sin páginas por ciudad
 - [ ] Página de autor de Rubén (schema `Person`, sameAs LinkedIn, enlazada a la Organization) para firmar los artículos
 - [ ] Prompt Universe: completar los 10 problemas del cliente × 3 prompts (`keyword-map.md`) y dar de alta en GEO Metrics los prompts propuestos

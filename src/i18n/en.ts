@@ -306,6 +306,19 @@ export const en = {
       },
     ],
   },
+  collaborators: {
+    headline: "Collaborators",
+    items: [
+      {
+        id: "roger-guerrero-plana",
+        name: "Roger Guerrero Plana",
+        role: "Partner",
+        url: "https://rogerguerreroplana.com",
+        description:
+          "Builds production AI and LLM systems: RAG, agents and self-hosted AI, with your data kept inside your own infrastructure.",
+      },
+    ],
+  },
   socialLinks: {
     linkedinLabel: "LinkedIn",
     githubLabel: "GitHub",
@@ -361,15 +374,6 @@ export const en = {
     title: "About Nimbel Code",
     description:
       "What Nimbel Code is, where it is based, what services it offers and how to get in touch. Custom software development with integrated AI since 2020.",
-    collaboratorsTitle: "Collaborators",
-    collaborators: [
-      {
-        name: "Roger Guerrero Plana",
-        url: "https://rogerguerreroplana.com",
-        description:
-          "Builds production AI and LLM systems: RAG, agents and self-hosted AI, with your data kept inside your own infrastructure.",
-      },
-    ],
     faqTitle: "Frequently asked questions",
     items: [
       {
