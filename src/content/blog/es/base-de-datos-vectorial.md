@@ -9,6 +9,11 @@ datePublished: "2026-11-07"
 
 **Una base de datos vectorial guarda el significado de textos o imágenes como listas de números (vectores) y encuentra los más parecidos a una pregunta.** Es la pieza que permite hacer RAG: dar a una IA la información de tu empresa justo antes de que responda, para que use tus datos y no generalidades. No hace falta montar una aparte: PostgreSQL, con la extensión pgvector, ya hace ese trabajo dentro de la base de datos que probablemente ya usas.
 
+<!-- Animación hecha con Remotion (remotion/RagFlow.tsx); se regenera con `pnpm video:render` -->
+<video autoplay muted loop playsinline preload="metadata" width="1200" height="900" poster="/assets/blog/rag-flow.webp" aria-label="Esquema en cuatro pasos: tus datos se convierten en vectores, PostgreSQL busca los más parecidos y la IA responde con ese contexto">
+  <source src="/assets/blog/rag-flow.mp4" type="video/mp4" />
+</video>
+
 ## El problema: una IA genérica no conoce tus datos
 
 Un asistente de IA sabe mucho del mundo, pero no sabe nada de tu catálogo, de tus contratos ni de tu archivo de fotos. Nunca los ha visto.
@@ -53,11 +58,6 @@ La conclusión es sencilla: las matemáticas difíciles ya están resueltas e in
 ## ¿Cómo recibe la IA el contexto?
 
 **La IA recibe tu pregunta junto con los fragmentos que PostgreSQL ha encontrado, y responde a partir de ellos.** El flujo tiene cuatro pasos:
-
-<!-- Animación hecha con Remotion (remotion/RagFlow.tsx); se regenera con `pnpm video:render` -->
-<video autoplay muted loop playsinline preload="metadata" width="1200" height="900" poster="/assets/blog/rag-flow.webp" aria-label="Esquema en cuatro pasos: tus datos se convierten en vectores, PostgreSQL busca los más parecidos y la IA responde con ese contexto">
-  <source src="/assets/blog/rag-flow.mp4" type="video/mp4" />
-</video>
 
 1. **Tus datos.** Documentos, fichas de producto, correos o imágenes que ya tienes.
 2. **Se convierten en vectores.** Cada contenido se vectoriza una vez y se guarda en PostgreSQL. Cuando cambia, se actualiza.
