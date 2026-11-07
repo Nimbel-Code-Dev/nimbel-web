@@ -17,6 +17,8 @@ const home = locale === "en" ? "/en/" : "/";
 const navLinks = [
   { label: t("navbar", "about"), href: `${home}#team` },
   { label: t("navbar", "services"), href: `${home}#services` },
+  // El blog solo existe en español por ahora
+  ...(locale === "es" ? [{ label: "Blog", href: "/blog/" }] : []),
 ];
 
 const pathname = Astro.url.pathname;

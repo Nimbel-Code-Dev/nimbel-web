@@ -1,0 +1,82 @@
+---
+import { getCollection } from "astro:content";
+import Footer from "@/components/Footer.astro";
+import Navbar from "@/components/Navbar.astro";
+import Layout from "@/layouts/Layout.astro";
+
+// /blog/: listado de artículos en español. Sin keyword principal, como las páginas de caso (decisiones.md, 2026-11-07)
+export function getStaticPaths() {
+  return [{ params: { locale: undefined } }];
+}
+
+const posts = (await getCollection("blog", (post) => post.id.startsWith("es/"))).sort((a, b) =>
+  b.data.datePublished.localeCompare(a.data.datePublished),
+);
+
+const title = "Blog | Nimbel Code";
+const description =
+  "Artículos de Nimbel Code sobre desarrollo de software a medida, apps e inteligencia artificial aplicada, explicados sin jerga.";
+
+const siteUrl = "https://www.nimbel.net/";
+const pageUrl = `${siteUrl}blog/`;
+const postUrl = (id: string) => `/blog/${id.split("/")[1]}/`;
+const formatDate = (date: string) =>
+  new Date(date).toLocaleDateString("es-ES", { day: "numeric", month: "long", year: "numeric" });
+
+const graph = [
+  {
+    "@type": "Blog",
+    "@id": `${pageUrl}#blog`,
+    url: pageUrl,
+    name: "Blog de Nimbel Code",
+    description,
+    inLanguage: "es",
+    publisher: { "@id": `${siteUrl}#organization` },
+    blogPost: posts.map((post) => ({ "@id": `${new URL(postUrl(post.id), siteUrl).href}#article` })),
+  },
+  {
+    "@type": "BreadcrumbList",
+    "@id": `${pageUrl}#breadcrumb`,
+    itemListElement: [
+      { "@type": "ListItem", position: 1, name: "Inicio", item: siteUrl },
+      { "@type": "ListItem", position: 2, name: "Blog", item: pageUrl },
+    ],
+  },
+];
+---
+
+<Layout title={title} description={description} lang="es" alternates={{ es: "/blog/" }} graph={graph}>
+  <header>
+    <Navbar currentPage="/blog/" locale="es" alternateUrl="/en/" />
+  </header>
+
+  <section class="w-full bg-nimbel-text">
+    <div class="max-w-3xl mx-auto px-6 py-16 font-clash text-nimbel-bg leading-relaxed">
+      <h1 class="font-mortend uppercase text-3xl mb-10">Blog</h1>
+      <ul class="flex flex-col gap-10">
+        {
+          posts.map((post) => (
+            <li>
+              <article>
+                <time datetime={post.data.datePublished} class="text-sm opacity-70">
+                  {formatDate(post.data.datePublished)}
+                </time>
+                <h2 class="font-mortend uppercase text-xl mt-2 mb-3">
+                  <a href={postUrl(post.id)} class="hover:underline">
+                    {post.data.name}
+                  </a>
+                </h2>
+                <p class="mb-3">{post.data.description}</p>
+                <a href={postUrl(post.id)} class="underline">
+                  Leer artículo
+                </a>
+              </article>
+            </li>
+          ))
+        }
+      </ul>
+    </div>
+  </section>
+
+  <Footer locale="es" />
+</Layout>

@@ -1,0 +1,75 @@
+---
+import { render, type CollectionEntry } from "astro:content";
+import Footer from "@/components/Footer.astro";
+import Navbar from "@/components/Navbar.astro";
+import Layout from "@/layouts/Layout.astro";
+
+// Artículo del blog (solo español por ahora). Mismo bloque visual que CasePage
+interface Props {
+  post: CollectionEntry<"blog">;
+}
+
+const { post } = Astro.props;
+const { Content, headings } = await render(post);
+const { name, title, description, datePublished } = post.data;
+
+const slug = post.id.split("/")[1];
+const pagePath = `/blog/${slug}/`;
+
+const siteUrl = "https://www.nimbel.net/";
+const pageUrl = new URL(pagePath, Astro.site).href;
+const organization = { "@id": `${siteUrl}#organization` };
+// Rubén ya está en el @graph global como founder de la Organization
+const author = { "@id": `${siteUrl}#ruben` };
+// El headline del Article es el H1 del propio markdown
+const headline = headings.find((h) => h.depth === 1)?.text ?? title;
+
+// FAQPage a partir de la sección "## Dudas frecuentes" del markdown: cada "### pregunta" seguida de su respuesta
+const faqSection = post.body?.split(/^## Dudas frecuentes\s*$/m)[1]?.split(/^## /m)[0] ?? "";
+const faq = [...faqSection.matchAll(/^### (.+)\n([\s\S]+?)(?=^### |$(?![\s\S]))/gm)].map(([, q, a]) => ({
+  "@type": "Question",
+  name: q.trim(),
+  acceptedAnswer: { "@type": "Answer", text: a.trim().replace(/\[([^\]]+)\]\([^)]+\)/g, "$1") },
+}));
+
+const graph = [
+  {
+    "@type": "Article",
+    "@id": `${pageUrl}#article`,
+    mainEntityOfPage: pageUrl,
+    headline,
+    description,
+    datePublished,
+    inLanguage: "es",
+    author,
+    publisher: organization,
+    about: { "@type": "Thing", name },
+  },
+  ...(faq.length ? [{ "@type": "FAQPage", "@id": `${pageUrl}#faq`, mainEntity: faq }] : []),
+  {
+    "@type": "BreadcrumbList",
+    "@id": `${pageUrl}#breadcrumb`,
+    itemListElement: [
+      { "@type": "ListItem", position: 1, name: "Inicio", item: siteUrl },
+      { "@type": "ListItem", position: 2, name: "Blog", item: `${siteUrl}blog/` },
+      { "@type": "ListItem", position: 3, name, item: pageUrl },
+    ],
+  },
+];
+---
+
+<Layout title={title} description={description} lang="es" alternates={{ es: pagePath }} graph={graph}>
+  <header>
+    <Navbar currentPage={pagePath} locale="es" alternateUrl="/en/" />
+  </header>
+
+  <section class="w-full bg-nimbel-text">
+    <article
+      class="max-w-3xl mx-auto px-6 py-16 font-clash text-nimbel-bg leading-relaxed [&_h1]:font-mortend [&_h1]:uppercase [&_h1]:text-3xl [&_h1]:mb-6 [&_h2]:font-mortend [&_h2]:uppercase [&_h2]:text-xl [&_h2]:mt-10 [&_h2]:mb-4 [&_h3]:font-semibold [&_h3]:mt-6 [&_h3]:mb-2 [&_p]:mb-4 [&_ul]:list-disc [&_ul]:pl-5 [&_ol]:list-decimal [&_ol]:pl-5 [&_ol]:mb-4 [&_li]:mb-2 [&_a]:underline [&_video]:w-full [&_video]:h-auto [&_video]:rounded-2xl [&_video]:my-8 [&_table]:w-full [&_table]:my-6 [&_table]:text-sm [&_th]:text-left [&_th]:p-2 [&_th]:border-b [&_th]:border-nimbel-bg/30 [&_td]:p-2 [&_td]:align-top [&_td]:border-b [&_td]:border-nimbel-bg/10"
+    >
+      <Content />
+    </article>
+  </section>
+
+  <Footer locale="es" />
+</Layout>

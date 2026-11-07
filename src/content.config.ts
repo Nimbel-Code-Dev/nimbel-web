@@ -13,4 +13,17 @@ const casos = defineCollection({
   }),
 });
 
-export const collections = { casos };
+// Artículos del blog: un .md por artículo en src/content/blog/es/ (el nombre del archivo es el slug).
+// Mismo esquema que los casos; por ahora solo en español
+const blog = defineCollection({
+  loader: glob({ pattern: "*/*.md", base: "./src/content/blog" }),
+  schema: z.object({
+    // Nombre corto del artículo: breadcrumb y "about" del Article
+    name: z.string(),
+    title: z.string(),
+    description: z.string(),
+    datePublished: z.string(),
+  }),
+});
+
+export const collections = { casos, blog };

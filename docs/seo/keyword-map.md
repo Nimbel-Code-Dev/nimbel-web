@@ -1,6 +1,6 @@
 # Keyword map — nimbel.net
 
-Última actualización: 2026-11-03 · Fuente: Semrush (base de datos España) + Google Search Console
+Última actualización: 2026-11-07 · Fuente: Semrush (base de datos España) + Google Search Console + DataForSEO (desde 2026-11-07)
 
 > Volúmenes <100 son estimaciones poco fiables de Semrush: sirven para priorizar, no como cifra real.
 
@@ -12,6 +12,7 @@
 - Evitar "gratis", "tutorial", "cómo hacer", "qué es", "sin saber programar", "sin código".
 - Una keyword principal por URL (sin canibalizar). Las secundarias pueden compartir URL con su principal.
 - Las páginas de caso (`/casos/<slug>/`, `/en/cases/<slug>/`) no llevan keyword principal: son prueba social (`decisiones.md`, 2026-11-02).
+- El índice del blog (`/blog/`) tampoco lleva keyword principal: es un listado. Cada artículo (`/blog/<slug>/`) sí la necesita (`decisiones.md`, 2026-11-07).
 - Cada pregunta tiene una sola respuesta en la web: no repetir preguntas entre páginas ni entre bloques de dudas (`decisiones.md`, 2026-11-03).
 - Densidad sobre extensión: sin objetivo de número de palabras; datos concretos y respuesta directa al inicio de cada H2.
 
@@ -28,6 +29,7 @@
 | cuánto cuesta crear una app | cuánto cuesta crear una app web (40, KD 8), …en España (30), …en euros (30), cuánto cuesta un software a medida (~100, KD 3), cuánto sale hacer un software a medida (70) | /cuanto-cuesta-crear-una-app (nueva; sustituye a /cuanto-cuesta-software-a-medida) | Investigación comercial | 210 | 18 | Validada — pendiente de crear |
 | externalizar desarrollo de software | criterios para externalizar desarrollo de software, equipo interno vs desarrollo externalizado | /externalizar-desarrollo-software (nueva) | Investigación comercial | ~50 | n/d | Pendiente |
 | custom software development barcelona | — | /en | Comercial | GSC: posición 4 | n/d | En curso: en el title desde 2026-11-02 |
+| base de datos vectorial | pgvector (480), búsqueda semántica (50), que es una base de datos vectorial (40), RAG con PostgreSQL | /blog/base-de-datos-vectorial | Informativa (autoridad y GEO, no captación directa) | 260 (DataForSEO) | 32 (Semrush) | Hecho 2026-11-07 (primer artículo del blog) |
 
 ## Prompt Universe (IA)
 Complementa a las keywords: preguntas en lenguaje natural que el cliente hace a una IA antes de contratar. Se miden en GEO Metrics (proyecto "Nimbel Code"). Prioridad: Validación y marca → Comparación → Descubrimiento → informacional (`decisiones.md`, 2026-11-03).
@@ -52,6 +54,23 @@ Pendiente: completar con los 10 problemas reales del cliente (3 prompts cada uno
 | Keyword | Vol/mes | KD | Acción |
 |---|---|---|---|
 | empresas desarrolladoras de apps en España | 320 | 27 | La SERP son listados "Top empresas…". Outreach para aparecer en esos rankings (también alimentan a los chatbots). |
+
+## En investigación: artículo RAG con PostgreSQL
+Sin keyword principal todavía; borrador en `borradores/rag-con-postgresql.md` (allí, la comparación con Semrush). Fuente: DataForSEO, Keywords Data API (Google Ads), España/español, media de 12 meses (oct 2025–sep 2026), consultado 2026-11-07. KD: DataForSEO Labs, no comparable con el de Semrush (da 0 donde Semrush da 32–62).
+
+| Keyword | Vol/mes | KD Semrush | Estado |
+|---|---|---|---|
+| base de datos vectorial | 260 | 32 | Elegida como principal 2026-11-07 (SERP 2026-11-07: informativa; AI Overview que cita pgvector; además de IBM, AWS, Microsoft y Google Cloud, rankean sitios pequeños como 10code.es, una empresa de desarrollo, en el puesto 3) |
+| embeddings | 720 | n/d | Finalista débil (SERP 2026-11-07: perfil de desarrollador o estudiante de ML; resultados mezclados en inglés: Google Developers, Wikipedia EN, OpenAI) |
+| vectorización | 880 | n/d | Descartada como principal (SERP 2026-11-07: casi toda de diseño gráfico, vectorizar imágenes a SVG) |
+| pgvector | 480 | 39 | Secundaria (intención de desarrollador) |
+| qué es un rag / que es rag | 480 (agrupadas) | 51 / 62 | Se responde en un H2; no se asigna ("qué es") |
+| búsqueda semántica | 50 | 33 | Secundaria |
+| que es una base de datos vectorial | 40 | n/d | Secundaria |
+| rag inteligencia artificial | 30 | n/d | Residual |
+| postgresql vector, qué es rag en ia | 20 c/u | n/d | Residual |
+| rag postgresql, qué son los embeddings | 10 c/u | n/d | Residual |
+| inteligencia artificial generativa y rag | sin dato | 54 | Residual |
 
 ## Sin validar todavía
 Pendientes de próxima sesión con Semrush. No crear páginas con ellas.

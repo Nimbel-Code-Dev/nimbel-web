@@ -98,6 +98,19 @@ const fambaCaseLabel = locale === "en" ? "FAMBA case" : "Caso FAMBA";
             </a>
           </li>
           {
+            // El blog solo existe en español por ahora
+            locale === "es" && (
+              <li>
+                <a
+                  href="/blog/"
+                  class="text-nimbel-text text-sm hover:text-nimbel-accent transition-colors"
+                >
+                  Blog
+                </a>
+              </li>
+            )
+          }
+          {
             fambaCaseLink && (
               <li>
                 <a
