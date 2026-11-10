@@ -11,7 +11,7 @@
 
 ## SEO
 
-- Las decisiones SEO viven en `docs/seo/` y son la fuente de verdad. Esa carpeta la edita también un proyecto de Claude Cowork: léela siempre del disco al empezar, no asumas su contenido.
+- Las decisiones SEO viven en `docs/seo/` y son la fuente de verdad. Léela siempre del disco al empezar (tras un `git pull`), no asumas su contenido.
 - Antes de cambiar textos, títulos, metas, slugs o crear páginas: lee `docs/seo/keyword-map.md` y `docs/seo/decisiones.md`.
 - Toda página nueva necesita una keyword principal asignada en `keyword-map.md`; si no la tiene, pregúntame antes de crearla.
 - No asignes la misma keyword principal a dos URLs.

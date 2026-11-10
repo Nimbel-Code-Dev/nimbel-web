@@ -1,6 +1,6 @@
 # docs/seo
 
-Fuente única de verdad de las decisiones SEO de nimbel.net. Esta carpeta la leen y escriben tanto Claude Code como un proyecto de Claude Cowork: léela siempre del disco, puede haber cambiado.
+Fuente única de verdad de las decisiones SEO de nimbel.net. Se edita solo desde Claude Code: léela siempre del disco (tras un `git pull`), puede haber cambiado.
 
 ## Ficheros
 - `keyword-map.md`: keywords elegidas y descartadas, la URL asignada a cada una y su estado.

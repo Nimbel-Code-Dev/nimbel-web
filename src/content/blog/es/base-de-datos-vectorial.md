@@ -3,9 +3,9 @@ name: "Base de datos vectorial"
 title: "Base de datos vectorial con PostgreSQL y RAG | Nimbel Code"
 description: "Qué es una base de datos vectorial y por qué PostgreSQL, con pgvector, ya hace ese trabajo para que la IA responda con tus datos. Explicado sin jerga."
 datePublished: "2026-11-07"
+author: ruben
+h1: "Base de datos vectorial: por qué PostgreSQL ya basta para hacer RAG"
 ---
-
-# Base de datos vectorial: por qué PostgreSQL ya basta para hacer RAG
 
 **Una base de datos vectorial guarda el significado de textos o imágenes como listas de números (vectores) y encuentra los más parecidos a una pregunta.** Es la pieza que permite hacer RAG: dar a una IA la información de tu empresa justo antes de que responda, para que use tus datos y no generalidades. No hace falta montar una aparte: PostgreSQL, con la extensión pgvector, ya hace ese trabajo dentro de la base de datos que probablemente ya usas.
 
