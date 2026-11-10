@@ -45,7 +45,7 @@ Las tareas hechas indican el commit donde se aplicaron.
 - [x] alt en todas las imágenes — hecho (935de85)
 - [x] Redirección permanente de nimbel.net a [www.nimbel.net](https://www.nimbel.net) — hecho, configurada en Vercel fuera del repo (responde 308, equivalente a 301)
 - [ ] Comprobar que OAI-SearchBot, Claude-SearchBot, PerplexityBot y Bingbot reciben 200 (`curl -A "OAI-SearchBot/1.0" -I https://www.nimbel.net/`) y que el firewall de Vercel no bloquea bots de IA
-- [ ] Remotion: confirmar en sus Términos y Condiciones (o escribiéndoles) que Nimbel entra en la licencia gratuita con 2 personas en nómina y colaboradores externos (`decisiones.md`, 2026-11-07)
+- [x] Remotion: licencia gratuita confirmada por Rubén — 2026-11-10 (`decisiones.md`, 2026-11-07)
 - [ ] llms.txt (opcional, prioridad baja): si se crea, que responda 200; si no, un 404 limpio
 - [ ] og-image: quitar "SOFTWARE A MEDIDA PARA SALUD" (contradice la web generalista); avisar a la diseñadora
 
@@ -57,7 +57,7 @@ Las tareas hechas indican el commit donde se aplicaron.
 
 ## Investigación
 Prioridad alta (siguiente sesión con Semrush):
-- [x] Artículo RAG con PostgreSQL — publicado 2026-11-07 como primer artículo del blog en /blog/base-de-datos-vectorial (texto en `src/content/blog/es/`; el borrador queda como histórico de la investigación). Pendiente aparte: Search Console (inspeccionar y solicitar indexación de /blog/ y del artículo). Por orden: (1) calibrar DataForSEO pidiendo en una sola tarea las 8 keywords que ya tienen dato de Semrush en el borrador y comparar el orden de magnitud y el ranking; (2) validar "embeddings", "qué son los embeddings" y "vectorización"; (3) SERP top 10 de las 2–3 finalistas; (4) proponer la keyword principal a Rubén. Reglas de gasto en `CLAUDE.md`. Pasos 1, 2 y 3 hechos 2026-11-07 (datos en `keyword-map.md`, "En investigación", y en el borrador). Paso 4 hecho 2026-11-07: keyword principal "base de datos vectorial" (`decisiones.md`). Slug, title, H1 y entradilla ajustados en el borrador 2026-11-07; aprobado y publicado el mismo día
+- [x] Artículo RAG con PostgreSQL — publicado 2026-11-07 como primer artículo del blog en /blog/base-de-datos-vectorial (texto en `src/content/blog/es/`; el borrador queda como histórico de la investigación). Indexación de /blog/ y del artículo solicitada en Search Console — hecho 2026-11-10. Por orden: (1) calibrar DataForSEO pidiendo en una sola tarea las 8 keywords que ya tienen dato de Semrush en el borrador y comparar el orden de magnitud y el ranking; (2) validar "embeddings", "qué son los embeddings" y "vectorización"; (3) SERP top 10 de las 2–3 finalistas; (4) proponer la keyword principal a Rubén. Reglas de gasto en `CLAUDE.md`. Pasos 1, 2 y 3 hechos 2026-11-07 (datos en `keyword-map.md`, "En investigación", y en el borrador). Paso 4 hecho 2026-11-07: keyword principal "base de datos vectorial" (`decisiones.md`). Slug, title, H1 y entradilla ajustados en el borrador 2026-11-07; aprobado y publicado el mismo día
 - [ ] Validar en Semrush las keywords de "Sin validar todavía" (`keyword-map.md`)
 - [x] Validar en Semrush (España) el volumen y el KD de todas las keywords de "Hipótesis" (Keyword Magic Tool, también con el filtro "Preguntas") — hecho 2026-11-01
 - [x] Analizar appsociados.com en Semrush (Posicionamiento orgánico): qué keywords les traen tráfico — hecho 2026-11-01: 0 keywords en el top 100
