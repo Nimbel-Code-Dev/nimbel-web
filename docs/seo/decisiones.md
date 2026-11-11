@@ -2,6 +2,10 @@
 
 Registro cronológico, la más reciente arriba. Formato: `### AAAA-MM-DD — título`, qué se decidió y por qué.
 
+### 2026-11-11 — Verificación de TechBehemoths con enlace de texto
+**Qué**: para verificar el perfil de TechBehemoths se pone un enlace de texto ("TechBehemoths", follow) a https://techbehemoths.com/company/nimbel-code en la columna de redes del pie, en todas las páginas. Se usa la URL del perfil, no el código exacto de su pestaña "Text". El perfil también se añade al `sameAs` del schema Organization. Se descartaron el badge con imagen (carga desde `cdn.techbehemoths.com`, les envía la IP de cada visita y obliga a añadirlos como proveedor en /privacidad) y el badge con la imagen alojada en la web (su comprobación podría pedir el código tal cual). Corrige el backlog: la verificación no pide un script, solo un enlace.
+**Por qué**: el perfil verificado da más peso a la sugerencia en el Top de Barcelona de TechBehemoths, y el enlace de texto no carga nada de terceros ni cambia la política de privacidad.
+
 ### 2026-11-10 — Autor de cada artículo del blog y fin de Cowork en docs/seo
 **Qué**: el autor de un artículo es quien lo escribe, y también quien elige su keyword principal. Cada autor tiene una ficha en `src/content/autores/<id>.json` (nombre, cargo y LinkedIn opcional) y el artículo la cita con `author: <id>`. La página muestra la firma ("Por …, cargo · fecha") bajo el H1, que pasa a la cabecera del Markdown (`h1`), y el schema `Article` lleva un `Person` con `@id` `#<id>` (con `ruben` se funde con el founder del @graph global). Además, `docs/seo/` deja de editarse desde Claude Cowork: todo se hace desde Claude Code. Sustituye a la parte de Cowork de "docs/seo/ es la fuente única de verdad" (2026-10-28).
 **Por qué**: el autor visible con cargo y fecha es una regla del plan del blog (E-E-A-T), y las fichas evitan repetir datos y preparan la página de autor del backlog. Cowork se deja porque el plugin de la base de conocimiento no funciona allí.

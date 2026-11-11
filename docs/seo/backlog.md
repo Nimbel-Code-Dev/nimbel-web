@@ -19,7 +19,8 @@ Las tareas hechas indican el commit donde se aplicaron.
   - [ ] Directorios (Clutch, GoodFirms, Sortlist, TechBehemoths): sede Athlone y, como ubicaciones adicionales, las ciudades donde hay equipo de verdad (Barcelona/Ripollet, Sevilla, Córdoba-Argentina). Misma descripción, servicios y tarifas en todos
   - [x] TechBehemoths: perfil enviado — hecho 2026-11-03 (plan FREE). Descripción propia en inglés (no copiada), sede Athlone, servicios (software a medida 40 %, apps 30 %, web 15 %, IA 15 %), sectores (salud, medios, finanzas, educación) y portfolio con FAMBA, NewsUp, Analysta e Innocard
   - [x] TechBehemoths: importación de reseñas de Google solicitada — 2026-11-03 (3 de las 4, límite del plan FREE; las verifica su equipo antes de publicarlas). Clutch no tiene reseñas que importar
-  - [ ] TechBehemoths: valorar el badge verificado (pide poner un script suyo en la web; implica actualizar la política de privacidad)
+  - [x] TechBehemoths: enlace de verificación en la columna de redes del pie (ES y EN) y perfil añadido al `sameAs` del schema — hecho 2026-11-11 (`decisiones.md`). Su bot (`TechBehemoths-VerificationBot/1.0`) recibe 200 en https://www.nimbel.net/, sin tocar el firewall de Vercel
+  - [ ] TechBehemoths: tras desplegar, pulsar "Verify" (Page Path vacío) y comprobar que el perfil pasa a verificado. Si falla, pegar en el pie el código exacto de su pestaña "Text"
   - [ ] TechBehemoths: "Suggest a company" en los Top de Barcelona cuando el perfil esté publicado
   - [x] Sortlist: perfil publicado (antes no lo estaba, al 39 %) — hecho 2026-11-03: descripción y tagline en inglés (el resto de idiomas los traduce Sortlist con IA), 6 personas, fundada en 2020, CRO 788569 (Irlanda), idiomas ES/EN/CA, oficina Athlone (se quitó C/ Ramon Turró, ya no existe), trabajo en remoto activado. Otras oficinas: Sortlist pide calle y número; pendiente de decidir si se ponen direcciones reales
   - [ ] DesignRush: valorar
