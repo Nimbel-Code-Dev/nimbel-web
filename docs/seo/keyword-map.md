@@ -1,8 +1,8 @@
 # Keyword map — nimbel.net
 
-Última actualización: 2026-11-07 · Fuente: Semrush (base de datos España) + Google Search Console + DataForSEO (desde 2026-11-07)
+Última actualización: 2026-11-11 · Fuente: Semrush (base de datos España) + Google Search Console + DataForSEO (desde 2026-11-07)
 
-> Volúmenes <100 son estimaciones poco fiables de Semrush: sirven para priorizar, no como cifra real.
+> Volúmenes <100 son estimaciones poco fiables: sirven para priorizar, no como cifra real. Desde 2026-11-07 los datos nuevos salen de DataForSEO; los marcados como Semrush son anteriores y Semrush ya no se usa. DataForSEO suele dar menos volumen que Semrush para la misma keyword.
 
 ## Criterio
 - Cliente principal: profesional con negocio o conocimiento de su sector que quiere lanzar su propia app o SaaS y no tiene equipo técnico (todos los clientes actuales son así).
@@ -26,6 +26,10 @@
 | empresa de desarrollo de apps | empresa desarrollo apps (390, KD 32), empresas de desarrollo de apps (260, KD 20), empresa desarrollo de apps (210, KD 26), empresa desarrollo app (140, KD 11), empresas desarrollo apps (140, KD 25), empresa de desarrollo app (70, KD 13) | /desarrollo-de-apps | Comercial (CPC 10–18 $) | 260 | 16 | Hecho 2026-11-01 |
 | desarrollo de apps para empresas | desarrollo de app para empresa (70, KD 8), desarrollo saas a medida (30) | /desarrollo-de-apps | Comercial | 110 | 8 | Hecho 2026-11-01 |
 | desarrollo de apps barcelona | — | /desarrollo-de-apps | Comercial local | 210 | 5 | Hecho 2026-11-01 |
+| empresas desarrolladoras de apps en España | empresas de desarrollo de software en españa (20, DataForSEO), mejores empresas de desarrollo de software en españa (10, DataForSEO) | /blog/empresas-desarrolladoras-de-apps-espana (nueva, comparativa) | Investigación comercial (la SERP son listados "Top empresas…") | 320 | 27 | Validada — pendiente de crear (Sol, después de aplicar la ficha) |
+| desarrollo apps madrid | desarrollo de apps madrid (10), empresa desarrollo apps madrid (10), desarrollo aplicaciones madrid (10) | /desarrollo-de-apps-madrid (nueva) | Comercial local | 20 (DataForSEO) | n/d | Validada — pendiente de crear (dentro del rediseño) |
+| desarrollo apps valencia | desarrollo de apps valencia (10), empresa desarrollo apps valencia (10), desarrollo aplicaciones valencia (10) | /desarrollo-de-apps-valencia (nueva) | Comercial local | 20 (DataForSEO) | n/d | Validada — pendiente de crear (dentro del rediseño) |
+| desarrollo apps sevilla | desarrollo de apps sevilla (10) | /desarrollo-de-apps-sevilla (nueva) | Comercial local | 10 (DataForSEO) | n/d | Validada — pendiente de crear (dentro del rediseño) |
 | cuánto cuesta crear una app | cuánto cuesta crear una app web (40, KD 8), …en España (30), …en euros (30), cuánto cuesta un software a medida (~100, KD 3), cuánto sale hacer un software a medida (70) | /cuanto-cuesta-crear-una-app (nueva; sustituye a /cuanto-cuesta-software-a-medida) | Investigación comercial | 210 | 18 | Validada — pendiente de crear |
 | externalizar desarrollo de software | criterios para externalizar desarrollo de software, equipo interno vs desarrollo externalizado | /externalizar-desarrollo-software (nueva) | Investigación comercial | ~50 | n/d | Pendiente |
 | custom software development barcelona | — | /en | Comercial | GSC: posición 4 | n/d | En curso: en el title desde 2026-11-02 |
@@ -53,7 +57,7 @@ Pendiente: completar con los 10 problemas reales del cliente (3 prompts cada uno
 ## Para conseguir presencia (no página propia)
 | Keyword | Vol/mes | KD | Acción |
 |---|---|---|---|
-| empresas desarrolladoras de apps en España | 320 | 27 | La SERP son listados "Top empresas…". Outreach para aparecer en esos rankings (también alimentan a los chatbots). |
+| empresas desarrolladoras de apps en España | 320 | 27 | La SERP son listados "Top empresas…". Outreach para aparecer en esos rankings (también alimentan a los chatbots). Desde 2026-11-11 tiene además página propia: la comparativa del blog (ver "Keywords elegidas") |
 
 ## En investigación: artículo RAG con PostgreSQL
 Sin keyword principal todavía; borrador en `borradores/rag-con-postgresql.md` (allí, la comparación con Semrush). Fuente: DataForSEO, Keywords Data API (Google Ads), España/español, media de 12 meses (oct 2025–sep 2026), consultado 2026-11-07. KD: DataForSEO Labs, no comparable con el de Semrush (da 0 donde Semrush da 32–62).
@@ -72,8 +76,45 @@ Sin keyword principal todavía; borrador en `borradores/rag-con-postgresql.md` (
 | rag postgresql, qué son los embeddings | 10 c/u | n/d | Residual |
 | inteligencia artificial generativa y rag | sin dato | 54 | Residual |
 
+## En investigación: páginas por ciudad
+
+Origen: en Search Console (últimos 7 días, a 2026-11-11), /desarrollo-de-apps recibe impresiones solo por búsquedas de Barcelona: "desarrollo apps barcelona" (87 impresiones, posición 53), "desarrollo app barcelona" (50, pos. 53,7), "desarrolladores de apps barcelona" (32, pos. 47,4). 0 clics. Rubén quiere añadir ciudades con más volumen, no solo Barcelona.
+
+Volumen mensual de DataForSEO (Google Ads, España, español, media de 12 meses, 2026-11-11). "—" = sin dato (por debajo del umbral de Google Ads). Google Ads redondea: 10 significa "entre 0 y ~10".
+
+| Ciudad | desarrollo apps … | desarrollo de apps … | empresa desarrollo apps … | desarrollo aplicaciones … | empresa desarrollo software … | Suma |
+|---|---|---|---|---|---|---|
+| Barcelona | 50 (CPC 18 $) | 40 | 10 | 10 | — | ~110 |
+| Madrid | 20 | 10 | 10 | 10 | — | ~50 |
+| Valencia | 20 | 10 | 10 | 10 | — | ~50 |
+| Sevilla | 10 | 10 | — | — | — | ~20 |
+| Málaga | 10 | — | — | — | 10 (CPC 17 $) | ~20 |
+| Zaragoza | 10 | 10 | — | — | — | ~20 |
+| Bilbao | — | — | — | — | — | 0 |
+
+Lectura: fuera de Barcelona la demanda es pequeña. Madrid y Valencia tienen la mitad que Barcelona, y el resto se queda en ~20 o menos. DataForSEO da para Barcelona bastante menos que Semrush ("desarrollo de apps barcelona": 40 frente a 210); el orden entre ciudades sirve para priorizar, no como cifra real.
+
+## En investigación: comparativa de empresas
+
+Para la comparativa de empresas ordenada por necesidad (`decisiones.md`, 2026-11-11). Volumen mensual de DataForSEO (Google Ads, España, español, media de 12 meses, 2026-11-11). "—" = sin dato.
+
+| Keyword | Vol/mes | CPC |
+|---|---|---|
+| empresas de desarrollo de software en españa | 20 | 25,5 $ |
+| mejores empresas de desarrollo de software | 10 | — |
+| mejores empresas de desarrollo de software en españa | 10 | — |
+| empresas desarrollo software españa | 10 | — |
+| top empresas desarrollo software españa | — | — |
+| empresas de software a medida en españa | — | — |
+| mejores empresas desarrollo apps españa | — | — |
+| mejores empresas de desarrollo de apps | — | — |
+| empresas desarrollo apps españa | — | — |
+| como elegir (una) empresa de desarrollo de software | — | — |
+
+No se volvió a pedir "empresas desarrolladoras de apps en España": ya tiene dato de Semrush (320/mes, KD 27, "Para conseguir presencia") y su SERP son listados "Top empresas…", el formato de la comparativa. "cómo elegir empresa de desarrollo de software" no tiene volumen en Google Ads.
+
 ## Sin validar todavía
-Pendientes de próxima sesión con Semrush. No crear páginas con ellas.
+Pendientes de validar con DataForSEO (Semrush ya no se usa). No crear páginas con ellas.
 | Keyword candidata | Grupo | URL prevista | Estado |
 |---|---|---|---|
 | cuánto cuesta desarrollar un saas | Coste | /cuanto-cuesta-crear-una-app (secundaria) | Sin validar |
