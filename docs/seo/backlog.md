@@ -20,9 +20,11 @@ Las tareas hechas indican el commit donde se aplicaron.
   - [x] TechBehemoths: perfil enviado — hecho 2026-11-03 (plan FREE). Descripción propia en inglés (no copiada), sede Athlone, servicios (software a medida 40 %, apps 30 %, web 15 %, IA 15 %), sectores (salud, medios, finanzas, educación) y portfolio con FAMBA, NewsUp, Analysta e Innocard
   - [x] TechBehemoths: importación de reseñas de Google solicitada — 2026-11-03 (3 de las 4, límite del plan FREE; las verifica su equipo antes de publicarlas). Clutch no tiene reseñas que importar
   - [x] TechBehemoths: enlace de verificación en la columna de redes del pie (ES y EN) y perfil añadido al `sameAs` del schema — hecho 2026-11-11 (`decisiones.md`). Su bot (`TechBehemoths-VerificationBot/1.0`) recibe 200 en https://www.nimbel.net/, sin tocar el firewall de Vercel
-  - [ ] TechBehemoths: tras desplegar, pulsar "Verify" (Page Path vacío) y comprobar que el perfil pasa a verificado. Si falla, pegar en el pie el código exacto de su pestaña "Text"
-  - [ ] TechBehemoths: "Suggest a company" en los Top de Barcelona cuando el perfil esté publicado
+  - [x] TechBehemoths: perfil verificado con el enlace de texto (solo la URL, Page Path vacío) — hecho 2026-11-11. El primer intento falló porque el commit aún no estaba desplegado
+  - [x] TechBehemoths: "Suggest a company" enviado en el Top de software a medida en Barcelona (https://techbehemoths.com/top-companies/custom-software-development/barcelona) — hecho 2026-11-11, por Rubén y diciendo que es el fundador
+  - [ ] TechBehemoths: comprobar hacia el 2026-11-25 si Nimbel aparece en ese Top (TechBehemoths no da plazo de revisión)
   - [x] Sortlist: perfil publicado (antes no lo estaba, al 39 %) — hecho 2026-11-03: descripción y tagline en inglés (el resto de idiomas los traduce Sortlist con IA), 6 personas, fundada en 2020, CRO 788569 (Irlanda), idiomas ES/EN/CA, oficina Athlone (se quitó C/ Ramon Turró, ya no existe), trabajo en remoto activado. Otras oficinas: Sortlist pide calle y número; pendiente de decidir si se ponen direcciones reales
+  - [ ] StartUB (Universitat de Barcelona): añadir en el pie de su web, junto al copyright, el crédito «Web desenvolupada per Nimbel Code» con enlace a https://www.nimbel.net/, sin nofollow. Autorizado por escrito por el director de StartUB! Lab el 2026-10-26 (registrado en la base, `proyectos/startub/README.md`). Es una mención de un tercero con autoridad (guía GEO 6.9.4)
   - [ ] DesignRush: valorar
   - Reseñas: no se hace campaña de reseñas (decisión de Rubén, 2026-11-03). Se piden solo en momentos naturales (fin de fase o de proyecto)
 
