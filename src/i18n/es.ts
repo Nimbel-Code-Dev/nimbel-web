@@ -304,6 +304,8 @@ export const es = {
         name: "Roger Guerrero Plana",
         role: "Partner",
         url: "https://rogerguerreroplana.com",
+        photo: "people/Roger.jpg",
+        photoAlt: "Foto de Roger Guerrero Plana",
         description:
           "Construye sistemas de IA y LLMs en producción: RAG, agentes e IA autoalojada, con los datos dentro de tu propia infraestructura.",
       },

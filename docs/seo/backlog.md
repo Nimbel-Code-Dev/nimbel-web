@@ -39,7 +39,7 @@ Las tareas hechas indican el commit donde se aplicaron.
 
 ## Contenido
 - [x] Home: sección "Colaboradores" con el enlace a Roger Guerrero Plana, en ES y EN — hecho 2026-11-06 (`decisiones.md`)
-- [ ] Home: añadir la foto de Roger Guerrero Plana a "Colaboradores" (cuadrada, 800×800 px, JPG). La saca Rubén de su perfil de LinkedIn, con permiso de Roger (2026-11-11)
+- [x] Home: añadir la foto de Roger Guerrero Plana a "Colaboradores" (cuadrada, 800×800 px, JPG). La saca Rubén de su perfil de LinkedIn, con permiso de Roger (2026-11-11) — hecho 2026-11-12 (`src/assets/people/Roger.jpg`)
 - [x] "Sobre Nimbel Code" y schema Organization: indicar dónde está el equipo (Athlone, Barcelona, Sevilla, Córdoba-Argentina) como dato, sin páginas por ciudad — hecho 2026-11-12 (FAQ "¿Dónde está?" y `location` del schema)
 - [ ] Página de autor por cada autor del blog (schema `Person`, sameAs LinkedIn, enlazada a la Organization). Ya hechas, 2026-11-10: fichas en `src/content/autores/`, firma visible y `Person` en el schema del artículo; falta la página propia de cada autor
 - [ ] Prompt Universe: completar los 10 problemas del cliente × 3 prompts (`keyword-map.md`) y dar de alta en GEO Metrics los prompts propuestos
