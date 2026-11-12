@@ -108,14 +108,6 @@ export const en = {
       },
     ],
   },
-  stats: {
-    ariaLabel: "Nimbel Code statistics",
-    items: [
-      { value: 20, label: "YEARS OF EXPERIENCE" },
-      { value: 50, label: "SUCCESSFUL PROJECTS" },
-      { value: 5, label: "COUNTRIES" },
-    ],
-  },
   caseStudies: {
     headline: "Featured web and mobile development projects",
     ariaLabel: "Case studies carousel",
@@ -200,9 +192,9 @@ export const en = {
           "They depend on the scope: a simple internal tool doesn't cost the same as a platform with a mobile app and integrations. That's why we work in phases, with a fixed budget and timeline for each one. A first phase usually starts at €10,000, and most of our clients started that way before continuing to evolve their software with us. We'll soon publish a page with more detail on pricing.",
       },
       {
-        title: "Your software is yours",
+        title: "The code stays in your hands",
         description:
-          "What we build for you is yours from day one: the code, the data and the control. You don't pay licenses to use it or depend on us to keep going. If you ever prefer another team to maintain it, you can.",
+          "The code stays in your hands: no per-user licences, full access and the freedom to have another team maintain it. You don't depend on us to keep going.",
       },
     ],
   },
@@ -346,14 +338,11 @@ export const en = {
         href: "https://calendly.com/ruben-nimbel/meeting",
         external: true,
       },
-      {
-        icon: "/assets/Linkedin.svg",
-        label: "LiNKEDiN",
-        sublabel: "We're not big on social media but we have LinkedIn!",
-        href: "https://www.linkedin.com/company/nimbel-code-apps/",
-        external: true,
-      },
     ],
+    social: {
+      label: "FOLLOW US",
+      sublabel: "Find us on Instagram, TikTok, LinkedIn and GitHub.",
+    },
   },
   footer: {
     description: "Your digital asset. Your control. Your team.",
@@ -379,7 +368,7 @@ export const en = {
       {
         question: "What is Nimbel Code?",
         answer:
-          "Nimbel Code is a custom software development company that builds software with AI built in. Founded in 2020, it operates as NIMBEL CODE LIMITED, a company registered in Ireland (CRO 788569).",
+          "Nimbel Code is a custom software development company. It builds web and mobile apps and digital platforms for businesses and companies without an in-house tech team, and integrates AI where it saves work or improves decisions. The brand dates from 2020, and it operates as NIMBEL CODE LIMITED, a company registered in Ireland in 2025 (CRO 788569).",
       },
       {
         question: "Is Nimbel Code related to the Nimbel baby carrier brand?",
@@ -394,17 +383,17 @@ export const en = {
       {
         question: "What services does it offer?",
         answer:
-          "Custom web and mobile apps, digital platforms, conversational assistants and AI integration into products and processes.",
+          "Mainly custom software and web and mobile apps. It also integrates AI into products and processes, such as conversational assistants, and builds websites.",
       },
       {
-        question: "Does it have experience in the healthcare sector?",
+        question: "Which sectors does it have experience in?",
         answer:
-          'Yes. Nimbel Code develops <a href="/en/cases/famba/">FAMBA</a>, a travel health platform created in collaboration with Hospital Clínic de Barcelona.',
+          'Healthcare, with <a href="/en/cases/famba/">FAMBA</a>, a travel health platform created with Hospital Clínic de Barcelona; education, with StartUB, from the Universitat de Barcelona; media, with NewsUp; and finance, with Analysta.',
       },
       {
         question: "Who runs Nimbel Code?",
         answer:
-          '<a href="https://www.linkedin.com/in/ruben1" target="_blank" rel="noopener">Rubén Sahagún</a>, founder and CEO. He holds a degree in Computer Engineering from the Universitat Autònoma de Barcelona (UAB) and has over 20 years of experience in software development across banking, healthcare, digital certification and streaming.',
+          '<a href="https://www.linkedin.com/in/ruben1" target="_blank" rel="noopener">Rubén Sahagún</a>, founder, CEO and CTO. He holds a degree in Computer Engineering from the Universitat Autònoma de Barcelona (UAB) and has over 20 years of experience in software development across banking, healthcare, digital certification and streaming.',
       },
       {
         question: "How much does a project cost?",

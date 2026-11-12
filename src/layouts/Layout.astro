@@ -73,8 +73,8 @@ const schema = {
         maxValue: 9,
       },
       description: isEn
-        ? "Nimbel Code builds custom software with integrated AI: web apps, mobile apps and digital platforms that businesses own."
-        : "Nimbel Code desarrolla software a medida con IA integrada: aplicaciones web, móviles y plataformas digitales propias para empresas.",
+        ? "Nimbel Code builds custom software and apps for businesses without an in-house tech team, with AI built in where it adds value, and has experience in healthcare, education, media and finance."
+        : "Nimbel Code desarrolla software y apps a medida para negocios sin equipo técnico, con IA integrada donde aporta, y tiene experiencia en salud, educación, medios y finanzas.",
       address: {
         "@type": "PostalAddress",
         streetAddress: "Unit 2, 2 Bridge Street",
@@ -83,20 +83,41 @@ const schema = {
         postalCode: "N37 F1W4",
         addressCountry: "IE",
       },
-      location: {
-        "@type": "Place",
-        name: "Barcelona",
-        address: {
-          "@type": "PostalAddress",
-          addressLocality: "Barcelona",
-          addressRegion: "Cataluña",
-          addressCountry: "ES",
+      // Dónde está el equipo (la sede legal va en address)
+      location: [
+        {
+          "@type": "Place",
+          name: "Barcelona",
+          address: {
+            "@type": "PostalAddress",
+            addressLocality: "Barcelona",
+            addressRegion: "Cataluña",
+            addressCountry: "ES",
+          },
         },
-      },
+        {
+          "@type": "Place",
+          name: "Sevilla",
+          address: {
+            "@type": "PostalAddress",
+            addressLocality: "Sevilla",
+            addressRegion: "Andalucía",
+            addressCountry: "ES",
+          },
+        },
+        {
+          "@type": "Place",
+          name: "Córdoba",
+          address: {
+            "@type": "PostalAddress",
+            addressLocality: "Córdoba",
+            addressRegion: "Córdoba",
+            addressCountry: "AR",
+          },
+        },
+      ],
       areaServed: [
         { "@type": "Country", name: "ES" },
-        { "@type": "Country", name: "MX" },
-        { "@type": "Country", name: "CO" },
         { "@type": "Country", name: "AR" },
       ],
       contactPoint: {
@@ -110,7 +131,7 @@ const schema = {
         "@type": "Person",
         "@id": `${siteUrl}#ruben`,
         name: "Rubén Sahagún",
-        jobTitle: "Founder & CEO",
+        jobTitle: "Founder, CEO & CTO",
         sameAs: ["https://www.linkedin.com/in/ruben1"],
       },
       knowsAbout: isEn

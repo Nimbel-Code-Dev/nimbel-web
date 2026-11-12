@@ -73,16 +73,25 @@ const graph = [
       <h2 class="font-mortend uppercase text-xl text-nimbel-bg mb-6">
         {faqTitle}
       </h2>
-      <div class="font-clash text-nimbel-bg leading-relaxed text-sm">
+      <!-- Desplegable nativo: las respuestas siguen en el HTML para Google y los LLM -->
+      <div class="font-clash text-nimbel-bg leading-relaxed text-sm border-b border-nimbel-bg/20">
         {
           items.map((item) => (
-            <div class="mb-8">
-              <h3 class="font-bold text-nimbel-bg mb-2">{item.question}</h3>
+            <details class="group border-t border-nimbel-bg/20">
+              <summary class="flex items-center justify-between gap-4 py-5 cursor-pointer list-none [&::-webkit-details-marker]:hidden hover:text-nimbel-accent transition-colors">
+                <h3 class="font-bold">{item.question}</h3>
+                <span
+                  class="text-2xl leading-none shrink-0 transition-transform group-open:rotate-45"
+                  aria-hidden="true"
+                >
+                  +
+                </span>
+              </summary>
               <p
-                class="[&_a]:underline [&_a]:hover:text-nimbel-accent"
+                class="pb-5 [&_a]:underline [&_a]:hover:text-nimbel-accent"
                 set:html={item.answer}
               />
-            </div>
+            </details>
           ))
         }
       </div>

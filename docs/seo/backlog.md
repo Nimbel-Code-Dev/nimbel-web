@@ -5,7 +5,8 @@ Las tareas hechas indican el commit donde se aplicaron.
 ## Alta
 - [ ] Plan del 12 al 25 de noviembre: tareas delegadas a Sol y Maribel (directorios, medición, rediseño y páginas por ciudad), en la base: `marketing/estrategia/2026-11-plan-web-sol-y-maribel.md`. Sol y Maribel trabajan en ramas con PR; Rubén revisa y fusiona
 - [ ] Aplicar la ficha única (`empresa/ficha-nimbel.md` en la base) en todos los canales:
-  - [ ] Web (Rubén con Claude, 2026-11-12): quitar el banner de cifras, el texto del pie sobre redes y la frase "Tu software es tuyo"; ajustar "Sobre Nimbel Code" y el schema; revisar la imagen de cabecera con la app de Repsol. La og-image va en el plan de Maribel
+  - [x] Web (Rubén con Claude, 2026-11-12): banner de cifras quitado; tarjeta de LinkedIn de Contacto cambiada por una de redes; "Tu software es tuyo" pasa a "El código queda en tu poder"; FAQ de "Sobre Nimbel Code" con la ficha y en desplegable; schema con la descripción de la ficha, el equipo en Barcelona, Sevilla y Córdoba y areaServed ES y AR — hecho 2026-11-12 (`decisiones.md`). La og-image va en el plan de Maribel
+  - [ ] Imagen de cabecera con la app de Repsol Toyota Rally Team (y un vídeo titulado "Test-video"): se decide en el rediseño (Rubén, 2026-11-12)
   - [ ] Directorios con los textos y datos de la ficha: Clutch, GoodFirms, Sortlist y TechBehemoths (Sol)
   - [ ] Página de empresa de LinkedIn con la descripción de la ficha (Sol). Los perfiles personales los cambia cada persona
   - [ ] Ficha de marca de GEO Metrics: quitar "salud", "Latinoamérica" y "propiedad intelectual" y, con todo cambiado, pedir recomendaciones nuevas (Sol)
@@ -39,7 +40,7 @@ Las tareas hechas indican el commit donde se aplicaron.
 ## Contenido
 - [x] Home: sección "Colaboradores" con el enlace a Roger Guerrero Plana, en ES y EN — hecho 2026-11-06 (`decisiones.md`)
 - [ ] Home: añadir la foto de Roger Guerrero Plana a "Colaboradores" (cuadrada, 800×800 px, JPG). La saca Rubén de su perfil de LinkedIn, con permiso de Roger (2026-11-11)
-- [ ] "Sobre Nimbel Code" y schema Organization: indicar dónde está el equipo (Athlone, Barcelona, Sevilla, Córdoba-Argentina) como dato, sin páginas por ciudad
+- [x] "Sobre Nimbel Code" y schema Organization: indicar dónde está el equipo (Athlone, Barcelona, Sevilla, Córdoba-Argentina) como dato, sin páginas por ciudad — hecho 2026-11-12 (FAQ "¿Dónde está?" y `location` del schema)
 - [ ] Página de autor por cada autor del blog (schema `Person`, sameAs LinkedIn, enlazada a la Organization). Ya hechas, 2026-11-10: fichas en `src/content/autores/`, firma visible y `Person` en el schema del artículo; falta la página propia de cada autor
 - [ ] Prompt Universe: completar los 10 problemas del cliente × 3 prompts (`keyword-map.md`) y dar de alta en GEO Metrics los prompts propuestos
 

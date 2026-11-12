@@ -106,14 +106,6 @@ export const es = {
       },
     ],
   },
-  stats: {
-    ariaLabel: "Estadísticas de Nimbel Code",
-    items: [
-      { value: 20, label: "AÑOS DE EXPERIENCIA" },
-      { value: 50, label: "PROYECTOS EXITOSOS" },
-      { value: 5, label: "PRESENCIA EN PAÍSES" },
-    ],
-  },
   caseStudies: {
     headline: "Proyectos de desarrollo web y móvil destacados",
     ariaLabel: "Carrusel de casos de éxito",
@@ -198,9 +190,9 @@ export const es = {
           "Dependen del alcance: no cuesta lo mismo una herramienta interna sencilla que una plataforma con app móvil e integraciones. Por eso trabajamos por fases, con presupuesto cerrado y plazo en cada una. Una primera fase suele partir de 10.000 €, y la mayoría de nuestros clientes empezaron así antes de seguir evolucionando su software con nosotros. Pronto publicaremos una página con más detalle sobre el precio.",
       },
       {
-        title: "Tu software es tuyo",
+        title: "El código queda en tu poder",
         description:
-          "Lo que desarrollamos para ti es tuyo desde el primer día: el código, los datos y el control. No pagas licencias por usarlo ni dependes de nosotros para seguir adelante. Si algún día prefieres que lo mantenga otro equipo, puedes hacerlo.",
+          "El código queda en tu poder: sin licencias por usuario, con acceso completo y libertad para que lo mantenga otro equipo. No dependes de nosotros para seguir adelante.",
       },
     ],
   },
@@ -344,14 +336,11 @@ export const es = {
         href: "https://calendly.com/ruben-nimbel/meeting",
         external: true,
       },
-      {
-        icon: "/assets/Linkedin.svg",
-        label: "LiNKEDiN",
-        sublabel: "No somos mucho de redes sociales pero tenemos linkedin!",
-        href: "https://www.linkedin.com/company/nimbel-code-apps/",
-        external: true,
-      },
     ],
+    social: {
+      label: "SÍGUENOS",
+      sublabel: "Encuéntranos en Instagram, TikTok, LinkedIn y GitHub.",
+    },
   },
   footer: {
     description: "Tu activo digital. Tu control. Tu equipo.",
@@ -377,7 +366,7 @@ export const es = {
       {
         question: "¿Qué es Nimbel Code?",
         answer:
-          "Nimbel Code es una empresa de desarrollo de software a medida con IA integrada. Fundada en 2020, opera como NIMBEL CODE LIMITED, sociedad registrada en Irlanda (CRO 788569).",
+          "Nimbel Code es una empresa de desarrollo de software a medida. Construye aplicaciones web y móviles y plataformas digitales para negocios y empresas que no tienen equipo técnico propio, e integra la IA donde ahorra trabajo o mejora decisiones. La marca nace en 2020 y opera como NIMBEL CODE LIMITED, sociedad registrada en Irlanda en 2025 (CRO 788569).",
       },
       {
         question:
@@ -393,17 +382,17 @@ export const es = {
       {
         question: "¿Qué servicios ofrece?",
         answer:
-          "Aplicaciones web y móviles a medida, plataformas digitales, asistentes conversacionales e integración de IA en productos y procesos.",
+          "Sobre todo software a medida y aplicaciones web y móviles. También integra IA en productos y procesos, como asistentes conversacionales, y desarrolla webs.",
       },
       {
-        question: "¿Tiene experiencia en el sector salud?",
+        question: "¿En qué sectores tiene experiencia?",
         answer:
-          'Sí. Nimbel Code desarrolla <a href="/casos/famba/">FAMBA</a>, una plataforma de salud del viajero creada en colaboración con el Hospital Clínic de Barcelona.',
+          'En salud, con <a href="/casos/famba/">FAMBA</a>, una plataforma de salud del viajero creada con el Hospital Clínic de Barcelona; en educación, con StartUB, de la Universitat de Barcelona; en medios, con NewsUp, y en finanzas, con Analysta.',
       },
       {
         question: "¿Quién dirige Nimbel Code?",
         answer:
-          '<a href="https://www.linkedin.com/in/ruben1" target="_blank" rel="noopener">Rubén Sahagún</a>, fundador y CEO. Es ingeniero informático por la Universidad Autónoma de Barcelona (UAB) y tiene más de 20 años de experiencia en desarrollo de software en banca, salud, certificación digital y streaming.',
+          '<a href="https://www.linkedin.com/in/ruben1" target="_blank" rel="noopener">Rubén Sahagún</a>, fundador, CEO y CTO. Es ingeniero informático por la Universidad Autónoma de Barcelona (UAB) y tiene más de 20 años de experiencia en desarrollo de software en banca, salud, certificación digital y streaming.',
       },
       {
         question: "¿Cuánto cuesta un proyecto?",

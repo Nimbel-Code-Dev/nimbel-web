@@ -56,7 +56,6 @@ describe('i18n section exports', () => {
     'hero',
     'clients',
     'services',
-    'stats',
     'caseStudies',
     'testimonials',
     'team',
@@ -108,33 +107,6 @@ describe('i18n — services section', () => {
 });
 
 // ---------------------------------------------------------------------------
-// Unit tests — stats section
-// ---------------------------------------------------------------------------
-describe('i18n — stats section', () => {
-  it('es.stats.items has 3 items', () => {
-    expect(es.stats.items).toHaveLength(3);
-  });
-
-  it('en.stats.items has 3 items', () => {
-    expect(en.stats.items).toHaveLength(3);
-  });
-
-  it('stat items have numeric value and string label (es)', () => {
-    for (const item of es.stats.items) {
-      expect(typeof item.value).toBe('number');
-      expect(typeof item.label).toBe('string');
-      expect(item.label.length).toBeGreaterThan(0);
-    }
-  });
-
-  it('stat values match between locales', () => {
-    es.stats.items.forEach((esItem, i) => {
-      expect(en.stats.items[i].value).toBe(esItem.value);
-    });
-  });
-});
-
-// ---------------------------------------------------------------------------
 // Integration tests — useTranslations hook
 // ---------------------------------------------------------------------------
 describe('useTranslations hook — integration', () => {
@@ -156,16 +128,6 @@ describe('useTranslations hook — integration', () => {
   it('works with services section — en', () => {
     const t = useTranslations('en');
     expect(t('services', 'sectionLabel')).toBe('Services');
-  });
-
-  it('works with stats section — es', () => {
-    const t = useTranslations('es');
-    expect(t('stats', 'ariaLabel')).toBe('Estadísticas de Nimbel Code');
-  });
-
-  it('works with stats section — en', () => {
-    const t = useTranslations('en');
-    expect(t('stats', 'ariaLabel')).toBe('Nimbel Code statistics');
   });
 
   it('works with contact section — es', () => {
