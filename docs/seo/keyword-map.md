@@ -141,6 +141,52 @@ Fuente: DataForSEO, Keywords Data API (Google Ads), España/español, media de 1
 
 Lectura: la frase "consultoría de procesos de IA" y el vocabulario de "implementar/integrar IA" no se buscan. La demanda comercial está en "consultoría ia" (poca dificultad y competidores pequeños en la SERP) y la informativa, en "automatización de procesos con ia" (al alza). No hay demanda que cruce IA y salud.
 
+## En investigación: vibe coding y apps hechas con IA
+
+Origen: la idea 16 de la estrategia de contenido de noviembre («Qué puedes hacer con IA tú solo y qué no», en `nimbel-kb/marketing/estrategia/2026-11-estrategia-contenido.md`). Se quiso ver si se busca qué se puede vibecodear y qué no, y si hay demanda de rescate de apps hechas con IA. Sin keyword principal ni URL asignada; no se ha decidido crear página.
+
+Fuente: DataForSEO Labs (Google, España/español, volumen mensual medio de 12 meses, oct 2025–sep 2026), consultado 2026-11-12. KD: DataForSEO Labs (no comparable con Semrush). "—" = sin dato. Coste: ~0,13 $ (3 de sugerencias de Labs, 2 de keyword overview, 2 de SERP y 1 tarea de volumen en modo Standard que no salió de la cola y se sustituyó por Labs).
+
+**Definición y herramientas**
+
+| Keyword | Vol/mes | KD | CPC | Intención / lectura |
+|---|---|---|---|---|
+| lovable | 60.500 | 9 | 0,91 $ | Marca (+83 % en un año). No es nuestra |
+| vibe coding | 12.100 | 46 | 3,81 $ | Informativa. Muy irregular: 33.100 en oct 2025, 4.400 en ago 2026, 6.600 en sep 2026 |
+| que es vibe coding / vibe coding: que es / vibe coding que es / que es el vibe coding | 1.000 / 880 / 880 / 480 | 4–9 | 1,2–3,8 $ | Informativa, ~3.000/mes en total (SERP 2026-11-12: definiciones generales de KeepCoding, Hostinger, DataCamp y Cyberclick para desarrolladores y marketing; ninguna desde el punto de vista de un negocio) |
+| vibe coding en español | 590 | 9 | 1,5 $ | Informativa |
+| bolt new | 1.300 | 5 | 4,76 $ | Marca |
+| mejor ia para programar / ia para programar | 1.300 / 880 | — | 3,2 / 5,0 $ | Público desarrollador |
+| vibe coding que es y para que sirve | 140 | 6 | 2,05 $ | La más cercana al enfoque de la idea 16 |
+| programar con ia | 110 | — | 6,36 $ | Público desarrollador |
+| curso vibe coding / vibe coding curso | 70 / 50 | — | 4,95 / 12,36 $ | Transaccional, pero de formación: no es nuestra |
+| best vibe coding tools / vibe coding herramientas | 50 / 50 | — | 9,74 $ / — | Comercial, para elegir herramienta |
+| riesgos, seguridad, limitaciones o problemas de vibe coding | 10–20 (solo en inglés) | — | — | Sin demanda en español |
+
+**Crear una app o una web con IA**
+
+| Keyword | Vol/mes | KD | CPC | Intención / lectura |
+|---|---|---|---|---|
+| crear app con ia | 590 | — | 7,9 $ | Informativa, a la baja (720 en el primer semestre de 2026, 390 en sep 2026) |
+| crear web con ia | 390 | 20 | 8,87 $ | Hazlo tú mismo (SERP 2026-11-12: HubSpot, Simply, Wix y listas de generadores gratis). El CPC alto es de las plataformas, no de empresas de desarrollo |
+| crear una app con ia gratis / crear app con ia gratis | 320 / 260 | 2 / — | 5,7 / 5,88 $ | Gratis: fuera de criterio |
+| como crear una app con ia / cómo crear una app con ia | 110 / 110 | — | 7,0 / 6,5 $ | "Cómo hacer": fuera de criterio |
+| crear app con ia gratis en español / creador de app con ia gratis | 70 / 50 | — | 8,64 / 5,55 $ | Gratis: fuera de criterio |
+| crear app con claude, crear app sin programar | 20 c/u | — / 13 | 1,95 $ / — | Residual ("crear app sin programar" cae un 95 % en un año) |
+| crear saas con ia, se puede crear una app con ia, crear una app con chatgpt, crear una app sin saber programar, crear app con lovable | 10 c/u | — | 5,4–10,4 $ | Residual |
+| vibecoding, vibe coder, vibe coding seguridad, vibe coding riesgos, lovable seguridad, app hecha con ia, riesgos de programar con ia | — | — | — | Sin volumen |
+
+**Rescate y ayuda profesional**
+
+| Keyword | Vol/mes | CPC | Lectura |
+|---|---|---|---|
+| contratar programador | 30 | 7,33 $ | Cae un 86 % en un año |
+| auditoria de codigo | 20 | — | Residual |
+| revision de codigo, mantenimiento de apps, lovable alternativas, lovable developer, lovable app store | 10 c/u | — | Residual |
+| experto, agencia, desarrollador, programador o freelance de Lovable; arreglar app hecha con ia; terminar mi app; rescatar proyecto software; rescate de proyectos de software; pasar app a produccion; auditoria seguridad app; exportar codigo lovable; empresa vibe coding | — | — | Sin volumen |
+
+Lectura: ninguna keyword del tema tiene intención de contratar. Lo comercial es de quien quiere hacerlo por su cuenta: herramientas, cursos y versiones gratis. Las de rescate no tienen volumen, así que en Google no hay demanda de "ayúdame a terminar lo que hice con IA" (esa pregunta ya se mide en GEO Metrics con el prompt de rescate). La única con potencial es "qué es vibe coding" (~3.000/mes, KD bajo), como contenido de entrada desde el punto de vista de un negocio; no capta cliente directamente y su intención ("qué es") está en "Evitar" del criterio.
+
 ## Sin validar todavía
 Pendientes de validar con DataForSEO (Semrush ya no se usa). No crear páginas con ellas.
 | Keyword candidata | Grupo | URL prevista | Estado |
