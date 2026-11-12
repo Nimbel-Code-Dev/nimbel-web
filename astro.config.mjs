@@ -6,6 +6,8 @@ import path from "node:path";
 
 export default defineConfig({
   site: "https://www.nimbel.net",
+  // CSS dentro del HTML: evita la petición que bloquea el renderizado
+  build: { inlineStylesheets: "always" },
   integrations: [
     // privacidad es noindex: no debe aparecer en el sitemap
     sitemap({ filter: (page) => !page.includes("/privacidad") }),
