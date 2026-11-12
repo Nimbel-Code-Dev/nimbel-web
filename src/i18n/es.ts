@@ -81,7 +81,7 @@ export const es = {
         title:
           "Tienes un negocio y quieres lanzar tu propia app o SaaS, pero no tienes equipo técnico",
         description:
-          "Tú conoces tu sector y a tus clientes; nosotros ponemos el equipo técnico que convierte tu idea en un producto real, desde la primera versión hasta que crece. Y el código es tuyo. Más sobre nuestro ",
+          "Tú conoces tu sector y a tus clientes; nosotros ponemos el equipo técnico que convierte tu idea en un producto real, desde la primera versión hasta que crece. Y el código queda en tu poder. Más sobre nuestro ",
         link: { label: "desarrollo de apps", href: "/desarrollo-de-apps/" },
         after: ".",
       },
@@ -409,7 +409,7 @@ export const es = {
   appDevelopment: {
     title: "Empresa de desarrollo de apps en Barcelona | Nimbel Code",
     description:
-      "Tú pones el conocimiento de tu negocio; nosotros, el equipo técnico que convierte tu idea en una app o SaaS real. Y el código es tuyo desde el primer día.",
+      "Tú pones el conocimiento de tu negocio; nosotros, el equipo técnico que convierte tu idea en una app o SaaS real. Y el código queda en tu poder.",
     breadcrumb: "Desarrollo de apps",
     headline:
       "Empresa de desarrollo de apps: tú pones el negocio, nosotros el equipo técnico",
@@ -461,9 +461,9 @@ export const es = {
             "Trabajamos por fases, con un presupuesto cerrado en cada una, para que sepas lo que vas a invertir antes de empezar. La primera fase es el MVP y suele partir de 10.000 €. A partir de ahí, el producto crece por fases según lo que necesites.",
         },
         {
-          title: "El código y los datos son tuyos",
+          title: "El código queda en tu poder",
           description:
-            "Lo que desarrollamos para ti es tuyo desde el primer día: el código, los datos y el control. No pagas licencias por usarlo ni dependes de nosotros para seguir adelante. Si algún día prefieres que lo mantenga otro equipo, puedes hacerlo.",
+            "El código queda en tu poder: sin licencias por usuario, con acceso completo y libertad para que lo mantenga otro equipo. No dependes de nosotros para seguir adelante.",
         },
       ],
     },

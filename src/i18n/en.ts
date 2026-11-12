@@ -82,7 +82,7 @@ export const en = {
         title:
           "You have a business and want to launch your own app or SaaS, but you don't have a tech team",
         description:
-          "You know your industry and your customers; we bring the tech team that turns your idea into a real product, from the first version until it grows. And the code is yours. More about our ",
+          "You know your industry and your customers; we bring the tech team that turns your idea into a real product, from the first version until it grows. And the code stays in your hands. More about our ",
         // La página en inglés aún no existe: sin href, el componente pinta el texto sin enlace
         link: { label: "app development", href: "" },
         after: ".",
@@ -410,7 +410,7 @@ export const en = {
   appDevelopment: {
     title: "App Development Company in Barcelona | Nimbel Code",
     description:
-      "You bring the knowledge of your business; we bring the tech team that turns your idea into a real app or SaaS. And the code is yours from day one.",
+      "You bring the knowledge of your business; we bring the tech team that turns your idea into a real app or SaaS. And the code stays in your hands.",
     breadcrumb: "App development",
     headline:
       "App development company: you bring the business, we bring the tech team",
@@ -462,9 +462,9 @@ export const en = {
             "We work in phases, with a fixed budget for each one, so you know what you'll invest before we start. The first phase is the MVP and usually starts at €10,000. From there, the product grows in phases as you need it.",
         },
         {
-          title: "The code and the data are yours",
+          title: "The code stays in your hands",
           description:
-            "What we build for you is yours from day one: the code, the data and the control. You don't pay licenses to use it or depend on us to keep going. If you ever prefer another team to maintain it, you can.",
+            "The code stays in your hands: no per-user licences, full access and the freedom to have another team maintain it. You don't depend on us to keep going.",
         },
       ],
     },
