@@ -1,7 +1,7 @@
 # Skill Registry — nimbel-code
 
 Generated: 2026-04-15
-Project: test-code-claude
+Project: nimbel-web
 
 ## User Skills
 
