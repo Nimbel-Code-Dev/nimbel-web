@@ -1,6 +1,6 @@
 # Keyword map — nimbel.net
 
-Última actualización: 2026-11-11 · Fuente: Semrush (base de datos España) + Google Search Console + DataForSEO (desde 2026-11-07)
+Última actualización: 2026-11-12 · Fuente: Semrush (base de datos España) + Google Search Console + DataForSEO (desde 2026-11-07)
 
 > Volúmenes <100 son estimaciones poco fiables: sirven para priorizar, no como cifra real. Desde 2026-11-07 los datos nuevos salen de DataForSEO; los marcados como Semrush son anteriores y Semrush ya no se usa. DataForSEO suele dar menos volumen que Semrush para la misma keyword.
 
@@ -112,6 +112,34 @@ Para la comparativa de empresas ordenada por necesidad (`decisiones.md`, 2026-11
 | como elegir (una) empresa de desarrollo de software | — | — |
 
 No se volvió a pedir "empresas desarrolladoras de apps en España": ya tiene dato de Semrush (320/mes, KD 27, "Para conseguir presencia") y su SERP son listados "Top empresas…", el formato de la comparativa. "cómo elegir empresa de desarrollo de software" no tiene volumen en Google Ads.
+
+## En investigación: consultoría e implementación de IA
+
+Origen: un cliente al que se ofreció soporte para implementar IA respondió que lo estaba haciendo con su equipo interno. Se quiso ver si "consultoría de procesos de IA" tiene demanda. Sin keyword principal ni URL asignada; no se ha decidido crear página.
+
+Fuente: DataForSEO, Keywords Data API (Google Ads), España/español, media de 12 meses (nov 2025–oct 2026), consultado 2026-11-12. KD: DataForSEO Labs (no comparable con Semrush). "—" = sin dato. Google Ads agrupa variantes: "consultoría ia" y "consultora ia" dan las mismas cifras, igual que "consultoria inteligencia artificial" y "consultor inteligencia artificial". Coste: ~0,20 $ (2 de volumen, 1 de KD y 3 de SERP).
+
+| Keyword | Vol/mes | KD | CPC | Estado |
+|---|---|---|---|---|
+| consultor ia | 1.000 | 18 | 8,72 $ | Débil (SERP 2026-11-12: mezcla de grandes empresas —Scalian, IBM, CGI—, ofertas de empleo y herramientas para consultores) |
+| agencia ia | 880 | 0 | 5,54 $ | Sin SERP revisada |
+| ia para empresas | 320 | 0 | 9,84 $ | Sin SERP revisada |
+| agencia de inteligencia artificial | 320 | 21 | 7,75 $ | Sin SERP revisada |
+| consultoría ia / consultora ia | 260 | 7 | 6,66 $ | Finalista comercial (SERP 2026-11-12: Accenture y Telefónica Tech arriba; el resto, consultoras pequeñas y freelancers con auditoría + hoja de ruta, n8n y agentes) |
+| automatización de procesos con ia | 260 (720 en oct 2026) | 0 | 7,86 $ | Finalista para artículo (SERP 2026-11-12: informativa, guías y blogs) |
+| empresa de inteligencia artificial | 210 | 0 | 5,52 $ | Sin SERP revisada |
+| agentes de ia para empresas | 110 (390 en oct 2026) | n/d | 13,46 $ | Sin SERP revisada |
+| consultoria transformacion digital | 110 | 0 | 6,69 $ | Sin SERP revisada |
+| consultoria inteligencia artificial / consultor inteligencia artificial | 90 | 4 | 3,07 $ | Secundaria |
+| inteligencia artificial para empresas | 90 | 0 | 12,74 $ | Secundaria |
+| automatizar procesos con ia | 70 | n/d | 9,29 $ | Secundaria |
+| consultora de inteligencia artificial | 30 | — | 16,5 $ | Residual |
+| empresas de ia en españa | 30 | — | 6,32 $ | Residual |
+| consultoría de inteligencia artificial, consultoría de procesos, inteligencia artificial en sanidad | 20 c/u | — | — | Residual |
+| implementación de ia en empresas, automatización de procesos ia, automatizacion de procesos con inteligencia artificial, automatización inteligente de procesos | 10 c/u | — | — | Residual |
+| consultoría de procesos de ia, consultoria de procesos ia, consultoría ia para empresas, consultoría ia generativa, implementar ia en empresas, implementar inteligencia artificial en empresas, implementacion inteligencia artificial empresas, integrar ia en mi empresa, como implementar ia en mi empresa, ia en procesos de negocio, desarrollo de soluciones de inteligencia artificial, formación ia empresas | — | — | — | Sin volumen |
+
+Lectura: la frase "consultoría de procesos de IA" y el vocabulario de "implementar/integrar IA" no se buscan. La demanda comercial está en "consultoría ia" (poca dificultad y competidores pequeños en la SERP) y la informativa, en "automatización de procesos con ia" (al alza). No hay demanda que cruce IA y salud.
 
 ## Sin validar todavía
 Pendientes de validar con DataForSEO (Semrush ya no se usa). No crear páginas con ellas.
