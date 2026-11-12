@@ -28,6 +28,8 @@ const backgroundDesktop = await getImage({
   format: "webp",
   quality: 35,
   width: 1440,
+  // Aplana la transparencia sobre nimbel-bg: el canal alfa multiplicaba el peso
+  background: "#0c1414",
 });
 
 const backgroundMobile = await getImage({
@@ -35,6 +37,7 @@ const backgroundMobile = await getImage({
   format: "webp",
   quality: 30,
   width: 640,
+  background: "#0c1414",
 });
 
 const canonicalURL = new URL(Astro.url.pathname, Astro.site);
