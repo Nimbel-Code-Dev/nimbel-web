@@ -25,17 +25,18 @@ const {
 
 const backgroundDesktop = await getImage({
   src: backgroundSrc,
-  format: "webp",
-  quality: 35,
+  format: "avif",
+  quality: 65,
   width: 1440,
-  // Aplana la transparencia sobre nimbel-bg: el canal alfa multiplicaba el peso
+  // Aplana la transparencia sobre nimbel-bg: el canal alfa multiplicaba el peso.
+  // Sin alfa, por debajo de ~65 aparecen bloques en los degradados.
   background: "#0c1414",
 });
 
 const backgroundMobile = await getImage({
   src: backgroundSrc,
-  format: "webp",
-  quality: 30,
+  format: "avif",
+  quality: 65,
   width: 640,
   background: "#0c1414",
 });
