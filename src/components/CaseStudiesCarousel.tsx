@@ -176,8 +176,10 @@ export default function CaseStudiesCarousel({ items, locale }: Props) {
           aria-label={
             locale === "es" ? "Navegación de proyectos" : "Project navigation"
           }
-          className="flex items-center gap-2"
+          className="flex items-center"
         >
+          {/* El botón es la zona táctil (24px de alto, punto + px-2 de ancho);
+              el punto visible es el span interior */}
           {items.map((_, i) => (
             <button
               key={i}
@@ -186,25 +188,29 @@ export default function CaseStudiesCarousel({ items, locale }: Props) {
               aria-label={`${locale === "es" ? "Proyecto" : "Project"} ${i + 1}`}
               aria-current={i === current ? "true" : undefined}
               onClick={() => goTo(i)}
-              className={[
-                "relative overflow-hidden rounded-full transition-all duration-300 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-nimbel-accent",
-                i === current
-                  ? "w-8 h-2 bg-white/20"
-                  : "w-2 h-2 bg-white/40 hover:bg-white/60",
-              ].join(" ")}
+              className="group flex items-center justify-center h-6 px-2 rounded-full focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-nimbel-accent"
             >
-              {i === current && (
-                <span
-                  key={`fill-${current}`}
-                  className="absolute inset-0 bg-nimbel-accent origin-left rounded-full"
-                  style={{
-                    animation: prefersReducedMotion
-                      ? "none"
-                      : `case-studies-progress ${AUTOPLAY_MS}ms linear forwards`,
-                    animationPlayState: paused ? "paused" : "running",
-                  }}
-                />
-              )}
+              <span
+                className={[
+                  "relative block overflow-hidden rounded-full transition-all duration-300",
+                  i === current
+                    ? "w-8 h-2 bg-white/20"
+                    : "w-2 h-2 bg-white/40 group-hover:bg-white/60",
+                ].join(" ")}
+              >
+                {i === current && (
+                  <span
+                    key={`fill-${current}`}
+                    className="absolute inset-0 bg-nimbel-accent origin-left rounded-full"
+                    style={{
+                      animation: prefersReducedMotion
+                        ? "none"
+                        : `case-studies-progress ${AUTOPLAY_MS}ms linear forwards`,
+                      animationPlayState: paused ? "paused" : "running",
+                    }}
+                  />
+                )}
+              </span>
             </button>
           ))}
         </div>
