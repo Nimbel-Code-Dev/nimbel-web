@@ -11,6 +11,9 @@ export interface CaseStudyItem {
   imgAlt: string;
   // Página interna del caso, si existe
   caseHref?: string;
+  // Captura ya optimizada por Astro en CaseStudies.astro
+  imgSrc: string;
+  imgSrcSet?: string;
 }
 
 interface Props {
@@ -95,7 +98,6 @@ export default function CaseStudiesCarousel({ items, locale }: Props) {
       <div style={{ display: "grid", gridTemplateAreas: '"stack"' }}>
         {items.map((item, i) => {
           const isActive = i === current;
-          const imgSrc = `/assets/${item.id}-app.png`;
 
           return (
             <div
@@ -152,7 +154,9 @@ export default function CaseStudiesCarousel({ items, locale }: Props) {
                 {/* Right: image */}
                 <div className="w-full aspect-[4/3] lg:aspect-[3/2] overflow-hidden rounded-lg">
                   <img
-                    src={imgSrc}
+                    src={item.imgSrc}
+                    srcSet={item.imgSrcSet}
+                    sizes="(min-width: 1024px) 576px, 100vw"
                     alt={item.imgAlt}
                     className="w-full h-full object-cover"
                     loading="lazy"

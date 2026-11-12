@@ -1,5 +1,7 @@
 ---
+import { getImage } from "astro:assets";
 import CaseStudiesCarousel from "@/components/CaseStudiesCarousel";
+import { getAsset } from "@/utils/images";
 import { useTranslations, type Locale } from "@/i18n/utils";
 
 interface Props {
@@ -24,10 +26,22 @@ const items = t("caseStudies", "items") as ReadonlyArray<{
 // Casos con página propia
 const caseLinks: Record<string, string> =
   locale === "en" ? { famba: "/en/cases/famba/" } : { famba: "/casos/famba/" };
-const itemsWithCase = items.map((item) => ({
-  ...item,
-  caseHref: caseLinks[item.id],
-}));
+// El carrusel es React: las capturas se optimizan aquí y se le pasan ya hechas
+const itemsWithCase = await Promise.all(
+  items.map(async (item) => {
+    const img = await getImage({
+      src: getAsset(`cases/${item.id}-app.png`),
+      width: 1200,
+      widths: [600, 1200],
+    });
+    return {
+      ...item,
+      caseHref: caseLinks[item.id],
+      imgSrc: img.src,
+      imgSrcSet: img.srcSet.attribute,
+    };
+  }),
+);
 ---
 
 <section

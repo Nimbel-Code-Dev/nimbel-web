@@ -1,4 +1,6 @@
 ---
+import { Image } from "astro:assets";
+import { getAsset } from "@/utils/images";
 import { useTranslations, type Locale } from "@/i18n/utils";
 
 interface Props {
@@ -50,11 +52,11 @@ function getInitials(name: string): string {
               <!-- Avatar circular -->
               <div class="shrink-0 w-16 h-16 rounded-full overflow-hidden bg-nimbel-bg flex items-center justify-center">
                 {item.photo ? (
-                  <img
-                    src={item.photo}
-                    alt={item.photoAlt}
+                  <Image
+                    src={getAsset(item.photo)}
+                    alt={item.photoAlt ?? ""}
+                    width={160}
                     class="w-full h-full object-cover"
-                    loading="lazy"
                   />
                 ) : (
                   <span class="text-nimbel-text font-bold text-lg select-none" aria-hidden="true">

@@ -1,4 +1,6 @@
 ---
+import { Image } from "astro:assets";
+import { getAsset } from "@/utils/images";
 import { useTranslations, type Locale } from "@/i18n/utils";
 
 interface Props {
@@ -49,11 +51,13 @@ const highlightedHeadline = highlightText(
       {
         items.map((item) => (
           <article data-testid={`team-card-${item.id}`}>
-            <img
-              src={item.photo}
+            <Image
+              src={getAsset(item.photo)}
               alt={item.photoAlt}
+              width={800}
+              widths={[400, 800]}
+              sizes="(min-width: 1024px) 370px, (min-width: 640px) 50vw, 100vw"
               class="w-full aspect-square object-cover rounded-sm grayscale"
-              loading="lazy"
             />
 
             <p class="font-bold text-nimbel-text text-lg lg:text-xl mt-3">

@@ -1,4 +1,7 @@
 ---
+import type { ImageMetadata } from "astro";
+import { Image } from "astro:assets";
+import { getAsset } from "@/utils/images";
 import { useTranslations, type Locale } from "@/i18n/utils";
 
 interface Props {
@@ -8,12 +11,13 @@ interface Props {
 const { locale = "es" } = Astro.props;
 const t = useTranslations(locale);
 
-const clients = [
+// Los SVG se sirven desde public; los PNG pasan por el optimizador de Astro
+const clients: { src: string | ImageMetadata; name: string }[] = [
   { src: "/assets/clinic-de-barcelona.svg", name: "Hospital Clínic de Barcelona" },
-  { src: "/assets/mediage-comunicacion.png", name: "Mediage Comunicación" },
-  { src: "/assets/unimedia.png", name: "Unimedia Tech" },
-  { src: "/assets/StartUB-Universitat-Barcelona.png", name: "StartUB Universitat Barcelona" },
-  { src: "/assets/elmerkat.png", name: "El Merkat" },
+  { src: getAsset("clients/mediage-comunicacion.png"), name: "Mediage Comunicación" },
+  { src: getAsset("clients/unimedia.png"), name: "Unimedia Tech" },
+  { src: getAsset("clients/StartUB-Universitat-Barcelona.png"), name: "StartUB Universitat Barcelona" },
+  { src: getAsset("clients/elmerkat.png"), name: "El Merkat" },
   { src: "/assets/innocard.svg", name: "Innocard" },
 ];
 
@@ -32,19 +36,38 @@ const logoAlt = t("clients", "logoAlt") as string;
     <div class="w-full sm:flex-1 overflow-hidden">
       <div class="flex items-center gap-15 w-max marquee">
         {clients.map((client) => (
-          <img
-            src={client.src}
-            alt={logoAlt.replace("{name}", client.name)}
-            class="h-7 w-auto max-w-36 object-contain grayscale opacity-60 hover:opacity-100 hover:grayscale-0 transition-all duration-300"
-          />
+          typeof client.src === "string" ? (
+            <img
+              src={client.src}
+              alt={logoAlt.replace("{name}", client.name)}
+              class="h-7 w-auto max-w-36 object-contain grayscale opacity-60 hover:opacity-100 hover:grayscale-0 transition-all duration-300"
+            />
+          ) : (
+            <Image
+              src={client.src}
+              alt={logoAlt.replace("{name}", client.name)}
+              height={56}
+              class="h-7 w-auto max-w-36 object-contain grayscale opacity-60 hover:opacity-100 hover:grayscale-0 transition-all duration-300"
+            />
+          )
         ))}
         {clients.map((client) => (
-          <img
-            src={client.src}
-            alt=""
-            aria-hidden="true"
-            class="h-7 w-auto max-w-36 object-contain grayscale opacity-60 hover:opacity-100 hover:grayscale-0 transition-all duration-300"
-          />
+          typeof client.src === "string" ? (
+            <img
+              src={client.src}
+              alt=""
+              aria-hidden="true"
+              class="h-7 w-auto max-w-36 object-contain grayscale opacity-60 hover:opacity-100 hover:grayscale-0 transition-all duration-300"
+            />
+          ) : (
+            <Image
+              src={client.src}
+              alt=""
+              aria-hidden="true"
+              height={56}
+              class="h-7 w-auto max-w-36 object-contain grayscale opacity-60 hover:opacity-100 hover:grayscale-0 transition-all duration-300"
+            />
+          )
         ))}
       </div>
     </div>
