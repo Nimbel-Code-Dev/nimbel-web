@@ -41,5 +41,5 @@ Se reutiliza el ya publicado de Gerard Gil, fundador de NewsUp ("te dejan con al
 ## Antes de publicar
 - [ ] Revisión de Rubén del borrador y de los [PENDIENTE].
 - [ ] Confirmar con NewsUp que se puede contar como rescate y con este nivel de detalle.
-- [ ] Decidir si la descripción del carrusel y de /desarrollo-de-apps pasa a la de este caso (RRPP y comunicación corporativa) en lugar de "plataforma digital de noticias".
+- [x] Decidir si la descripción del carrusel y de /desarrollo-de-apps pasa a la de este caso (RRPP y comunicación corporativa) en lugar de "plataforma digital de noticias" — sí, hecho 2026-11-13, también el título del carrusel
 - [ ] Traducir al inglés y activar los enlaces "Ver caso" (carrusel, footer si se quiere, /desarrollo-de-apps) en los dos idiomas.

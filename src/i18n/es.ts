@@ -142,10 +142,10 @@ export const es = {
       },
       {
         id: "newsup",
-        title: "NEWSUP crea, personaliza y comparte toda tu identidad",
+        title: "NEWSUP, la sala de prensa de las marcas y sus agencias",
         titleHighlight: "NEWSUP",
         description:
-          "Newsup es una plataforma digital de noticias, que permite tener una sala de prensa, enviar emails y compartir contenido multimedia HD.",
+          "Plataforma de RRPP para marcas y agencias: sala de prensa digital, envío de comunicados, gestor multimedia con IA y CRM de prensa.",
         cta: "conoce NEWSUP",
         href: "https://www.newsup.ai/",
         imgAlt: "Captura del proyecto NEWSUP",
@@ -515,7 +515,7 @@ export const es = {
             {
               name: "NewsUp",
               description:
-                "Plataforma digital de noticias que permite tener una sala de prensa, enviar emails y compartir contenido multimedia HD. Pasó por varios proveedores hasta que rescatamos el proyecto y construimos su producto.",
+                "Plataforma de RRPP y comunicación corporativa para marcas y agencias: sala de prensa digital, envío de comunicados, información embargada, gestor multimedia con IA y CRM de prensa. Pasó por dos proveedores hasta que rescatamos el proyecto y lo llevamos a producción.",
               testimonial: "gerard-gil",
               link: { label: "Ver el caso de NewsUp", href: "/casos/newsup/" },
             },

@@ -144,10 +144,10 @@ export const en = {
       },
       {
         id: "newsup",
-        title: "NEWSUP create, customize and share your entire identity",
+        title: "NEWSUP, the press room for brands and their agencies",
         titleHighlight: "NEWSUP",
         description:
-          "Newsup is a digital news platform that allows you to have a press room, send emails, and share HD multimedia content.",
+          "A PR platform for brands and agencies: digital press room, press release distribution, AI-powered media manager and press CRM.",
         cta: "discover NEWSUP",
         href: "https://www.newsup.ai/",
         imgAlt: "NewsUp project screenshot",
@@ -516,7 +516,7 @@ export const en = {
             {
               name: "NewsUp",
               description:
-                "A digital news platform that lets you have a press room, send emails and share HD multimedia content. It went through several providers until we rescued the project and built their product.",
+                "A PR and corporate communications platform for brands and agencies: digital press room, press release distribution, embargoed information, AI-powered media manager and press CRM. It went through two providers until we rescued the project and took it into production.",
               testimonial: "gerard-gil",
               link: { label: "See the NewsUp case", href: "/en/cases/newsup/" },
             },

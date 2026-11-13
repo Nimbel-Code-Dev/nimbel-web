@@ -2,6 +2,10 @@
 
 Registro cronológico, la más reciente arriba. Formato: `### AAAA-MM-DD — título`, qué se decidió y por qué.
 
+### 2026-11-13 — NewsUp deja de presentarse como "plataforma digital de noticias"
+**Qué**: el carrusel de la home y la tarjeta de /desarrollo-de-apps describen NewsUp como plataforma de RRPP para marcas y agencias (ES y EN), igual que su caso. El título del carrusel pasa de "NEWSUP crea, personaliza y comparte toda tu identidad" a "NEWSUP, la sala de prensa de las marcas y sus agencias" / "NEWSUP, the press room for brands and their agencies". En /desarrollo-de-apps, "varios proveedores" pasa a "dos" y "construimos su producto" a "lo llevamos a producción".
+**Por qué**: "plataforma digital de noticias" no es lo que hace NewsUp, y el título anterior no decía qué es. Rubén eligió cambiar también el título (se valoró cambiar solo las descripciones).
+
 ### 2026-11-13 — Se publica el caso NewsUp
 **Qué**: nueva página de caso en `/casos/newsup/` y `/en/cases/newsup/`, con su «de X a Y» (de un prototipo que no se podía sacar a producción a una plataforma con una docena de clientes, varios de ellos grandes empresas) y los apartados El problema (2019), Cuando llegamos (verano de 2023, tras dos proveedores), Cómo lo hicimos, Qué hicimos, La IA lleva la idea más lejos y Hoy, con el testimonio de Gerard Gil. Title y meta, los del borrador. Se activan los enlaces al caso en el carrusel de la home, en /desarrollo-de-apps y en la FAQ de "Sobre Nimbel Code". El pie sigue enlazando solo a FAMBA.
 **Por qué**: decisión de Rubén: publicar ya y que Gerard lo revise después, como con FAMBA. No se nombra a los proveedores anteriores ni a ningún cliente, y el número de clientes se da sin desglose, porque Gerard es discreto con su cartera. Se omite que, visto con perspectiva, empezar de cero habría sido más rápido: la decisión de conservar el prototipo fue del cliente y era razonable.
