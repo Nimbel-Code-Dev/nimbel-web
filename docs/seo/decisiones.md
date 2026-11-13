@@ -2,6 +2,10 @@
 
 Registro cronológico, la más reciente arriba. Formato: `### AAAA-MM-DD — título`, qué se decidió y por qué.
 
+### 2026-11-13 — El caso FAMBA cuenta el problema, el rescate y CaixaImpulse
+**Qué**: el caso FAMBA abre con su «de X a Y» y añade cuatro apartados: El problema (clínicas que pierden de vista al viajero), Cuando llegamos (casi dos años con otro proveedor y primera versión en 3 meses), Cómo trabajamos (criterio de producto, de usabilidad y de negocio, y una arquitectura pensada a largo plazo) y Financiación (CaixaImpulse). Se mantienen Qué hicimos y Protección de datos. Title y meta sin cambios.
+**Por qué**: la página solo describía la parte técnica, y el método «de X a Y» pide contar el antes y el después. El rescate se redacta sin decir que se descartó el trabajo anterior, para que el Clínic no lo lea como trabajo y dinero perdidos. No se nombra al proveedor anterior. Jose Muñoz revisa el texto ya publicado y pide los cambios que hagan falta.
+
 ### 2026-11-13 — No se paga el puesto patrocinado de TechBehemoths
 **Qué**: el 2026-11-12, TechBehemoths avisó por email de que Nimbel no entra en el top 10 de software a medida en Barcelona y ofreció un puesto de pago en un top publicitario. No se paga, por ahora. El perfil verificado, el enlace del pie y el `sameAs` del schema se mantienen. La tarea S2 del plan de Sol y Maribel queda resuelta.
 **Por qué**: decisión de Rubén. Un puesto de pago no es una mención independiente, que es lo que se buscaba con los listados "Top empresas" (2026-11-03) por su peso en las respuestas de las IAs. Se puede reconsiderar si cambia el precio o el criterio.

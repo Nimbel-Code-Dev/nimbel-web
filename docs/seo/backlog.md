@@ -50,6 +50,7 @@ Las tareas hechas indican el commit donde se aplicaron.
 - [x] Schema Organization: legalName "NIMBEL CODE LIMITED", identifier CRO 788569, sameAs (LinkedIn, Instagram, TikTok, GitHub, Crunchbase, Clutch, GoodFirms) y pie legal — hecho (9e58e1a, 2c8179d, 10b7817)
 - [x] Página de caso: FAMBA — hecho (e3fab13)
 - [ ] Páginas de casos: NewsUp (borrador en `docs/seo/borradores/caso-newsup.md`, pendiente de revisión de Rubén), en español y en inglés. El «de X a Y» de FAMBA y NewsUp lo escribe Rubén y lo aprueba cada cliente antes de publicarlo. Incluir cifras propias siempre que se puedan publicar. Analysta e Innocard no tendrán página de caso: son antiguos clientes sin relación actual (decisión de Rubén, 2026-11-11)
+  - [x] «de X a Y» de FAMBA publicado en /casos/famba/ y /en/cases/famba/ — hecho 2026-11-13, pendiente de que Jose Muñoz lo revise. Falta el de NewsUp
 - [x] FAQ en "Sobre Nimbel Code" (orientada a GEO) — hecho (9c0b650)
 
 ## Técnico
