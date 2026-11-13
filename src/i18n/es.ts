@@ -194,6 +194,11 @@ export const es = {
         description:
           "El código queda en tu poder: sin licencias por usuario, con acceso completo y libertad para que lo mantenga otro equipo. No dependes de nosotros para seguir adelante.",
       },
+      {
+        title: "Programamos con IA. No hacemos vibe coding.",
+        description:
+          "Usamos IA cada día para programar, pero no programa por nosotros. La usan ingenieros que ya eran muy buenos sin ella: con IA van mucho más rápido sin perder rigor. Recibes software que alguien del equipo entiende y sabe mantener.",
+      },
     ],
   },
   testimonials: {
@@ -385,6 +390,11 @@ export const es = {
         question: "¿Qué servicios ofrece?",
         answer:
           "Sobre todo software a medida y aplicaciones web y móviles. También integra IA en productos y procesos, como asistentes conversacionales, y desarrolla webs.",
+      },
+      {
+        question: "¿Nimbel Code programa con IA?",
+        answer:
+          "Sí, pero no hace vibe coding. El equipo usa IA cada día para programar más rápido, y son ingenieros que ya eran muy buenos sin ella. No hay subcontratas ni juniors de paso: el software que entrega lo entiende y sabe mantenerlo alguien del equipo.",
       },
       {
         question: "¿En qué sectores tiene experiencia?",

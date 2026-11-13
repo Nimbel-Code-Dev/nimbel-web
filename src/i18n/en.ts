@@ -196,6 +196,11 @@ export const en = {
         description:
           "The code stays in your hands: no per-user licences, full access and the freedom to have another team maintain it. You don't depend on us to keep going.",
       },
+      {
+        title: "We code with AI. We don't vibe code.",
+        description:
+          "We use AI every day to write code, but it doesn't write the code for us. It's used by engineers who were already very good without it: with AI they go much faster without losing rigour. You get software that someone on the team understands and knows how to maintain.",
+      },
     ],
   },
   testimonials: {
@@ -386,6 +391,11 @@ export const en = {
         question: "What services does it offer?",
         answer:
           "Mainly custom software and web and mobile apps. It also integrates AI into products and processes, such as conversational assistants, and builds websites.",
+      },
+      {
+        question: "Does Nimbel Code use AI to write code?",
+        answer:
+          "Yes, but it doesn't vibe code. The team uses AI every day to code faster, and they are engineers who were already very good without it. There are no subcontractors or juniors passing through: the software it delivers is understood and can be maintained by someone on the team.",
       },
       {
         question: "Which sectors does it have experience in?",
