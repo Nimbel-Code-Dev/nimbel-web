@@ -222,7 +222,7 @@ export const en = {
         name: "Gerard Gil",
         role: "Founder of NewsUp",
         quote:
-          "Nimbel didn't just build the platform for us. They helped us understand what we really needed and how to scale it without depending on them forever. That's what sets them apart from any development agency: they leave you with something that's yours, not a black box.",
+          "We found someone who understood us. We know the communications industry, and Nimbel helped us turn those ideas into technology. On top of that, they leave you with something that's yours, not a black box.",
         photoAlt: "Photo of Gerard Gil",
         photo: "people/Gerard.jpg",
       },
@@ -516,7 +516,7 @@ export const en = {
             {
               name: "NewsUp",
               description:
-                "A PR and corporate communications platform for brands and agencies: digital press room, press release distribution, embargoed information, AI-powered media manager and press CRM. It went through two providers until we rescued the project and took it into production.",
+                "A PR and corporate communications platform for brands and agencies. It went through two providers until we rescued the project and took it into production.",
               testimonial: "gerard-gil",
               link: { label: "See the NewsUp case", href: "/en/cases/newsup/" },
             },
