@@ -2,6 +2,10 @@
 
 Registro cronológico, la más reciente arriba. Formato: `### AAAA-MM-DD — título`, qué se decidió y por qué.
 
+### 2026-11-13 — No se paga el puesto patrocinado de TechBehemoths
+**Qué**: el 2026-11-12, TechBehemoths avisó por email de que Nimbel no entra en el top 10 de software a medida en Barcelona y ofreció un puesto de pago en un top publicitario. No se paga, por ahora. El perfil verificado, el enlace del pie y el `sameAs` del schema se mantienen. La tarea S2 del plan de Sol y Maribel queda resuelta.
+**Por qué**: decisión de Rubén. Un puesto de pago no es una mención independiente, que es lo que se buscaba con los listados "Top empresas" (2026-11-03) por su peso en las respuestas de las IAs. Se puede reconsiderar si cambia el precio o el criterio.
+
 ### 2026-11-13 — "Programamos con IA, no hacemos vibe coding" en la home y en la FAQ
 **Qué**: tercera nota en "Cómo trabajamos" de la home (ES y EN), "Programamos con IA. No hacemos vibe coding." / "We code with AI. We don't vibe code.", y una pregunta nueva en la FAQ de "Sobre Nimbel Code", después de servicios: "¿Nimbel Code programa con IA?" / "Does Nimbel Code use AI to write code?". Entra en el schema `FAQPage` porque sale de los mismos `items`. No se asigna keyword: "vibe coding" (12.100/mes, `keyword-map.md`) es informativa y sigue en investigación sin URL.
 **Por qué**: Rubén quiere dejar claro que el equipo programa con IA, pero con ingenieros que ya eran muy buenos sin ella, y que no entrega código generado sin criterio. Refuerza el eyebrow del hero ("Sin subcontratas. Sin juniors de paso.") y el servicio de rescate de código hecho con IA. Rubén eligió "lo entiende y sabe mantener" en lugar de "lo ha revisado".
