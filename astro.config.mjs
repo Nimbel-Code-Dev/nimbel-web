@@ -9,7 +9,7 @@ export default defineConfig({
   site: "https://www.nimbel.net",
   // CSS dentro del HTML: evita la petición que bloquea el renderizado
   build: { inlineStylesheets: "always" },
-  output: "server",
+  // Estático: con output "server" las imágenes van por /_image y dan 404 en Vercel
   adapter: vercel({
     webAnalytics: { enabled: true },
   }),
