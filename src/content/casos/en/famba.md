@@ -24,7 +24,7 @@ With FAMBA, travelers chat with the same medical team that vaccinated them, who 
 The first version was the starting point. Since then, the platform has evolved as the service's team identifies new needs. Because we know the healthcare sector, we don't stop at technology: we bring product, usability and business judgment. And we designed the architecture around where the service is heading, not only what is asked for today. That way, each new step doesn't force us to redo the previous one.
 
 ## Funding
-FAMBA is backed by CaixaImpulse, the health innovation program of the "la Caixa" Foundation. The project secured the second phase, met all its goals and exceeded them. The third phase starts in mid-2027.
+FAMBA is backed by CaixaImpulse, the health innovation program of the "la Caixa" Foundation, which awarded it its second phase.
 
 ## What we did
 Design and development of the mobile app and the backend, and technical leadership of the product. Patient onboarding via QR code for a study with European recruitment centers, trip management with medical validation, and integrated payments.

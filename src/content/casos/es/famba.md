@@ -24,7 +24,7 @@ Con FAMBA, el viajero habla por chat con el mismo equipo médico que lo vacunó,
 La primera versión fue el punto de partida. Desde entonces, la plataforma evoluciona a medida que el equipo del servicio detecta nuevas necesidades. Como conocemos el sector sanitario, no nos limitamos a la tecnología: aportamos criterio de producto, de usabilidad y de negocio. Y diseñamos la arquitectura pensando en hacia dónde va a ir el servicio, no solo en lo que se pide hoy. Así, cada paso nuevo no obliga a rehacer lo anterior.
 
 ## Financiación
-FAMBA cuenta con el apoyo de CaixaImpulse, el programa de innovación en salud de la Fundación «la Caixa». El proyecto obtuvo la segunda fase, cumplió todos sus objetivos y los superó. La tercera fase empieza a mediados de 2027.
+FAMBA cuenta con el apoyo de CaixaImpulse, el programa de innovación en salud de la Fundación «la Caixa», que le concedió su segunda fase.
 
 ## Qué hicimos
 Diseño y desarrollo de la app móvil y el backend, y dirección técnica del producto. Alta de pacientes por QR para un estudio con centros de reclutamiento europeos, gestión de viajes con validación médica y pagos integrados.

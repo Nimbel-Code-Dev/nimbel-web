@@ -2,6 +2,10 @@
 
 Registro cronológico, la más reciente arriba. Formato: `### AAAA-MM-DD — título`, qué se decidió y por qué.
 
+### 2026-11-13 — FAMBA: CaixaImpulse, solo lo concedido
+**Qué**: el apartado "Financiación" del caso FAMBA dice solo que CaixaImpulse le concedió su segunda fase (ES y EN). Se quitan "cumplió todos sus objetivos y los superó" y la frase sobre la fase siguiente.
+**Por qué**: el equipo de FAMBA avisó de que la fase siguiente aún no está concedida (hay que solicitarla y pasar entrevista) y de que la Fundación «la Caixa» vigila lo que se publica. La evaluación de la fase 2 la hace la Fundación, no nosotros.
+
 ### 2026-11-13 — El caso NewsUp, revisado por Gerard Gil
 **Qué**: el caso NewsUp se reescribe con la revisión de Gerard Gil. Se quitan la competencia y el número de clientes (el «de X a Y» pasa a "De una idea adelantada a su tiempo, atrapada en un prototipo, a una plataforma de RRPP en producción que no deja de crecer"). La gestión compartida entre marca y agencias queda en una frase, sin explicar cómo funciona, y "Qué hicimos" pasa de dos listas a dos párrafos. Gerard es el protagonista: "El problema" pasa a "La idea de Gerard". Su testimonio cambia en toda la web (home, /desarrollo-de-apps y caso) por uno aprobado por él: "Encontramos a alguien que nos entendía…". La tarjeta de /desarrollo-de-apps deja de enumerar funciones. Sustituye a lo publicado esa misma mañana ("Se publica el caso NewsUp").
 **Por qué**: petición de Gerard: la cifra de clientes es aún baja, la gestión compartida es un diferencial que no quiere revelar y prefiere menos detalle del producto. Rubén pidió destacar a Gerard como visionario, en línea con el playbook (el cliente es el héroe y Nimbel, el guía).
