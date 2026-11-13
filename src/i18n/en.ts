@@ -10,7 +10,7 @@ export const en = {
     cta: "SCHEDULE A CALL",
   },
   hero: {
-    eyebrow: "Full control over your digital system",
+    eyebrow: "No subcontractors. No juniors passing through.",
     headline: "Custom software development for businesses",
     subtitle:
       "We transform your ideas into your own digital assets. No licenses, no dependencies.",
@@ -347,7 +347,7 @@ export const en = {
     },
   },
   footer: {
-    description: "Your digital asset. Your control. Your team.",
+    description: "We build your software.",
     nav: {
       title: "Navigation",
       about: "About us",

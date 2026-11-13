@@ -10,7 +10,7 @@ export const es = {
     cta: "AGENDA UNA CALL",
   },
   hero: {
-    eyebrow: "Control total sobre tu sistema digital",
+    eyebrow: "Sin subcontratas. Sin juniors de paso.",
     headline: "Desarrollo de software a medida para empresas",
     subtitle:
       "Transformamos tus ideas en activos digitales propios. Sin licencias, sin dependencias.",
@@ -345,7 +345,7 @@ export const es = {
     },
   },
   footer: {
-    description: "Tu activo digital. Tu control. Tu equipo.",
+    description: "Construimos tu software.",
     nav: {
       title: "Navegación",
       about: "Sobre nosotros",
