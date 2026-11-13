@@ -400,7 +400,7 @@ export const en = {
       {
         question: "Which sectors does it have experience in?",
         answer:
-          'Healthcare, with <a href="/en/cases/famba/">FAMBA</a>, a travel health platform created with Hospital Clínic de Barcelona; education, with StartUB, from the Universitat de Barcelona; media, with NewsUp; and finance, with Analysta.',
+          'Healthcare, with <a href="/en/cases/famba/">FAMBA</a>, a travel health platform created with Hospital Clínic de Barcelona; education, with StartUB, from the Universitat de Barcelona; media, with <a href="/en/cases/newsup/">NewsUp</a>; and finance, with Analysta.',
       },
       {
         question: "Who runs Nimbel Code?",
@@ -518,6 +518,7 @@ export const en = {
               description:
                 "A digital news platform that lets you have a press room, send emails and share HD multimedia content. It went through several providers until we rescued the project and built their product.",
               testimonial: "gerard-gil",
+              link: { label: "See the NewsUp case", href: "/en/cases/newsup/" },
             },
           ],
         },

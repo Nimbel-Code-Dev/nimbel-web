@@ -1,6 +1,8 @@
 # /casos/newsup/ — borrador
 
-> **BORRADOR, pendiente de revisión de Rubén.** Cuando se apruebe, se publica en español (`src/content/casos/es/newsup.md`) y en inglés (`src/content/casos/en/newsup.md`, en /en/cases/newsup/), con el mismo patrón que el caso FAMBA. Las páginas de caso no llevan keyword principal (`decisiones.md`, 2026-11-02).
+> **PUBLICADO el 2026-11-13** en `/casos/newsup/` y `/en/cases/newsup/`, con un texto más completo que este borrador (ver `decisiones.md`, 2026-11-13). El texto vigente está en `src/content/casos/<es|en>/newsup.md`; este archivo queda como histórico.
+>
+> ~~**BORRADOR, pendiente de revisión de Rubén.**~~ Cuando se apruebe, se publica en español (`src/content/casos/es/newsup.md`) y en inglés (`src/content/casos/en/newsup.md`, en /en/cases/newsup/), con el mismo patrón que el caso FAMBA. Las páginas de caso no llevan keyword principal (`decisiones.md`, 2026-11-02).
 
 Última actualización: 2026-11-02 · Español.
 

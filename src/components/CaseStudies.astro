@@ -25,7 +25,9 @@ const items = t("caseStudies", "items") as ReadonlyArray<{
 
 // Casos con página propia
 const caseLinks: Record<string, string> =
-  locale === "en" ? { famba: "/en/cases/famba/" } : { famba: "/casos/famba/" };
+  locale === "en"
+    ? { famba: "/en/cases/famba/", newsup: "/en/cases/newsup/" }
+    : { famba: "/casos/famba/", newsup: "/casos/newsup/" };
 // El carrusel es React: las capturas se optimizan aquí y se le pasan ya hechas
 const itemsWithCase = await Promise.all(
   items.map(async (item) => {

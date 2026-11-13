@@ -2,6 +2,10 @@
 
 Registro cronológico, la más reciente arriba. Formato: `### AAAA-MM-DD — título`, qué se decidió y por qué.
 
+### 2026-11-13 — Se publica el caso NewsUp
+**Qué**: nueva página de caso en `/casos/newsup/` y `/en/cases/newsup/`, con su «de X a Y» (de un prototipo que no se podía sacar a producción a una plataforma con una docena de clientes, varios de ellos grandes empresas) y los apartados El problema (2019), Cuando llegamos (verano de 2023, tras dos proveedores), Cómo lo hicimos, Qué hicimos, La IA lleva la idea más lejos y Hoy, con el testimonio de Gerard Gil. Title y meta, los del borrador. Se activan los enlaces al caso en el carrusel de la home, en /desarrollo-de-apps y en la FAQ de "Sobre Nimbel Code". El pie sigue enlazando solo a FAMBA.
+**Por qué**: decisión de Rubén: publicar ya y que Gerard lo revise después, como con FAMBA. No se nombra a los proveedores anteriores ni a ningún cliente, y el número de clientes se da sin desglose, porque Gerard es discreto con su cartera. Se omite que, visto con perspectiva, empezar de cero habría sido más rápido: la decisión de conservar el prototipo fue del cliente y era razonable.
+
 ### 2026-11-13 — El caso FAMBA cuenta el problema, el rescate y CaixaImpulse
 **Qué**: el caso FAMBA abre con su «de X a Y» y añade cuatro apartados: El problema (clínicas que pierden de vista al viajero), Cuando llegamos (casi dos años con otro proveedor y primera versión en 3 meses), Cómo trabajamos (criterio de producto, de usabilidad y de negocio, y una arquitectura pensada a largo plazo) y Financiación (CaixaImpulse). Se mantienen Qué hicimos y Protección de datos. Title y meta sin cambios.
 **Por qué**: la página solo describía la parte técnica, y el método «de X a Y» pide contar el antes y el después. El rescate se redacta sin decir que se descartó el trabajo anterior, para que el Clínic no lo lea como trabajo y dinero perdidos. No se nombra al proveedor anterior. Jose Muñoz revisa el texto ya publicado y pide los cambios que hagan falta.

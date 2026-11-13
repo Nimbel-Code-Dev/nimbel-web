@@ -399,7 +399,7 @@ export const es = {
       {
         question: "¿En qué sectores tiene experiencia?",
         answer:
-          'En salud, con <a href="/casos/famba/">FAMBA</a>, una plataforma de salud del viajero creada con el Hospital Clínic de Barcelona; en educación, con StartUB, de la Universitat de Barcelona; en medios, con NewsUp, y en finanzas, con Analysta.',
+          'En salud, con <a href="/casos/famba/">FAMBA</a>, una plataforma de salud del viajero creada con el Hospital Clínic de Barcelona; en educación, con StartUB, de la Universitat de Barcelona; en medios, con <a href="/casos/newsup/">NewsUp</a>, y en finanzas, con Analysta.',
       },
       {
         question: "¿Quién dirige Nimbel Code?",
@@ -517,6 +517,7 @@ export const es = {
               description:
                 "Plataforma digital de noticias que permite tener una sala de prensa, enviar emails y compartir contenido multimedia HD. Pasó por varios proveedores hasta que rescatamos el proyecto y construimos su producto.",
               testimonial: "gerard-gil",
+              link: { label: "Ver el caso de NewsUp", href: "/casos/newsup/" },
             },
           ],
         },
