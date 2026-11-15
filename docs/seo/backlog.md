@@ -68,7 +68,7 @@ Las tareas hechas indican el commit donde se aplicaron.
 - [ ] Bing Webmaster Tools (ya importado desde Search Console en oct 2026): revisar el informe AI Performance (Citation Share, Intents) y que el sitemap esté enviado
 - [x] Visitas desde asistentes de IA — decidido 2026-11-03: no se instala GA4 (la web no lo tiene; exigiría banner de cookies y cambiar la política, con HubSpot aún sin resolver). Las visitas que llegan desde ChatGPT, Perplexity, Claude, etc. ya las mide el script de GEO Metrics (verificado, activo). Línea base: 0 visitas desde IA en 30 días. Opcional: Vercel Web Analytics (sin cookies) para ver el origen de todas las visitas
 - [x] Analítica de visitas y UTM — hecho 2026-11-15: Umami Cloud sin cookies en `Layout.astro`, evento `reserva` al reservar en Calendly y política de privacidad actualizada (`decisiones.md`, 2026-11-15)
-- [ ] Enlaces de LinkedIn a las páginas de sector con UTM (`utm_source=linkedin`, `utm_medium` según sea post o mensaje, `utm_campaign` con el sector), cuando las páginas existan
+- [ ] Enlaces de LinkedIn a las páginas de sector con UTM, cuando las páginas existan. Convención en `decisiones.md` (2026-11-15): `utm_source=linkedin`, `utm_medium=post` o `mensaje`, `utm_campaign=salud`, `educacion` o `industria`, en minúsculas y sin tildes
 - [ ] Atribución de leads: Calendly gratis no permite preguntas propias. Preguntar al inicio de cada primera llamada "¿Cómo nos encontraste? Si fue con una IA, ¿qué le preguntaste?" y apuntarlo en el CRM (campo "Origen")
 
 ## Investigación

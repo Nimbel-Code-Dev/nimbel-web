@@ -2,6 +2,10 @@
 
 Registro cronológico, la más reciente arriba. Formato: `### AAAA-MM-DD — título`, qué se decidió y por qué.
 
+### 2026-11-15 — Convención de UTM para los enlaces de LinkedIn
+**Qué**: los enlaces de LinkedIn a la web llevan tres UTM: `utm_source=linkedin`, `utm_medium=post` o `utm_medium=mensaje`, y `utm_campaign` con el sector (`salud`, `educacion` o `industria`). Siempre en minúsculas y sin tildes. Ejemplo: `https://www.nimbel.net/software-sanitario/?utm_source=linkedin&utm_medium=post&utm_campaign=salud`.
+**Por qué**: para ver en Umami (informe de UTM y evento `reserva`) y en las reservas de Calendly cuántas visitas y llamadas trae cada sector y cada formato. Umami distingue mayúsculas, tildes y variantes, así que un valor escrito distinto cuenta como otra campaña. Decisión de Rubén.
+
 ### 2026-11-15 — Analítica con Umami Cloud, sin cookies
 **Qué**: se instala Umami Cloud (plan Hobby: 100.000 eventos al mes, 1 web y 6 meses de datos) en `Layout.astro`, limitado a `www.nimbel.net` con `data-domains`, para que no cuenten las visitas en local ni las vistas previas de Vercel. En `Contact.astro`, cuando Calendly avisa de una reserva (`calendly.event_scheduled`), se envía el evento `reserva` a Umami. La política de privacidad (ES y EN) pasa a mencionar Umami en el apartado 2 y en la lista de terceros del apartado 6. Calendly guarda por su cuenta las cinco UTM estándar de la página donde está incrustado, sin código. Completa la decisión del 2026-11-03 de no instalar GA4.
 **Por qué**: para ver de dónde llegan las visitas y cuántas reservas trae cada UTM, empezando por los enlaces de LinkedIn a las páginas de sector. Umami no usa cookies, así que no hace falta banner. Se descartaron GA4 (banner de cookies y visitas perdidas por rechazo), Vercel Web Analytics (las UTM son de pago) y Umami en servidor propio (mantenimiento de más para este volumen). Decisión de Rubén.
