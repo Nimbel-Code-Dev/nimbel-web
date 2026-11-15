@@ -129,5 +129,13 @@ const highlightedHeadline = highlightText(
     }, { threshold: 0.1 });
     var target = document.getElementById('contact');
     if (target) observer.observe(target);
+
+    // Cuando Calendly confirma una reserva, se cuenta como evento en Umami
+    window.addEventListener('message', function(e) {
+      if (e.origin !== 'https://calendly.com') return;
+      if (e.data && e.data.event === 'calendly.event_scheduled' && window.umami) {
+        window.umami.track('reserva');
+      }
+    });
   })();
 </script>
