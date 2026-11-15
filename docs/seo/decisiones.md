@@ -2,6 +2,10 @@
 
 Registro cronológico, la más reciente arriba. Formato: `### AAAA-MM-DD — título`, qué se decidió y por qué.
 
+### 2026-11-15 — Se quita Vercel Web Analytics
+**Qué**: se quita `webAnalytics: { enabled: true }` del adaptador de Vercel en `astro.config.mjs`. La web deja de cargar `/_vercel/insights/script.js`. La única analítica es Umami.
+**Por qué**: estaba activo sin que la política de privacidad lo mencionara, y con Umami se medían las mismas visitas dos veces. Decisión de Rubén.
+
 ### 2026-11-15 — Redirecciones 301 de dos URL antiguas
 **Qué**: en `vercel.json`, `/en/about` pasa a `/en/about-nimbel-code/` y `/testimonials/pol-margaix`, a la tarjeta de su testimonio en la home (`/#testimonial-card-pol-margaix`). Las dos daban 404.
 **Por qué**: `/en/about` seguía en el índice de Bing desde 2025 y `/testimonials/pol-margaix` tuvo impresiones en Google en los últimos 6 meses (Search Console, 15/11). Con la redirección no se pierde lo que tengan y los buscadores actualizan su índice. Decisión de Rubén.

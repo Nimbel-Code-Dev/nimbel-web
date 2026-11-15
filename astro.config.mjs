@@ -10,9 +10,8 @@ export default defineConfig({
   // CSS dentro del HTML: evita la petición que bloquea el renderizado
   build: { inlineStylesheets: "always" },
   // Estático: con output "server" las imágenes van por /_image y dan 404 en Vercel
-  adapter: vercel({
-    webAnalytics: { enabled: true },
-  }),
+  // Sin Vercel Web Analytics: la analítica es Umami (decisiones.md, 2026-11-15)
+  adapter: vercel(),
   integrations: [
     // privacidad es noindex: no debe aparecer en el sitemap
     sitemap({ filter: (page) => !page.includes("/privacidad") }),
