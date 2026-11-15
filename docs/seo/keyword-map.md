@@ -30,6 +30,9 @@
 | desarrollo apps madrid | desarrollo de apps madrid (10), empresa desarrollo apps madrid (10), desarrollo aplicaciones madrid (10) | /desarrollo-de-apps-madrid (nueva) | Comercial local | 20 (DataForSEO) | n/d | Validada — pendiente de crear (dentro del rediseño) |
 | desarrollo apps valencia | desarrollo de apps valencia (10), empresa desarrollo apps valencia (10), desarrollo aplicaciones valencia (10) | /desarrollo-de-apps-valencia (nueva) | Comercial local | 20 (DataForSEO) | n/d | Validada — pendiente de crear (dentro del rediseño) |
 | desarrollo apps sevilla | desarrollo de apps sevilla (10) | /desarrollo-de-apps-sevilla (nueva) | Comercial local | 10 (DataForSEO) | n/d | Validada — pendiente de crear (dentro del rediseño) |
+| software sanitario | software para hospitales (10), app sanitaria (20), desarrollo apps salud (10), app para médicos (10) | /software-sanitario (nueva, página de sector) | Comercial (conversión desde LinkedIn, no captación) | 30 (DataForSEO) | n/d | Aprobada 2026-11-15 — pendiente de crear (R7, dentro del rediseño) |
+| software para centros educativos | software para universidades (10), desarrollo de software educativo (10), desarrollo lms (10), app para colegios (10) | /software-centros-educativos (nueva, página de sector) | Comercial (conversión desde LinkedIn, no captación) | 10 (DataForSEO) | n/d | Aprobada 2026-11-15 — pendiente de crear (R7, dentro del rediseño) |
+| digitalización industrial | digitalización de procesos industriales (10), software para industria (10), software para empresas industriales (10), software industria 4.0 (10) | /digitalizacion-industrial (nueva, página de sector) | Mixta: guías y consultoras para pymes (conversión, no captación) | 110 (DataForSEO) | n/d | Aprobada 2026-11-15 — pendiente de crear (R7, dentro del rediseño; antes, la ficha tiene que incluir industria) |
 | cuánto cuesta crear una app | cuánto cuesta crear una app web (40, KD 8), …en España (30), …en euros (30), cuánto cuesta un software a medida (~100, KD 3), cuánto sale hacer un software a medida (70) | /cuanto-cuesta-crear-una-app (nueva; sustituye a /cuanto-cuesta-software-a-medida) | Investigación comercial | 210 | 18 | Validada — pendiente de crear |
 | externalizar desarrollo de software | criterios para externalizar desarrollo de software, equipo interno vs desarrollo externalizado | /externalizar-desarrollo-software (nueva) | Investigación comercial | ~50 | n/d | Pendiente |
 | custom software development barcelona | — | /en | Comercial | GSC: posición 4 | n/d | En curso: en el title desde 2026-11-02 |
@@ -216,13 +219,13 @@ Lectura: no hay demanda en Google para una página de sector salud como captaci�
 
 ## En investigación: páginas por sector
 
-Origen: decisión del 2026-11-15 de crear páginas de salud, educación e industria como páginas de conversión para quien llega desde LinkedIn (`decisiones.md`). No se espera tráfico de Google: la keyword principal sirve para cumplir la regla de una keyword por URL y para que la página se entienda. Propuestas pendientes de que las apruebe Rubén; no se pasan a «Keywords elegidas» hasta entonces.
+Origen: decisión del 2026-11-15 de crear páginas de salud, educación e industria como páginas de conversión para quien llega desde LinkedIn (`decisiones.md`). No se espera tráfico de Google: la keyword principal sirve para cumplir la regla de una keyword por URL y para que la página se entienda. Rubén aprobó las tres propuestas el 2026-11-15; están en «Keywords elegidas».
 
 Fuente: DataForSEO, Keywords Data API (Google Ads), España/español, media de 12 meses (nov 2025–oct 2026), consultado 2026-11-15. «—» = sin dato. Coste: ~0,10 $ (1 de volumen en modo live y 3 de SERP). Los datos de salud de la sección anterior también cuentan.
 
-**Propuesta de keyword principal por página**
+**Keyword principal por página (aprobadas el 2026-11-15)**
 
-| Página | Keyword principal propuesta | Vol/mes | CPC | Secundarias | Por qué |
+| Página | Keyword principal | Vol/mes | CPC | Secundarias | Por qué |
 |---|---|---|---|---|---|
 | Salud (`/software-sanitario`) | software sanitario | 30 | 8,24 $ | software para hospitales (10), app sanitaria (20), desarrollo apps salud (10), app para médicos (10) | La SERP (2026-11-15) es de software para hospitales y clínicas: productos y comparadores. Busca quien decide en un centro sanitario. Encaja con FAMBA |
 | Educación (`/software-centros-educativos`) | software para centros educativos | 10 | 8,96 $ | software para universidades (10), desarrollo de software educativo (10), desarrollo lms (10), app para colegios (10) | Ninguna tiene volumen real. Es la más amplia con intención de comprar software. Alternativa: «software para universidades», más cercana a StartUB pero más estrecha |
@@ -234,15 +237,15 @@ Fuente: DataForSEO, Keywords Data API (Google Ads), España/español, media de 1
 |---|---|---|---|
 | plataforma educativa | 4.400 | 1,71 $ | Descartada: navegacional (SERP 2026-11-15: la entidad catalana Plataforma Educativa, el portal educativo de Santa Fe y Aulaplaneta) |
 | software mes | 170 | 9,4 $ | Descartada: categoría de producto (sistemas MES estándar), sin SERP revisada |
-| digitalización industrial | 110 | 2,5 $ | Propuesta para industria |
+| digitalización industrial | 110 | 2,5 $ | Elegida para industria |
 | software para clínicas | 70 | 6,6 $ | No se propone: probablemente intención de SaaS estándar, como «programa para clínica» (descartada el 2026-10-28). Sin SERP revisada |
-| software sanitario | 30 | 8,24 $ | Propuesta para salud |
+| software sanitario | 30 | 8,24 $ | Elegida para salud |
 | app hospital | 30 | — | Probablemente pacientes que buscan la app de su hospital. Sin SERP revisada |
 | software trazabilidad | 30 | 15,48 $ | Categoría de producto. Sin SERP revisada |
 | app sanitaria | 20 | — | Secundaria de salud |
 | software salud, software para centros médicos | 10 c/u | — | Residual |
 | software para universidades, app para colegios, desarrollo lms, desarrollo de software educativo | 10 c/u | — | Secundarias de educación |
-| software para centros educativos | 10 | 8,96 $ | Propuesta para educación |
+| software para centros educativos | 10 | 8,96 $ | Elegida para educación |
 | software para industria, software de gestión de producción, software industria 4.0, software gestión incidencias, digitalización de procesos industriales, software para empresas industriales | 10 c/u | — / 2,8 $ | Secundarias de industria |
 | desarrollo software médico, digitalización sanitaria, transformación digital sanidad, desarrollo de apps médicas, plataforma educativa a medida, desarrollo plataforma educativa, plataforma lms a medida, software educativo a medida, desarrollo app educativa, plataforma de formación para empresas, software industrial a medida, desarrollo software industrial, software para fábricas, app para industria, software para logística a medida | — | — | Sin volumen |
 
