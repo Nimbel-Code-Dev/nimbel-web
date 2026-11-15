@@ -2,6 +2,10 @@
 
 Registro cronológico, la más reciente arriba. Formato: `### AAAA-MM-DD — título`, qué se decidió y por qué.
 
+### 2026-11-15 — Páginas por sector: salud, educación e industria
+**Qué**: se crean tres páginas de sector a la vez, dentro del rediseño: salud, educación e industria. Son páginas de conversión y de validación para quien llega desde LinkedIn o desde la prospección, no páginas de captación SEO: sus keywords tienen entre 10 y 110 búsquedas al mes (`keyword-map.md`, "En investigación: páginas por sector"). Cada una lleva su keyword principal, que está pendiente de que la apruebe Rubén. La home y /desarrollo-de-apps siguen siendo generalistas. Sustituye a "La web se mantiene generalista" (2026-10-28) solo en lo de no tener páginas de sector. Condiciones: no se inventan clientes ni proyectos; industria no tiene todavía un caso con nombre, y la ficha de Nimbel (sectores: salud, educación, medios y finanzas) tiene que incluir industria antes de publicar esa página, decisión pendiente de Rubén.
+**Por qué**: decisión de Rubén. En LinkedIn se insiste en que hacemos software para salud, y quien llega a la web a comprobarlo tiene que encontrar esa especialización en el primer clic. La web no es solo SEO: lo que se descartó el 2026-11-15 fue la página de salud como apuesta de captación en Google, no la página.
+
 ### 2026-11-13 — FAMBA: CaixaImpulse, solo lo concedido
 **Qué**: el apartado "Financiación" del caso FAMBA dice solo que CaixaImpulse le concedió su segunda fase (ES y EN). Se quitan "cumplió todos sus objetivos y los superó" y la frase sobre la fase siguiente.
 **Por qué**: el equipo de FAMBA avisó de que la fase siguiente aún no está concedida (hay que solicitarla y pasar entrevista) y de que la Fundación «la Caixa» vigila lo que se publica. La evaluación de la fase 2 la hace la Fundación, no nosotros.

@@ -11,6 +11,7 @@ Las tareas hechas indican el commit donde se aplicaron.
   - [ ] Página de empresa de LinkedIn con la descripción de la ficha (Sol). Los perfiles personales los cambia cada persona
   - [ ] Ficha de marca de GEO Metrics: quitar "salud", "Latinoamérica" y "propiedad intelectual" y, con todo cambiado, pedir recomendaciones nuevas (Sol)
 - [ ] Comparativa de empresas en /blog/empresas-desarrolladoras-de-apps-espana (Sol, después de aplicar la ficha; condiciones en `decisiones.md`, 2026-11-11)
+- [ ] Páginas por sector: salud, educación e industria, a la vez y dentro del rediseño (`decisiones.md`, 2026-11-15). Antes: Rubén aprueba la keyword principal de cada una (propuestas en `keyword-map.md`, "En investigación: páginas por sector") y decide si la ficha incluye industria
 - [ ] Páginas por ciudad: /desarrollo-de-apps-madrid, /desarrollo-de-apps-valencia y /desarrollo-de-apps-sevilla, dentro del rediseño (`decisiones.md`, 2026-11-11; datos en `keyword-map.md`)
 - [x] Home: title, H1, subtítulo, H2 y meta description — hecho 2026-10-28
 - [x] Ampliar home a ~1.200–1.500 palabras con el texto de `contenido-home.md`, montado con los bloques visuales actuales — hecho (801b393). La diseñadora lo rediseñará; la sección de Barcelona se quitó
