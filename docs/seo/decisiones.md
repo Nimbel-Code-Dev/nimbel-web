@@ -2,6 +2,10 @@
 
 Registro cronológico, la más reciente arriba. Formato: `### AAAA-MM-DD — título`, qué se decidió y por qué.
 
+### 2026-11-15 — Redirecciones 301 de dos URL antiguas
+**Qué**: en `vercel.json`, `/en/about` pasa a `/en/about-nimbel-code/` y `/testimonials/pol-margaix`, a la tarjeta de su testimonio en la home (`/#testimonial-card-pol-margaix`). Las dos daban 404.
+**Por qué**: `/en/about` seguía en el índice de Bing desde 2025 y `/testimonials/pol-margaix` tuvo impresiones en Google en los últimos 6 meses (Search Console, 15/11). Con la redirección no se pierde lo que tengan y los buscadores actualizan su índice. Decisión de Rubén.
+
 ### 2026-11-15 — Convención de UTM para los enlaces de LinkedIn
 **Qué**: los enlaces de LinkedIn a la web llevan tres UTM: `utm_source=linkedin`, `utm_medium=post` o `utm_medium=mensaje`, y `utm_campaign` con el sector (`salud`, `educacion` o `industria`). Siempre en minúsculas y sin tildes. Ejemplo: `https://www.nimbel.net/software-sanitario/?utm_source=linkedin&utm_medium=post&utm_campaign=salud`.
 **Por qué**: para ver en Umami (informe de UTM y evento `reserva`) y en las reservas de Calendly cuántas visitas y llamadas trae cada sector y cada formato. Umami distingue mayúsculas, tildes y variantes, así que un valor escrito distinto cuenta como otra campaña. Decisión de Rubén.
