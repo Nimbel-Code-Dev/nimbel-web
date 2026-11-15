@@ -1,6 +1,6 @@
 # Keyword map — nimbel.net
 
-Última actualización: 2026-11-12 · Fuente: Semrush (base de datos España) + Google Search Console + DataForSEO (desde 2026-11-07)
+Última actualización: 2026-11-15 · Fuente: Semrush (base de datos España) + Google Search Console + DataForSEO (desde 2026-11-07)
 
 > Volúmenes <100 son estimaciones poco fiables: sirven para priorizar, no como cifra real. Desde 2026-11-07 los datos nuevos salen de DataForSEO; los marcados como Semrush son anteriores y Semrush ya no se usa. DataForSEO suele dar menos volumen que Semrush para la misma keyword.
 
@@ -187,17 +187,35 @@ Fuente: DataForSEO Labs (Google, España/español, volumen mensual medio de 12 m
 
 Lectura: ninguna keyword del tema tiene intención de contratar. Lo comercial es de quien quiere hacerlo por su cuenta: herramientas, cursos y versiones gratis. Las de rescate no tienen volumen, así que en Google no hay demanda de "ayúdame a terminar lo que hice con IA" (esa pregunta ya se mide en GEO Metrics con el prompt de rescate). La única con potencial es "qué es vibe coding" (~3.000/mes, KD bajo), como contenido de entrada desde el punto de vista de un negocio; no capta cliente directamente y su intención ("qué es") está en "Evitar" del criterio.
 
+## En investigación: sector salud, aplicaciones, SaaS, mantenimiento y Barcelona
+
+Origen: diagnóstico de Search Console del 2026-11-15 (casi todo el tráfico es de marca; la única tracción sin marca es /desarrollo-de-apps, en posición 40–53 por búsquedas de Barcelona) y la estrategia para atraer tráfico con intención de compra. Se validaron las candidatas de «Sin validar todavía» y otras posibles páginas de servicio. El diagnóstico y la prioridad están en `nimbel-kb/marketing/estrategia/2026-11-plan-web-sol-y-maribel.md`.
+
+Fuente: DataForSEO, Keywords Data API (Google Ads), España/español, media de 12 meses (nov 2025–oct 2026), consultado 2026-11-15. KD: DataForSEO Labs (no comparable con Semrush). «—» = sin dato. Coste: ~0,19 $ (2 de volumen en modo live, 1 de KD y 2 de SERP).
+
+| Keyword | Vol/mes | KD | CPC | Estado |
+|---|---|---|---|---|
+| desarrollo de aplicaciones web | 880 | 3 | 12,63 $ | Descartada (SERP 2026-11-15: ciclos de FP DAW —Campus Cámara FP, Universidad Europea, XTART, CCC—; intención de estudiar, no de contratar) |
+| desarrollo de aplicaciones móviles | 110 | 0 | 12,63 $ | Descartada (SERP 2026-11-15: guías, herramientas y tutoriales para desarrolladores; solo un anuncio de empresa) |
+| app de salud | 70 | 29 | 7,33 $ | Descartada: no es de quien quiere contratar un desarrollo |
+| desarrolladores de apps barcelona | 40 | 0 | 17,59 $ | Candidata a secundaria de /desarrollo-de-apps (pendiente de decisión de Rubén). En GSC ya sale en posición ~46 |
+| mantenimiento de software | 30 | 0 | — | Secundaria como mucho; sin página propia |
+| desarrollo saas | 20 (110 en oct 2026) | — | 4,7 $ | Residual |
+| desarrollo de aplicaciones web a medida | 20 | — | — | Residual |
+| app para médicos | 10 | — | 7,75 $ | Residual |
+| desarrollo apps salud, software para hospitales, software como dispositivo médico | 10 c/u | — | — | Residual |
+| empresa desarrollo aplicaciones web, desarrollo de plataformas web, desarrollo de plataformas digitales, empresa desarrollo aplicaciones móviles | 10 c/u | — | — | Residual |
+| software a medida barcelona, desarrollo software a medida barcelona, agencia desarrollo apps barcelona, programadores barcelona, desarrollo apps moviles barcelona | 10 c/u | — | — | Residual |
+| mantenimiento de aplicaciones, soporte y mantenimiento de software, precio desarrollo app | 10 c/u | — | — | Residual |
+| plataforma de salud a medida, app para clínicas a medida, software sanitario a medida, desarrollo software salud, desarrollo de software sanitario, desarrollo de aplicaciones sanitarias, empresa desarrollo software sanitario, software médico a medida, desarrollo app médica, software para clínicas a medida, software para dispositivos médicos, desarrollo software dispositivos médicos | — | — | — | Sin volumen |
+| plataforma e-learning a medida, desarrollo plataforma elearning, plataforma de formación online a medida | — | — | — | Sin volumen |
+| empresa desarrollo saas, cuánto cuesta desarrollar un saas, crear una plataforma saas, cómo lanzar una app | — | — | — | Sin volumen |
+| empresa mantenimiento software, cambiar de proveedor de software, empresa desarrollo software barcelona | — | — | — | Sin volumen (la última tenía 90/mes en Semrush; DataForSEO no da dato) |
+
+Lectura: no hay demanda en Google para una página de sector salud: salud se trabaja con outbound, casos y GEO. «Desarrollo de aplicaciones web/móviles» tiene volumen, pero la intención es formativa. SaaS, mantenimiento y formación online no justifican página propia. La demanda con intención de compra ya está repartida entre la home, /desarrollo-de-apps, /cuanto-cuesta-crear-una-app y la comparativa: la prioridad es subir esas páginas, no crear otras.
+
 ## Sin validar todavía
-Pendientes de validar con DataForSEO (Semrush ya no se usa). No crear páginas con ellas.
-| Keyword candidata | Grupo | URL prevista | Estado |
-|---|---|---|---|
-| cuánto cuesta desarrollar un saas | Coste | /cuanto-cuesta-crear-una-app (secundaria) | Sin validar |
-| cómo lanzar una app | Proceso | artículo (por decidir) | Sin validar |
-| crear una plataforma saas | Proceso | artículo (por decidir) | Sin validar |
-| cómo elegir empresa de desarrollo de software | Proveedor | artículo (por decidir) | Sin validar |
-| app para médicos | Sector | futura página de sector salud (solo si hay volumen) | Sin validar |
-| plataforma de salud a medida | Sector | futura página de sector salud (solo si hay volumen) | Sin validar |
-| app para clínicas a medida | Sector | futura página de sector salud (solo si hay volumen) | Sin validar |
+Ninguna desde el 2026-11-15: las candidatas que había se validaron con DataForSEO ese día (ver «En investigación: sector salud, aplicaciones, SaaS, mantenimiento y Barcelona») o ya tenían dato («cómo elegir empresa de desarrollo de software», sin volumen, en «En investigación: comparativa de empresas», 2026-11-11). Las nuevas candidatas se añaden aquí y no se crean páginas con ellas hasta validarlas.
 
 ## Descartadas
 | Keyword | Motivo |
@@ -210,3 +228,6 @@ Pendientes de validar con DataForSEO (Semrush ya no se usa). No crear páginas c
 | cto externo / cto as a service / external cto | 0/mes (Semrush, 2026-11-01) |
 | desarrollo mvp / desarrollo de mvp / precio mvp | ~20/mes cada variante, sin datos de KD. Se puede mencionar "MVP" en el copy, no como keyword |
 | saas (genérica) | Volumen inflado por búsquedas sin relación (SAA, aerolíneas, colegios); sin intención útil |
+| desarrollo de aplicaciones web / desarrollo de aplicaciones móviles | 880 y 110/mes, pero la SERP es de FP (DAW/DAM) y de guías para desarrolladores (DataForSEO, 2026-11-15) |
+| página de sector salud (app para médicos, plataforma de salud a medida, app para clínicas a medida, software sanitario a medida…) | 0–10/mes cada una (DataForSEO, 2026-11-15) |
+| cuánto cuesta desarrollar un saas, crear una plataforma saas, cómo lanzar una app | Sin volumen (DataForSEO, 2026-11-15) |
