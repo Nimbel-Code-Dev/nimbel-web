@@ -240,6 +240,19 @@ Fuente: DataForSEO, Keywords Data API (Google Ads), España/español, media de 1
 
 Lectura: sí hay demanda que cruza IA y salud (unas 1.500 búsquedas al mes entre las cinco primeras, al alza), pero toda es informativa o de quien busca una herramienta para usarla. Ninguna keyword tiene intención de encargar un desarrollo («desarrollo ia salud» y «software ia salud» no tienen volumen), así que no justifica una página de servicio. Lo único con potencial es un artículo de entrada sobre «ia medica» (KD 0, 880/mes) desde el punto de vista de quien decide en un centro sanitario: qué se usa ya, qué hace falta para integrarlo con sus sistemas y sus datos, con el caso FAMBA. Compite con medios y laboratorios (Mapfre, Sanofi, IBM) y con fabricantes de software para clínicas. No se ha decidido nada.
 
+## En investigación: automatización de procesos con IA en salud
+
+Origen: petición de Rubén del 2026-11-16 de cruzar «automatización de procesos con ia» (260/mes, 720 en oct 2026; ver «En investigación: consultoría e implementación de IA», 2026-11-12) con el sector salud.
+
+Fuente: DataForSEO, Keywords Data API (Google Ads), España/español, media de 12 meses (nov 2025–oct 2026), consultado 2026-11-16, y DataForSEO Labs (sugerencias de «automatizacion» y «automatizar» filtradas por salud, clínic-, hospital-, sanit- y medic-). «—» = sin dato. Coste: ~0,11 $ (1 de volumen en modo live con 24 keywords, pedida con `noAiMode` para que devuelva todas, y 2 de sugerencias de Labs). Sin SERP: no hay finalistas.
+
+| Keyword | Vol/mes | Estado |
+|---|---|---|
+| automatización en salud, automatización en la salud, automatización en la medicina, automatización (en el) laboratorio clínico, ventajas de la automatización en el laboratorio clínico | 10 c/u (Labs) | Residual e informativa. La de laboratorio clínico es de técnicos de laboratorio (equipos de análisis), no de procesos |
+| automatización de procesos con ia en salud, automatización de procesos en salud, automatización de procesos sanitarios, automatización sanitaria, automatización en sanidad, automatización de clínicas, automatizar clínica, automatización clínica, automatización hospitalaria, automatización hospitales, automatización de procesos hospitalarios, automatización de procesos clínicos, rpa sanidad, rpa salud, rpa hospitales, automatizar citas clínica, automatización citas médicas, automatización consulta médica, ia gestión hospitalaria, ia gestión clínica, ia administrativa sanidad, agentes ia clínicas, ia para clínicas privadas, automatización con ia para clínicas | — | Sin volumen |
+
+Lectura: el cruce no se busca. «Automatización de procesos con ia» tiene demanda informativa sin sector; con salud, ninguna variante pasa de 10/mes y «automatizar» con términos de salud no tiene ninguna sugerencia en Labs. Sirve como mensaje para LinkedIn o la página /software-sanitario, no como keyword. Si se escribe el artículo de «automatización de procesos con ia», la salud puede ir como ejemplo dentro, no como enfoque.
+
 ## En investigación: páginas por sector
 
 Origen: decisión del 2026-11-15 de crear páginas de salud, educación e industria como páginas de conversión para quien llega desde LinkedIn (`decisiones.md`). No se espera tráfico de Google: la keyword principal sirve para cumplir la regla de una keyword por URL y para que la página se entienda. Rubén aprobó las tres propuestas el 2026-11-15; están en «Keywords elegidas».
