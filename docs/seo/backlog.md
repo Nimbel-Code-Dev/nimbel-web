@@ -61,7 +61,7 @@ Las tareas hechas indican el commit donde se aplicaron.
 - [ ] Comprobar que OAI-SearchBot, Claude-SearchBot, PerplexityBot y Bingbot reciben 200 (`curl -A "OAI-SearchBot/1.0" -I https://www.nimbel.net/`) y que el firewall de Vercel no bloquea bots de IA
 - [x] Remotion: licencia gratuita confirmada por Rubén — 2026-11-10 (`decisiones.md`, 2026-11-07)
 - [ ] llms.txt: entra en el plan de Sol y Maribel (R6), con un enlace discreto en el pie y las mismas respuestas que ya da la web. Tiene que responder 200 (`decisiones.md`, 2026-11-11)
-- [ ] og-image: quitar "SOFTWARE A MEDIDA PARA SALUD" (contradice la web generalista); avisar a la diseñadora
+- [x] og-image: quitar "SOFTWARE A MEDIDA PARA SALUD" (contradice la web generalista) — hecho 2026-11-16 por Maribel (`decisiones.md`)
 
 ## Medición
 - [ ] Activar el informe Generative AI de Search Console y exportarlo cada mes

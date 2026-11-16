@@ -2,6 +2,10 @@
 
 Registro cronológico, la más reciente arriba. Formato: `### AAAA-MM-DD — título`, qué se decidió y por qué.
 
+### 2026-11-16 — og-image definitiva, sin el tagline de salud
+**Qué**: `public/og-image.png` se sustituye por `public/og-image.jpg` (1200x630): logo de Nimbel Code sobre el fondo de la marca, sin texto. Sale de la página «Portadas redes» del Figma Plantillas RRSS. `Layout.astro` apunta a la nueva ruta en `og:image` y `twitter:image`. Sustituye a la og-image provisional del 2026-10-24.
+**Por qué**: "SOFTWARE A MEDIDA PARA SALUD" contradecía la web generalista y la ficha de Nimbel (salud no es el único foco). Va en JPG porque el fondo es un degradado: pesa unos 90 KB frente a más de 600 KB en PNG, y algunas redes y WhatsApp no muestran la vista previa si la imagen pesa demasiado. El cambio de URL también obliga a LinkedIn y al resto a no usar la imagen antigua que tengan en caché. Tarea M1 del plan de la web; diseño de Maribel.
+
 ### 2026-11-15 — Se quita Vercel Web Analytics
 **Qué**: se quita `webAnalytics: { enabled: true }` del adaptador de Vercel en `astro.config.mjs`. La web deja de cargar `/_vercel/insights/script.js`. La única analítica es Umami.
 **Por qué**: estaba activo sin que la política de privacidad lo mencionara, y con Umami se medían las mismas visitas dos veces. Decisión de Rubén.
