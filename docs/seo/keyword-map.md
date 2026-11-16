@@ -142,7 +142,7 @@ Fuente: DataForSEO, Keywords Data API (Google Ads), España/español, media de 1
 | implementación de ia en empresas, automatización de procesos ia, automatizacion de procesos con inteligencia artificial, automatización inteligente de procesos | 10 c/u | — | — | Residual |
 | consultoría de procesos de ia, consultoria de procesos ia, consultoría ia para empresas, consultoría ia generativa, implementar ia en empresas, implementar inteligencia artificial en empresas, implementacion inteligencia artificial empresas, integrar ia en mi empresa, como implementar ia en mi empresa, ia en procesos de negocio, desarrollo de soluciones de inteligencia artificial, formación ia empresas | — | — | — | Sin volumen |
 
-Lectura: la frase "consultoría de procesos de IA" y el vocabulario de "implementar/integrar IA" no se buscan. La demanda comercial está en "consultoría ia" (poca dificultad y competidores pequeños en la SERP) y la informativa, en "automatización de procesos con ia" (al alza). No hay demanda que cruce IA y salud.
+Lectura: la frase "consultoría de procesos de IA" y el vocabulario de "implementar/integrar IA" no se buscan. La demanda comercial está en "consultoría ia" (poca dificultad y competidores pequeños en la SERP) y la informativa, en "automatización de procesos con ia" (al alza). No hay demanda que cruce IA y salud (matizado el 2026-11-16: la hay, pero informativa; ver «En investigación: IA en salud»).
 
 ## En investigación: vibe coding y apps hechas con IA
 
@@ -216,6 +216,29 @@ Fuente: DataForSEO, Keywords Data API (Google Ads), España/español, media de 1
 | empresa mantenimiento software, cambiar de proveedor de software, empresa desarrollo software barcelona | — | — | — | Sin volumen (la última tenía 90/mes en Semrush; DataForSEO no da dato) |
 
 Lectura: no hay demanda en Google para una página de sector salud como captación SEO (la página se hace igualmente como página de conversión: ver «En investigación: páginas por sector» y `decisiones.md`, 2026-11-15). «Desarrollo de aplicaciones web/móviles» tiene volumen, pero la intención es formativa. SaaS, mantenimiento y formación online no justifican página propia. La demanda con intención de compra ya está repartida entre la home, /desarrollo-de-apps, /cuanto-cuesta-crear-una-app y la comparativa: la prioridad es subir esas páginas, no crear otras.
+
+## En investigación: IA en salud
+
+Origen: en el análisis de consultoría de IA (2026-11-12) solo se consultó «inteligencia artificial en sanidad» (20/mes), y de ahí salió «No hay demanda que cruce IA y salud». Rubén pidió mirar el cruce a fondo el 2026-11-16.
+
+Fuente: DataForSEO, Keywords Data API (Google Ads), España/español, media de 12 meses (nov 2025–oct 2026), consultado 2026-11-16. KD y sugerencias: DataForSEO Labs (no comparable con Semrush). «—» = sin dato. Coste: ~0,35 $ (4 de volumen en modo live, 2 de sugerencias de Labs, 1 de KD y 3 de SERP). La respuesta resumida del MCP solo devuelve 10 keywords por llamada: hay que pedir el volumen en tandas de 10.
+
+| Keyword | Vol/mes | KD | CPC | Estado |
+|---|---|---|---|---|
+| ia medica | 880 (1.000 en oct 2026; +83 % en un año) | 0 | 2,19 $ | Informativa y de herramientas (SERP 2026-11-16: Mapfre Salud, IBM y blogs explicativos, mezclados con productos de IA para médicos y clínicas —DriCloud, Noa, Dorascribe— y una app de Google Play). Quien busca quiere usar o entender una IA, no encargar un desarrollo |
+| ia para medicos | 260 | n/d | 3,07 $ | Informativa (SERP 2026-11-16: PDF del Colegio de Médicos de Madrid, listados de herramientas, un vídeo para pacientes y blogs como KeepCoding). Busca el médico que quiere usar herramientas |
+| inteligencia artificial en medicina | 260 | 19 | 3,4 $ | Informativa y académica (SERP 2026-11-16: ScienceDirect, Campus Health Tech, Campus Sanofi, Comisión Europea, Founderz, El Mundo, Dialnet) |
+| ia en medicina | 210 | 19 | 3,65 $ | Misma intención que la anterior. Baja en verano (40–50) y sube en primavera (320) |
+| inteligencia artificial en salud / inteligencia artificial en la salud | 110 | 0 | 14,57 $ | Sin SERP revisada. El CPC alto apunta a anunciantes (formación o productos) |
+| vera ia medica | 70 (260 en sep 2026) | — | 4,68 $ | Navegacional (una herramienta concreta) |
+| inteligencia artificial medica | 70 | n/d | 3,01 $ | Secundaria de «ia medica» |
+| ia en salud, ia en sanidad, ia diagnostico medico, inteligencia artificial para medicos, ia medica gratuita (210 en oct 2026) | 50 c/u | 0 / n/d | 2,5–4,7 $ | Residuales. «ia medica gratuita» crece, pero es de quien busca una herramienta gratis |
+| ia para consulta medica | 30 | — | 4,49 $ | Residual |
+| inteligencia artificial en sanidad, ia en hospitales, ia medica google | 10–20 c/u | — | — | Residual |
+| inteligencia artificial en hospitales, inteligencia artificial diagnostico medico, chatbot salud, chatbot para clinicas, ia en enfermeria, aplicaciones de la inteligencia artificial en medicina, ia generativa para medicos, ia para informes medicos, curso(s) de ia para medicos | 10 c/u | — | — | Residual |
+| ia para clinicas, inteligencia artificial para clinicas, chatbot sanitario, agentes de ia en salud, ia y proteccion de datos sanitarios, ia historia clinica, ia para fisioterapeutas, ia para psicologos, ia para dentistas, ia para clinicas dentales, ia en farmacia, ia generativa en salud, software ia salud, desarrollo ia salud, ia sanitaria, transcripcion medica ia, ia consulta medica, ia radiologia, ia en atencion primaria, ley ia sanidad, ai act salud | — | — | — | Sin volumen |
+
+Lectura: sí hay demanda que cruza IA y salud (unas 1.500 búsquedas al mes entre las cinco primeras, al alza), pero toda es informativa o de quien busca una herramienta para usarla. Ninguna keyword tiene intención de encargar un desarrollo («desarrollo ia salud» y «software ia salud» no tienen volumen), así que no justifica una página de servicio. Lo único con potencial es un artículo de entrada sobre «ia medica» (KD 0, 880/mes) desde el punto de vista de quien decide en un centro sanitario: qué se usa ya, qué hace falta para integrarlo con sus sistemas y sus datos, con el caso FAMBA. Compite con medios y laboratorios (Mapfre, Sanofi, IBM) y con fabricantes de software para clínicas. No se ha decidido nada.
 
 ## En investigación: páginas por sector
 
