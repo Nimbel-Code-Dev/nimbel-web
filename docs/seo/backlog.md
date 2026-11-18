@@ -2,18 +2,20 @@
 
 Las tareas hechas indican el commit donde se aplicaron.
 
+> **Desde el 2026-11-18, lo pendiente se sigue en la [guía de gestión comercial](https://github.com/Nimbel-Code-Dev/nimbel-kb/blob/main/ventas/guia-gestion-comercial-paso-a-paso.md#paso-4-perfil-web-y-escaparates) de la base** (paso 4, T4.7 a T4.21, y su «Backlog de la web y SEO»). Aquí queda el historial de lo hecho con su commit; las líneas con ➡️ dicen en qué tarea de la guía está cada una (`decisiones.md`, 2026-11-18).
+
 ## Alta
-- [ ] Plan del 12 al 25 de noviembre: tareas delegadas a Sol y Maribel (directorios, medición, rediseño y páginas por ciudad), en la base: `marketing/estrategia/2026-11-plan-web-sol-y-maribel.md`. Sol y Maribel trabajan en ramas con PR; Rubén revisa y fusiona
-- [ ] Aplicar la ficha única (`empresa/ficha-nimbel.md` en la base) en todos los canales:
+- ➡️ **En la guía (paso 4):** Plan del 12 al 25 de noviembre: tareas delegadas a Sol y Maribel (directorios, medición, rediseño y páginas por ciudad), en la base: `marketing/estrategia/2026-11-plan-web-sol-y-maribel.md`. Sol y Maribel trabajan en ramas con PR; Rubén revisa y fusiona
+- Aplicar la ficha única (`empresa/ficha-nimbel.md` en la base) en todos los canales:
   - [x] Web (Rubén con Claude, 2026-11-12): banner de cifras quitado; tarjeta de LinkedIn de Contacto cambiada por una de redes; "Tu software es tuyo" pasa a "El código queda en tu poder"; FAQ de "Sobre Nimbel Code" con la ficha y en desplegable; schema con la descripción de la ficha, el equipo en Barcelona, Sevilla y Córdoba y areaServed ES y AR — hecho 2026-11-12 (`decisiones.md`). La og-image va en el plan de Maribel
   - [x] Instagram @nimbelcode.tech (Rubén con Claude, 2026-11-15): nombre «Nimbel Code | Apps y software a medida», bio de la persona 3 con FAMBA y la UB, y 4 enlaces con título (/desarrollo-de-apps/, Calendly, /casos/famba/ y /casos/newsup/) con `utm_source=instagram&utm_medium=bio`. El antes y el después están en la base: `marketing/redes/metricas-instagram-2026-11.md`. Sin commit en este repo
-  - [ ] Imagen de cabecera con la app de Repsol Toyota Rally Team (y un vídeo titulado "Test-video"): se decide en el rediseño (Rubén, 2026-11-12)
+  - ➡️ **En la guía (T4.15, rediseño):** Imagen de cabecera con la app de Repsol Toyota Rally Team (y un vídeo titulado "Test-video"): se decide en el rediseño (Rubén, 2026-11-12)
   - [x] Directorios con los textos y datos de la ficha: Clutch, GoodFirms, Sortlist y TechBehemoths (Sol con Claude) — hecho 2026-11-17. Los cuatro con la descripción de la ficha en inglés (en TechBehemoths, redacción propia con los mismos datos, porque penaliza las copiadas) y enlace a /desarrollo-de-apps/ en la descripción; sin «20 years» referido a la empresa, «Founded in Barcelona» ni «you fully own / you own the code». Servicios 50/25/15/10 (software, apps, IA, web) en Clutch, GoodFirms y TechBehemoths; Sortlist no usa porcentajes. Ubicaciones: Clutch, Sortlist y TechBehemoths solo Athlone (Clutch pide calle para las adicionales; TechBehemoths FREE solo admite una); GoodFirms ya tenía Barcelona, Sevilla y Córdoba como adicionales. Tarifa: TechBehemoths no tiene el tramo $25–49 y se queda en $30–70. Sol es admin en Sortlist; GoodFirms se editó con la cuenta de Rubén. Sin commit de código
-  - [ ] Página de empresa de LinkedIn con la descripción de la ficha (Sol). Los perfiles personales los cambia cada persona
-  - [ ] Ficha de marca de GEO Metrics: quitar "salud", "Latinoamérica" y "propiedad intelectual" y, con todo cambiado, pedir recomendaciones nuevas (Sol)
-- [ ] Comparativa de empresas en /blog/empresas-desarrolladoras-de-apps-espana (Sol, después de aplicar la ficha; condiciones en `decisiones.md`, 2026-11-11)
-- [ ] Páginas por sector: salud, educación e industria, a la vez y dentro del rediseño (`decisiones.md`, 2026-11-15). Keywords aprobadas el 2026-11-15: /software-sanitario, /software-centros-educativos y /digitalizacion-industrial (`keyword-map.md`). Antes de publicar industria: Rubén decide si la ficha incluye industria
-- [ ] Páginas por ciudad: /desarrollo-de-apps-madrid, /desarrollo-de-apps-valencia y /desarrollo-de-apps-sevilla, dentro del rediseño (`decisiones.md`, 2026-11-11; datos en `keyword-map.md`)
+  - ➡️ **En la guía (T4.2):** Página de empresa de LinkedIn con la descripción de la ficha (Sol). Los perfiles personales los cambia cada persona
+  - ➡️ **En la guía (backlog de la guía, S8 en pausa):** Ficha de marca de GEO Metrics: quitar "salud", "Latinoamérica" y "propiedad intelectual" y, con todo cambiado, pedir recomendaciones nuevas (Sol)
+- ➡️ **En la guía (T4.19):** Comparativa de empresas en /blog/empresas-desarrolladoras-de-apps-espana (Sol, después de aplicar la ficha; condiciones en `decisiones.md`, 2026-11-11)
+- ➡️ **En la guía (T4.17 textos, T4.15 y T4.16 diseño y código):** Páginas por sector: salud, educación e industria, a la vez y dentro del rediseño (`decisiones.md`, 2026-11-15). Keywords aprobadas el 2026-11-15: /software-sanitario, /software-centros-educativos y /digitalizacion-industrial (`keyword-map.md`). Antes de publicar industria: Rubén decide si la ficha incluye industria
+- ➡️ **En la guía (backlog de la guía, R5):** Páginas por ciudad: /desarrollo-de-apps-madrid, /desarrollo-de-apps-valencia y /desarrollo-de-apps-sevilla, dentro del rediseño (`decisiones.md`, 2026-11-11; datos en `keyword-map.md`)
 - [x] Home: title, H1, subtítulo, H2 y meta description — hecho 2026-10-28
 - [x] Ampliar home a ~1.200–1.500 palabras con el texto de `contenido-home.md`, montado con los bloques visuales actuales — hecho (801b393). La diseñadora lo rediseñará; la sección de Barcelona se quitó
 - [x] Home: responder cuándo conviene software a medida frente a uno estándar (SaaS) — hecho (9764dfb)
@@ -23,10 +25,10 @@ Las tareas hechas indican el commit donde se aplicaron.
 - [x] /en: title, meta, H2 de Servicios y testimonio de Jose Muñoz, iguales que en español; tilde de PAÍSES — hecho 2026-11-02
 - [x] Privacidad: voseo corregido, sin mención a formulario, proveedores listados (Vercel, Google Fonts, Calendly, GeoMetrics) — hecho 2026-11-03. HubSpot quitado de la web — hecho 2026-11-03 (`decisiones.md`, "Se quita HubSpot"). Pendiente: revisión por un abogado; valorar alojar las fuentes en local
 - [x] Caso FAMBA en inglés en /en/cases/famba/, con sus enlaces en inglés (footer, carrusel, FAQ de salud y /desarrollo-de-apps) — hecho 2026-11-02, sin keyword principal (las páginas de caso no llevan)
-- [ ] /desarrollo-de-apps en inglés (/en/app-development/ propuesto, keyword propuesta "app development company barcelona"): el texto ya está en `en.ts`; falta validar la keyword con DataForSEO (España, en inglés). Al crearla, activar el enlace de la situación del fundador y los hreflang en las dos direcciones
+- ➡️ **En la guía (backlog de la guía):** /desarrollo-de-apps en inglés (/en/app-development/ propuesto, keyword propuesta "app development company barcelona"): el texto ya está en `en.ts`; falta validar la keyword con DataForSEO (España, en inglés). Al crearla, activar el enlace de la situación del fundador y los hreflang en las dos direcciones
 - [x] Publicar /desarrollo-de-apps (borrador aprobado en `docs/seo/borradores/desarrollo-de-apps.md`), con enlace desde la situación del fundador en la home — hecho (9945b02)
-- [ ] Página nueva /cuanto-cuesta-crear-una-app (valorar incluir, con contexto: la mayoría de clientes empezó con una primera fase de ~10.000 € y hoy invierte ≥100.000 €/año). Cifras en HTML, respuesta en las primeras líneas y bloque corto de dudas sin repetir la FAQ de "Sobre Nimbel Code" (`decisiones.md`, 2026-11-03). Es donde se publican las tarifas (`decisiones.md`, 2026-11-18)
-- [ ] Listados "Top empresas…" (ver `decisiones.md`, 2026-11-03, "Listados Top empresas"). Por orden:
+- ➡️ **En la guía (T6.2):** Página nueva /cuanto-cuesta-crear-una-app (valorar incluir, con contexto: la mayoría de clientes empezó con una primera fase de ~10.000 € y hoy invierte ≥100.000 €/año). Cifras en HTML, respuesta en las primeras líneas y bloque corto de dudas sin repetir la FAQ de "Sobre Nimbel Code" (`decisiones.md`, 2026-11-03). Es donde se publican las tarifas (`decisiones.md`, 2026-11-18)
+- [x] Listados "Top empresas…" (ver `decisiones.md`, 2026-11-03, "Listados Top empresas"). Por orden: — hecho 2026-11-17, con el último paso (StartUB) el 2026-11-16
   - [x] Directorios (Clutch, GoodFirms, Sortlist, TechBehemoths): sede Athlone y, como ubicaciones adicionales, las ciudades donde hay equipo de verdad (Barcelona/Ripollet, Sevilla, Córdoba-Argentina). Misma descripción y servicios en todos — hecho 2026-11-17. Las tarifas no se igualan en los directorios: el precio se explica en /cuanto-cuesta-crear-una-app (`decisiones.md`, 2026-11-18)
   - [x] TechBehemoths: perfil enviado — hecho 2026-11-03 (plan FREE). Descripción propia en inglés (no copiada), sede Athlone, servicios (software a medida 40 %, apps 30 %, web 15 %, IA 15 %), sectores (salud, medios, finanzas, educación) y portfolio con FAMBA, NewsUp, Analysta e Innocard
   - [x] TechBehemoths: importación de reseñas de Google solicitada — 2026-11-03 (3 de las 4, límite del plan FREE; las verifica su equipo antes de publicarlas). Clutch no tiene reseñas que importar
@@ -35,7 +37,7 @@ Las tareas hechas indican el commit donde se aplicaron.
   - [x] TechBehemoths: "Suggest a company" enviado en el Top de software a medida en Barcelona (https://techbehemoths.com/top-companies/custom-software-development/barcelona) — hecho 2026-11-11, por Rubén y diciendo que es el fundador
   - [x] TechBehemoths: ¿aparece Nimbel en ese Top? — resuelto 2026-11-12: TechBehemoths avisó por email de que no entramos en el top 10 y ofreció un puesto de pago. No se paga por ahora (`decisiones.md`, 2026-11-13). El perfil verificado y el enlace del pie se mantienen
   - [x] Sortlist: perfil publicado (antes no lo estaba, al 39 %) — hecho 2026-11-03: descripción y tagline en inglés (el resto de idiomas los traduce Sortlist con IA), 6 personas, fundada en 2020, CRO 788569 (Irlanda), idiomas ES/EN/CA, oficina Athlone (se quitó C/ Ramon Turró, ya no existe), trabajo en remoto activado. Otras oficinas: no se ponen, solo Athlone; las ciudades con equipo van en la descripción — decidido 2026-11-11 (`decisiones.md`)
-  - [ ] StartUB (Universitat de Barcelona): añadir en el pie de su web, junto al copyright, el crédito «Web desenvolupada per Nimbel Code» con enlace a https://www.nimbel.net/, sin nofollow. Autorizado por escrito por el director de StartUB! Lab el 2026-10-26 (registrado en la base, `proyectos/startub/README.md`). Es una mención de un tercero con autoridad (guía GEO 6.9.4)
+  - [x] StartUB (Universitat de Barcelona): añadir en el pie de su web, junto al copyright, el crédito «Web desenvolupada per Nimbel Code» con enlace a https://www.nimbel.net/, sin nofollow. Autorizado por escrito por el director de StartUB! Lab el 2026-10-26 (registrado en la base, `proyectos/startub/README.md`). Es una mención de un tercero con autoridad (guía GEO 6.9.4) — hecho 2026-11-16: el crédito está en el pie de startub.ub.edu, enlaza a https://www.nimbel.net sin `nofollow` (plan de la web en la base)
   - [x] DesignRush: descartado de momento — decidido 2026-11-11 (`decisiones.md`)
   - Reseñas: no se hace campaña de reseñas (decisión de Rubén, 2026-11-03). Se piden solo en momentos naturales (fin de fase o de proyecto)
 
@@ -43,12 +45,12 @@ Las tareas hechas indican el commit donde se aplicaron.
 - [x] Home: sección "Colaboradores" con el enlace a Roger Guerrero Plana, en ES y EN — hecho 2026-11-06 (`decisiones.md`)
 - [x] Home: añadir la foto de Roger Guerrero Plana a "Colaboradores" (cuadrada, 800×800 px, JPG). La saca Rubén de su perfil de LinkedIn, con permiso de Roger (2026-11-11) — hecho 2026-11-12 (`src/assets/people/Roger.jpg`)
 - [x] "Sobre Nimbel Code" y schema Organization: indicar dónde está el equipo (Athlone, Barcelona, Sevilla, Córdoba-Argentina) como dato, sin páginas por ciudad — hecho 2026-11-12 (FAQ "¿Dónde está?" y `location` del schema)
-- [ ] Página de autor por cada autor del blog (schema `Person`, sameAs LinkedIn, enlazada a la Organization). Ya hechas, 2026-11-10: fichas en `src/content/autores/`, firma visible y `Person` en el schema del artículo; falta la página propia de cada autor
-- [ ] Prompt Universe: completar los 10 problemas del cliente × 3 prompts (`keyword-map.md`) y dar de alta en GEO Metrics los prompts propuestos
+- ➡️ **En la guía (backlog de la guía):** Página de autor por cada autor del blog (schema `Person`, sameAs LinkedIn, enlazada a la Organization). Ya hechas, 2026-11-10: fichas en `src/content/autores/`, firma visible y `Person` en el schema del artículo; falta la página propia de cada autor
+- ➡️ **En la guía (T4.20):** Prompt Universe: completar los 10 problemas del cliente × 3 prompts (`keyword-map.md`) y dar de alta en GEO Metrics los prompts propuestos
 
 ## Media
-- [ ] Artículo /externalizar-desarrollo-software, firmado por Rubén, con tabla comparativa (equipo interno / freelance / empresa externa) y bloque corto de dudas
-- [ ] /en orientada a "custom software development barcelona" (en el title desde 2026-11-02; falta trabajarla en H1 y texto)
+- ➡️ **En la guía (backlog de la guía):** Artículo /externalizar-desarrollo-software, firmado por Rubén, con tabla comparativa (equipo interno / freelance / empresa externa) y bloque corto de dudas
+- ➡️ **En la guía (backlog de la guía):** /en orientada a "custom software development barcelona" (en el title desde 2026-11-02; falta trabajarla en H1 y texto)
 - [x] Schema Organization: legalName "NIMBEL CODE LIMITED", identifier CRO 788569, sameAs (LinkedIn, Instagram, TikTok, GitHub, Crunchbase, Clutch, GoodFirms) y pie legal — hecho (9e58e1a, 2c8179d, 10b7817)
 - [x] Página de caso: FAMBA — hecho (e3fab13)
 - [x] Páginas de casos: NewsUp en /casos/newsup/ y /en/cases/newsup/ — hecho 2026-11-13 y revisado por Gerard Gil el mismo día. El «de X a Y» de FAMBA y NewsUp lo escribe Rubén y lo aprueba cada cliente antes de publicarlo. Incluir cifras propias siempre que se puedan publicar. Analysta e Innocard no tendrán página de caso: son antiguos clientes sin relación actual (decisión de Rubén, 2026-11-11)
@@ -59,18 +61,18 @@ Las tareas hechas indican el commit donde se aplicaron.
 - [x] Search Console: inspeccionar /desarrollo-de-apps y solicitar indexación (el sitemap no hace falta reenviarlo) — hecho 2026-11-02
 - [x] alt en todas las imágenes — hecho (935de85)
 - [x] Redirección permanente de nimbel.net a [www.nimbel.net](https://www.nimbel.net) — hecho, configurada en Vercel fuera del repo (responde 308, equivalente a 301)
-- [ ] Comprobar que OAI-SearchBot, Claude-SearchBot, PerplexityBot y Bingbot reciben 200 (`curl -A "OAI-SearchBot/1.0" -I https://www.nimbel.net/`) y que el firewall de Vercel no bloquea bots de IA
+- [x] Comprobar que OAI-SearchBot, Claude-SearchBot, PerplexityBot y Bingbot reciben 200 (`curl -A "OAI-SearchBot/1.0" -I https://www.nimbel.net/`) y que el firewall de Vercel no bloquea bots de IA — hecho 2026-11-12: las páginas principales, `robots.txt` y el sitemap dan 200 con los cuatro. Se probó cambiando el user agent, así que un bloqueo por IP en Vercel no se vería (plan de la web en la base)
 - [x] Remotion: licencia gratuita confirmada por Rubén — 2026-11-10 (`decisiones.md`, 2026-11-07)
-- [ ] llms.txt: entra en el plan de Sol y Maribel (R6), con un enlace discreto en el pie y las mismas respuestas que ya da la web. Tiene que responder 200 (`decisiones.md`, 2026-11-11)
+- ➡️ **En la guía (T4.5):** llms.txt: entra en el plan de Sol y Maribel (R6), con un enlace discreto en el pie y las mismas respuestas que ya da la web. Tiene que responder 200 (`decisiones.md`, 2026-11-11)
 - [x] og-image: quitar "SOFTWARE A MEDIDA PARA SALUD" (contradice la web generalista) — hecho 2026-11-16 por Maribel (`decisiones.md`)
 
 ## Medición
-- [ ] Activar el informe Generative AI de Search Console y exportarlo cada mes
-- [ ] Bing Webmaster Tools (ya importado desde Search Console en oct 2026): revisar el informe AI Performance (Citation Share, Intents) y que el sitemap esté enviado
+- ➡️ **En la guía (T4.21):** Activar el informe Generative AI de Search Console y exportarlo cada mes
+- ➡️ **En la guía (T4.11):** Bing Webmaster Tools (ya importado desde Search Console en oct 2026): revisar el informe AI Performance (Citation Share, Intents) y que el sitemap esté enviado
 - [x] Visitas desde asistentes de IA — decidido 2026-11-03: no se instala GA4 (la web no lo tiene; exigiría banner de cookies y cambiar la política, con HubSpot aún sin resolver). Las visitas que llegan desde ChatGPT, Perplexity, Claude, etc. ya las mide el script de GEO Metrics (verificado, activo). Línea base: 0 visitas desde IA en 30 días. Opcional: Vercel Web Analytics (sin cookies) para ver el origen de todas las visitas
 - [x] Analítica de visitas y UTM — hecho 2026-11-15: Umami Cloud sin cookies en `Layout.astro`, evento `reserva` al reservar en Calendly y política de privacidad actualizada (`decisiones.md`, 2026-11-15)
-- [ ] Enlaces de LinkedIn a las páginas de sector con UTM, cuando las páginas existan. Convención en `decisiones.md` (2026-11-15): `utm_source=linkedin`, `utm_medium=post` o `mensaje`, `utm_campaign=salud`, `educacion` o `industria`, en minúsculas y sin tildes
-- [ ] Atribución de leads: Calendly gratis no permite preguntas propias. Preguntar al inicio de cada primera llamada "¿Cómo nos encontraste? Si fue con una IA, ¿qué le preguntaste?" y apuntarlo en el CRM (campo "Origen")
+- ➡️ **En la guía (T4.18):** Enlaces de LinkedIn a las páginas de sector con UTM, cuando las páginas existan. Convención en `decisiones.md` (2026-11-15): `utm_source=linkedin`, `utm_medium=post` o `mensaje`, `utm_campaign=salud`, `educacion` o `industria`, en minúsculas y sin tildes
+- ➡️ **En la guía (T9.2, S5):** Atribución de leads: Calendly gratis no permite preguntas propias. Preguntar al inicio de cada primera llamada "¿Cómo nos encontraste? Si fue con una IA, ¿qué le preguntaste?" y apuntarlo en el CRM (campo "Origen")
 
 ## Investigación
 Prioridad alta (siguiente sesión con Semrush):
@@ -85,9 +87,9 @@ Resto:
 Línea base de citas en IA (2026-11-03): Bing AI Performance (Copilot y partners), 25 citas en 30 días (datos desde el 27-10), todas a la home, sin consultas visibles (probablemente de marca). Comparar en cada hito: más citas, más páginas citadas y citas a /desarrollo-de-apps o a los casos.
 
 Hitos de Search Console (sin filtro de país, 3 meses, pestaña Páginas; cuentan las impresiones en posiciones 40–90). Si un hito no se cumple, se actúa en esa fecha, no se espera al siguiente:
-- [ ] ~2026-11-17: home y /desarrollo-de-apps indexadas y con impresiones en alguna búsqueda que no sea de marca. Si no: revisar indexación y técnica
-- [ ] ~2026-12-01: impresiones en keywords objetivo (desarrollo de software a medida, empresa de desarrollo de apps…) y más búsquedas distintas cada semana. Si no: el contenido no basta, revisar enfoque
-- [ ] 2026-12-20: alguna keyword objetivo en el top 30; comparar / frente a /desarrollo-de-apps y decidir el foco de la home. Revisar también, por separado, las citas en IA (GEO Metrics, GSC Generative AI, Bing). Si no hay top 30: priorizar la autoridad externa (listados, directorios, reseñas, menciones)
-- [ ] Decidir cómo apoyar "empresa desarrollo software barcelona" en la home, ahora que solo está en el title
-- [ ] Confirmar en la SERP (google.es, gl=es, incógnito) la intención de "programa para clínica" y de las keywords elegidas
+- [x] ~2026-11-17: home y /desarrollo-de-apps indexadas y con impresiones en alguna búsqueda que no sea de marca. Si no: revisar indexación y técnica — cumplido 2026-11-15: las dos indexadas; /desarrollo-de-apps con ~300 impresiones sin marca en posición 40–53 (plan de la web en la base, S3)
+- ➡️ **En la guía (T4.10):** ~2026-12-01: impresiones en keywords objetivo (desarrollo de software a medida, empresa de desarrollo de apps…) y más búsquedas distintas cada semana. Si no: el contenido no basta, revisar enfoque
+- ➡️ **En la guía (T4.11):** 2026-12-20: alguna keyword objetivo en el top 30; comparar / frente a /desarrollo-de-apps y decidir el foco de la home. Revisar también, por separado, las citas en IA (GEO Metrics, GSC Generative AI, Bing). Si no hay top 30: priorizar la autoridad externa (listados, directorios, reseñas, menciones)
+- ➡️ **En la guía (T4.8):** Decidir cómo apoyar "empresa desarrollo software barcelona" en la home, ahora que solo está en el title
+- ➡️ **En la guía (backlog de la guía):** Confirmar en la SERP (google.es, gl=es, incógnito) la intención de "programa para clínica" y de las keywords elegidas
 - [x] Decidir si "empresa desarrollo software barcelona" va en la home o en página local — hecho 2026-10-28: va en la home

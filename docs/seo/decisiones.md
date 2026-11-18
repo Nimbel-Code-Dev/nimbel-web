@@ -2,6 +2,10 @@
 
 Registro cronológico, la más reciente arriba. Formato: `### AAAA-MM-DD — título`, qué se decidió y por qué.
 
+### 2026-11-18 — Las tareas pendientes de la web y del SEO se siguen en la guía comercial
+**Qué**: lo pendiente de `backlog.md` y del plan de la web de Sol y Maribel pasa a la [guía de gestión comercial](https://github.com/Nimbel-Code-Dev/nimbel-kb/blob/main/ventas/guia-gestion-comercial-paso-a-paso.md#paso-4-perfil-web-y-escaparates) de la base, en el paso 4 (T4.7 a T4.21) y en su «Backlog de la web y SEO» para lo que va después del 4/12. `backlog.md` se queda con el historial de lo hecho y apunta a la tarea de la guía de cada pendiente. Este registro, `keyword-map.md` y `contenido-home.md` no cambian.
+**Por qué**: había tres sitios con tareas de la web (este backlog, el plan de la web y la guía), con la misma tarea repetida y estados distintos. Con una sola tabla se ve la carga de cada persona y qué bloquea a qué. Decisión de Rubén, hablada con Sol.
+
 ### 2026-11-18 — Las tarifas se explican en el artículo de precio, no en los directorios
 **Qué**: los cuatro directorios (Clutch, GoodFirms, Sortlist y TechBehemoths) llevan la misma descripción y los mismos servicios de la ficha, pero la tarifa por hora no se iguala: cada directorio tiene sus propios tramos (Clutch y GoodFirms, $25–49; TechBehemoths no tiene ese tramo y se queda en $30–70). Las tarifas y el precio se explican en el artículo /cuanto-cuesta-crear-una-app. Cierra la tarea de directorios del backlog.
 **Por qué**: los tramos de cada directorio no coinciden entre sí, así que no se puede poner la misma cifra en todos. El artículo de precio da el contexto (primera fase desde 10.000 €, trabajo por fases) que un tramo por hora no da. Decisión de Sol, 2026-11-18.
