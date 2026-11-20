@@ -1,6 +1,6 @@
 # Keyword map — nimbel.net
 
-Última actualización: 2026-11-15 · Fuente: Semrush (base de datos España) + Google Search Console + DataForSEO (desde 2026-11-07)
+Última actualización: 2026-11-20 · Fuente: Semrush (base de datos España) + Google Search Console + DataForSEO (desde 2026-11-07)
 
 > Volúmenes <100 son estimaciones poco fiables: sirven para priorizar, no como cifra real. Desde 2026-11-07 los datos nuevos salen de DataForSEO; los marcados como Semrush son anteriores y Semrush ya no se usa. DataForSEO suele dar menos volumen que Semrush para la misma keyword.
 
@@ -37,6 +37,7 @@
 | externalizar desarrollo de software | criterios para externalizar desarrollo de software, equipo interno vs desarrollo externalizado | /externalizar-desarrollo-software (nueva) | Investigación comercial | ~50 | n/d | Pendiente |
 | custom software development barcelona | — | /en | Comercial | GSC: posición 4 | n/d | En curso: en el title desde 2026-11-02 |
 | base de datos vectorial | pgvector (480), búsqueda semántica (50), que es una base de datos vectorial (40), RAG con PostgreSQL | /blog/base-de-datos-vectorial | Informativa (autoridad y GEO, no captación directa) | 260 (DataForSEO) | 32 (Semrush) | Hecho 2026-11-07 (primer artículo del blog) |
+| sistema legacy | sistemas legacy (140, agrupada), software legacy (40, KD 47), modernización de sistemas legacy (10) | /blog/modernizar-sistema-legacy | Informativa con interés comercial (puja de anuncios 17–24 $) | 140 (DataForSEO) | 0 (DataForSEO) | Hecho 2026-11-20 (artículo de Albert, caso NewsUp) |
 
 ## Prompt Universe (IA)
 Complementa a las keywords: preguntas en lenguaje natural que el cliente hace a una IA antes de contratar. Se miden en GEO Metrics (proyecto "Nimbel Code"). Prioridad: Validación y marca → Comparación → Descubrimiento → informacional (`decisiones.md`, 2026-11-03).
@@ -302,3 +303,21 @@ Ninguna desde el 2026-11-15: las candidatas que había se validaron con DataForS
 | desarrollo de aplicaciones web / desarrollo de aplicaciones móviles | 880 y 110/mes, pero la SERP es de FP (DAW/DAM) y de guías para desarrolladores (DataForSEO, 2026-11-15) |
 | app para médicos, plataforma de salud a medida, app para clínicas a medida, software sanitario a medida… como keyword de captación | 0–10/mes cada una (DataForSEO, 2026-11-15). La página de salud sí se hace, como página de conversión, con otra keyword principal (`decisiones.md`, 2026-11-15) |
 | cuánto cuesta desarrollar un saas, crear una plataforma saas, cómo lanzar una app | Sin volumen (DataForSEO, 2026-11-15) |
+
+## En investigación: modernizar un sistema legacy
+
+Origen: artículo de Albert sobre la migración del editor de NewsUp (borrador en Google Docs, revisado por el cliente). Keyword principal elegida el 2026-11-20: "sistema legacy" (`decisiones.md`).
+
+Fuente: DataForSEO, Keywords Data API (Google Ads), España/español, media de 12 meses (nov 2025–oct 2026), consultado 2026-11-20. KD: DataForSEO Labs (no comparable con Semrush). "—" = sin dato. Coste: ~0,07 $ (1 de volumen, 1 de KD y 2 de SERP).
+
+| Keyword | Vol/mes | KD | Estado |
+|---|---|---|---|
+| sistema legacy / sistemas legacy | 140 (agrupadas; puja 17–24 $) | 0 | Elegida (SERP 2026-11-20: débil; Wikipedia en ruso, páginas en portugués y glosarios antiguos; solo compite redwerk.es, una empresa de desarrollo, con una guía de modernización) |
+| migración de datos | 70 | 0 | Descartada (SERP 2026-11-20: migración de centros de datos y herramientas de datos, otra intención) |
+| código legacy | 70 | 47 | Descartada (público desarrollador) |
+| software legacy | 40 | 47 | Secundaria |
+| aplicaciones legacy | 40 | 46 | Secundaria |
+| migración de base de datos | 30 | n/d | Residual |
+| migración de aplicaciones | 20 | n/d | Residual |
+| qué es un sistema legacy, modernización de sistemas legacy, modernización de aplicaciones, modernización tecnológica, migración de software | 10 c/u | — | Residual |
+| modernizar sistema legacy, migración de sistemas legacy, migrar sistema legacy, modernización de software, modernizar software antiguo, migración de datos sin parar, migración sin downtime | — | — | Sin volumen |
