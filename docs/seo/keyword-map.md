@@ -19,7 +19,7 @@
 ## Keywords elegidas
 | Keyword principal | Variantes / secundarias | URL asignada | Intención | Vol/mes | KD | Estado |
 |---|---|---|---|---|---|---|
-| software a medida | desarrollo de software a medida (140, KD 0; principal hasta el 2026-11-20), desarrollo software a medida (50), desarrollo a medida de software (20) | / | Comercial (CPC 11,8 $; SERP 2026-11-20: artículos de empresas de desarrollo que explican qué es y cuándo conviene, y páginas de servicio) | 260 (DataForSEO 20/11; Semrush 1.300) | 0 (DataForSEO) | Hecho 2026-11-20: title «Software a medida para empresas \| Nimbel Code». H1 y meta sin cambios (ya la contienen) |
+| software a medida | desarrollo de software a medida (140, KD 0; principal hasta el 2026-11-20), desarrollo software a medida (50), desarrollo a medida de software (20) | / | Comercial (CPC 11,8 $; SERP 2026-11-20: artículos de empresas de desarrollo que explican qué es y cuándo conviene, y páginas de servicio) | 260 (DataForSEO 20/11; Semrush 1.300) | 0 (DataForSEO) | Hecho 2026-11-20: title «Software a medida para empresas \| Nimbel Code». H1 sin cambios (ya la contiene); la meta pierde el «Barcelona.» final |
 | software a medida para empresas | — | / | Comercial (CPC 19,86 $) | 30 (DataForSEO 20/11; Semrush 210) | n/d | Hecho 2026-10-28; en el title desde 2026-11-20 |
 | empresas de desarrollo de software a medida | — | / + reseñas | Comercial | 10 (DataForSEO 20/11; Semrush 110) | n/d | Pendiente |
 | empresa desarrollo software barcelona | — | / | Comercial local | — (DataForSEO 15/11; Semrush 90) | n/d | Descartada 2026-11-20: sale del title de la home, que deja de localizarse en Barcelona (`decisiones.md`) |

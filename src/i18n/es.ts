@@ -2,7 +2,7 @@ export const es = {
   meta: {
     title: "Software a medida para empresas | Nimbel Code",
     description:
-      "Desarrollamos software a medida para empresas: aplicaciones web, móvil e IA integrada. Tú te centras en tu negocio; nosotros en la tecnología. Barcelona.",
+      "Desarrollamos software a medida para empresas: aplicaciones web, móvil e IA integrada. Tú te centras en tu negocio; nosotros en la tecnología.",
   },
   navbar: {
     about: "Sobre nosotros",
