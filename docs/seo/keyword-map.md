@@ -19,25 +19,39 @@
 ## Keywords elegidas
 | Keyword principal | Variantes / secundarias | URL asignada | Intención | Vol/mes | KD | Estado |
 |---|---|---|---|---|---|---|
-| desarrollo de software a medida | software a medida (1.300), desarrollo software a medida (480), desarrollo a medida de software (390) | / | Comercial | 1.000 | 8 | Hecho 2026-10-28 |
-| software a medida para empresas | — | / | Comercial | 210 | 5 | Hecho 2026-10-28 |
-| empresas de desarrollo de software a medida | — | / + reseñas | Comercial | 110 | 29 | Pendiente |
-| empresa desarrollo software barcelona | — | / | Comercial local | 90 | 14 | En curso: solo en el title |
-| empresa de desarrollo de apps | empresa desarrollo apps (390, KD 32), empresas de desarrollo de apps (260, KD 20), empresa desarrollo de apps (210, KD 26), empresa desarrollo app (140, KD 11), empresas desarrollo apps (140, KD 25), empresa de desarrollo app (70, KD 13) | /desarrollo-de-apps | Comercial (CPC 10–18 $) | 260 | 16 | Hecho 2026-11-01 |
-| desarrollo de apps para empresas | desarrollo de app para empresa (70, KD 8), desarrollo saas a medida (30) | /desarrollo-de-apps | Comercial | 110 | 8 | Hecho 2026-11-01 |
-| desarrollo de apps barcelona | — | /desarrollo-de-apps | Comercial local | 210 | 5 | Hecho 2026-11-01 |
-| empresas desarrolladoras de apps en España | empresas de desarrollo de software en españa (20, DataForSEO), mejores empresas de desarrollo de software en españa (10, DataForSEO) | /blog/empresas-desarrolladoras-de-apps-espana (nueva, comparativa) | Investigación comercial (la SERP son listados "Top empresas…") | 320 | 27 | Validada — pendiente de crear (Sol, después de aplicar la ficha) |
+| desarrollo de software a medida | software a medida (260, KD 0), desarrollo software a medida (50), desarrollo a medida de software (20) | / | Comercial (CPC 13,69 $) | 140 (DataForSEO 20/11; Semrush 1.000) | 0 (DataForSEO) | Hecho 2026-10-28 |
+| software a medida para empresas | — | / | Comercial (CPC 19,86 $) | 30 (DataForSEO 20/11; Semrush 210) | n/d | Hecho 2026-10-28 |
+| empresas de desarrollo de software a medida | — | / + reseñas | Comercial | 10 (DataForSEO 20/11; Semrush 110) | n/d | Pendiente |
+| empresa desarrollo software barcelona | — | / | Comercial local | — (DataForSEO 15/11; Semrush 90) | n/d | En curso: solo en el title |
+| empresa de desarrollo de apps | empresas de desarrollo de apps y empresa desarrollo de apps (agrupadas con la principal), empresa desarrollo apps (30, KD 19; agrupa empresa desarrollo app y empresas desarrollo apps), empresa de desarrollo app (10) | /desarrollo-de-apps | Comercial (CPC 24–31 $) | 40 (DataForSEO 20/11; Semrush 260) | 16 (DataForSEO) | Hecho 2026-11-01 |
+| desarrollo de apps para empresas | desarrollo de app para empresa (agrupada con la principal), desarrollo saas a medida (—) | /desarrollo-de-apps | Comercial | 30 (DataForSEO 20/11; Semrush 110) | 19 (DataForSEO) | Hecho 2026-11-01 |
+| desarrollo de apps barcelona | — | /desarrollo-de-apps | Comercial local | 40 (DataForSEO 11/11; Semrush 210) | n/d | Hecho 2026-11-01 |
+| empresas desarrolladoras de apps en España | empresas de desarrollo de software en españa (20, DataForSEO), mejores empresas de desarrollo de software en españa (10, DataForSEO) | /blog/empresas-desarrolladoras-de-apps-espana (nueva, comparativa) | Investigación comercial (la SERP son listados "Top empresas…") | 20 (DataForSEO 20/11; Semrush 320) | n/d | Validada — pendiente de crear (Sol, después de aplicar la ficha) |
 | desarrollo apps madrid | desarrollo de apps madrid (10), empresa desarrollo apps madrid (10), desarrollo aplicaciones madrid (10) | /desarrollo-de-apps/madrid/ (nueva) | Comercial local | 20 (DataForSEO) | n/d | Validada — pendiente de crear (dentro del rediseño) |
 | desarrollo apps valencia | desarrollo de apps valencia (10), empresa desarrollo apps valencia (10), desarrollo aplicaciones valencia (10) | /desarrollo-de-apps/valencia/ (nueva) | Comercial local | 20 (DataForSEO) | n/d | Validada — pendiente de crear (dentro del rediseño) |
 | desarrollo apps sevilla | desarrollo de apps sevilla (10) | /desarrollo-de-apps/sevilla/ (nueva) | Comercial local | 10 (DataForSEO) | n/d | Validada — pendiente de crear (dentro del rediseño) |
 | software sanitario | software para hospitales (10), app sanitaria (20), desarrollo apps salud (10), app para médicos (10) | /software-sanitario (nueva, página de sector) | Comercial (conversión desde LinkedIn, no captación) | 30 (DataForSEO) | n/d | Aprobada 2026-11-15 — pendiente de crear (R7, dentro del rediseño) |
 | software para centros educativos | software para universidades (10), desarrollo de software educativo (10), desarrollo lms (10), app para colegios (10) | /software-centros-educativos (nueva, página de sector) | Comercial (conversión desde LinkedIn, no captación) | 10 (DataForSEO) | n/d | Aprobada 2026-11-15 — pendiente de crear (R7, dentro del rediseño) |
 | digitalización industrial | digitalización de procesos industriales (10), software para industria (10), software para empresas industriales (10), software industria 4.0 (10) | /digitalizacion-industrial (nueva, página de sector) | Mixta: guías y consultoras para pymes (conversión, no captación) | 110 (DataForSEO) | n/d | Aprobada 2026-11-15 — pendiente de crear (R7, dentro del rediseño; antes, la ficha tiene que incluir industria) |
-| cuánto cuesta crear una app | cuánto cuesta crear una app web (40, KD 8), …en España (30), …en euros (30), cuánto cuesta un software a medida (~100, KD 3), cuánto sale hacer un software a medida (70) | /cuanto-cuesta-crear-una-app (nueva; sustituye a /cuanto-cuesta-software-a-medida) | Investigación comercial | 210 | 18 | Validada — pendiente de crear |
-| externalizar desarrollo de software | criterios para externalizar desarrollo de software, equipo interno vs desarrollo externalizado | /externalizar-desarrollo-software (nueva) | Investigación comercial | ~50 | n/d | Pendiente |
+| cuánto cuesta crear una app | cuánto cuesta crear una app web, …en España, …en euros, cuánto cuesta un software a medida y cuánto sale hacer un software a medida: sin volumen en DataForSEO (20/11) | /cuanto-cuesta-crear-una-app (nueva; sustituye a /cuanto-cuesta-software-a-medida) | Investigación comercial (CPC 4,56 $) | 90 (DataForSEO 20/11; Semrush 210) | n/d | Validada — pendiente de crear |
+| externalizar desarrollo de software | criterios para externalizar desarrollo de software, equipo interno vs desarrollo externalizado | /externalizar-desarrollo-software (nueva) | Investigación comercial | — (DataForSEO 20/11; Semrush ~50). Las secundarias, tampoco | n/d | Pendiente |
 | custom software development barcelona | — | /en | Comercial | GSC: posición 4 | n/d | En curso: en el title desde 2026-11-02 |
 | base de datos vectorial | pgvector (480), búsqueda semántica (50), que es una base de datos vectorial (40), RAG con PostgreSQL | /blog/base-de-datos-vectorial | Informativa (autoridad y GEO, no captación directa) | 260 (DataForSEO) | 32 (Semrush) | Hecho 2026-11-07 (primer artículo del blog) |
 | sistema legacy | sistemas legacy (140, agrupada), software legacy (40, KD 47), modernización de sistemas legacy (10) | /blog/modernizar-sistema-legacy | Informativa con interés comercial (puja de anuncios 17–24 $) | 140 (DataForSEO) | 0 (DataForSEO) | Hecho 2026-11-20 (artículo de Albert, caso NewsUp) |
+
+### Revalidación con DataForSEO (2026-11-20)
+
+Las cifras de Semrush de la tabla se volvieron a pedir a DataForSEO (Keywords Data API, Google Ads, España/español, media de 12 meses, nov 2025–oct 2026). KD de DataForSEO Labs (no comparable con Semrush). Coste: ~0,10 $ (1 de volumen en modo live con 26 keywords y 1 de KD con 12).
+
+| Grupo | Semrush (suma) | DataForSEO (suma, sin contar dos veces las agrupadas) |
+|---|---|---|
+| Home: software a medida y variantes | ~3.500 | ~510 (software a medida 260, desarrollo de software a medida 140, desarrollo software a medida 50, software a medida para empresas 30, desarrollo a medida de software 20, empresas de desarrollo de software a medida 10) |
+| /desarrollo-de-apps: empresa de desarrollo de apps, para empresas y Barcelona | ~1.900 | ~150 (empresa de desarrollo de apps 40, empresa desarrollo apps 30, desarrollo de apps para empresas 30, desarrollo de apps barcelona 40, empresa de desarrollo app 10) |
+| /cuanto-cuesta-crear-una-app | ~480 | 90 (solo la principal; las secundarias no tienen volumen) |
+| Comparativa de empresas | 320 | 20 |
+| /externalizar-desarrollo-software | ~50 | — |
+
+Lectura: DataForSEO da entre 5 y 15 veces menos y agrupa variantes que Semrush contaba por separado («empresa de desarrollo de apps», «empresas de desarrollo de apps» y «empresa desarrollo de apps» son una sola búsqueda; igual «empresa desarrollo apps», «empresa desarrollo app» y «empresas desarrollo apps»). El orden de prioridad no cambia: la home es el grupo con más demanda, después /desarrollo-de-apps y después /cuanto-cuesta-crear-una-app. Cambian dos cosas: en la home, «software a medida» (260) tiene más volumen que la principal, «desarrollo de software a medida» (140); y /externalizar-desarrollo-software no tiene demanda. Las keywords informativas de IA («ia medica» 880, «automatización de procesos con ia» 260, «consultoría ia» 260) tienen ahora más volumen que cualquier keyword comercial de la web salvo «software a medida».
 
 ## Prompt Universe (IA)
 Complementa a las keywords: preguntas en lenguaje natural que el cliente hace a una IA antes de contratar. Se miden en GEO Metrics (proyecto "Nimbel Code"). Prioridad: Validación y marca → Comparación → Descubrimiento → informacional (`decisiones.md`, 2026-11-03).
@@ -61,7 +75,7 @@ Pendiente: completar con los 10 problemas reales del cliente (3 prompts cada uno
 ## Para conseguir presencia (no página propia)
 | Keyword | Vol/mes | KD | Acción |
 |---|---|---|---|
-| empresas desarrolladoras de apps en España | 320 | 27 | La SERP son listados "Top empresas…". Outreach para aparecer en esos rankings (también alimentan a los chatbots). Desde 2026-11-11 tiene además página propia: la comparativa del blog (ver "Keywords elegidas") |
+| empresas desarrolladoras de apps en España | 20 (DataForSEO 20/11; Semrush 320) | n/d | La SERP son listados "Top empresas…". Outreach para aparecer en esos rankings (también alimentan a los chatbots). Desde 2026-11-11 tiene además página propia: la comparativa del blog (ver "Keywords elegidas") |
 
 ## En investigación: artículo RAG con PostgreSQL
 Sin keyword principal todavía; borrador en `borradores/rag-con-postgresql.md` (allí, la comparación con Semrush). Fuente: DataForSEO, Keywords Data API (Google Ads), España/español, media de 12 meses (oct 2025–sep 2026), consultado 2026-11-07. KD: DataForSEO Labs, no comparable con el de Semrush (da 0 donde Semrush da 32–62).
