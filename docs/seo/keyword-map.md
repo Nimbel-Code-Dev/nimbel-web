@@ -25,7 +25,7 @@
 | empresa desarrollo software barcelona | — | / | Comercial local | — (DataForSEO 15/11; Semrush 90) | n/d | Descartada 2026-11-20: sale del title de la home, que deja de localizarse en Barcelona (`decisiones.md`) |
 | empresa de desarrollo de apps | empresas de desarrollo de apps y empresa desarrollo de apps (agrupadas con la principal), empresa desarrollo apps (30, KD 19; agrupa empresa desarrollo app y empresas desarrollo apps), empresa de desarrollo app (10) | /desarrollo-de-apps | Comercial (CPC 24–31 $) | 40 (DataForSEO 20/11; Semrush 260) | 16 (DataForSEO) | Hecho 2026-11-01 |
 | desarrollo de apps para empresas | desarrollo de app para empresa (agrupada con la principal), desarrollo saas a medida (—) | /desarrollo-de-apps | Comercial | 30 (DataForSEO 20/11; Semrush 110) | 19 (DataForSEO) | Hecho 2026-11-01 |
-| desarrollo de apps barcelona | — | /desarrollo-de-apps | Comercial local | 40 (DataForSEO 11/11; Semrush 210) | n/d | Hecho 2026-11-01 |
+| desarrollo de apps barcelona | desarrolladores de apps barcelona (40, CPC 17,59 $, DataForSEO 15/11; secundaria desde 2026-11-20) | /desarrollo-de-apps | Comercial local | 40 (DataForSEO 11/11; Semrush 210) | n/d | Hecho 2026-11-01. Reforzada 2026-11-20: H2 «Desarrollo de apps en Barcelona» (foto de partida en `fotos/desarrollo-de-apps-2026-11-20.md`) |
 | empresas desarrolladoras de apps en España | empresas de desarrollo de software en españa (20, DataForSEO), mejores empresas de desarrollo de software en españa (10, DataForSEO) | /blog/empresas-desarrolladoras-de-apps-espana (nueva, comparativa) | Investigación comercial (la SERP son listados "Top empresas…") | 20 (DataForSEO 20/11; Semrush 320) | n/d | Validada — pendiente de crear (Sol, después de aplicar la ficha) |
 | desarrollo apps madrid | desarrollo de apps madrid (10), empresa desarrollo apps madrid (10), desarrollo aplicaciones madrid (10) | /desarrollo-de-apps/madrid/ (nueva) | Comercial local | 20 (DataForSEO) | n/d | Validada — pendiente de crear (dentro del rediseño) |
 | desarrollo apps valencia | desarrollo de apps valencia (10), empresa desarrollo apps valencia (10), desarrollo aplicaciones valencia (10) | /desarrollo-de-apps/valencia/ (nueva) | Comercial local | 20 (DataForSEO) | n/d | Validada — pendiente de crear (dentro del rediseño) |
@@ -216,7 +216,7 @@ Fuente: DataForSEO, Keywords Data API (Google Ads), España/español, media de 1
 | desarrollo de aplicaciones web | 880 | 3 | 12,63 $ | Descartada (SERP 2026-11-15: ciclos de FP DAW —Campus Cámara FP, Universidad Europea, XTART, CCC—; intención de estudiar, no de contratar) |
 | desarrollo de aplicaciones móviles | 110 | 0 | 12,63 $ | Descartada (SERP 2026-11-15: guías, herramientas y tutoriales para desarrolladores; solo un anuncio de empresa) |
 | app de salud | 70 | 29 | 7,33 $ | Descartada: no es de quien quiere contratar un desarrollo |
-| desarrolladores de apps barcelona | 40 | 0 | 17,59 $ | Candidata a secundaria de /desarrollo-de-apps (pendiente de decisión de Rubén). En GSC ya sale en posición ~46 |
+| desarrolladores de apps barcelona | 40 | 0 | 17,59 $ | Secundaria de «desarrollo de apps barcelona» en /desarrollo-de-apps desde 2026-11-20 (ver «Keywords elegidas»). En GSC, 72 impresiones en posición 43,7 (a 2026-11-19) |
 | mantenimiento de software | 30 | 0 | — | Secundaria como mucho; sin página propia |
 | desarrollo saas | 20 (110 en oct 2026) | — | 4,7 $ | Residual |
 | desarrollo de aplicaciones web a medida | 20 | — | — | Residual |

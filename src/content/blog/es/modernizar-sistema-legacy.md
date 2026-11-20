@@ -97,7 +97,7 @@ Esa es la verdadera razón para modernizar un sistema legacy: no el cambio en s�
 
 No siempre compensa. Si tu sistema funciona, nadie necesita cambiarlo y no te frena para crecer, migrarlo es gastar dinero sin retorno. Merece la pena cuando cada cambio cuesta cada vez más, cuando hay funcionalidades que no puedes construir por culpa del modelo antiguo o cuando dependes de una tecnología que nadie sabe mantener.
 
-En Nimbel Code, empresa de [desarrollo de software a medida](/desarrollo-de-apps), empezamos siempre por medir y te decimos con datos si la migración compensa o no. Si tienes un sistema que se ha quedado atrás, [escríbenos](/#contact) y lo vemos juntos.
+En Nimbel Code, empresa de [desarrollo de software a medida](/), empezamos siempre por medir y te decimos con datos si la migración compensa o no. Si tienes un sistema que se ha quedado atrás, [escríbenos](/#contact) y lo vemos juntos.
 
 ## Dudas frecuentes
 

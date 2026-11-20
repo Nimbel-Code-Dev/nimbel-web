@@ -16,6 +16,7 @@ Las tareas hechas indican el commit donde se aplicaron.
 - ➡️ **En la guía (T4.19):** Comparativa de empresas en /blog/empresas-desarrolladoras-de-apps-espana (Sol, después de aplicar la ficha; condiciones en `decisiones.md`, 2026-11-11)
 - ➡️ **En la guía (T4.17 textos, T4.15 y T4.16 diseño y código):** Páginas por sector: salud, educación e industria, a la vez y dentro del rediseño (`decisiones.md`, 2026-11-15). Keywords aprobadas el 2026-11-15: /software-sanitario, /software-centros-educativos y /digitalizacion-industrial (`keyword-map.md`). Antes de publicar industria: Rubén decide si la ficha incluye industria
 - ➡️ **En la guía (T4.23 y T4.24):** Páginas por ciudad: /desarrollo-de-apps/madrid/, /desarrollo-de-apps/valencia/ y /desarrollo-de-apps/sevilla/, dentro del rediseño (`decisiones.md`, 2026-11-11 y 2026-11-20; datos en `keyword-map.md`)
+- [x] /desarrollo-de-apps/: foto de partida (T4.26, falta Bing), H2 «Desarrollo de apps en Barcelona», «desarrolladores de apps barcelona» como secundaria, enlace en el menú y en el pie (menú móvil hasta 1024 px) y enlace del artículo de legacy a la home — hecho 2026-11-20 (`decisiones.md`)
 - [x] Home: title, H1, subtítulo, H2 y meta description — hecho 2026-10-28
 - [x] Ampliar home a ~1.200–1.500 palabras con el texto de `contenido-home.md`, montado con los bloques visuales actuales — hecho (801b393). La diseñadora lo rediseñará; la sección de Barcelona se quitó
 - [x] Home: responder cuándo conviene software a medida frente a uno estándar (SaaS) — hecho (9764dfb)

@@ -436,6 +436,12 @@ export const es = {
         "También para empresas que quieren una app propia para sus clientes o su equipo sin contratar a nadie.",
       ],
     },
+    barcelona: {
+      title: "Desarrollo de apps en Barcelona",
+      paragraphs: [
+        "Parte de nuestro equipo de desarrolladores está en Barcelona y Ripollet: si tu empresa está allí, nos reunimos en persona cuando haga falta, y el resto del proyecto avanza en remoto con entregas frecuentes. Entre nuestros proyectos en Barcelona están FAMBA, la plataforma de salud del viajero creada con el Hospital Clínic de Barcelona, y la web de StartUB, de la Universitat de Barcelona, que desarrollamos y mantenemos.",
+      ],
+    },
     journey: {
       headline: "De la idea a la app en el mercado",
       intro: "Una primera versión (MVP) suele estar lista en unos 3 meses.",

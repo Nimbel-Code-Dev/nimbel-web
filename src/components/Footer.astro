@@ -100,6 +100,19 @@ const fambaCaseLabel = locale === "en" ? "FAMBA case" : "Caso FAMBA";
             </a>
           </li>
           {
+            // Desarrollo de apps solo existe en español por ahora
+            locale === "es" && (
+              <li>
+                <a
+                  href="/desarrollo-de-apps/"
+                  class="text-nimbel-text text-sm hover:text-nimbel-accent transition-colors"
+                >
+                  Desarrollo de apps
+                </a>
+              </li>
+            )
+          }
+          {
             // El blog solo existe en español por ahora
             locale === "es" && (
               <li>

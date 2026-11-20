@@ -437,6 +437,12 @@ export const en = {
         "It's also for companies that want their own app for their customers or their team without hiring anyone.",
       ],
     },
+    barcelona: {
+      title: "App development in Barcelona",
+      paragraphs: [
+        "Part of our development team is based in Barcelona and Ripollet: if your company is there, we meet in person whenever it's needed, and the rest of the project moves forward remotely with frequent deliveries. Our projects in Barcelona include FAMBA, the travel health platform created with Hospital Clínic de Barcelona, and the StartUB website, from the Universitat de Barcelona, which we develop and maintain.",
+      ],
+    },
     journey: {
       headline: "From idea to app on the market",
       intro: "A first version (MVP) is usually ready in about 3 months.",

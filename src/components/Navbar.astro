@@ -17,8 +17,13 @@ const home = locale === "en" ? "/en/" : "/";
 const navLinks = [
   { label: t("navbar", "about"), href: `${home}#team` },
   { label: t("navbar", "services"), href: `${home}#services` },
-  // El blog solo existe en español por ahora
-  ...(locale === "es" ? [{ label: "Blog", href: "/blog/" }] : []),
+  // Desarrollo de apps y el blog solo existen en español por ahora
+  ...(locale === "es"
+    ? [
+        { label: "Desarrollo de apps", href: "/desarrollo-de-apps/" },
+        { label: "Blog", href: "/blog/" },
+      ]
+    : []),
 ];
 
 const pathname = Astro.url.pathname;
@@ -36,7 +41,7 @@ const alternateUrl =
   </a>
 
   <!-- Desktop: Links + CTA + Lang switcher -->
-  <div class="hidden md:flex gap-4 items-center">
+  <div class="hidden lg:flex gap-4 items-center">
     {
       navLinks.map((link) => (
         <a
@@ -70,7 +75,7 @@ const alternateUrl =
   <!-- Mobile: Hamburger button -->
   <button
     id="menu-toggle"
-    class="md:hidden flex flex-col gap-1.25 p-2 cursor-pointer"
+    class="lg:hidden flex flex-col gap-1.25 p-2 cursor-pointer"
     aria-label={locale === "en" ? "Open menu" : "Abrir menú"}
     aria-expanded="false"
     aria-controls="mobile-menu"
