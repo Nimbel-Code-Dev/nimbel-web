@@ -19,10 +19,10 @@
 ## Keywords elegidas
 | Keyword principal | Variantes / secundarias | URL asignada | Intención | Vol/mes | KD | Estado |
 |---|---|---|---|---|---|---|
-| desarrollo de software a medida | software a medida (260, KD 0), desarrollo software a medida (50), desarrollo a medida de software (20) | / | Comercial (CPC 13,69 $) | 140 (DataForSEO 20/11; Semrush 1.000) | 0 (DataForSEO) | Hecho 2026-10-28 |
-| software a medida para empresas | — | / | Comercial (CPC 19,86 $) | 30 (DataForSEO 20/11; Semrush 210) | n/d | Hecho 2026-10-28 |
+| software a medida | desarrollo de software a medida (140, KD 0; principal hasta el 2026-11-20), desarrollo software a medida (50), desarrollo a medida de software (20) | / | Comercial (CPC 11,8 $; SERP 2026-11-20: artículos de empresas de desarrollo que explican qué es y cuándo conviene, y páginas de servicio) | 260 (DataForSEO 20/11; Semrush 1.300) | 0 (DataForSEO) | Hecho 2026-11-20: title «Software a medida para empresas \| Nimbel Code». H1 y meta sin cambios (ya la contienen) |
+| software a medida para empresas | — | / | Comercial (CPC 19,86 $) | 30 (DataForSEO 20/11; Semrush 210) | n/d | Hecho 2026-10-28; en el title desde 2026-11-20 |
 | empresas de desarrollo de software a medida | — | / + reseñas | Comercial | 10 (DataForSEO 20/11; Semrush 110) | n/d | Pendiente |
-| empresa desarrollo software barcelona | — | / | Comercial local | — (DataForSEO 15/11; Semrush 90) | n/d | En curso: solo en el title |
+| empresa desarrollo software barcelona | — | / | Comercial local | — (DataForSEO 15/11; Semrush 90) | n/d | Descartada 2026-11-20: sale del title de la home, que deja de localizarse en Barcelona (`decisiones.md`) |
 | empresa de desarrollo de apps | empresas de desarrollo de apps y empresa desarrollo de apps (agrupadas con la principal), empresa desarrollo apps (30, KD 19; agrupa empresa desarrollo app y empresas desarrollo apps), empresa de desarrollo app (10) | /desarrollo-de-apps | Comercial (CPC 24–31 $) | 40 (DataForSEO 20/11; Semrush 260) | 16 (DataForSEO) | Hecho 2026-11-01 |
 | desarrollo de apps para empresas | desarrollo de app para empresa (agrupada con la principal), desarrollo saas a medida (—) | /desarrollo-de-apps | Comercial | 30 (DataForSEO 20/11; Semrush 110) | 19 (DataForSEO) | Hecho 2026-11-01 |
 | desarrollo de apps barcelona | — | /desarrollo-de-apps | Comercial local | 40 (DataForSEO 11/11; Semrush 210) | n/d | Hecho 2026-11-01 |
