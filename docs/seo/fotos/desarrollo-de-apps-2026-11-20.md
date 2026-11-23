@@ -47,7 +47,7 @@ Proyecto «Nimbel Code», del 2026-10-21 al 2026-11-20 (264 respuestas analizada
 
 Añadido el 2026-11-23: AI Performance de todo el sitio (`nimbel.net`), del 2026-10-26 al 2026-11-21, exportado por Sol. Son 33 citas en Copilot y Bing con IA, siempre de una sola página al día: 31 entre el 27/10 y el 2/11, 1 el 4/11 y 1 el 20/11. El detalle está en la foto de la home (`home-2026-11-23.md`, punto 3).
 
-Pendiente: exportar la pestaña de páginas citadas para saber cuántas de esas citas son de esta URL.
+Por página (`AIPageStatsReport`): las 33 citas son de la home. **Esta URL tiene 0 citas en Bing.**
 
 ## 4. Lighthouse (móvil)
 
