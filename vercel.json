@@ -3,7 +3,8 @@
   "outputDirectory": "dist",
   "redirects": [
     { "source": "/en/about", "destination": "/en/about-nimbel-code/", "statusCode": 301 },
-    { "source": "/testimonials/pol-margaix", "destination": "/#testimonial-card-pol-margaix", "statusCode": 301 }
+    { "source": "/testimonials/pol-margaix", "destination": "/#testimonial-card-pol-margaix", "statusCode": 301 },
+    { "source": "/l/famba", "destination": "/casos/famba/?utm_source=linkedin&utm_medium=post&utm_campaign=salud", "statusCode": 302 }
   ],
   "headers": [
     {
