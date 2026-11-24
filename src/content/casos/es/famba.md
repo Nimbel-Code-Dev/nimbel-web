@@ -18,7 +18,7 @@ Tras la COVID-19, el Servicio de Salud Internacional del Hospital Clínic de Bar
 El proyecto llevaba casi dos años intentando sacar una versión que funcionara con otro proveedor. El Clínic necesitaba tenerla lista para una fecha que no se podía mover. Analizamos con el equipo qué camino nos permitía llegar a tiempo y replanteamos la arquitectura desde la base, pensada para crecer. En 3 meses desde que nos incorporamos, FAMBA tenía su primera versión.
 
 ## Qué cambió
-Con FAMBA, el viajero habla por chat con el mismo equipo médico que lo vacunó, que ya conoce su perfil, los 365 días del año. Puede enviar fotos y registrar síntomas con ayuda de la IA, y recibe alertas si hay un brote en la zona. El Clínic sigue cada caso hasta que el viajero se recupera y gana una herramienta de vigilancia epidemiológica.
+Con FAMBA, el viajero habla por chat con el mismo equipo médico que lo vacunó, que ya conoce su perfil, los 365 días del año. Puede enviar fotos y registrar sus síntomas paso a paso, y recibe alertas si hay un brote en la zona. El Clínic sigue cada caso hasta que el viajero se recupera y gana una herramienta de vigilancia epidemiológica.
 
 ## Cómo trabajamos
 La primera versión fue el punto de partida. Desde entonces, la plataforma evoluciona a medida que el equipo del servicio detecta nuevas necesidades. Como conocemos el sector sanitario, no nos limitamos a la tecnología: aportamos criterio de producto, de usabilidad y de negocio. Y diseñamos la arquitectura pensando en hacia dónde va a ir el servicio, no solo en lo que se pide hoy. Así, cada paso nuevo no obliga a rehacer lo anterior.

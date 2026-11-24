@@ -18,7 +18,7 @@ After COVID-19, the International Health Service at Hospital Clínic de Barcelon
 The project had spent almost two years trying to get a working version out with another provider. Hospital Clínic needed it ready by a date that could not move. With our team, we worked out which path would get us there on time and rethought the architecture from the ground up, built to grow. Within 3 months of joining, FAMBA had its first version.
 
 ## What changed
-With FAMBA, travelers chat with the same medical team that vaccinated them, who already know their profile, 365 days a year. They can send photos and log symptoms with the help of AI, and they get alerts if there is an outbreak in the area. Hospital Clínic follows each case until the traveler recovers and gains a tool for epidemiological surveillance.
+With FAMBA, travelers chat with the same medical team that vaccinated them, who already know their profile, 365 days a year. They can send photos and log their symptoms step by step, and they get alerts if there is an outbreak in the area. Hospital Clínic follows each case until the traveler recovers and gains a tool for epidemiological surveillance.
 
 ## How we work
 The first version was the starting point. Since then, the platform has evolved as the service's team identifies new needs. Because we know the healthcare sector, we don't stop at technology: we bring product, usability and business judgment. And we designed the architecture around where the service is heading, not only what is asked for today. That way, each new step doesn't force us to redo the previous one.
